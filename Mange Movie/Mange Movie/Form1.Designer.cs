@@ -86,6 +86,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -630,6 +631,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Red;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label7);
@@ -788,6 +790,21 @@
             this.textBox7.Size = new System.Drawing.Size(201, 15);
             this.textBox7.TabIndex = 21;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(55)))), ((int)(((byte)(69)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(853, -11);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(42, 46);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "_";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -905,6 +922,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
     }
 }
 

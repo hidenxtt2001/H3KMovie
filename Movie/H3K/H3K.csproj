@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20E2F9F9-B1FF-4E36-958B-45D7507D918E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>H3K</RootNamespace>
+    <AssemblyName>H3K</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InterFace\ConnectData.cs" />
+    <Compile Include="InterFace\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterFace\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterFace\MenuControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterFace\MenuControl.Designer.cs">
+      <DependentUpon>MenuControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterFace\Movie_Mange\MovieInfor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InterFace\Movie_Mange\MovieInfor.Designer.cs">
+      <DependentUpon>MovieInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterFace\Movie_Mange\Wait Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterFace\Movie_Mange\Wait Form.Designer.cs">
+      <DependentUpon>Wait Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterFace\WatchMovie\MovieShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterFace\WatchMovie\MovieShow.Designer.cs">
+      <DependentUpon>MovieShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterFace\WatchMovie\WatchMovieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterFace\WatchMovie\WatchMovieForm.Designer.cs">
+      <DependentUpon>WatchMovieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InterFace\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterFace\MenuControl.resx">
+      <DependentUpon>MenuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterFace\Movie_Mange\MovieInfor.resx">
+      <DependentUpon>MovieInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterFace\Movie_Mange\Wait Form.resx">
+      <DependentUpon>Wait Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterFace\WatchMovie\MovieShow.resx">
+      <DependentUpon>MovieShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterFace\WatchMovie\WatchMovieForm.resx">
+      <DependentUpon>WatchMovieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squared_menu_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_menu_vertical_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_menu_vertical_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_squared_menu_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_account_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_clock_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_time_machine_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_machine_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\love_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_historical_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_historical_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_love_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cinema_film_play_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cinema_film_play_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_squared_menu_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_account_321.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

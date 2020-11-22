@@ -35,3 +35,4 @@ C:\Users\Admin\Source\Repos\H3KMovie2\Mange Movie\Mange Movie\obj\Debug\Mange Mo
 C:\Users\Admin\Source\Repos\H3KMovie2\Mange Movie\Mange Movie\obj\Debug\Mange Movie.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Source\Repos\H3KMovie2\Mange Movie\Mange Movie\obj\Debug\Mange Movie.exe
 C:\Users\Admin\Source\Repos\H3KMovie2\Mange Movie\Mange Movie\obj\Debug\Mange Movie.pdb
+C:\Users\Admin\Source\Repos\H3KMovie2\Mange Movie\Mange Movie\obj\Debug\Mange_Movie.Form4.resources

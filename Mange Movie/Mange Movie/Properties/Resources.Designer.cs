@@ -113,9 +113,39 @@ namespace Mange_Movie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap H3KLogo {
+            get {
+                object obj = ResourceManager.GetObject("H3KLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap H3Klogo2 {
             get {
                 object obj = ResourceManager.GetObject("H3Klogo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieCamLogo1 {
+            get {
+                object obj = ResourceManager.GetObject("MovieCamLogo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quoteGIF2 {
+            get {
+                object obj = ResourceManager.GetObject("quoteGIF2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -80,12 +80,6 @@
     <Compile Include="InterFace\Sign Form\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterFace\Sign Form\Sign Up.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InterFace\Sign Form\Sign Up.Designer.cs">
-      <DependentUpon>Sign Up.cs</DependentUpon>
-    </Compile>
     <Compile Include="InterFace\WatchMovie\MovieShow.cs">
       <SubType>Form</SubType>
     </Compile>

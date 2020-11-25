@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace H3K.InterFace.Sign_Form
+namespace H3K.InterFace.Movie_Mange
 {
-    public partial class Sign_Up : Form
+    public partial class MovieItem : UserControl
     {
-        public Sign_Up()
+        public MovieItem()
         {
             InitializeComponent();
         }

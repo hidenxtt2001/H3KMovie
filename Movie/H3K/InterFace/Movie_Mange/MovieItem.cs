@@ -16,5 +16,48 @@ namespace H3K.InterFace.Movie_Mange
         {
             InitializeComponent();
         }
+
+        private string _title;
+        private Image _background;
+        private string _movieLink;
+        private string _content;
+        private string _director;
+        private int _rating;
+        [Category("Custom")]
+        public string Title
+        {
+            get { return _title; }
+            set { _title = value; title.Text = value; }
+        }
+        [Category("Custom")]
+        public Image ImageBackgournd
+        {
+            get { return _background; }
+            set { _background = value; this.BackgroundImage = _background; }
+        }
+        [Category("Custom")]
+        public string Content
+        {
+            get { return _content; }
+            set { _content = value; }
+        }
+        [Category("Custom")]
+        public string Director
+        {
+            get { return _director; }
+            set { _director = value; director.Text = value; }
+        }
+        [Category("Custom")]
+        public int Rating
+        {
+            get { return _rating; }
+            set { _rating = value; }
+        }
+        [Category("Custom")]
+        public string MovieLink
+        {
+            get { return _movieLink; }
+            set { _movieLink = value; }
+        }
     }
 }

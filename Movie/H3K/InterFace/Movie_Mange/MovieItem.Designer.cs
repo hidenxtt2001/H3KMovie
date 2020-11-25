@@ -28,57 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.title = new System.Windows.Forms.Label();
+            this.director = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pictureBox1
             // 
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(195, 224);
-            this.panel1.TabIndex = 0;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 236);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // title
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 224);
-            this.label1.MaximumSize = new System.Drawing.Size(189, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(10);
-            this.label1.Size = new System.Drawing.Size(57, 33);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Title";
+            this.title.AutoSize = true;
+            this.title.Dock = System.Windows.Forms.DockStyle.Top;
+            this.title.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Location = new System.Drawing.Point(0, 236);
+            this.title.MaximumSize = new System.Drawing.Size(200, 0);
+            this.title.Name = "title";
+            this.title.Padding = new System.Windows.Forms.Padding(6);
+            this.title.Size = new System.Drawing.Size(54, 26);
+            this.title.TabIndex = 1;
+            this.title.Text = "Title";
+            this.title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // director
             // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 257);
-            this.label2.MaximumSize = new System.Drawing.Size(189, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(10);
-            this.label2.Size = new System.Drawing.Size(75, 33);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Director";
+            this.director.AutoSize = true;
+            this.director.Dock = System.Windows.Forms.DockStyle.Top;
+            this.director.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.director.Location = new System.Drawing.Point(0, 262);
+            this.director.MaximumSize = new System.Drawing.Size(200, 0);
+            this.director.Name = "director";
+            this.director.Padding = new System.Windows.Forms.Padding(6);
+            this.director.Size = new System.Drawing.Size(75, 26);
+            this.director.TabIndex = 2;
+            this.director.Text = "Director";
+            this.director.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MovieItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.director);
+            this.Controls.Add(this.title);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "MovieItem";
-            this.Size = new System.Drawing.Size(195, 290);
+            this.Size = new System.Drawing.Size(200, 288);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,8 +90,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.Label director;
     }
 }

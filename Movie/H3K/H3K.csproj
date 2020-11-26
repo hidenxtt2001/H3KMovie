@@ -151,76 +151,13 @@
     <None Include="Resources\icon_movie.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\search_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\squared_menu_100px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu_50px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_menu_vertical_16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_menu_vertical_161.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_squared_menu_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_account_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_clock_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_time_machine_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\time_machine_30px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\love_48px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_historical_48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_historical_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_love_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_cinema_film_play_16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_cinema_film_play_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\search_icon1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_squared_menu_321.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_account_321.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\icons8_delete.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_subtract.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8_left_16.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\icons8_left.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_search1.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_right.ico" />

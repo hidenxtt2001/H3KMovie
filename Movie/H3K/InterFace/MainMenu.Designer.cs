@@ -494,7 +494,6 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.button5.BackgroundImage = global::H3K.Properties.Resources.icons8_right;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button5.Dock = System.Windows.Forms.DockStyle.Right;
             this.button5.FlatAppearance.BorderSize = 0;
@@ -511,7 +510,6 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.button4.BackgroundImage = global::H3K.Properties.Resources.icons8_left;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button4.Dock = System.Windows.Forms.DockStyle.Left;
             this.button4.FlatAppearance.BorderSize = 0;
@@ -626,7 +624,6 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::H3K.Properties.Resources.search_icon;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Dock = System.Windows.Forms.DockStyle.Left;
             this.button1.FlatAppearance.BorderSize = 0;

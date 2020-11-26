@@ -16,7 +16,7 @@ namespace H3K
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InterFace.MainMenu());
+            Application.Run(new InterFace.Sign_Form.Login());
         }
     }
 }

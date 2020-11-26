@@ -75,12 +75,12 @@ namespace H3K
         private static DataTable dataTemp { get; set; }
 
         private static ConnectData connectData { get; set; }
-        private Dictionary<int, MovieInfor> items { get; set; }
+        private Dictionary<int, MovieItem> items { get; set; }
         private void getDatabase()
         {
             connectData = new ConnectData();
             dataTemp = new DataTable();
-            items = new Dictionary<int, MovieInfor>();
+            items = new Dictionary<int, MovieItem>();
             try
             {
                 dataMovie = connectData.dataMovie();
@@ -95,7 +95,7 @@ namespace H3K
             {
                 using (var image = new MemoryStream((byte[])(dataRow["poster"])))
                 {
-                    items.Add(Convert.ToInt32(dataRow["movieid"]), new MovieInfor()
+                    items.Add(Convert.ToInt32(dataRow["movieid"]), new MovieItem()
                     {
                         ImageBackgournd = Image.FromStream(image),
                         Title = Regex.Replace(dataRow["title"].ToString(), @"\s+", " "),

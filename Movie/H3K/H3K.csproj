@@ -62,12 +62,6 @@
     <Compile Include="InterFace\MenuControl.Designer.cs">
       <DependentUpon>MenuControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterFace\Movie_Mange\MovieInfor.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="InterFace\Movie_Mange\MovieInfor.Designer.cs">
-      <DependentUpon>MovieInfor.cs</DependentUpon>
-    </Compile>
     <Compile Include="InterFace\Movie_Mange\MovieItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,9 +99,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InterFace\MenuControl.resx">
       <DependentUpon>MenuControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InterFace\Movie_Mange\MovieInfor.resx">
-      <DependentUpon>MovieInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterFace\Movie_Mange\MovieItem.resx">
       <DependentUpon>MovieItem.cs</DependentUpon>

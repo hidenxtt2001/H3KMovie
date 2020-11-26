@@ -56,5 +56,4 @@ C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.exe
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.pdb
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.Sign_Form.Login.resources
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.Movie_Mange.MovieItem.resources
-C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.Movie_Mange.MovieInfor.resources
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.WatchMovieForm.resources

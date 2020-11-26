@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,11 @@ namespace H3K.InterFace
             category_scroll.HorizontalScroll.Maximum = 0;
             category_scroll.AutoScrollPosition = new Point(0, 0);
             category_scroll.AutoScroll = true;
+            list_item_movie.VerticalScroll.Maximum = 0;
+            list_item_movie.AutoScroll = false;
+            list_item_movie.VerticalScroll.Visible = false;
+            list_item_movie.AutoScroll = true;
+            this.list_item_movie.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(this.list_item_movie, true, null);
         }
 
         #region Mouse Drag Panel
@@ -94,14 +100,6 @@ namespace H3K.InterFace
                 SendMessage(this.category_scroll.Handle, WM_SCROLL, (IntPtr)Convert.ToInt32(timer1.Tag), IntPtr.Zero);
             }
         }
-
-
-
-
-
         #endregion
-
-
-
     }
 }

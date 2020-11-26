@@ -14,8 +14,8 @@ namespace H3K.InterFace
 {
     public partial class WatchMovieForm : Form
     {
-        private static MovieInfor movie { get; set; }
-        public WatchMovieForm(MovieInfor item)
+        private static MovieItem movie { get; set; }
+        public WatchMovieForm(MovieItem item)
         {
             InitializeComponent();
             movie = item;

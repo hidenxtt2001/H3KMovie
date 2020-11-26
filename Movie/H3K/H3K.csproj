@@ -162,5 +162,14 @@
   <ItemGroup>
     <None Include="Resources\icons8_right.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_sort_left2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_sort_right2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search1.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

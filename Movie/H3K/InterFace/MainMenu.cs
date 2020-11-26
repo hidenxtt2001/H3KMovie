@@ -26,7 +26,7 @@ namespace H3K.InterFace
         public const int HT_CAPTION = 0x2;
 
         [DllImportAttribute("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        public static extern int SendMessage(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
         private void panel3_MouseMove(object sender, MouseEventArgs e)
@@ -34,7 +34,7 @@ namespace H3K.InterFace
             if (e.Button == MouseButtons.Left)
             {
                 ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+                SendMessage(Handle, WM_NCLBUTTONDOWN, (IntPtr)HT_CAPTION, IntPtr.Zero);
             }
         }
         #endregion
@@ -63,7 +63,43 @@ namespace H3K.InterFace
         }
         #endregion
 
-        
+        #region Category Movie
+        private void button4_MouseDown(object sender, MouseEventArgs e)
+        {
+            timer1.Tag = 1;
+            timer1.Enabled = true;
+        }
+
+        private void button5_MouseDown(object sender, MouseEventArgs e)
+        {
+            timer1.Tag = 0;
+            timer1.Enabled = true;
+        }
+        private void button5_MouseUp(object sender, MouseEventArgs e)
+        {
+            timer1.Enabled = false;
+        }
+        private void button5_MouseLeave(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+        }
+        private const int WM_SCROLL = 276; // Horizontal scroll 
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            if (!category_scroll.Focus()) category_scroll.Focus();
+            for (int i = 0; i < 5; i++)
+            {
+                SendMessage(this.category_scroll.Handle, WM_SCROLL, (IntPtr)Convert.ToInt32(timer1.Tag), IntPtr.Zero);
+            }
+        }
+
+
+
+
+
+        #endregion
 
 
 

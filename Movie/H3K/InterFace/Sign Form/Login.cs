@@ -133,8 +133,7 @@ namespace H3K.InterFace.Sign_Form
         {
             return Regex.IsMatch(email, @"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$");
         }
+
         #endregion
-
-
     }
 }

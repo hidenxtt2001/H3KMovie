@@ -78,18 +78,19 @@
             this.logo.Dock = System.Windows.Forms.DockStyle.Left;
             this.logo.Location = new System.Drawing.Point(0, 0);
             this.logo.Name = "logo";
+            this.logo.Padding = new System.Windows.Forms.Padding(15, 30, 15, 30);
             this.logo.Size = new System.Drawing.Size(423, 460);
             this.logo.TabIndex = 1;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::H3K.Properties.Resources.icon_movie;
+            this.pictureBox1.BackgroundImage = global::H3K.Properties.Resources.logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 30);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(423, 460);
+            this.pictureBox1.Size = new System.Drawing.Size(393, 400);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -233,7 +234,7 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Top;
             this.label6.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(0, 30);
+            this.label6.Location = new System.Drawing.Point(0, 40);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(426, 109);
             this.label6.TabIndex = 0;
@@ -249,7 +250,8 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(426, 30);
+            this.panel7.Padding = new System.Windows.Forms.Padding(4);
+            this.panel7.Size = new System.Drawing.Size(426, 40);
             this.panel7.TabIndex = 9;
             this.panel7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -262,9 +264,9 @@
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 0);
+            this.button4.Location = new System.Drawing.Point(4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(36, 30);
+            this.button4.Size = new System.Drawing.Size(36, 32);
             this.button4.TabIndex = 13;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -278,9 +280,9 @@
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(366, 0);
+            this.button5.Location = new System.Drawing.Point(362, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(30, 30);
+            this.button5.Size = new System.Drawing.Size(30, 32);
             this.button5.TabIndex = 1;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button2_Click);
@@ -294,9 +296,9 @@
             this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(396, 0);
+            this.button6.Location = new System.Drawing.Point(392, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(30, 30);
+            this.button6.Size = new System.Drawing.Size(30, 32);
             this.button6.TabIndex = 0;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button1_Click);
@@ -446,7 +448,7 @@
             this.label8.Dock = System.Windows.Forms.DockStyle.Top;
             this.label8.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label8.Location = new System.Drawing.Point(0, 30);
+            this.label8.Location = new System.Drawing.Point(0, 40);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(426, 109);
             this.label8.TabIndex = 0;
@@ -461,7 +463,8 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(426, 30);
+            this.panel9.Padding = new System.Windows.Forms.Padding(4);
+            this.panel9.Size = new System.Drawing.Size(426, 40);
             this.panel9.TabIndex = 9;
             this.panel9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -474,9 +477,9 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(366, 0);
+            this.button2.Location = new System.Drawing.Point(362, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 30);
+            this.button2.Size = new System.Drawing.Size(30, 32);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -490,9 +493,9 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(396, 0);
+            this.button3.Location = new System.Drawing.Point(392, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(30, 30);
+            this.button3.Size = new System.Drawing.Size(30, 32);
             this.button3.TabIndex = 0;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button1_Click);

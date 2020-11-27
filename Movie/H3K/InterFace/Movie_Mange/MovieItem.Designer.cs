@@ -28,50 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.title = new System.Windows.Forms.Label();
-            this.director = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gradientPanel1 = new H3K.InterFace.Movie_Mange.GradientPanel();
+            this.poster = new System.Windows.Forms.Panel();
+            this.poster.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // gradientPanel1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(148, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 169);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.gradientPanel1.ColorBotton = System.Drawing.Color.Black;
+            this.gradientPanel1.ColorTop = System.Drawing.Color.Transparent;
+            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gradientPanel1.Location = new System.Drawing.Point(0, 142);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Opacity = 80;
+            this.gradientPanel1.Size = new System.Drawing.Size(154, 81);
+            this.gradientPanel1.TabIndex = 0;
+            this.gradientPanel1.MouseLeave += new System.EventHandler(this.poster_MouseLeave);
+            this.gradientPanel1.MouseHover += new System.EventHandler(this.poster_MouseHover);
             // 
-            // title
+            // poster
             // 
-            this.title.BackColor = System.Drawing.Color.Transparent;
-            this.title.Dock = System.Windows.Forms.DockStyle.Top;
-            this.title.Font = new System.Drawing.Font("Consolas", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.Location = new System.Drawing.Point(0, 169);
-            this.title.MaximumSize = new System.Drawing.Size(200, 0);
-            this.title.Name = "title";
-            this.title.Padding = new System.Windows.Forms.Padding(6);
-            this.title.Size = new System.Drawing.Size(148, 22);
-            this.title.TabIndex = 1;
-            this.title.Text = "Title";
-            this.title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // director
-            // 
-            this.director.BackColor = System.Drawing.Color.Transparent;
-            this.director.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.director.Font = new System.Drawing.Font("Consolas", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.director.Location = new System.Drawing.Point(0, 191);
-            this.director.MaximumSize = new System.Drawing.Size(200, 0);
-            this.director.Name = "director";
-            this.director.Padding = new System.Windows.Forms.Padding(6);
-            this.director.Size = new System.Drawing.Size(148, 24);
-            this.director.TabIndex = 2;
-            this.director.Text = "Director";
-            this.director.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.poster.Controls.Add(this.gradientPanel1);
+            this.poster.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.poster.Location = new System.Drawing.Point(3, 3);
+            this.poster.Name = "poster";
+            this.poster.Size = new System.Drawing.Size(154, 223);
+            this.poster.TabIndex = 1;
+            this.poster.MouseLeave += new System.EventHandler(this.poster_MouseLeave);
+            this.poster.MouseHover += new System.EventHandler(this.poster_MouseHover);
             // 
             // MovieItem
             // 
@@ -79,23 +63,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.director);
-            this.Controls.Add(this.title);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.poster);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "MovieItem";
-            this.Size = new System.Drawing.Size(148, 215);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Padding = new System.Windows.Forms.Padding(3);
+            this.Size = new System.Drawing.Size(160, 229);
+            this.poster.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label title;
-        private System.Windows.Forms.Label director;
+        private GradientPanel gradientPanel1;
+        private System.Windows.Forms.Panel poster;
     }
 }

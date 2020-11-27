@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Mange Movie",
+    "\\Mange Movie\\Mange Movie",
     "\\Movie",
     "\\Movie\\H3K",
     "\\Movie\\H3K\\InterFace",
     "\\Movie\\H3K\\InterFace\\Sign Form"
   ],
-  "SelectedNode": "\\Movie\\H3K.sln",
+  "SelectedNode": "\\Mange Movie\\Mange Movie\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

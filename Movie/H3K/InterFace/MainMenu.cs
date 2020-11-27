@@ -25,6 +25,8 @@ namespace H3K.InterFace
             list_item_movie.VerticalScroll.Visible = false;
             list_item_movie.AutoScroll = true;
             this.list_item_movie.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(this.list_item_movie, true, null);
+
+            selectPanel = movie_show;
         }
 
         #region Mouse Drag Panel
@@ -107,8 +109,37 @@ namespace H3K.InterFace
                 SendMessage(this.category_scroll.Handle, WM_SCROLL, (IntPtr)Convert.ToInt32(timer1.Tag), IntPtr.Zero);
             }
         }
+
         #endregion
 
-        
+        #region Button Main Show Panel
+
+        private Control selectPanel { get; set; }
+        private void mainbutton_show(object sender, EventArgs e)
+        {
+            if (selectPanel != null) selectPanel.BackColor = Color.FromArgb(23, 27, 41);
+            switch (((Button)sender).Name)
+            {
+                case "movie_show":
+                    movie_show_panel.BringToFront();
+                    break;
+                case "account_infor":
+                    account_infor_panel.BringToFront();
+                    break;
+                case "favorite_show":
+                    favorite_show_panel.BringToFront();
+                    break;
+                case "history_show":
+                    history_show_panel.BringToFront();
+                    break;
+            }
+            selectPanel = (Button)sender;
+            ((Button)sender).BackColor = Color.FromArgb(125, 124, 163);
+
+        }
+
+        #endregion
+
+
     }
 }

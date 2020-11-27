@@ -63,6 +63,13 @@ namespace H3K.InterFace
 
         }
 
+        private void search_input_Leave(object sender, EventArgs e)
+        {
+            if(search_input.Text.Replace(" ",string.Empty) == string.Empty)
+            {
+                search_input.Text = "Search";
+            }
+        }
         private void search_input_Enter(object sender, EventArgs e)
         {
             search_input.Text = "";
@@ -101,5 +108,7 @@ namespace H3K.InterFace
             }
         }
         #endregion
+
+        
     }
 }

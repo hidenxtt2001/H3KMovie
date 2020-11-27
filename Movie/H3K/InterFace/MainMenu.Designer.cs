@@ -45,29 +45,29 @@
             this.list_item_movie = new System.Windows.Forms.FlowLayoutPanel();
             this.category = new System.Windows.Forms.Panel();
             this.category_scroll = new System.Windows.Forms.Panel();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.genre23 = new System.Windows.Forms.Button();
+            this.genre22 = new System.Windows.Forms.Button();
+            this.genre21 = new System.Windows.Forms.Button();
+            this.genre20 = new System.Windows.Forms.Button();
+            this.genre19 = new System.Windows.Forms.Button();
+            this.genre18 = new System.Windows.Forms.Button();
+            this.genre17 = new System.Windows.Forms.Button();
+            this.genre16 = new System.Windows.Forms.Button();
+            this.genre15 = new System.Windows.Forms.Button();
+            this.genre14 = new System.Windows.Forms.Button();
+            this.genre13 = new System.Windows.Forms.Button();
+            this.genre12 = new System.Windows.Forms.Button();
+            this.genre11 = new System.Windows.Forms.Button();
+            this.genre10 = new System.Windows.Forms.Button();
+            this.genre9 = new System.Windows.Forms.Button();
+            this.genre8 = new System.Windows.Forms.Button();
+            this.genre7 = new System.Windows.Forms.Button();
+            this.genre6 = new System.Windows.Forms.Button();
+            this.genre5 = new System.Windows.Forms.Button();
+            this.genre4 = new System.Windows.Forms.Button();
+            this.genre3 = new System.Windows.Forms.Button();
+            this.genre2 = new System.Windows.Forms.Button();
+            this.genre1 = new System.Windows.Forms.Button();
             this.scroll_right = new System.Windows.Forms.Button();
             this.scroll_left = new System.Windows.Forms.Button();
             this.control = new System.Windows.Forms.Panel();
@@ -284,356 +284,356 @@
             // 
             // category_scroll
             // 
-            this.category_scroll.Controls.Add(this.button25);
-            this.category_scroll.Controls.Add(this.button26);
-            this.category_scroll.Controls.Add(this.button27);
-            this.category_scroll.Controls.Add(this.button28);
-            this.category_scroll.Controls.Add(this.button24);
-            this.category_scroll.Controls.Add(this.button23);
-            this.category_scroll.Controls.Add(this.button22);
-            this.category_scroll.Controls.Add(this.button21);
-            this.category_scroll.Controls.Add(this.button20);
-            this.category_scroll.Controls.Add(this.button19);
-            this.category_scroll.Controls.Add(this.button18);
-            this.category_scroll.Controls.Add(this.button17);
-            this.category_scroll.Controls.Add(this.button16);
-            this.category_scroll.Controls.Add(this.button15);
-            this.category_scroll.Controls.Add(this.button14);
-            this.category_scroll.Controls.Add(this.button13);
-            this.category_scroll.Controls.Add(this.button12);
-            this.category_scroll.Controls.Add(this.button11);
-            this.category_scroll.Controls.Add(this.button10);
-            this.category_scroll.Controls.Add(this.button9);
-            this.category_scroll.Controls.Add(this.button8);
-            this.category_scroll.Controls.Add(this.button7);
-            this.category_scroll.Controls.Add(this.button6);
+            this.category_scroll.Controls.Add(this.genre23);
+            this.category_scroll.Controls.Add(this.genre22);
+            this.category_scroll.Controls.Add(this.genre21);
+            this.category_scroll.Controls.Add(this.genre20);
+            this.category_scroll.Controls.Add(this.genre19);
+            this.category_scroll.Controls.Add(this.genre18);
+            this.category_scroll.Controls.Add(this.genre17);
+            this.category_scroll.Controls.Add(this.genre16);
+            this.category_scroll.Controls.Add(this.genre15);
+            this.category_scroll.Controls.Add(this.genre14);
+            this.category_scroll.Controls.Add(this.genre13);
+            this.category_scroll.Controls.Add(this.genre12);
+            this.category_scroll.Controls.Add(this.genre11);
+            this.category_scroll.Controls.Add(this.genre10);
+            this.category_scroll.Controls.Add(this.genre9);
+            this.category_scroll.Controls.Add(this.genre8);
+            this.category_scroll.Controls.Add(this.genre7);
+            this.category_scroll.Controls.Add(this.genre6);
+            this.category_scroll.Controls.Add(this.genre5);
+            this.category_scroll.Controls.Add(this.genre4);
+            this.category_scroll.Controls.Add(this.genre3);
+            this.category_scroll.Controls.Add(this.genre2);
+            this.category_scroll.Controls.Add(this.genre1);
             this.category_scroll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.category_scroll.Location = new System.Drawing.Point(78, 18);
             this.category_scroll.Name = "category_scroll";
             this.category_scroll.Size = new System.Drawing.Size(1118, 34);
             this.category_scroll.TabIndex = 2;
             // 
-            // button25
+            // genre23
             // 
-            this.button25.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button25.Location = new System.Drawing.Point(2464, 0);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(112, 34);
-            this.button25.TabIndex = 21;
-            this.button25.Text = "button25";
-            this.button25.UseVisualStyleBackColor = true;
+            this.genre23.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre23.FlatAppearance.BorderSize = 0;
+            this.genre23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre23.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre23.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre23.Location = new System.Drawing.Point(2464, 0);
+            this.genre23.Name = "genre23";
+            this.genre23.Size = new System.Drawing.Size(112, 34);
+            this.genre23.TabIndex = 21;
+            this.genre23.Text = "Western";
+            this.genre23.UseVisualStyleBackColor = true;
             // 
-            // button26
+            // genre22
             // 
-            this.button26.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button26.Location = new System.Drawing.Point(2352, 0);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(112, 34);
-            this.button26.TabIndex = 22;
-            this.button26.Text = "button26";
-            this.button26.UseVisualStyleBackColor = true;
+            this.genre22.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre22.FlatAppearance.BorderSize = 0;
+            this.genre22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre22.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre22.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre22.Location = new System.Drawing.Point(2352, 0);
+            this.genre22.Name = "genre22";
+            this.genre22.Size = new System.Drawing.Size(112, 34);
+            this.genre22.TabIndex = 22;
+            this.genre22.Text = "War";
+            this.genre22.UseVisualStyleBackColor = true;
             // 
-            // button27
+            // genre21
             // 
-            this.button27.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button27.FlatAppearance.BorderSize = 0;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button27.Location = new System.Drawing.Point(2240, 0);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(112, 34);
-            this.button27.TabIndex = 23;
-            this.button27.Text = "button27";
-            this.button27.UseVisualStyleBackColor = true;
+            this.genre21.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre21.FlatAppearance.BorderSize = 0;
+            this.genre21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre21.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre21.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre21.Location = new System.Drawing.Point(2240, 0);
+            this.genre21.Name = "genre21";
+            this.genre21.Size = new System.Drawing.Size(112, 34);
+            this.genre21.TabIndex = 23;
+            this.genre21.Text = "Thriller";
+            this.genre21.UseVisualStyleBackColor = true;
             // 
-            // button28
+            // genre20
             // 
-            this.button28.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button28.FlatAppearance.BorderSize = 0;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button28.Location = new System.Drawing.Point(2128, 0);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(112, 34);
-            this.button28.TabIndex = 24;
-            this.button28.Text = "button28";
-            this.button28.UseVisualStyleBackColor = true;
+            this.genre20.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre20.FlatAppearance.BorderSize = 0;
+            this.genre20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre20.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre20.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre20.Location = new System.Drawing.Point(2128, 0);
+            this.genre20.Name = "genre20";
+            this.genre20.Size = new System.Drawing.Size(112, 34);
+            this.genre20.TabIndex = 24;
+            this.genre20.Text = "Sport";
+            this.genre20.UseVisualStyleBackColor = true;
             // 
-            // button24
+            // genre19
             // 
-            this.button24.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button24.Location = new System.Drawing.Point(2016, 0);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(112, 34);
-            this.button24.TabIndex = 20;
-            this.button24.Text = "button24";
-            this.button24.UseVisualStyleBackColor = true;
+            this.genre19.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre19.FlatAppearance.BorderSize = 0;
+            this.genre19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre19.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre19.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre19.Location = new System.Drawing.Point(2016, 0);
+            this.genre19.Name = "genre19";
+            this.genre19.Size = new System.Drawing.Size(112, 34);
+            this.genre19.TabIndex = 20;
+            this.genre19.Text = "Short";
+            this.genre19.UseVisualStyleBackColor = true;
             // 
-            // button23
+            // genre18
             // 
-            this.button23.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button23.Location = new System.Drawing.Point(1904, 0);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(112, 34);
-            this.button23.TabIndex = 19;
-            this.button23.Text = "button23";
-            this.button23.UseVisualStyleBackColor = true;
+            this.genre18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre18.FlatAppearance.BorderSize = 0;
+            this.genre18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre18.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre18.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre18.Location = new System.Drawing.Point(1904, 0);
+            this.genre18.Name = "genre18";
+            this.genre18.Size = new System.Drawing.Size(112, 34);
+            this.genre18.TabIndex = 19;
+            this.genre18.Text = "Sci-fi";
+            this.genre18.UseVisualStyleBackColor = true;
             // 
-            // button22
+            // genre17
             // 
-            this.button22.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button22.Location = new System.Drawing.Point(1792, 0);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(112, 34);
-            this.button22.TabIndex = 18;
-            this.button22.Text = "button22";
-            this.button22.UseVisualStyleBackColor = true;
+            this.genre17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre17.FlatAppearance.BorderSize = 0;
+            this.genre17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre17.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre17.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre17.Location = new System.Drawing.Point(1792, 0);
+            this.genre17.Name = "genre17";
+            this.genre17.Size = new System.Drawing.Size(112, 34);
+            this.genre17.TabIndex = 18;
+            this.genre17.Text = "Romance";
+            this.genre17.UseVisualStyleBackColor = true;
             // 
-            // button21
+            // genre16
             // 
-            this.button21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button21.Location = new System.Drawing.Point(1680, 0);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(112, 34);
-            this.button21.TabIndex = 17;
-            this.button21.Text = "button21";
-            this.button21.UseVisualStyleBackColor = true;
+            this.genre16.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre16.FlatAppearance.BorderSize = 0;
+            this.genre16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre16.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre16.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre16.Location = new System.Drawing.Point(1680, 0);
+            this.genre16.Name = "genre16";
+            this.genre16.Size = new System.Drawing.Size(112, 34);
+            this.genre16.TabIndex = 17;
+            this.genre16.Text = "Mystery";
+            this.genre16.UseVisualStyleBackColor = true;
             // 
-            // button20
+            // genre15
             // 
-            this.button20.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button20.Location = new System.Drawing.Point(1568, 0);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(112, 34);
-            this.button20.TabIndex = 16;
-            this.button20.Text = "button20";
-            this.button20.UseVisualStyleBackColor = true;
+            this.genre15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre15.FlatAppearance.BorderSize = 0;
+            this.genre15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre15.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre15.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre15.Location = new System.Drawing.Point(1568, 0);
+            this.genre15.Name = "genre15";
+            this.genre15.Size = new System.Drawing.Size(112, 34);
+            this.genre15.TabIndex = 16;
+            this.genre15.Text = "Musical";
+            this.genre15.UseVisualStyleBackColor = true;
             // 
-            // button19
+            // genre14
             // 
-            this.button19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button19.Location = new System.Drawing.Point(1456, 0);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(112, 34);
-            this.button19.TabIndex = 15;
-            this.button19.Text = "button19";
-            this.button19.UseVisualStyleBackColor = true;
+            this.genre14.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre14.FlatAppearance.BorderSize = 0;
+            this.genre14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre14.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre14.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre14.Location = new System.Drawing.Point(1456, 0);
+            this.genre14.Name = "genre14";
+            this.genre14.Size = new System.Drawing.Size(112, 34);
+            this.genre14.TabIndex = 15;
+            this.genre14.Text = "Music";
+            this.genre14.UseVisualStyleBackColor = true;
             // 
-            // button18
+            // genre13
             // 
-            this.button18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button18.Location = new System.Drawing.Point(1344, 0);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(112, 34);
-            this.button18.TabIndex = 14;
-            this.button18.Text = "button18";
-            this.button18.UseVisualStyleBackColor = true;
+            this.genre13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre13.FlatAppearance.BorderSize = 0;
+            this.genre13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre13.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre13.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre13.Location = new System.Drawing.Point(1344, 0);
+            this.genre13.Name = "genre13";
+            this.genre13.Size = new System.Drawing.Size(112, 34);
+            this.genre13.TabIndex = 14;
+            this.genre13.Text = "Horror";
+            this.genre13.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // genre12
             // 
-            this.button17.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button17.Location = new System.Drawing.Point(1232, 0);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(112, 34);
-            this.button17.TabIndex = 13;
-            this.button17.Text = "button17";
-            this.button17.UseVisualStyleBackColor = true;
+            this.genre12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre12.FlatAppearance.BorderSize = 0;
+            this.genre12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre12.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre12.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre12.Location = new System.Drawing.Point(1232, 0);
+            this.genre12.Name = "genre12";
+            this.genre12.Size = new System.Drawing.Size(112, 34);
+            this.genre12.TabIndex = 13;
+            this.genre12.Text = "History";
+            this.genre12.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // genre11
             // 
-            this.button16.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button16.Location = new System.Drawing.Point(1120, 0);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(112, 34);
-            this.button16.TabIndex = 12;
-            this.button16.Text = "button16";
-            this.button16.UseVisualStyleBackColor = true;
+            this.genre11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre11.FlatAppearance.BorderSize = 0;
+            this.genre11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre11.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre11.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre11.Location = new System.Drawing.Point(1120, 0);
+            this.genre11.Name = "genre11";
+            this.genre11.Size = new System.Drawing.Size(112, 34);
+            this.genre11.TabIndex = 12;
+            this.genre11.Text = "Film-Noir";
+            this.genre11.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // genre10
             // 
-            this.button15.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button15.Location = new System.Drawing.Point(1008, 0);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(112, 34);
-            this.button15.TabIndex = 11;
-            this.button15.Text = "button15";
-            this.button15.UseVisualStyleBackColor = true;
+            this.genre10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre10.FlatAppearance.BorderSize = 0;
+            this.genre10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre10.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre10.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre10.Location = new System.Drawing.Point(1008, 0);
+            this.genre10.Name = "genre10";
+            this.genre10.Size = new System.Drawing.Size(112, 34);
+            this.genre10.TabIndex = 11;
+            this.genre10.Text = "Fantasy";
+            this.genre10.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // genre9
             // 
-            this.button14.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button14.Location = new System.Drawing.Point(896, 0);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(112, 34);
-            this.button14.TabIndex = 10;
-            this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
+            this.genre9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre9.FlatAppearance.BorderSize = 0;
+            this.genre9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre9.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre9.Location = new System.Drawing.Point(896, 0);
+            this.genre9.Name = "genre9";
+            this.genre9.Size = new System.Drawing.Size(112, 34);
+            this.genre9.TabIndex = 10;
+            this.genre9.Text = "Family";
+            this.genre9.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // genre8
             // 
-            this.button13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button13.Location = new System.Drawing.Point(784, 0);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(112, 34);
-            this.button13.TabIndex = 9;
-            this.button13.Text = "button13";
-            this.button13.UseVisualStyleBackColor = true;
+            this.genre8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre8.FlatAppearance.BorderSize = 0;
+            this.genre8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre8.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre8.Location = new System.Drawing.Point(784, 0);
+            this.genre8.Name = "genre8";
+            this.genre8.Size = new System.Drawing.Size(112, 34);
+            this.genre8.TabIndex = 9;
+            this.genre8.Text = "Drama";
+            this.genre8.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // genre7
             // 
-            this.button12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button12.Location = new System.Drawing.Point(672, 0);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(112, 34);
-            this.button12.TabIndex = 8;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
+            this.genre7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre7.FlatAppearance.BorderSize = 0;
+            this.genre7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre7.Location = new System.Drawing.Point(672, 0);
+            this.genre7.Name = "genre7";
+            this.genre7.Size = new System.Drawing.Size(112, 34);
+            this.genre7.TabIndex = 8;
+            this.genre7.Text = "Document";
+            this.genre7.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // genre6
             // 
-            this.button11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button11.Location = new System.Drawing.Point(560, 0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(112, 34);
-            this.button11.TabIndex = 7;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
+            this.genre6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre6.FlatAppearance.BorderSize = 0;
+            this.genre6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre6.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre6.Location = new System.Drawing.Point(560, 0);
+            this.genre6.Name = "genre6";
+            this.genre6.Size = new System.Drawing.Size(112, 34);
+            this.genre6.TabIndex = 7;
+            this.genre6.Text = "Crime";
+            this.genre6.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // genre5
             // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button10.Location = new System.Drawing.Point(448, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(112, 34);
-            this.button10.TabIndex = 6;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.genre5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre5.FlatAppearance.BorderSize = 0;
+            this.genre5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre5.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre5.Location = new System.Drawing.Point(448, 0);
+            this.genre5.Name = "genre5";
+            this.genre5.Size = new System.Drawing.Size(112, 34);
+            this.genre5.TabIndex = 6;
+            this.genre5.Text = "Comedy";
+            this.genre5.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // genre4
             // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button9.Location = new System.Drawing.Point(336, 0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(112, 34);
-            this.button9.TabIndex = 5;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.genre4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre4.FlatAppearance.BorderSize = 0;
+            this.genre4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre4.Location = new System.Drawing.Point(336, 0);
+            this.genre4.Name = "genre4";
+            this.genre4.Size = new System.Drawing.Size(112, 34);
+            this.genre4.TabIndex = 5;
+            this.genre4.Text = "Adventure";
+            this.genre4.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // genre3
             // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button8.Location = new System.Drawing.Point(224, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(112, 34);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.genre3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre3.FlatAppearance.BorderSize = 0;
+            this.genre3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre3.Location = new System.Drawing.Point(224, 0);
+            this.genre3.Name = "genre3";
+            this.genre3.Size = new System.Drawing.Size(112, 34);
+            this.genre3.TabIndex = 4;
+            this.genre3.Text = "Action";
+            this.genre3.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // genre2
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button7.Location = new System.Drawing.Point(112, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(112, 34);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.genre2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre2.FlatAppearance.BorderSize = 0;
+            this.genre2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre2.Location = new System.Drawing.Point(112, 0);
+            this.genre2.Name = "genre2";
+            this.genre2.Size = new System.Drawing.Size(112, 34);
+            this.genre2.TabIndex = 3;
+            this.genre2.Text = "Animation";
+            this.genre2.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // genre1
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(112, 34);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.genre1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre1.FlatAppearance.BorderSize = 0;
+            this.genre1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre1.Location = new System.Drawing.Point(0, 0);
+            this.genre1.Name = "genre1";
+            this.genre1.Size = new System.Drawing.Size(112, 34);
+            this.genre1.TabIndex = 2;
+            this.genre1.Text = "All";
+            this.genre1.UseVisualStyleBackColor = true;
             // 
             // scroll_right
             // 
@@ -751,6 +751,7 @@
             this.search_input.TabIndex = 1;
             this.search_input.Text = "Search";
             this.search_input.Enter += new System.EventHandler(this.search_input_Enter);
+            this.search_input.Leave += new System.EventHandler(this.search_input_Leave);
             // 
             // panel6
             // 
@@ -835,29 +836,29 @@
         private System.Windows.Forms.Button scroll_right;
         private System.Windows.Forms.Button scroll_left;
         private System.Windows.Forms.Panel category_scroll;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button genre23;
+        private System.Windows.Forms.Button genre22;
+        private System.Windows.Forms.Button genre21;
+        private System.Windows.Forms.Button genre20;
+        private System.Windows.Forms.Button genre19;
+        private System.Windows.Forms.Button genre18;
+        private System.Windows.Forms.Button genre17;
+        private System.Windows.Forms.Button genre16;
+        private System.Windows.Forms.Button genre15;
+        private System.Windows.Forms.Button genre14;
+        private System.Windows.Forms.Button genre13;
+        private System.Windows.Forms.Button genre12;
+        private System.Windows.Forms.Button genre11;
+        private System.Windows.Forms.Button genre10;
+        private System.Windows.Forms.Button genre9;
+        private System.Windows.Forms.Button genre8;
+        private System.Windows.Forms.Button genre7;
+        private System.Windows.Forms.Button genre6;
+        private System.Windows.Forms.Button genre5;
+        private System.Windows.Forms.Button genre4;
+        private System.Windows.Forms.Button genre3;
+        private System.Windows.Forms.Button genre2;
+        private System.Windows.Forms.Button genre1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button account_infor;
         private System.Windows.Forms.ImageList icon_mainmenu;

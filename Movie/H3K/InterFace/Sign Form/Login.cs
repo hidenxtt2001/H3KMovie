@@ -25,6 +25,7 @@ namespace H3K.InterFace.Sign_Form
         public static extern bool ReleaseCapture();
         #endregion
 
+        public bool loginSubmit {get;set;}
         private ConnectData connect { get; set; }
 
         public Login()
@@ -32,7 +33,7 @@ namespace H3K.InterFace.Sign_Form
             InitializeComponent();
             password_input.PasswordChar = '*';
             password_sign_up.PasswordChar = '*';
-            
+            loginSubmit = false;
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -77,42 +78,51 @@ namespace H3K.InterFace.Sign_Form
 
         private void SignUp_Button_Click(object sender, EventArgs e)
         {
-            if (!checkSpecialCharacter(username_sign_up.Text))
+            if (!checkSpecialCharacter(username_sign_up.Text)) // Check ký tự đặc biệt
             {
-                MessageBox.Show("Username cant contain Special Character!");
+
+                new MessageWarning("Username cant contain Special Character!").ShowDialog();
                 return;
             }
-            else if (!checkValidEmail(email_sign_up.Text))
+            else if (!checkValidEmail(email_sign_up.Text)) // Kiểm tra định dạng email
             {
-                MessageBox.Show("Email not valid!");
+                new MessageWarning("Email not valid!").ShowDialog();
                 return;
             }
-            if (connect.Register(username_sign_up.Text, password_sign_up.Text,email_sign_up.Text))
+
+            // Kiểm tra tài khoản có tồn tại trong database hay không ?
+            if (connect.Register(username_sign_up.Text, password_sign_up.Text,email_sign_up.Text)) 
             {
-                MessageBox.Show("Passs");
+                new MessageWarning("Sign Up Success").ShowDialog();
                 sign_up.SendToBack();
             }
             else
             {
-                MessageBox.Show("Failed");
+                new MessageWarning("Username or Email already Exists").ShowDialog();
             }
         }
 
         private void Login_Button_Click(object sender, EventArgs e)
         {
+            if(username_input.Text == string.Empty || password_input.Text == string.Empty)
+            {
+                new MessageWarning("Please enter your complete information !!").ShowDialog();
+                return;
+            }
             if(!checkSpecialCharacter(username_input.Text))
             {
-                MessageBox.Show("Username cant contain Special Character!!");
+                new MessageWarning("Username cant contain Special Character !!").ShowDialog();
                 return;
             }
            
             if(connect.Login(username_input.Text, password_input.Text))
             {
-                MessageBox.Show("Passs");
+                loginSubmit = true;
+                this.Close();
             }
             else
             {
-                MessageBox.Show("Failed");
+                new MessageWarning("Please check correct your login input !!").ShowDialog();
             }
         }
 

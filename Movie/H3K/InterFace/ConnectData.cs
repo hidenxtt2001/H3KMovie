@@ -89,7 +89,7 @@ namespace H3K.InterFace
                         {
                             reader.Close();
                             data.Open();
-                            cmd.CommandText = "INSERT INTO Account  VALUES (@USERNAME,@PASSWORD,@EMAIL)";
+                            cmd.CommandText = "INSERT INTO Account (username,password,email) VALUES (@USERNAME,@PASSWORD,@EMAIL)";
                             cmd.ExecuteNonQuery();
                             data.Close();
                             return true;

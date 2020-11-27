@@ -78,7 +78,7 @@
             this.logo.Dock = System.Windows.Forms.DockStyle.Left;
             this.logo.Location = new System.Drawing.Point(0, 0);
             this.logo.Name = "logo";
-            this.logo.Padding = new System.Windows.Forms.Padding(15, 30, 15, 30);
+            this.logo.Padding = new System.Windows.Forms.Padding(10, 35, 10, 35);
             this.logo.Size = new System.Drawing.Size(423, 460);
             this.logo.TabIndex = 1;
             // 
@@ -88,9 +88,9 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 35);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(393, 400);
+            this.pictureBox1.Size = new System.Drawing.Size(403, 390);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);

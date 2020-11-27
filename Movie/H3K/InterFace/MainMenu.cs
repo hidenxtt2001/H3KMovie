@@ -17,6 +17,8 @@ namespace H3K.InterFace
         public MainMenu()
         {
             InitializeComponent();
+
+            // Disable Horizontal Scroll Bar
             category_scroll.HorizontalScroll.Maximum = 0;
             category_scroll.AutoScrollPosition = new Point(0, 0);
             category_scroll.AutoScroll = true;
@@ -24,10 +26,31 @@ namespace H3K.InterFace
             list_item_movie.AutoScroll = false;
             list_item_movie.VerticalScroll.Visible = false;
             list_item_movie.AutoScroll = true;
+
+            // Enable Double Buffered
             this.list_item_movie.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(this.list_item_movie, true, null);
 
+            // Set normal button main choose
             selectPanel = movie_show;
         }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            LoginCheck();
+        }
+        #region Check Login
+
+        private void LoginCheck()
+        {
+            Sign_Form.Login loginform = new Sign_Form.Login();
+            loginform.ShowDialog();
+            if (!loginform.loginSubmit)
+            {
+                this.Close();
+            }
+        }
+
+        #endregion
 
         #region Mouse Drag Panel
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -81,13 +104,13 @@ namespace H3K.InterFace
         #region Category Movie
         private void button4_MouseDown(object sender, MouseEventArgs e)
         {
-            timer1.Tag = 1;
+            timer1.Tag = 0;
             timer1.Enabled = true;
         }
 
         private void button5_MouseDown(object sender, MouseEventArgs e)
         {
-            timer1.Tag = 0;
+            timer1.Tag = 1;
             timer1.Enabled = true;
         }
         private void button5_MouseUp(object sender, MouseEventArgs e)
@@ -138,8 +161,10 @@ namespace H3K.InterFace
 
         }
 
+
         #endregion
 
 
+        
     }
 }

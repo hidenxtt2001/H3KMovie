@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>H3K</RootNamespace>
     <AssemblyName>H3K</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +47,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Test">
+      <HintPath>..\..\..\Test\Test\bin\Debug\Test.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +192,81 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_account_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EndgamePoster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poster.medium %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\John-Wick-Chapter-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen-0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picturetopeople.org-2c34a1c8e87b901d7b5efed341635efacb693568b42c1e6334.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film_reel_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directors_chair_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark-background-8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\127014683_411632503208205_5350497386075625397_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\127234901_375162190218963_2262844563072384525_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_rounded_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_rounded_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_rounded_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_50pxBlank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_half_empty_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_50pxBlank1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_50pxBlank2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_half_empty_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %284%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

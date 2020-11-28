@@ -148,7 +148,11 @@ namespace Mange_Movie
                     {
                         MessageBox.Show("Thêm thành công");
                     }
-                    else MessageBox.Show("Thêm thất bại");
+                    else
+                    {
+                        if (data.checkExist(movieid)) data.MovieDel(movieid);
+                        MessageBox.Show("Thêm thất bại");
+                    }
                 }
             }
             else

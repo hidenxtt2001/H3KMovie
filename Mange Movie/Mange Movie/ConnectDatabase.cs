@@ -70,6 +70,28 @@ namespace Mange_Movie
             }
         }
 
+
+        public bool MovieDel(string movieid)
+        {
+            try
+            {
+                data.Open();
+                using (SqlCommand cmd = new SqlCommand() { Connection = data })
+                {
+                    cmd.CommandText = " DELETE FROM Movies WHERE movie_id = @MovieID";
+                    cmd.Parameters.AddWithValue("@MovieID", movieid);
+                    cmd.ExecuteNonQuery();
+                    data.Close();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                data.Close();
+                return false;
+            }
+        }
+
         public bool MovieGenresAdd(string [] genre)
         {
             try

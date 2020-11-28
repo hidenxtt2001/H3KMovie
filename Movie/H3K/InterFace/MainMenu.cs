@@ -22,18 +22,30 @@ namespace H3K.InterFace
             category_scroll.HorizontalScroll.Maximum = 0;
             category_scroll.AutoScrollPosition = new Point(0, 0);
             category_scroll.AutoScroll = true;
+
+
             list_item_movie.VerticalScroll.Maximum = 0;
-            list_item_movie.AutoScroll = false;
-            list_item_movie.VerticalScroll.Visible = false;
+            list_item_movie.AutoScrollPosition = new Point(0, 0);
             list_item_movie.AutoScroll = true;
 
             // Enable Double Buffered
-            this.list_item_movie.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(this.list_item_movie, true, null);
+            EnableDoubleBuferring(this);
+            
 
             // Set normal button main choose
             selectPanel = movie_show;
         }
 
+
+        public static void EnableDoubleBuferring(Control control)
+        {
+            foreach (Control item in control.Controls)
+            {
+                EnableDoubleBuferring(item);
+            }
+            var property = typeof(Control).GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
+            property.SetValue(control, true, null);
+        }
         private void MainMenu_Load(object sender, EventArgs e)
         {
             LoginCheck();
@@ -126,7 +138,7 @@ namespace H3K.InterFace
         private void timer1_Tick(object sender, EventArgs e)
         {
 
-            if (!category_scroll.Focus()) category_scroll.Focus();
+            if (!category_scroll.Focused) category_scroll.Focus();
             for (int i = 0; i < 5; i++)
             {
                 SendMessage(this.category_scroll.Handle, WM_SCROLL, (IntPtr)Convert.ToInt32(timer1.Tag), IntPtr.Zero);
@@ -164,7 +176,9 @@ namespace H3K.InterFace
 
         #endregion
 
+        #region Scroll Moive
 
-        
+        #endregion
+
     }
 }

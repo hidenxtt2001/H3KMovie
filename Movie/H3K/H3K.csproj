@@ -62,14 +62,14 @@
     <Compile Include="InterFace\MenuControl.Designer.cs">
       <DependentUpon>MenuControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterFace\Movie_Mange\GradientPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="InterFace\Movie_Mange\MovieItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="InterFace\Movie_Mange\MovieItem.Designer.cs">
       <DependentUpon>MovieItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterFace\Movie_Mange\SmoothScrollPanel.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="InterFace\Movie_Mange\Wait Form.cs">
       <SubType>Form</SubType>

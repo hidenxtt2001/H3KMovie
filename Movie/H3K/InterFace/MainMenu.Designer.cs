@@ -30,10 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
+            this.icon_mainmenu = new System.Windows.Forms.ImageList(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.form_born = new System.Windows.Forms.TableLayoutPanel();
             this.menu_panel = new System.Windows.Forms.Panel();
             this.history_show = new System.Windows.Forms.Button();
-            this.icon_mainmenu = new System.Windows.Forms.ImageList(this.components);
             this.favorite_show = new System.Windows.Forms.Button();
             this.account_infor = new System.Windows.Forms.Button();
             this.movie_show = new System.Windows.Forms.Button();
@@ -41,8 +42,34 @@
             this.action_panel = new System.Windows.Forms.Panel();
             this.common = new System.Windows.Forms.Panel();
             this.movie_show_panel = new System.Windows.Forms.Panel();
+            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
+            this.movieItem1 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem2 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem3 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem4 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem5 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem6 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem7 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem8 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem9 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem10 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem11 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem12 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem13 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem14 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem15 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem16 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem17 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem18 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem19 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem20 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem21 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem22 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem23 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem24 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem25 = new H3K.InterFace.Movie_Mange.MovieItem();
+            this.movieItem26 = new H3K.InterFace.Movie_Mange.MovieItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.list_item_movie = new System.Windows.Forms.FlowLayoutPanel();
             this.category = new System.Windows.Forms.Panel();
             this.category_scroll = new System.Windows.Forms.Panel();
             this.genre23 = new System.Windows.Forms.Button();
@@ -87,21 +114,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.movieItem1 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem2 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem3 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem4 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem5 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem6 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem7 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem8 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem9 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem10 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem11 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem12 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem13 = new H3K.InterFace.Movie_Mange.MovieItem();
-            this.movieItem14 = new H3K.InterFace.Movie_Mange.MovieItem();
             this.form_born.SuspendLayout();
             this.menu_panel.SuspendLayout();
             this.action_panel.SuspendLayout();
@@ -118,6 +130,20 @@
             this.search_panel.SuspendLayout();
             this.SuspendLayout();
             // 
+            // icon_mainmenu
+            // 
+            this.icon_mainmenu.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("icon_mainmenu.ImageStream")));
+            this.icon_mainmenu.TransparentColor = System.Drawing.Color.Transparent;
+            this.icon_mainmenu.Images.SetKeyName(0, "icons8_cinema.ico");
+            this.icon_mainmenu.Images.SetKeyName(1, "icons8_customer.ico");
+            this.icon_mainmenu.Images.SetKeyName(2, "icons8_literature.ico");
+            this.icon_mainmenu.Images.SetKeyName(3, "icons8_star_filled.ico");
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // form_born
             // 
             this.form_born.ColumnCount = 2;
@@ -130,7 +156,7 @@
             this.form_born.Name = "form_born";
             this.form_born.RowCount = 1;
             this.form_born.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.form_born.Size = new System.Drawing.Size(1366, 768);
+            this.form_born.Size = new System.Drawing.Size(1188, 768);
             this.form_born.TabIndex = 0;
             // 
             // menu_panel
@@ -167,15 +193,6 @@
             this.history_show.Text = "History";
             this.history_show.UseVisualStyleBackColor = true;
             this.history_show.Click += new System.EventHandler(this.mainbutton_show);
-            // 
-            // icon_mainmenu
-            // 
-            this.icon_mainmenu.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("icon_mainmenu.ImageStream")));
-            this.icon_mainmenu.TransparentColor = System.Drawing.Color.Transparent;
-            this.icon_mainmenu.Images.SetKeyName(0, "icons8_cinema.ico");
-            this.icon_mainmenu.Images.SetKeyName(1, "icons8_customer.ico");
-            this.icon_mainmenu.Images.SetKeyName(2, "icons8_literature.ico");
-            this.icon_mainmenu.Images.SetKeyName(3, "icons8_star_filled.ico");
             // 
             // favorite_show
             // 
@@ -261,7 +278,7 @@
             this.action_panel.Location = new System.Drawing.Point(164, 0);
             this.action_panel.Margin = new System.Windows.Forms.Padding(0);
             this.action_panel.Name = "action_panel";
-            this.action_panel.Size = new System.Drawing.Size(1202, 768);
+            this.action_panel.Size = new System.Drawing.Size(1024, 768);
             this.action_panel.TabIndex = 1;
             // 
             // common
@@ -273,27 +290,19 @@
             this.common.Dock = System.Windows.Forms.DockStyle.Fill;
             this.common.Location = new System.Drawing.Point(0, 42);
             this.common.Name = "common";
-            this.common.Size = new System.Drawing.Size(1202, 726);
+            this.common.Size = new System.Drawing.Size(1024, 726);
             this.common.TabIndex = 3;
             // 
             // movie_show_panel
             // 
-            this.movie_show_panel.Controls.Add(this.panel1);
             this.movie_show_panel.Controls.Add(this.list_item_movie);
+            this.movie_show_panel.Controls.Add(this.panel1);
             this.movie_show_panel.Controls.Add(this.category);
             this.movie_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.movie_show_panel.Location = new System.Drawing.Point(0, 0);
             this.movie_show_panel.Name = "movie_show_panel";
-            this.movie_show_panel.Size = new System.Drawing.Size(1202, 726);
+            this.movie_show_panel.Size = new System.Drawing.Size(1024, 726);
             this.movie_show_panel.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 719);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1202, 7);
-            this.panel1.TabIndex = 3;
             // 
             // list_item_movie
             // 
@@ -311,12 +320,499 @@
             this.list_item_movie.Controls.Add(this.movieItem12);
             this.list_item_movie.Controls.Add(this.movieItem13);
             this.list_item_movie.Controls.Add(this.movieItem14);
+            this.list_item_movie.Controls.Add(this.movieItem15);
+            this.list_item_movie.Controls.Add(this.movieItem16);
+            this.list_item_movie.Controls.Add(this.movieItem17);
+            this.list_item_movie.Controls.Add(this.movieItem18);
+            this.list_item_movie.Controls.Add(this.movieItem19);
+            this.list_item_movie.Controls.Add(this.movieItem20);
+            this.list_item_movie.Controls.Add(this.movieItem21);
+            this.list_item_movie.Controls.Add(this.movieItem22);
+            this.list_item_movie.Controls.Add(this.movieItem23);
+            this.list_item_movie.Controls.Add(this.movieItem24);
+            this.list_item_movie.Controls.Add(this.movieItem25);
+            this.list_item_movie.Controls.Add(this.movieItem26);
             this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
             this.list_item_movie.Location = new System.Drawing.Point(0, 70);
             this.list_item_movie.Name = "list_item_movie";
-            this.list_item_movie.Padding = new System.Windows.Forms.Padding(5);
-            this.list_item_movie.Size = new System.Drawing.Size(1202, 656);
-            this.list_item_movie.TabIndex = 2;
+            this.list_item_movie.Size = new System.Drawing.Size(1024, 649);
+            this.list_item_movie.TabIndex = 4;
+            // 
+            // movieItem1
+            // 
+            this.movieItem1.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem1.Content = null;
+            this.movieItem1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem1.Director = null;
+            this.movieItem1.ImageBackgournd = null;
+            this.movieItem1.Location = new System.Drawing.Point(5, 5);
+            this.movieItem1.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem1.MovieLink = null;
+            this.movieItem1.Name = "movieItem1";
+            this.movieItem1.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem1.Rating = 0;
+            this.movieItem1.Size = new System.Drawing.Size(160, 229);
+            this.movieItem1.TabIndex = 0;
+            this.movieItem1.Title = null;
+            // 
+            // movieItem2
+            // 
+            this.movieItem2.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem2.Content = null;
+            this.movieItem2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem2.Director = null;
+            this.movieItem2.ImageBackgournd = null;
+            this.movieItem2.Location = new System.Drawing.Point(175, 5);
+            this.movieItem2.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem2.MovieLink = null;
+            this.movieItem2.Name = "movieItem2";
+            this.movieItem2.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem2.Rating = 0;
+            this.movieItem2.Size = new System.Drawing.Size(160, 229);
+            this.movieItem2.TabIndex = 1;
+            this.movieItem2.Title = null;
+            // 
+            // movieItem3
+            // 
+            this.movieItem3.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem3.Content = null;
+            this.movieItem3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem3.Director = null;
+            this.movieItem3.ImageBackgournd = null;
+            this.movieItem3.Location = new System.Drawing.Point(345, 5);
+            this.movieItem3.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem3.MovieLink = null;
+            this.movieItem3.Name = "movieItem3";
+            this.movieItem3.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem3.Rating = 0;
+            this.movieItem3.Size = new System.Drawing.Size(160, 229);
+            this.movieItem3.TabIndex = 2;
+            this.movieItem3.Title = null;
+            // 
+            // movieItem4
+            // 
+            this.movieItem4.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem4.Content = null;
+            this.movieItem4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem4.Director = null;
+            this.movieItem4.ImageBackgournd = null;
+            this.movieItem4.Location = new System.Drawing.Point(515, 5);
+            this.movieItem4.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem4.MovieLink = null;
+            this.movieItem4.Name = "movieItem4";
+            this.movieItem4.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem4.Rating = 0;
+            this.movieItem4.Size = new System.Drawing.Size(160, 229);
+            this.movieItem4.TabIndex = 3;
+            this.movieItem4.Title = null;
+            // 
+            // movieItem5
+            // 
+            this.movieItem5.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem5.Content = null;
+            this.movieItem5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem5.Director = null;
+            this.movieItem5.ImageBackgournd = null;
+            this.movieItem5.Location = new System.Drawing.Point(685, 5);
+            this.movieItem5.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem5.MovieLink = null;
+            this.movieItem5.Name = "movieItem5";
+            this.movieItem5.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem5.Rating = 0;
+            this.movieItem5.Size = new System.Drawing.Size(160, 229);
+            this.movieItem5.TabIndex = 4;
+            this.movieItem5.Title = null;
+            // 
+            // movieItem6
+            // 
+            this.movieItem6.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem6.Content = null;
+            this.movieItem6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem6.Director = null;
+            this.movieItem6.ImageBackgournd = null;
+            this.movieItem6.Location = new System.Drawing.Point(855, 5);
+            this.movieItem6.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem6.MovieLink = null;
+            this.movieItem6.Name = "movieItem6";
+            this.movieItem6.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem6.Rating = 0;
+            this.movieItem6.Size = new System.Drawing.Size(160, 229);
+            this.movieItem6.TabIndex = 5;
+            this.movieItem6.Title = null;
+            // 
+            // movieItem7
+            // 
+            this.movieItem7.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem7.Content = null;
+            this.movieItem7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem7.Director = null;
+            this.movieItem7.ImageBackgournd = null;
+            this.movieItem7.Location = new System.Drawing.Point(5, 244);
+            this.movieItem7.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem7.MovieLink = null;
+            this.movieItem7.Name = "movieItem7";
+            this.movieItem7.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem7.Rating = 0;
+            this.movieItem7.Size = new System.Drawing.Size(160, 229);
+            this.movieItem7.TabIndex = 6;
+            this.movieItem7.Title = null;
+            // 
+            // movieItem8
+            // 
+            this.movieItem8.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem8.Content = null;
+            this.movieItem8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem8.Director = null;
+            this.movieItem8.ImageBackgournd = null;
+            this.movieItem8.Location = new System.Drawing.Point(175, 244);
+            this.movieItem8.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem8.MovieLink = null;
+            this.movieItem8.Name = "movieItem8";
+            this.movieItem8.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem8.Rating = 0;
+            this.movieItem8.Size = new System.Drawing.Size(160, 229);
+            this.movieItem8.TabIndex = 7;
+            this.movieItem8.Title = null;
+            // 
+            // movieItem9
+            // 
+            this.movieItem9.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem9.Content = null;
+            this.movieItem9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem9.Director = null;
+            this.movieItem9.ImageBackgournd = null;
+            this.movieItem9.Location = new System.Drawing.Point(345, 244);
+            this.movieItem9.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem9.MovieLink = null;
+            this.movieItem9.Name = "movieItem9";
+            this.movieItem9.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem9.Rating = 0;
+            this.movieItem9.Size = new System.Drawing.Size(160, 229);
+            this.movieItem9.TabIndex = 8;
+            this.movieItem9.Title = null;
+            // 
+            // movieItem10
+            // 
+            this.movieItem10.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem10.Content = null;
+            this.movieItem10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem10.Director = null;
+            this.movieItem10.ImageBackgournd = null;
+            this.movieItem10.Location = new System.Drawing.Point(515, 244);
+            this.movieItem10.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem10.MovieLink = null;
+            this.movieItem10.Name = "movieItem10";
+            this.movieItem10.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem10.Rating = 0;
+            this.movieItem10.Size = new System.Drawing.Size(160, 229);
+            this.movieItem10.TabIndex = 9;
+            this.movieItem10.Title = null;
+            // 
+            // movieItem11
+            // 
+            this.movieItem11.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem11.Content = null;
+            this.movieItem11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem11.Director = null;
+            this.movieItem11.ImageBackgournd = null;
+            this.movieItem11.Location = new System.Drawing.Point(685, 244);
+            this.movieItem11.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem11.MovieLink = null;
+            this.movieItem11.Name = "movieItem11";
+            this.movieItem11.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem11.Rating = 0;
+            this.movieItem11.Size = new System.Drawing.Size(160, 229);
+            this.movieItem11.TabIndex = 10;
+            this.movieItem11.Title = null;
+            // 
+            // movieItem12
+            // 
+            this.movieItem12.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem12.Content = null;
+            this.movieItem12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem12.Director = null;
+            this.movieItem12.ImageBackgournd = null;
+            this.movieItem12.Location = new System.Drawing.Point(855, 244);
+            this.movieItem12.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem12.MovieLink = null;
+            this.movieItem12.Name = "movieItem12";
+            this.movieItem12.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem12.Rating = 0;
+            this.movieItem12.Size = new System.Drawing.Size(160, 229);
+            this.movieItem12.TabIndex = 11;
+            this.movieItem12.Title = null;
+            // 
+            // movieItem13
+            // 
+            this.movieItem13.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem13.Content = null;
+            this.movieItem13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem13.Director = null;
+            this.movieItem13.ImageBackgournd = null;
+            this.movieItem13.Location = new System.Drawing.Point(5, 483);
+            this.movieItem13.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem13.MovieLink = null;
+            this.movieItem13.Name = "movieItem13";
+            this.movieItem13.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem13.Rating = 0;
+            this.movieItem13.Size = new System.Drawing.Size(160, 229);
+            this.movieItem13.TabIndex = 12;
+            this.movieItem13.Title = null;
+            // 
+            // movieItem14
+            // 
+            this.movieItem14.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem14.Content = null;
+            this.movieItem14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem14.Director = null;
+            this.movieItem14.ImageBackgournd = null;
+            this.movieItem14.Location = new System.Drawing.Point(175, 483);
+            this.movieItem14.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem14.MovieLink = null;
+            this.movieItem14.Name = "movieItem14";
+            this.movieItem14.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem14.Rating = 0;
+            this.movieItem14.Size = new System.Drawing.Size(160, 229);
+            this.movieItem14.TabIndex = 13;
+            this.movieItem14.Title = null;
+            // 
+            // movieItem15
+            // 
+            this.movieItem15.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem15.Content = null;
+            this.movieItem15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem15.Director = null;
+            this.movieItem15.ImageBackgournd = null;
+            this.movieItem15.Location = new System.Drawing.Point(345, 483);
+            this.movieItem15.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem15.MovieLink = null;
+            this.movieItem15.Name = "movieItem15";
+            this.movieItem15.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem15.Rating = 0;
+            this.movieItem15.Size = new System.Drawing.Size(160, 229);
+            this.movieItem15.TabIndex = 14;
+            this.movieItem15.Title = null;
+            // 
+            // movieItem16
+            // 
+            this.movieItem16.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem16.Content = null;
+            this.movieItem16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem16.Director = null;
+            this.movieItem16.ImageBackgournd = null;
+            this.movieItem16.Location = new System.Drawing.Point(515, 483);
+            this.movieItem16.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem16.MovieLink = null;
+            this.movieItem16.Name = "movieItem16";
+            this.movieItem16.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem16.Rating = 0;
+            this.movieItem16.Size = new System.Drawing.Size(160, 229);
+            this.movieItem16.TabIndex = 15;
+            this.movieItem16.Title = null;
+            // 
+            // movieItem17
+            // 
+            this.movieItem17.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem17.Content = null;
+            this.movieItem17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem17.Director = null;
+            this.movieItem17.ImageBackgournd = null;
+            this.movieItem17.Location = new System.Drawing.Point(685, 483);
+            this.movieItem17.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem17.MovieLink = null;
+            this.movieItem17.Name = "movieItem17";
+            this.movieItem17.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem17.Rating = 0;
+            this.movieItem17.Size = new System.Drawing.Size(160, 229);
+            this.movieItem17.TabIndex = 16;
+            this.movieItem17.Title = null;
+            // 
+            // movieItem18
+            // 
+            this.movieItem18.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem18.Content = null;
+            this.movieItem18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem18.Director = null;
+            this.movieItem18.ImageBackgournd = null;
+            this.movieItem18.Location = new System.Drawing.Point(855, 483);
+            this.movieItem18.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem18.MovieLink = null;
+            this.movieItem18.Name = "movieItem18";
+            this.movieItem18.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem18.Rating = 0;
+            this.movieItem18.Size = new System.Drawing.Size(160, 229);
+            this.movieItem18.TabIndex = 17;
+            this.movieItem18.Title = null;
+            // 
+            // movieItem19
+            // 
+            this.movieItem19.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem19.Content = null;
+            this.movieItem19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem19.Director = null;
+            this.movieItem19.ImageBackgournd = null;
+            this.movieItem19.Location = new System.Drawing.Point(5, 722);
+            this.movieItem19.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem19.MovieLink = null;
+            this.movieItem19.Name = "movieItem19";
+            this.movieItem19.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem19.Rating = 0;
+            this.movieItem19.Size = new System.Drawing.Size(160, 229);
+            this.movieItem19.TabIndex = 18;
+            this.movieItem19.Title = null;
+            // 
+            // movieItem20
+            // 
+            this.movieItem20.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem20.Content = null;
+            this.movieItem20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem20.Director = null;
+            this.movieItem20.ImageBackgournd = null;
+            this.movieItem20.Location = new System.Drawing.Point(175, 722);
+            this.movieItem20.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem20.MovieLink = null;
+            this.movieItem20.Name = "movieItem20";
+            this.movieItem20.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem20.Rating = 0;
+            this.movieItem20.Size = new System.Drawing.Size(160, 229);
+            this.movieItem20.TabIndex = 19;
+            this.movieItem20.Title = null;
+            // 
+            // movieItem21
+            // 
+            this.movieItem21.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem21.Content = null;
+            this.movieItem21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem21.Director = null;
+            this.movieItem21.ImageBackgournd = null;
+            this.movieItem21.Location = new System.Drawing.Point(345, 722);
+            this.movieItem21.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem21.MovieLink = null;
+            this.movieItem21.Name = "movieItem21";
+            this.movieItem21.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem21.Rating = 0;
+            this.movieItem21.Size = new System.Drawing.Size(160, 229);
+            this.movieItem21.TabIndex = 20;
+            this.movieItem21.Title = null;
+            // 
+            // movieItem22
+            // 
+            this.movieItem22.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem22.Content = null;
+            this.movieItem22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem22.Director = null;
+            this.movieItem22.ImageBackgournd = null;
+            this.movieItem22.Location = new System.Drawing.Point(515, 722);
+            this.movieItem22.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem22.MovieLink = null;
+            this.movieItem22.Name = "movieItem22";
+            this.movieItem22.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem22.Rating = 0;
+            this.movieItem22.Size = new System.Drawing.Size(160, 229);
+            this.movieItem22.TabIndex = 21;
+            this.movieItem22.Title = null;
+            // 
+            // movieItem23
+            // 
+            this.movieItem23.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem23.Content = null;
+            this.movieItem23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem23.Director = null;
+            this.movieItem23.ImageBackgournd = null;
+            this.movieItem23.Location = new System.Drawing.Point(685, 722);
+            this.movieItem23.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem23.MovieLink = null;
+            this.movieItem23.Name = "movieItem23";
+            this.movieItem23.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem23.Rating = 0;
+            this.movieItem23.Size = new System.Drawing.Size(160, 229);
+            this.movieItem23.TabIndex = 22;
+            this.movieItem23.Title = null;
+            // 
+            // movieItem24
+            // 
+            this.movieItem24.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem24.Content = null;
+            this.movieItem24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem24.Director = null;
+            this.movieItem24.ImageBackgournd = null;
+            this.movieItem24.Location = new System.Drawing.Point(855, 722);
+            this.movieItem24.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem24.MovieLink = null;
+            this.movieItem24.Name = "movieItem24";
+            this.movieItem24.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem24.Rating = 0;
+            this.movieItem24.Size = new System.Drawing.Size(160, 229);
+            this.movieItem24.TabIndex = 23;
+            this.movieItem24.Title = null;
+            // 
+            // movieItem25
+            // 
+            this.movieItem25.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem25.Content = null;
+            this.movieItem25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem25.Director = null;
+            this.movieItem25.ImageBackgournd = null;
+            this.movieItem25.Location = new System.Drawing.Point(5, 961);
+            this.movieItem25.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem25.MovieLink = null;
+            this.movieItem25.Name = "movieItem25";
+            this.movieItem25.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem25.Rating = 0;
+            this.movieItem25.Size = new System.Drawing.Size(160, 229);
+            this.movieItem25.TabIndex = 24;
+            this.movieItem25.Title = null;
+            // 
+            // movieItem26
+            // 
+            this.movieItem26.BackColor = System.Drawing.Color.Transparent;
+            this.movieItem26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.movieItem26.Content = null;
+            this.movieItem26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.movieItem26.Director = null;
+            this.movieItem26.ImageBackgournd = null;
+            this.movieItem26.Location = new System.Drawing.Point(175, 961);
+            this.movieItem26.Margin = new System.Windows.Forms.Padding(5);
+            this.movieItem26.MovieLink = null;
+            this.movieItem26.Name = "movieItem26";
+            this.movieItem26.Padding = new System.Windows.Forms.Padding(5);
+            this.movieItem26.Rating = 0;
+            this.movieItem26.Size = new System.Drawing.Size(160, 229);
+            this.movieItem26.TabIndex = 25;
+            this.movieItem26.Title = null;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 719);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1024, 7);
+            this.panel1.TabIndex = 3;
             // 
             // category
             // 
@@ -327,7 +823,7 @@
             this.category.Location = new System.Drawing.Point(0, 0);
             this.category.Name = "category";
             this.category.Padding = new System.Windows.Forms.Padding(18);
-            this.category.Size = new System.Drawing.Size(1202, 70);
+            this.category.Size = new System.Drawing.Size(1024, 70);
             this.category.TabIndex = 1;
             // 
             // category_scroll
@@ -358,7 +854,7 @@
             this.category_scroll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.category_scroll.Location = new System.Drawing.Point(78, 18);
             this.category_scroll.Name = "category_scroll";
-            this.category_scroll.Size = new System.Drawing.Size(1046, 34);
+            this.category_scroll.Size = new System.Drawing.Size(868, 34);
             this.category_scroll.TabIndex = 2;
             // 
             // genre23
@@ -691,7 +1187,7 @@
             this.scroll_right.Dock = System.Windows.Forms.DockStyle.Right;
             this.scroll_right.FlatAppearance.BorderSize = 0;
             this.scroll_right.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.scroll_right.Location = new System.Drawing.Point(1124, 18);
+            this.scroll_right.Location = new System.Drawing.Point(946, 18);
             this.scroll_right.Name = "scroll_right";
             this.scroll_right.Size = new System.Drawing.Size(60, 34);
             this.scroll_right.TabIndex = 1;
@@ -723,7 +1219,7 @@
             this.account_infor_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.account_infor_panel.Location = new System.Drawing.Point(0, 0);
             this.account_infor_panel.Name = "account_infor_panel";
-            this.account_infor_panel.Size = new System.Drawing.Size(1202, 726);
+            this.account_infor_panel.Size = new System.Drawing.Size(1024, 726);
             this.account_infor_panel.TabIndex = 3;
             // 
             // label1
@@ -733,7 +1229,7 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1202, 70);
+            this.label1.Size = new System.Drawing.Size(1024, 70);
             this.label1.TabIndex = 0;
             this.label1.Text = "Account Information";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -745,7 +1241,7 @@
             this.favorite_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.favorite_show_panel.Location = new System.Drawing.Point(0, 0);
             this.favorite_show_panel.Name = "favorite_show_panel";
-            this.favorite_show_panel.Size = new System.Drawing.Size(1202, 726);
+            this.favorite_show_panel.Size = new System.Drawing.Size(1024, 726);
             this.favorite_show_panel.TabIndex = 4;
             // 
             // movies_list_favorite
@@ -754,7 +1250,7 @@
             this.movies_list_favorite.Location = new System.Drawing.Point(0, 70);
             this.movies_list_favorite.Name = "movies_list_favorite";
             this.movies_list_favorite.Padding = new System.Windows.Forms.Padding(5);
-            this.movies_list_favorite.Size = new System.Drawing.Size(1202, 656);
+            this.movies_list_favorite.Size = new System.Drawing.Size(1024, 656);
             this.movies_list_favorite.TabIndex = 3;
             // 
             // label3
@@ -764,7 +1260,7 @@
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1202, 70);
+            this.label3.Size = new System.Drawing.Size(1024, 70);
             this.label3.TabIndex = 1;
             this.label3.Text = "Movies Favorite";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -776,7 +1272,7 @@
             this.history_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.history_show_panel.Location = new System.Drawing.Point(0, 0);
             this.history_show_panel.Name = "history_show_panel";
-            this.history_show_panel.Size = new System.Drawing.Size(1202, 726);
+            this.history_show_panel.Size = new System.Drawing.Size(1024, 726);
             this.history_show_panel.TabIndex = 4;
             // 
             // movies_list_history
@@ -785,7 +1281,7 @@
             this.movies_list_history.Location = new System.Drawing.Point(0, 70);
             this.movies_list_history.Name = "movies_list_history";
             this.movies_list_history.Padding = new System.Windows.Forms.Padding(5);
-            this.movies_list_history.Size = new System.Drawing.Size(1202, 656);
+            this.movies_list_history.Size = new System.Drawing.Size(1024, 656);
             this.movies_list_history.TabIndex = 3;
             // 
             // label2
@@ -795,7 +1291,7 @@
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1202, 70);
+            this.label2.Size = new System.Drawing.Size(1024, 70);
             this.label2.TabIndex = 1;
             this.label2.Text = "Movie History";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -809,7 +1305,7 @@
             this.control.Location = new System.Drawing.Point(0, 0);
             this.control.Name = "control";
             this.control.Padding = new System.Windows.Forms.Padding(6);
-            this.control.Size = new System.Drawing.Size(1202, 42);
+            this.control.Size = new System.Drawing.Size(1024, 42);
             this.control.TabIndex = 0;
             this.control.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseMove);
             // 
@@ -819,7 +1315,7 @@
             this.control_button.Controls.Add(this.button2);
             this.control_button.Controls.Add(this.button3);
             this.control_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.control_button.Location = new System.Drawing.Point(1136, 6);
+            this.control_button.Location = new System.Drawing.Point(958, 6);
             this.control_button.Name = "control_button";
             this.control_button.Size = new System.Drawing.Size(60, 30);
             this.control_button.TabIndex = 2;
@@ -916,269 +1412,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 1;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // movieItem1
-            // 
-            this.movieItem1.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem1.Content = null;
-            this.movieItem1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem1.Director = null;
-            this.movieItem1.ImageBackgournd = null;
-            this.movieItem1.Location = new System.Drawing.Point(10, 10);
-            this.movieItem1.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem1.MovieLink = null;
-            this.movieItem1.Name = "movieItem1";
-            this.movieItem1.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem1.Rating = 0;
-            this.movieItem1.Size = new System.Drawing.Size(160, 229);
-            this.movieItem1.TabIndex = 0;
-            this.movieItem1.Title = null;
-            // 
-            // movieItem2
-            // 
-            this.movieItem2.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem2.Content = null;
-            this.movieItem2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem2.Director = null;
-            this.movieItem2.ImageBackgournd = null;
-            this.movieItem2.Location = new System.Drawing.Point(180, 10);
-            this.movieItem2.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem2.MovieLink = null;
-            this.movieItem2.Name = "movieItem2";
-            this.movieItem2.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem2.Rating = 0;
-            this.movieItem2.Size = new System.Drawing.Size(160, 229);
-            this.movieItem2.TabIndex = 1;
-            this.movieItem2.Title = null;
-            // 
-            // movieItem3
-            // 
-            this.movieItem3.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem3.Content = null;
-            this.movieItem3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem3.Director = null;
-            this.movieItem3.ImageBackgournd = null;
-            this.movieItem3.Location = new System.Drawing.Point(350, 10);
-            this.movieItem3.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem3.MovieLink = null;
-            this.movieItem3.Name = "movieItem3";
-            this.movieItem3.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem3.Rating = 0;
-            this.movieItem3.Size = new System.Drawing.Size(160, 229);
-            this.movieItem3.TabIndex = 2;
-            this.movieItem3.Title = null;
-            // 
-            // movieItem4
-            // 
-            this.movieItem4.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem4.Content = null;
-            this.movieItem4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem4.Director = null;
-            this.movieItem4.ImageBackgournd = null;
-            this.movieItem4.Location = new System.Drawing.Point(520, 10);
-            this.movieItem4.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem4.MovieLink = null;
-            this.movieItem4.Name = "movieItem4";
-            this.movieItem4.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem4.Rating = 0;
-            this.movieItem4.Size = new System.Drawing.Size(160, 229);
-            this.movieItem4.TabIndex = 3;
-            this.movieItem4.Title = null;
-            // 
-            // movieItem5
-            // 
-            this.movieItem5.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem5.Content = null;
-            this.movieItem5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem5.Director = null;
-            this.movieItem5.ImageBackgournd = null;
-            this.movieItem5.Location = new System.Drawing.Point(690, 10);
-            this.movieItem5.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem5.MovieLink = null;
-            this.movieItem5.Name = "movieItem5";
-            this.movieItem5.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem5.Rating = 0;
-            this.movieItem5.Size = new System.Drawing.Size(160, 229);
-            this.movieItem5.TabIndex = 4;
-            this.movieItem5.Title = null;
-            // 
-            // movieItem6
-            // 
-            this.movieItem6.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem6.Content = null;
-            this.movieItem6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem6.Director = null;
-            this.movieItem6.ImageBackgournd = null;
-            this.movieItem6.Location = new System.Drawing.Point(860, 10);
-            this.movieItem6.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem6.MovieLink = null;
-            this.movieItem6.Name = "movieItem6";
-            this.movieItem6.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem6.Rating = 0;
-            this.movieItem6.Size = new System.Drawing.Size(160, 229);
-            this.movieItem6.TabIndex = 5;
-            this.movieItem6.Title = null;
-            // 
-            // movieItem7
-            // 
-            this.movieItem7.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem7.Content = null;
-            this.movieItem7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem7.Director = null;
-            this.movieItem7.ImageBackgournd = null;
-            this.movieItem7.Location = new System.Drawing.Point(1030, 10);
-            this.movieItem7.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem7.MovieLink = null;
-            this.movieItem7.Name = "movieItem7";
-            this.movieItem7.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem7.Rating = 0;
-            this.movieItem7.Size = new System.Drawing.Size(160, 229);
-            this.movieItem7.TabIndex = 6;
-            this.movieItem7.Title = null;
-            // 
-            // movieItem8
-            // 
-            this.movieItem8.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem8.Content = null;
-            this.movieItem8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem8.Director = null;
-            this.movieItem8.ImageBackgournd = null;
-            this.movieItem8.Location = new System.Drawing.Point(10, 249);
-            this.movieItem8.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem8.MovieLink = null;
-            this.movieItem8.Name = "movieItem8";
-            this.movieItem8.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem8.Rating = 0;
-            this.movieItem8.Size = new System.Drawing.Size(160, 229);
-            this.movieItem8.TabIndex = 7;
-            this.movieItem8.Title = null;
-            // 
-            // movieItem9
-            // 
-            this.movieItem9.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem9.Content = null;
-            this.movieItem9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem9.Director = null;
-            this.movieItem9.ImageBackgournd = null;
-            this.movieItem9.Location = new System.Drawing.Point(180, 249);
-            this.movieItem9.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem9.MovieLink = null;
-            this.movieItem9.Name = "movieItem9";
-            this.movieItem9.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem9.Rating = 0;
-            this.movieItem9.Size = new System.Drawing.Size(160, 229);
-            this.movieItem9.TabIndex = 8;
-            this.movieItem9.Title = null;
-            // 
-            // movieItem10
-            // 
-            this.movieItem10.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem10.Content = null;
-            this.movieItem10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem10.Director = null;
-            this.movieItem10.ImageBackgournd = null;
-            this.movieItem10.Location = new System.Drawing.Point(350, 249);
-            this.movieItem10.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem10.MovieLink = null;
-            this.movieItem10.Name = "movieItem10";
-            this.movieItem10.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem10.Rating = 0;
-            this.movieItem10.Size = new System.Drawing.Size(160, 229);
-            this.movieItem10.TabIndex = 9;
-            this.movieItem10.Title = null;
-            // 
-            // movieItem11
-            // 
-            this.movieItem11.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem11.Content = null;
-            this.movieItem11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem11.Director = null;
-            this.movieItem11.ImageBackgournd = null;
-            this.movieItem11.Location = new System.Drawing.Point(520, 249);
-            this.movieItem11.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem11.MovieLink = null;
-            this.movieItem11.Name = "movieItem11";
-            this.movieItem11.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem11.Rating = 0;
-            this.movieItem11.Size = new System.Drawing.Size(160, 229);
-            this.movieItem11.TabIndex = 10;
-            this.movieItem11.Title = null;
-            // 
-            // movieItem12
-            // 
-            this.movieItem12.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem12.Content = null;
-            this.movieItem12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem12.Director = null;
-            this.movieItem12.ImageBackgournd = null;
-            this.movieItem12.Location = new System.Drawing.Point(690, 249);
-            this.movieItem12.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem12.MovieLink = null;
-            this.movieItem12.Name = "movieItem12";
-            this.movieItem12.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem12.Rating = 0;
-            this.movieItem12.Size = new System.Drawing.Size(160, 229);
-            this.movieItem12.TabIndex = 11;
-            this.movieItem12.Title = null;
-            // 
-            // movieItem13
-            // 
-            this.movieItem13.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem13.Content = null;
-            this.movieItem13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem13.Director = null;
-            this.movieItem13.ImageBackgournd = null;
-            this.movieItem13.Location = new System.Drawing.Point(860, 249);
-            this.movieItem13.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem13.MovieLink = null;
-            this.movieItem13.Name = "movieItem13";
-            this.movieItem13.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem13.Rating = 0;
-            this.movieItem13.Size = new System.Drawing.Size(160, 229);
-            this.movieItem13.TabIndex = 12;
-            this.movieItem13.Title = null;
-            // 
-            // movieItem14
-            // 
-            this.movieItem14.BackColor = System.Drawing.Color.Transparent;
-            this.movieItem14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.movieItem14.Content = null;
-            this.movieItem14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.movieItem14.Director = null;
-            this.movieItem14.ImageBackgournd = null;
-            this.movieItem14.Location = new System.Drawing.Point(1030, 249);
-            this.movieItem14.Margin = new System.Windows.Forms.Padding(5);
-            this.movieItem14.MovieLink = null;
-            this.movieItem14.Name = "movieItem14";
-            this.movieItem14.Padding = new System.Windows.Forms.Padding(3);
-            this.movieItem14.Rating = 0;
-            this.movieItem14.Size = new System.Drawing.Size(160, 229);
-            this.movieItem14.TabIndex = 13;
-            this.movieItem14.Title = null;
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1188, 768);
             this.Controls.Add(this.form_born);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainMenu";
@@ -1206,23 +1445,37 @@
         }
 
         #endregion
-
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ImageList icon_mainmenu;
         private System.Windows.Forms.TableLayoutPanel form_born;
         private System.Windows.Forms.Panel menu_panel;
+        private System.Windows.Forms.Button history_show;
+        private System.Windows.Forms.Button favorite_show;
+        private System.Windows.Forms.Button account_infor;
+        private System.Windows.Forms.Button movie_show;
+        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel action_panel;
+        private System.Windows.Forms.Panel common;
+        private System.Windows.Forms.Panel account_infor_panel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel favorite_show_panel;
+        private System.Windows.Forms.FlowLayoutPanel movies_list_favorite;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel history_show_panel;
+        private System.Windows.Forms.FlowLayoutPanel movies_list_history;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel control;
+        private System.Windows.Forms.Panel control_button;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel search_panel;
         private System.Windows.Forms.TextBox search_input;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel control;
-        private System.Windows.Forms.Panel control_button;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel movie_show_panel;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel category;
-        private System.Windows.Forms.Button scroll_right;
-        private System.Windows.Forms.Button scroll_left;
         private System.Windows.Forms.Panel category_scroll;
         private System.Windows.Forms.Button genre23;
         private System.Windows.Forms.Button genre22;
@@ -1247,24 +1500,9 @@
         private System.Windows.Forms.Button genre3;
         private System.Windows.Forms.Button genre2;
         private System.Windows.Forms.Button genre1;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button account_infor;
-        private System.Windows.Forms.ImageList icon_mainmenu;
-        private System.Windows.Forms.Button history_show;
-        private System.Windows.Forms.Button favorite_show;
-        private System.Windows.Forms.Panel movie_show_panel;
-        private System.Windows.Forms.Panel common;
-        private System.Windows.Forms.FlowLayoutPanel list_item_movie;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button movie_show;
-        private System.Windows.Forms.Panel history_show_panel;
-        private System.Windows.Forms.Panel favorite_show_panel;
-        private System.Windows.Forms.Panel account_infor_panel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.FlowLayoutPanel movies_list_favorite;
-        private System.Windows.Forms.FlowLayoutPanel movies_list_history;
+        private System.Windows.Forms.Button scroll_right;
+        private System.Windows.Forms.Button scroll_left;
+        private Movie_Mange.SmoothScrollPanel list_item_movie;
         private Movie_Mange.MovieItem movieItem1;
         private Movie_Mange.MovieItem movieItem2;
         private Movie_Mange.MovieItem movieItem3;
@@ -1279,5 +1517,17 @@
         private Movie_Mange.MovieItem movieItem12;
         private Movie_Mange.MovieItem movieItem13;
         private Movie_Mange.MovieItem movieItem14;
+        private Movie_Mange.MovieItem movieItem15;
+        private Movie_Mange.MovieItem movieItem16;
+        private Movie_Mange.MovieItem movieItem17;
+        private Movie_Mange.MovieItem movieItem18;
+        private Movie_Mange.MovieItem movieItem19;
+        private Movie_Mange.MovieItem movieItem20;
+        private Movie_Mange.MovieItem movieItem21;
+        private Movie_Mange.MovieItem movieItem22;
+        private Movie_Mange.MovieItem movieItem23;
+        private Movie_Mange.MovieItem movieItem24;
+        private Movie_Mange.MovieItem movieItem25;
+        private Movie_Mange.MovieItem movieItem26;
     }
 }

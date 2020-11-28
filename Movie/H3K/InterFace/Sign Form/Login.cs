@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -34,6 +35,16 @@ namespace H3K.InterFace.Sign_Form
             password_input.PasswordChar = '*';
             password_sign_up.PasswordChar = '*';
             loginSubmit = false;
+            EnableDoubleBuferring(this);
+        }
+        public static void EnableDoubleBuferring(Control control)
+        {
+            foreach (Control item in control.Controls)
+            {
+                EnableDoubleBuferring(item);
+            }
+            var property = typeof(Control).GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
+            property.SetValue(control, true, null);
         }
 
         private void Login_Load(object sender, EventArgs e)

@@ -33,7 +33,7 @@ namespace H3K.InterFace.Movie_Mange
         public Image ImageBackgournd
         {
             get { return _background; }
-            set { _background = value; this.BackgroundImage = _background; }
+            set { _background = value;}
         }
         [Category("Custom")]
         public string Content
@@ -77,7 +77,7 @@ namespace H3K.InterFace.Movie_Mange
 
         private void poster_MouseLeave(object sender, EventArgs e)
         {
-            if (!IsMouseHover(poster))
+            if (!IsMouseHover(this))
             {
                 this.BackColor = Color.Transparent;
             }

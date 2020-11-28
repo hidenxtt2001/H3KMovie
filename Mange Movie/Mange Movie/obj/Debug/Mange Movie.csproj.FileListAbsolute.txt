@@ -36,3 +36,15 @@ C:\Users\Admin\Source\Repos\H3KMovie2\Mange Movie\Mange Movie\obj\Debug\Mange Mo
 C:\Users\Admin\Source\Repos\H3KMovie2\Mange Movie\Mange Movie\obj\Debug\Mange Movie.exe
 C:\Users\Admin\Source\Repos\H3KMovie2\Mange Movie\Mange Movie\obj\Debug\Mange Movie.pdb
 C:\Users\Admin\Source\Repos\H3KMovie2\Mange Movie\Mange Movie\obj\Debug\Mange_Movie.Form4.resources
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\bin\Debug\Mange Movie.exe.config
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\bin\Debug\Mange Movie.exe
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\bin\Debug\Mange Movie.pdb
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\obj\Debug\Mange Movie.csprojAssemblyReference.cache
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\obj\Debug\Mange_Movie.Button_WOC.resources
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\obj\Debug\Mange_Movie.Form1.resources
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\obj\Debug\Mange_Movie.Form4.resources
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\obj\Debug\Mange_Movie.Properties.Resources.resources
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\obj\Debug\Mange Movie.csproj.GenerateResource.cache
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\obj\Debug\Mange Movie.csproj.CoreCompileInputs.cache
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\obj\Debug\Mange Movie.exe
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Mange Movie\Mange Movie\obj\Debug\Mange Movie.pdb

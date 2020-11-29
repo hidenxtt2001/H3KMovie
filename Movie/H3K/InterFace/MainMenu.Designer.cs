@@ -40,8 +40,10 @@
             this.movie_show = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.action_panel = new System.Windows.Forms.Panel();
+            this.loading_label = new System.Windows.Forms.Label();
             this.common = new System.Windows.Forms.Panel();
             this.movie_show_panel = new System.Windows.Forms.Panel();
+            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.category = new System.Windows.Forms.Panel();
             this.category_scroll = new System.Windows.Forms.Panel();
@@ -70,6 +72,9 @@
             this.genre1 = new System.Windows.Forms.Button();
             this.scroll_right = new System.Windows.Forms.Button();
             this.scroll_left = new System.Windows.Forms.Button();
+            this.favorite_show_panel = new System.Windows.Forms.Panel();
+            this.movies_list_favorite = new System.Windows.Forms.FlowLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
             this.account_infor_panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -84,9 +89,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.favorite_show_panel = new System.Windows.Forms.Panel();
-            this.movies_list_favorite = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
             this.history_show_panel = new System.Windows.Forms.Panel();
             this.movies_list_history = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -99,8 +101,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.loading_label = new System.Windows.Forms.Label();
-            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.form_born.SuspendLayout();
             this.menu_panel.SuspendLayout();
             this.action_panel.SuspendLayout();
@@ -108,11 +108,11 @@
             this.movie_show_panel.SuspendLayout();
             this.category.SuspendLayout();
             this.category_scroll.SuspendLayout();
+            this.favorite_show_panel.SuspendLayout();
             this.account_infor_panel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.favorite_show_panel.SuspendLayout();
             this.history_show_panel.SuspendLayout();
             this.control.SuspendLayout();
             this.control_button.SuspendLayout();
@@ -274,6 +274,18 @@
             this.action_panel.Size = new System.Drawing.Size(997, 768);
             this.action_panel.TabIndex = 1;
             // 
+            // loading_label
+            // 
+            this.loading_label.AutoSize = true;
+            this.loading_label.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loading_label.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.loading_label.Location = new System.Drawing.Point(450, 389);
+            this.loading_label.Name = "loading_label";
+            this.loading_label.Size = new System.Drawing.Size(96, 18);
+            this.loading_label.TabIndex = 0;
+            this.loading_label.Text = "Loading....";
+            this.loading_label.Visible = false;
+            // 
             // common
             // 
             this.common.Controls.Add(this.movie_show_panel);
@@ -296,6 +308,14 @@
             this.movie_show_panel.Name = "movie_show_panel";
             this.movie_show_panel.Size = new System.Drawing.Size(997, 726);
             this.movie_show_panel.TabIndex = 2;
+            // 
+            // list_item_movie
+            // 
+            this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.list_item_movie.Location = new System.Drawing.Point(0, 70);
+            this.list_item_movie.Name = "list_item_movie";
+            this.list_item_movie.Size = new System.Drawing.Size(997, 649);
+            this.list_item_movie.TabIndex = 4;
             // 
             // panel1
             // 
@@ -727,6 +747,37 @@
             this.scroll_left.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
             this.scroll_left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
             // 
+            // favorite_show_panel
+            // 
+            this.favorite_show_panel.Controls.Add(this.movies_list_favorite);
+            this.favorite_show_panel.Controls.Add(this.label3);
+            this.favorite_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.favorite_show_panel.Location = new System.Drawing.Point(0, 0);
+            this.favorite_show_panel.Name = "favorite_show_panel";
+            this.favorite_show_panel.Size = new System.Drawing.Size(997, 726);
+            this.favorite_show_panel.TabIndex = 4;
+            // 
+            // movies_list_favorite
+            // 
+            this.movies_list_favorite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.movies_list_favorite.Location = new System.Drawing.Point(0, 70);
+            this.movies_list_favorite.Name = "movies_list_favorite";
+            this.movies_list_favorite.Padding = new System.Windows.Forms.Padding(5);
+            this.movies_list_favorite.Size = new System.Drawing.Size(997, 656);
+            this.movies_list_favorite.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(997, 70);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Movies Favorite";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // account_infor_panel
             // 
             this.account_infor_panel.Controls.Add(this.tableLayoutPanel1);
@@ -905,37 +956,6 @@
             this.label1.Text = "Account Information";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // favorite_show_panel
-            // 
-            this.favorite_show_panel.Controls.Add(this.movies_list_favorite);
-            this.favorite_show_panel.Controls.Add(this.label3);
-            this.favorite_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.favorite_show_panel.Location = new System.Drawing.Point(0, 0);
-            this.favorite_show_panel.Name = "favorite_show_panel";
-            this.favorite_show_panel.Size = new System.Drawing.Size(997, 726);
-            this.favorite_show_panel.TabIndex = 4;
-            // 
-            // movies_list_favorite
-            // 
-            this.movies_list_favorite.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.movies_list_favorite.Location = new System.Drawing.Point(0, 70);
-            this.movies_list_favorite.Name = "movies_list_favorite";
-            this.movies_list_favorite.Padding = new System.Windows.Forms.Padding(5);
-            this.movies_list_favorite.Size = new System.Drawing.Size(997, 656);
-            this.movies_list_favorite.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(997, 70);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Movies Favorite";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // history_show_panel
             // 
             this.history_show_panel.Controls.Add(this.movies_list_history);
@@ -1083,26 +1103,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // loading_label
-            // 
-            this.loading_label.AutoSize = true;
-            this.loading_label.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loading_label.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.loading_label.Location = new System.Drawing.Point(450, 389);
-            this.loading_label.Name = "loading_label";
-            this.loading_label.Size = new System.Drawing.Size(96, 18);
-            this.loading_label.TabIndex = 0;
-            this.loading_label.Text = "Loading....";
-            this.loading_label.Visible = false;
-            // 
-            // list_item_movie
-            // 
-            this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.list_item_movie.Location = new System.Drawing.Point(0, 70);
-            this.list_item_movie.Name = "list_item_movie";
-            this.list_item_movie.Size = new System.Drawing.Size(997, 649);
-            this.list_item_movie.TabIndex = 4;
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1124,12 +1124,12 @@
             this.movie_show_panel.ResumeLayout(false);
             this.category.ResumeLayout(false);
             this.category_scroll.ResumeLayout(false);
+            this.favorite_show_panel.ResumeLayout(false);
             this.account_infor_panel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.favorite_show_panel.ResumeLayout(false);
             this.history_show_panel.ResumeLayout(false);
             this.control.ResumeLayout(false);
             this.control.PerformLayout();

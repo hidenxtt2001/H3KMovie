@@ -41,6 +41,7 @@
             this.poster.Name = "poster";
             this.poster.Size = new System.Drawing.Size(143, 185);
             this.poster.TabIndex = 0;
+            this.poster.Click += new System.EventHandler(this.watch_click);
             this.poster.MouseLeave += new System.EventHandler(this.poster_MouseLeave);
             this.poster.MouseHover += new System.EventHandler(this.poster_MouseHover);
             // 
@@ -56,6 +57,7 @@
             this.title.TabIndex = 1;
             this.title.Text = "Title";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.title.Click += new System.EventHandler(this.watch_click);
             this.title.MouseLeave += new System.EventHandler(this.poster_MouseLeave);
             this.title.MouseHover += new System.EventHandler(this.poster_MouseHover);
             // 

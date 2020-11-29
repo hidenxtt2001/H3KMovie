@@ -46,7 +46,6 @@ C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\bin\Debug\H3K.exe
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\bin\Debug\H3K.pdb
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.csprojAssemblyReference.cache
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.MainMenu.resources
-C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.MenuControl.resources
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.Movie_Mange.Wait_Form.resources
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.WatchMovie.MovieShow.resources
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.Properties.Resources.resources
@@ -56,5 +55,6 @@ C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.exe
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.pdb
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.Sign_Form.Login.resources
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.Movie_Mange.MovieItem.resources
-C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.WatchMovieForm.resources
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.Sign_Form.MessageWarning.resources
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.WatchMovie.MovieShowInfor.resources
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.WatchMovie.RatingStar.resources

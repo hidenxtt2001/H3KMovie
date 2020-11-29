@@ -56,12 +56,6 @@
     <Compile Include="InterFace\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterFace\MenuControl.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InterFace\MenuControl.Designer.cs">
-      <DependentUpon>MenuControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="InterFace\Movie_Mange\MovieItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,25 +83,31 @@
     <Compile Include="InterFace\Sign Form\MessageWarning.Designer.cs">
       <DependentUpon>MessageWarning.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterFace\WatchMovie\GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="InterFace\WatchMovie\MovieShow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InterFace\WatchMovie\MovieShow.Designer.cs">
       <DependentUpon>MovieShow.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterFace\WatchMovie\WatchMovieForm.cs">
+    <Compile Include="InterFace\WatchMovie\MovieShowInfor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterFace\WatchMovie\WatchMovieForm.Designer.cs">
-      <DependentUpon>WatchMovieForm.cs</DependentUpon>
+    <Compile Include="InterFace\WatchMovie\MovieShowInfor.Designer.cs">
+      <DependentUpon>MovieShowInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterFace\WatchMovie\RatingStar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InterFace\WatchMovie\RatingStar.Designer.cs">
+      <DependentUpon>RatingStar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="InterFace\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InterFace\MenuControl.resx">
-      <DependentUpon>MenuControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterFace\Movie_Mange\MovieItem.resx">
       <DependentUpon>MovieItem.cs</DependentUpon>
@@ -124,8 +124,11 @@
     <EmbeddedResource Include="InterFace\WatchMovie\MovieShow.resx">
       <DependentUpon>MovieShow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InterFace\WatchMovie\WatchMovieForm.resx">
-      <DependentUpon>WatchMovieForm.cs</DependentUpon>
+    <EmbeddedResource Include="InterFace\WatchMovie\MovieShowInfor.resx">
+      <DependentUpon>MovieShowInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterFace\WatchMovie\RatingStar.resx">
+      <DependentUpon>RatingStar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

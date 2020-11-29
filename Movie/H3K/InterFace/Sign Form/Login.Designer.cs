@@ -113,7 +113,7 @@
             this.sign_up.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sign_up.Location = new System.Drawing.Point(0, 0);
             this.sign_up.Name = "sign_up";
-            this.sign_up.Size = new System.Drawing.Size(426, 460);
+            this.sign_up.Size = new System.Drawing.Size(434, 460);
             this.sign_up.TabIndex = 5;
             // 
             // panel2
@@ -236,7 +236,7 @@
             this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label6.Location = new System.Drawing.Point(0, 40);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(426, 109);
+            this.label6.Size = new System.Drawing.Size(434, 109);
             this.label6.TabIndex = 0;
             this.label6.Text = "Sign Up";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -251,7 +251,7 @@
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
             this.panel7.Padding = new System.Windows.Forms.Padding(4);
-            this.panel7.Size = new System.Drawing.Size(426, 40);
+            this.panel7.Size = new System.Drawing.Size(434, 40);
             this.panel7.TabIndex = 9;
             this.panel7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -280,7 +280,7 @@
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(362, 4);
+            this.button5.Location = new System.Drawing.Point(370, 4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(30, 32);
             this.button5.TabIndex = 1;
@@ -296,7 +296,7 @@
             this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(392, 4);
+            this.button6.Location = new System.Drawing.Point(400, 4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(30, 32);
             this.button6.TabIndex = 0;
@@ -319,7 +319,7 @@
             this.sign_in.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sign_in.Location = new System.Drawing.Point(0, 0);
             this.sign_in.Name = "sign_in";
-            this.sign_in.Size = new System.Drawing.Size(426, 460);
+            this.sign_in.Size = new System.Drawing.Size(434, 460);
             this.sign_in.TabIndex = 6;
             // 
             // panel4
@@ -444,13 +444,14 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
             this.label8.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label8.Location = new System.Drawing.Point(0, 40);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(426, 109);
+            this.label8.Size = new System.Drawing.Size(434, 109);
             this.label8.TabIndex = 0;
             this.label8.Text = "Sign In";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -464,7 +465,7 @@
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
             this.panel9.Padding = new System.Windows.Forms.Padding(4);
-            this.panel9.Size = new System.Drawing.Size(426, 40);
+            this.panel9.Size = new System.Drawing.Size(434, 40);
             this.panel9.TabIndex = 9;
             this.panel9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -477,7 +478,7 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(362, 4);
+            this.button2.Location = new System.Drawing.Point(370, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(30, 32);
             this.button2.TabIndex = 1;
@@ -493,7 +494,7 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(118)))), ((int)(((byte)(118)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(392, 4);
+            this.button3.Location = new System.Drawing.Point(400, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(30, 32);
             this.button3.TabIndex = 0;
@@ -507,7 +508,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(423, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(426, 460);
+            this.panel1.Size = new System.Drawing.Size(434, 460);
             this.panel1.TabIndex = 9;
             // 
             // Login
@@ -515,7 +516,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(28)))), ((int)(((byte)(31)))));
-            this.ClientSize = new System.Drawing.Size(849, 460);
+            this.ClientSize = new System.Drawing.Size(857, 460);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.logo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

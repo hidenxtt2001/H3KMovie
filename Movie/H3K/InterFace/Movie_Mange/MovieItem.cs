@@ -105,5 +105,10 @@ namespace H3K.InterFace.Movie_Mange
             poster.BackgroundImage = _background;
         }
 
+        private void watch_click(object sender, EventArgs e)
+        {
+            WatchMovie.MovieShowInfor form = new WatchMovie.MovieShowInfor(this);
+            form.ShowDialog();
+        }
     }
 }

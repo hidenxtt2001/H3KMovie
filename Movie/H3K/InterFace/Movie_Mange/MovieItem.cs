@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace H3K.InterFace.Movie_Mange
 {
@@ -17,12 +18,17 @@ namespace H3K.InterFace.Movie_Mange
             InitializeComponent();
         }
 
+        private string _movie_id;
         private string _title;
-        private Image _background;
-        private string _movieLink;
         private string _content;
-        private string _director;
         private int _rating;
+        private string _director;
+        private string _movieLink;
+        private Image _background;
+        private string _year;
+        private string _nation;
+
+
         [Category("Custom")]
         public string Title
         {
@@ -59,6 +65,15 @@ namespace H3K.InterFace.Movie_Mange
             get { return _movieLink; }
             set { _movieLink = value; }
         }
+        [Category("Custom")]
+        public string Movie_id { get => _movie_id; set => _movie_id = value; }
+        [Category("Custom")]
+        public string Year { get => _year; set => _year = value; }
+        [Category("Custom")]
+        public string Nation { get => _nation; set => _nation = value; }
+
+
+        #region Action on Hover
         private bool IsMouseHover(Control c)
         {
             Point p = Control.MousePosition;
@@ -82,5 +97,13 @@ namespace H3K.InterFace.Movie_Mange
                 this.BackColor = Color.Transparent;
             }
         }
+        #endregion
+
+        private void MovieItem_Load(object sender, EventArgs e)
+        {
+            title.Text = _title;
+            poster.BackgroundImage = _background;
+        }
+
     }
 }

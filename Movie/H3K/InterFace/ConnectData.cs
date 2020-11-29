@@ -8,21 +8,27 @@ using System.Threading.Tasks;
 
 namespace H3K.InterFace
 {
-    class ConnectData
+    public class ConnectData
     {
         private static string connectionString = @"Server=tcp:hunghuy2009.database.windows.net,1433;Initial Catalog=H3K;Persist Security Info=False;User ID=hunghuy2009;Password=Hunghuy123;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         private SqlConnection data { get; set; }
 
+        private DataTable _account;
+
+        public DataTable Account { get { return _account; } }
+
         public ConnectData()
         {
             data = new SqlConnection(connectionString);
+            _account = new DataTable();
         }
-        public DataSet dataMovie()
+        public DataSet dataMovie(int genreid) // Get Movie follow genre
         {
             data.Open();
             DataSet result = new DataSet();
-            using (SqlDataAdapter da = new SqlDataAdapter(@"select * from Movies", data))
+            using (SqlDataAdapter da = new SqlDataAdapter(@"SELECT * FROM Movies JOIN Movie_Genres ON Movies.movie_id = Movie_Genres.movie_id WHERE Movie_Genres.genre_id = @GENREID", data))
             {
+                da.SelectCommand.Parameters.AddWithValue("@GENREID", genreid);
                 da.Fill(result);
                 da.Dispose();
             }
@@ -30,7 +36,7 @@ namespace H3K.InterFace
             return result;
 
         }
-        public DataSet dataGenres()
+        public DataSet dataGenres() // Get Genres
         {
             data.Open();
             DataSet result = new DataSet();
@@ -43,7 +49,7 @@ namespace H3K.InterFace
             return result;
         }
 
-        public bool Login(string username,string password)
+        public bool Login(string username,string password) // Check Login
         {
             try
             {
@@ -56,7 +62,12 @@ namespace H3K.InterFace
                     cmd.Parameters.AddWithValue("@PASSWORD", password);
                     using (SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
                     {
-                        return reader.Read();
+                        if (reader.HasRows)
+                        {
+                            _account.Load(reader);
+                            return true;
+                        }
+                        return false;
                     }
                 }
             }
@@ -67,7 +78,7 @@ namespace H3K.InterFace
             }
         }
 
-        public bool Register(string username, string password, string email)
+        public bool Register(string username, string password, string email) //Register Account 
         {
             try
             {
@@ -102,6 +113,67 @@ namespace H3K.InterFace
                 data.Close();
                 return false;
             }
+        }
+
+        public DataSet dataHistory(string username) // Get History Movie of Account
+        {
+            data.Open();
+            DataSet result = new DataSet();
+            using (SqlDataAdapter da = new SqlDataAdapter(@"select mv.* from History his join Account ac on his.username = ac.username join Movies mv on mv.movie_id = his.movie_id where ac.username = @username", data))
+            {
+                da.SelectCommand.Parameters.AddWithValue("@username", username);
+                da.Fill(result);
+                da.Dispose();
+            }
+            data.Close();
+            return result;
+        }
+
+        public DataSet dataFavorite(string username) // Get Favorite Movie Of Account
+        {
+            data.Open();
+            DataSet result = new DataSet();
+            using (SqlDataAdapter da = new SqlDataAdapter(@"select mv.* from Favorite fv join Account ac on fv.username = ac.username join Movies mv on mv.movie_id = fv.movie_id where ac.username = @username ", data))
+            {
+                da.SelectCommand.Parameters.AddWithValue("@username", username);
+                da.Fill(result);
+                da.Dispose();
+            }
+            data.Close();
+            return result;
+        }
+
+        public bool UpdateAccount()
+        {
+            try
+            {
+                data.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = data;
+                    cmd.CommandText = "SELECT * FROM Account WHERE username=@USERNAME";
+                    cmd.Parameters.AddWithValue("@USERNAME", _account.Rows[0]["username"].ToString());
+                    using (SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                    {
+                        if (reader.HasRows)
+                        {
+                            _account.Load(reader);
+                            return true;
+                        }
+                        return false;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                data.Close();
+                return false;
+            }
+        }
+
+        public void Logout() // Logout Account
+        {
+            if (Account != null) _account = null;
         }
     }
 }

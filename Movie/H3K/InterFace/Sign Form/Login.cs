@@ -29,13 +29,14 @@ namespace H3K.InterFace.Sign_Form
         public bool loginSubmit {get;set;}
         private ConnectData connect { get; set; }
 
-        public Login()
+        public Login(ConnectData connectdata)
         {
             InitializeComponent();
             password_input.PasswordChar = '*';
             password_sign_up.PasswordChar = '*';
             loginSubmit = false;
             EnableDoubleBuferring(this);
+            connect = connectdata;
         }
         public static void EnableDoubleBuferring(Control control)
         {
@@ -48,8 +49,7 @@ namespace H3K.InterFace.Sign_Form
         }
 
         private void Login_Load(object sender, EventArgs e)
-        {
-            connect = new ConnectData();
+        {            
         }
 
         #region Action Button

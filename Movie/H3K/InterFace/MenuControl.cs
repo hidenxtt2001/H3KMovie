@@ -78,7 +78,7 @@ namespace H3K
         private Dictionary<int, MovieItem> items { get; set; }
         private void getDatabase()
         {
-            connectData = new ConnectData();
+            /*connectData = new ConnectData();
             dataTemp = new DataTable();
             items = new Dictionary<int, MovieItem>();
             try
@@ -105,7 +105,7 @@ namespace H3K
                         Content = dataRow["plot"].ToString()
                     });
                 }
-            }
+            }*/
         }
 
         #endregion

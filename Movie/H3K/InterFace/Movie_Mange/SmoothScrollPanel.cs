@@ -11,16 +11,18 @@ namespace H3K.InterFace.Movie_Mange
     {
         public SmoothScrollPanel()
         {
-            var property = typeof(Control).GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
-            property.SetValue(this, true, null);
+            this.DoubleBuffered = true;
+            typeof(Control).GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(this, true, null);
         }
+
+
+
+
 
         protected override void OnMouseWheel(MouseEventArgs e)
         {
-            this.Invalidate();
             base.OnMouseWheel(e);
         }
-
         protected override CreateParams CreateParams
         {
             get
@@ -30,5 +32,6 @@ namespace H3K.InterFace.Movie_Mange
                 return cp;
             }
         }
+
     }
 }

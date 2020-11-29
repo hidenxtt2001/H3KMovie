@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace H3K.InterFace
 {
@@ -24,16 +25,28 @@ namespace H3K.InterFace
         }
         public DataSet dataMovie(int genreid) // Get Movie follow genre
         {
-            data.Open();
-            DataSet result = new DataSet();
-            using (SqlDataAdapter da = new SqlDataAdapter(@"SELECT * FROM Movies JOIN Movie_Genres ON Movies.movie_id = Movie_Genres.movie_id WHERE Movie_Genres.genre_id = @GENREID", data))
+            try
             {
-                da.SelectCommand.Parameters.AddWithValue("@GENREID", genreid);
-                da.Fill(result);
-                da.Dispose();
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"SELECT * FROM Movies JOIN Movie_Genres ON Movies.movie_id = Movie_Genres.movie_id WHERE Movie_Genres.genre_id = @GENREID", data))
+                {
+                    da.SelectCommand.Parameters.AddWithValue("@GENREID", genreid);
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
             }
-            data.Close();
-            return result;
+            catch (Exception ex)
+            {
+                data.Close();
+                if (ex.Message == "The connection was not closed. The connection's current state is connecting.")
+                {
+                    dataMovie(genreid);
+                }
+                return null;
+            }
 
         }
         public DataSet dataGenres() // Get Genres

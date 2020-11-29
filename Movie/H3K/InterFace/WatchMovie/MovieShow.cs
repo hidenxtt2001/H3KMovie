@@ -16,10 +16,11 @@ namespace H3K.InterFace.WatchMovie
     {
         
         private static string id { get; set; }
-        public MovieShow(string link)
+        public MovieShow(string link,string title)
         {
             InitializeComponent();
             id = Regex.Match(link, @"[-\w]{25,}").Value;
+            this.Text = title;
         }
 
         private void MovieShow_Load(object sender, EventArgs e)

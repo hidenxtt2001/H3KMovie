@@ -15,6 +15,10 @@
         {
             if (disposing && (components != null))
             {
+                this.Content = null;
+                this.title = null;
+                this.ImageBackgournd = null;
+                this.Director = null;
                 components.Dispose();
             }
             base.Dispose(disposing);

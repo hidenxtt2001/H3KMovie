@@ -16,6 +16,7 @@ namespace H3K.InterFace.WatchMovie
     {
         private MovieItem movieItem { get; set; }
 
+
         public MovieShowInfor(MovieItem movieItem)
         {
             InitializeComponent();
@@ -23,8 +24,6 @@ namespace H3K.InterFace.WatchMovie
             this.content.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.content.MouseWheel += richTextBox1_MouseWheel;
         }
-
-
         void richTextBox1_MouseWheel(object sender, MouseEventArgs e)
         {
             if (e.Delta > 0)
@@ -43,6 +42,17 @@ namespace H3K.InterFace.WatchMovie
                 content.ScrollToCaret();
             }
         }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_CLIPCHILDREN
+                return cp;
+            }
+        }
+        
 
         #region Mouse Drag Panel
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -76,6 +86,14 @@ namespace H3K.InterFace.WatchMovie
             content.Text = movieItem.Content;
             content.SelectAll();
             content.SelectionAlignment = HorizontalAlignment.Center;
+        }
+
+        private void watch_movie_Click(object sender, EventArgs e)
+        {
+            MovieShow form = new MovieShow(movieItem.Movie_id,movieItem.Title);
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

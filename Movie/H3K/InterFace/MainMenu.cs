@@ -42,7 +42,7 @@ namespace H3K.InterFace
             data = new ConnectData();
         }
 
-        
+        private static List<Thread> workLoad { get; set; }
 
         public static void EnableDoubleBuferring(Control control)
         {
@@ -55,6 +55,7 @@ namespace H3K.InterFace
         }
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            workLoad = new List<Thread>();
             if (!LoginCheck())
             {
                 this.Close();
@@ -290,41 +291,56 @@ namespace H3K.InterFace
 
             ClearControl(list_item_movie);
             loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
-            DataTable result = data.dataMovie(genre).Tables[0];
-            loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
-            foreach (DataRow item in result.Rows)
+            try
             {
-                list_item_movie.Invoke(new Action(()=> {
-                    list_item_movie.Controls.Add(new Movie_Mange.MovieItem()
-                    {
-                        Movie_id = item["movie_id"].ToString(),
-                        Title = item["title"].ToString(),
-                        Content = item["plot"].ToString(),
-                        Rating = Convert.ToInt32(item["rating"]),
-                        Director = item["director"].ToString(),
-                        MovieLink = item["movie_link"].ToString(),
-                        ImageBackgournd = byteArrayToImage((byte[])(item["poster"])),
-                        Year = item["year_create"].ToString(),
-                        Nation = item["nation"].ToString()
-                    });
-                }));
+                DataTable result = data.dataMovie(genre).Tables[0];
+                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                foreach (DataRow item in result.Rows)
+                {
+                    list_item_movie.Invoke(new Action(() => {
+                        list_item_movie.Controls.Add(new Movie_Mange.MovieItem()
+                        {
+                            Movie_id = item["movie_id"].ToString(),
+                            Title = item["title"].ToString(),
+                            Content = item["plot"].ToString(),
+                            Rating = Convert.ToInt32(item["rating"]),
+                            Director = item["director"].ToString(),
+                            MovieLink = item["movie_link"].ToString(),
+                            ImageBackgournd = byteArrayToImage((byte[])(item["poster"])),
+                            Year = item["year_create"].ToString(),
+                            Nation = item["nation"].ToString()
+                        });
+                    }));
+                }
             }
+            catch (Exception)
+            {
+
+            }
+            
 
         }
 
         private void GenreChooseLoad(object sender, EventArgs e)
         {
+            if(workLoad.Count != 0)
+            {
+                foreach(Thread k in workLoad)
+                {
+                    k.Abort();
+                }
+            }
             Thread t = new Thread(() => {
                 loadMovie(Convert.ToInt32(Regex.Match(((Button)sender).Name, @"\d{1,}").Value));
             });
             t.IsBackground = true;
+            workLoad.Add(t);
             t.Start();
         }
 
 
 
-        #endregion
 
-        
+        #endregion
     }
 }

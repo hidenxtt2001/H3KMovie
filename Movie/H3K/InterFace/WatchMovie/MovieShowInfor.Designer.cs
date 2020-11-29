@@ -182,6 +182,7 @@
             this.watch_movie.TabIndex = 2;
             this.watch_movie.Text = "Watch";
             this.watch_movie.UseVisualStyleBackColor = false;
+            this.watch_movie.Click += new System.EventHandler(this.watch_movie_Click);
             // 
             // button2
             // 

@@ -43,6 +43,7 @@
             this.loading_label = new System.Windows.Forms.Label();
             this.common = new System.Windows.Forms.Panel();
             this.movie_show_panel = new System.Windows.Forms.Panel();
+            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.category = new System.Windows.Forms.Panel();
             this.category_scroll = new System.Windows.Forms.Panel();
@@ -100,7 +101,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.form_born.SuspendLayout();
             this.menu_panel.SuspendLayout();
             this.action_panel.SuspendLayout();
@@ -148,7 +148,7 @@
             this.form_born.Name = "form_born";
             this.form_born.RowCount = 1;
             this.form_born.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.form_born.Size = new System.Drawing.Size(1161, 768);
+            this.form_born.Size = new System.Drawing.Size(1340, 768);
             this.form_born.TabIndex = 0;
             // 
             // menu_panel
@@ -259,7 +259,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(164, 112);
             this.panel8.TabIndex = 0;
-            this.panel8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseMove);
+            this.panel8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // action_panel
             // 
@@ -271,7 +271,7 @@
             this.action_panel.Location = new System.Drawing.Point(164, 0);
             this.action_panel.Margin = new System.Windows.Forms.Padding(0);
             this.action_panel.Name = "action_panel";
-            this.action_panel.Size = new System.Drawing.Size(997, 768);
+            this.action_panel.Size = new System.Drawing.Size(1176, 768);
             this.action_panel.TabIndex = 1;
             // 
             // loading_label
@@ -279,7 +279,7 @@
             this.loading_label.AutoSize = true;
             this.loading_label.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loading_label.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.loading_label.Location = new System.Drawing.Point(450, 389);
+            this.loading_label.Location = new System.Drawing.Point(550, 385);
             this.loading_label.Name = "loading_label";
             this.loading_label.Size = new System.Drawing.Size(96, 18);
             this.loading_label.TabIndex = 0;
@@ -295,7 +295,7 @@
             this.common.Dock = System.Windows.Forms.DockStyle.Fill;
             this.common.Location = new System.Drawing.Point(0, 42);
             this.common.Name = "common";
-            this.common.Size = new System.Drawing.Size(997, 726);
+            this.common.Size = new System.Drawing.Size(1176, 726);
             this.common.TabIndex = 3;
             // 
             // movie_show_panel
@@ -306,15 +306,23 @@
             this.movie_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.movie_show_panel.Location = new System.Drawing.Point(0, 0);
             this.movie_show_panel.Name = "movie_show_panel";
-            this.movie_show_panel.Size = new System.Drawing.Size(997, 726);
+            this.movie_show_panel.Size = new System.Drawing.Size(1176, 726);
             this.movie_show_panel.TabIndex = 2;
+            // 
+            // list_item_movie
+            // 
+            this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.list_item_movie.Location = new System.Drawing.Point(0, 70);
+            this.list_item_movie.Name = "list_item_movie";
+            this.list_item_movie.Size = new System.Drawing.Size(1176, 649);
+            this.list_item_movie.TabIndex = 4;
             // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 719);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(997, 7);
+            this.panel1.Size = new System.Drawing.Size(1176, 7);
             this.panel1.TabIndex = 3;
             // 
             // category
@@ -326,7 +334,7 @@
             this.category.Location = new System.Drawing.Point(0, 0);
             this.category.Name = "category";
             this.category.Padding = new System.Windows.Forms.Padding(18);
-            this.category.Size = new System.Drawing.Size(997, 70);
+            this.category.Size = new System.Drawing.Size(1176, 70);
             this.category.TabIndex = 1;
             // 
             // category_scroll
@@ -357,7 +365,7 @@
             this.category_scroll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.category_scroll.Location = new System.Drawing.Point(78, 18);
             this.category_scroll.Name = "category_scroll";
-            this.category_scroll.Size = new System.Drawing.Size(841, 34);
+            this.category_scroll.Size = new System.Drawing.Size(1020, 34);
             this.category_scroll.TabIndex = 2;
             // 
             // genre23
@@ -713,7 +721,7 @@
             this.scroll_right.Dock = System.Windows.Forms.DockStyle.Right;
             this.scroll_right.FlatAppearance.BorderSize = 0;
             this.scroll_right.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.scroll_right.Location = new System.Drawing.Point(919, 18);
+            this.scroll_right.Location = new System.Drawing.Point(1098, 18);
             this.scroll_right.Name = "scroll_right";
             this.scroll_right.Size = new System.Drawing.Size(60, 34);
             this.scroll_right.TabIndex = 1;
@@ -746,7 +754,7 @@
             this.favorite_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.favorite_show_panel.Location = new System.Drawing.Point(0, 0);
             this.favorite_show_panel.Name = "favorite_show_panel";
-            this.favorite_show_panel.Size = new System.Drawing.Size(997, 726);
+            this.favorite_show_panel.Size = new System.Drawing.Size(1176, 726);
             this.favorite_show_panel.TabIndex = 4;
             // 
             // movies_list_favorite
@@ -755,7 +763,7 @@
             this.movies_list_favorite.Location = new System.Drawing.Point(0, 70);
             this.movies_list_favorite.Name = "movies_list_favorite";
             this.movies_list_favorite.Padding = new System.Windows.Forms.Padding(5);
-            this.movies_list_favorite.Size = new System.Drawing.Size(997, 656);
+            this.movies_list_favorite.Size = new System.Drawing.Size(1176, 656);
             this.movies_list_favorite.TabIndex = 3;
             // 
             // label3
@@ -765,7 +773,7 @@
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(997, 70);
+            this.label3.Size = new System.Drawing.Size(1176, 70);
             this.label3.TabIndex = 1;
             this.label3.Text = "Movies Favorite";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -777,7 +785,7 @@
             this.account_infor_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.account_infor_panel.Location = new System.Drawing.Point(0, 0);
             this.account_infor_panel.Name = "account_infor_panel";
-            this.account_infor_panel.Size = new System.Drawing.Size(997, 726);
+            this.account_infor_panel.Size = new System.Drawing.Size(1176, 726);
             this.account_infor_panel.TabIndex = 3;
             // 
             // tableLayoutPanel1
@@ -793,27 +801,27 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(997, 656);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1176, 656);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(124)))), ((int)(((byte)(163)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(497, 55);
+            this.panel2.Location = new System.Drawing.Point(578, 55);
             this.panel2.Margin = new System.Windows.Forms.Padding(49, 55, 49, 55);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1, 546);
+            this.panel2.Size = new System.Drawing.Size(19, 546);
             this.panel2.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.flowLayoutPanel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(597, 100);
+            this.panel3.Location = new System.Drawing.Point(696, 100);
             this.panel3.Margin = new System.Windows.Forms.Padding(50, 100, 50, 100);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(350, 456);
+            this.panel3.Size = new System.Drawing.Size(430, 456);
             this.panel3.TabIndex = 1;
             // 
             // flowLayoutPanel1
@@ -829,7 +837,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(350, 456);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(430, 456);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // label4
@@ -852,7 +860,7 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(3, 53);
+            this.textBox1.Location = new System.Drawing.Point(169, 10);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(250, 25);
@@ -865,7 +873,7 @@
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label5.ImageIndex = 6;
             this.label5.ImageList = this.icon_mainmenu;
-            this.label5.Location = new System.Drawing.Point(3, 98);
+            this.label5.Location = new System.Drawing.Point(3, 55);
             this.label5.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(160, 23);
@@ -878,7 +886,7 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(3, 141);
+            this.textBox2.Location = new System.Drawing.Point(169, 55);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(250, 25);
@@ -891,7 +899,7 @@
             this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label6.ImageIndex = 4;
             this.label6.ImageList = this.icon_mainmenu;
-            this.label6.Location = new System.Drawing.Point(3, 186);
+            this.label6.Location = new System.Drawing.Point(3, 100);
             this.label6.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(160, 23);
@@ -904,7 +912,7 @@
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(3, 229);
+            this.textBox3.Location = new System.Drawing.Point(169, 100);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(250, 25);
@@ -917,7 +925,7 @@
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label7.ImageIndex = 5;
             this.label7.ImageList = this.icon_mainmenu;
-            this.label7.Location = new System.Drawing.Point(3, 274);
+            this.label7.Location = new System.Drawing.Point(3, 145);
             this.label7.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(160, 23);
@@ -930,7 +938,7 @@
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(3, 317);
+            this.textBox4.Location = new System.Drawing.Point(169, 145);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(250, 25);
@@ -943,7 +951,7 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(997, 70);
+            this.label1.Size = new System.Drawing.Size(1176, 70);
             this.label1.TabIndex = 0;
             this.label1.Text = "Account Information";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -955,7 +963,7 @@
             this.history_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.history_show_panel.Location = new System.Drawing.Point(0, 0);
             this.history_show_panel.Name = "history_show_panel";
-            this.history_show_panel.Size = new System.Drawing.Size(997, 726);
+            this.history_show_panel.Size = new System.Drawing.Size(1176, 726);
             this.history_show_panel.TabIndex = 4;
             // 
             // movies_list_history
@@ -964,7 +972,7 @@
             this.movies_list_history.Location = new System.Drawing.Point(0, 70);
             this.movies_list_history.Name = "movies_list_history";
             this.movies_list_history.Padding = new System.Windows.Forms.Padding(5);
-            this.movies_list_history.Size = new System.Drawing.Size(997, 656);
+            this.movies_list_history.Size = new System.Drawing.Size(1176, 656);
             this.movies_list_history.TabIndex = 3;
             // 
             // label2
@@ -974,7 +982,7 @@
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(997, 70);
+            this.label2.Size = new System.Drawing.Size(1176, 70);
             this.label2.TabIndex = 1;
             this.label2.Text = "Movie History";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -988,9 +996,9 @@
             this.control.Location = new System.Drawing.Point(0, 0);
             this.control.Name = "control";
             this.control.Padding = new System.Windows.Forms.Padding(6);
-            this.control.Size = new System.Drawing.Size(997, 42);
+            this.control.Size = new System.Drawing.Size(1176, 42);
             this.control.TabIndex = 0;
-            this.control.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseMove);
+            this.control.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // control_button
             // 
@@ -998,7 +1006,7 @@
             this.control_button.Controls.Add(this.button2);
             this.control_button.Controls.Add(this.button3);
             this.control_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.control_button.Location = new System.Drawing.Point(931, 6);
+            this.control_button.Location = new System.Drawing.Point(1110, 6);
             this.control_button.Name = "control_button";
             this.control_button.Size = new System.Drawing.Size(60, 30);
             this.control_button.TabIndex = 2;
@@ -1061,6 +1069,7 @@
             this.search_input.TabIndex = 1;
             this.search_input.Text = "Search";
             this.search_input.Enter += new System.EventHandler(this.search_input_Enter);
+            this.search_input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.search_input_KeyDown);
             this.search_input.Leave += new System.EventHandler(this.search_input_Leave);
             // 
             // panel6
@@ -1095,20 +1104,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // list_item_movie
-            // 
-            this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.list_item_movie.Location = new System.Drawing.Point(0, 70);
-            this.list_item_movie.Name = "list_item_movie";
-            this.list_item_movie.Size = new System.Drawing.Size(997, 649);
-            this.list_item_movie.TabIndex = 4;
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1161, 768);
+            this.ClientSize = new System.Drawing.Size(1340, 768);
             this.Controls.Add(this.form_born);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainMenu";

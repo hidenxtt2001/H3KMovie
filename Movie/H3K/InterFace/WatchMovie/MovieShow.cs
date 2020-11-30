@@ -14,7 +14,14 @@ namespace H3K.InterFace.WatchMovie
 {
     public partial class MovieShow : Form
     {
+        [DllImport("KERNEL32.DLL", EntryPoint = "SetProcessWorkingSetSize", SetLastError = true, CallingConvention = CallingConvention.StdCall)]
+        internal static extern bool SetProcessWorkingSetSize(IntPtr pProcess, int dwMinimumWorkingSetSize, int dwMaximumWorkingSetSize);
+
+        [DllImport("KERNEL32.DLL", EntryPoint = "GetCurrentProcess", SetLastError = true, CallingConvention = CallingConvention.StdCall)]
+        internal static extern IntPtr GetCurrentProcess();
+
         
+            
         private static string id { get; set; }
         public MovieShow(string link,string title)
         {
@@ -41,6 +48,9 @@ namespace H3K.InterFace.WatchMovie
 
         private void MovieShow_FormClosing(object sender, FormClosingEventArgs e)
         {
+            
+            IntPtr pHandle = GetCurrentProcess();
+            SetProcessWorkingSetSize(pHandle, -1, -1);
             webBrowser1.Dispose();
             webBrowser1 = null;
             System.GC.Collect();

@@ -16,11 +16,13 @@ namespace H3K.InterFace.WatchMovie
     {
         private MovieItem movieItem { get; set; }
 
+        private ConnectData data { get; set; }
 
-        public MovieShowInfor(MovieItem movieItem)
+        public MovieShowInfor(MovieItem movieItem , ConnectData data)
         {
             InitializeComponent();
             this.movieItem = movieItem;
+            this.data = data;
             this.content.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.content.MouseWheel += richTextBox1_MouseWheel;
         }
@@ -66,8 +68,9 @@ namespace H3K.InterFace.WatchMovie
         {
             if (e.Button == MouseButtons.Left)
             {
-                ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, (IntPtr)HT_CAPTION, IntPtr.Zero);
+                ReleaseCapture();
+                
             }
         }
         #endregion
@@ -81,19 +84,62 @@ namespace H3K.InterFace.WatchMovie
         {
             poster.BackgroundImage = movieItem.ImageBackgournd;
             rating.Point = movieItem.Rating;
+            point.Text = movieItem.Rating + "/100";
             director.Text = movieItem.Director;
             title.Text = movieItem.Title;
             content.Text = movieItem.Content;
             content.SelectAll();
             content.SelectionAlignment = HorizontalAlignment.Center;
+
+            setFlagLoad();
         }
+
+        private void setFlagLoad()
+        {
+            if (data.checkFavorite(data.Account.Rows[0]["username"].ToString(), movieItem.Movie_id))
+            {
+                mark_flag.Image = Mark.Images[1];
+                mark_flag.Tag = 1;
+            }
+            else
+            {
+                mark_flag.Image = Mark.Images[0];
+                mark_flag.Tag = 0;
+            }
+        }
+        private void mark_flag_Click(object sender, EventArgs e)
+        {
+            setFlag();
+        }
+        private void setFlag()
+        {
+            
+            if ( Convert.ToInt32(mark_flag.Tag) == 0)
+            {
+                data.setFavorite(data.Account.Rows[0]["username"].ToString(), movieItem.Movie_id);
+                mark_flag.Image = Mark.Images[1];
+                mark_flag.Tag = 1;
+            }
+            else
+            {
+                data.delFavorite(data.Account.Rows[0]["username"].ToString(), movieItem.Movie_id);
+                mark_flag.Image = Mark.Images[0];
+                mark_flag.Tag = 0;
+            } 
+                
+        }
+
 
         private void watch_movie_Click(object sender, EventArgs e)
         {
             MovieShow form = new MovieShow(movieItem.Movie_id,movieItem.Title);
+            if (!data.checkHistory(data.Account.Rows[0]["username"].ToString(), movieItem.Movie_id))
+                data.setHistory(data.Account.Rows[0]["username"].ToString(), movieItem.Movie_id);
             this.Hide();
             form.ShowDialog();
             this.Close();
         }
+
+        
     }
 }

@@ -107,7 +107,7 @@ namespace H3K.InterFace.Movie_Mange
 
         private void watch_click(object sender, EventArgs e)
         {
-            WatchMovie.MovieShowInfor form = new WatchMovie.MovieShowInfor(this);
+            WatchMovie.MovieShowInfor form = new WatchMovie.MovieShowInfor(this, MainMenu.data);
             (this.ParentForm as Form).Hide();
             form.ShowDialog();
             (this.ParentForm as Form).Show();

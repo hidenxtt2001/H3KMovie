@@ -17,7 +17,7 @@ namespace H3K.InterFace
 {
     public partial class MainMenu : Form
     {
-        private ConnectData data { get; set; }
+        public static ConnectData data { get; set; }
         public MainMenu()
         {
             InitializeComponent();
@@ -82,9 +82,11 @@ namespace H3K.InterFace
 
         [DllImportAttribute("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
-        [DllImportAttribute("user32.dll")]
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
-        private void panel3_MouseMove(object sender, MouseEventArgs e)
+
+        private void Form1_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -92,6 +94,7 @@ namespace H3K.InterFace
                 SendMessage(Handle, WM_NCLBUTTONDOWN, (IntPtr)HT_CAPTION, IntPtr.Zero);
             }
         }
+
         #endregion
 
         #region Control Action
@@ -107,11 +110,6 @@ namespace H3K.InterFace
         #endregion
 
         #region Search Action
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void search_input_Leave(object sender, EventArgs e)
         {
             if(search_input.Text.Replace(" ",string.Empty) == string.Empty)
@@ -123,6 +121,19 @@ namespace H3K.InterFace
         {
             search_input.Text = "";
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadSearch(search_input.Text);
+        }
+        private void search_input_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                loadSearch(search_input.Text);
+            }
+        }
+
+        
         #endregion
 
         #region Category Movie
@@ -208,7 +219,7 @@ namespace H3K.InterFace
 
         #region Load Data
 
-        public Image byteArrayToImage(byte[] bytesArr)
+        public Image byteArrayToImage(byte[] bytesArr) // Convert byte to Array
         {
             using (MemoryStream memstr = new MemoryStream(bytesArr))
             {
@@ -217,7 +228,7 @@ namespace H3K.InterFace
             }
         }
 
-        private void ClearControl(Control control)
+        private void ClearControl(Control control) // Clear UserControl
         {
             foreach (Control k in control.Controls)
             {
@@ -321,6 +332,44 @@ namespace H3K.InterFace
 
         }
 
+        private void loadSearch(string keyword) // Search Movie
+        {
+            if (workLoad.Count != 0)
+            {
+                foreach (Thread k in workLoad)
+                {
+                    k.Abort();
+                }
+            }
+            Thread t = new Thread(() => {
+                ClearControl(list_item_movie);
+                loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
+                DataTable result = data.searchMovie(keyword).Tables[0];
+                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                foreach (DataRow item in result.Rows)
+                {
+                    list_item_movie.Invoke(new Action(() => {
+                        list_item_movie.Controls.Add(new Movie_Mange.MovieItem()
+                        {
+                            Movie_id = item["movie_id"].ToString(),
+                            Title = item["title"].ToString(),
+                            Content = item["plot"].ToString(),
+                            Rating = Convert.ToInt32(item["rating"]),
+                            Director = item["director"].ToString(),
+                            MovieLink = item["movie_link"].ToString(),
+                            ImageBackgournd = byteArrayToImage((byte[])(item["poster"])),
+                            Year = item["year_create"].ToString(),
+                            Nation = item["nation"].ToString()
+                        });
+                    }));
+                }
+            });
+            t.IsBackground = true;
+            workLoad.Add(t);
+            t.Start();
+            
+        }
+
         private void GenreChooseLoad(object sender, EventArgs e)
         {
             if(workLoad.Count != 0)
@@ -329,6 +378,7 @@ namespace H3K.InterFace
                 {
                     k.Abort();
                 }
+                workLoad.Clear();
             }
             Thread t = new Thread(() => {
                 loadMovie(Convert.ToInt32(Regex.Match(((Button)sender).Name, @"\d{1,}").Value));
@@ -341,6 +391,11 @@ namespace H3K.InterFace
 
 
 
+
+
+
         #endregion
+
+        
     }
 }

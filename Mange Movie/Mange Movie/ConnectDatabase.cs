@@ -11,6 +11,7 @@ namespace Mange_Movie
     class ConnectDatabase
     {
         public static string connectionString = @"Server=tcp:hunghuy2009.database.windows.net,1433;Initial Catalog=H3K;Persist Security Info=False;User ID=hunghuy2009;Password=Hunghuy123;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        //private static string connectionString = @"Server=DESKTOP-5EV3VQR\SQLEXPRESS;Database=DOAN;Trusted_Connection=True;MultipleActiveResultSets=true;";
         public SqlConnection data;
 
         public ConnectDatabase()
@@ -40,7 +41,7 @@ namespace Mange_Movie
             }
         }
 
-        public bool MovieAdd(string movieid,string title,string plot, int rating, string director, string movie_link,byte[] poster,string nation,string year)
+        public bool MovieAdd(string movieid,string title,string plot, int rating, string director, string movie_link,string poster_link,string nation,string year)
         {
             try
             {
@@ -54,7 +55,7 @@ namespace Mange_Movie
                     cmd.Parameters.AddWithValue("@Rating", rating);
                     cmd.Parameters.AddWithValue("@Director", director);
                     cmd.Parameters.AddWithValue("@Movie_Link", movie_link);
-                    cmd.Parameters.AddWithValue("@Poster", poster);
+                    cmd.Parameters.AddWithValue("@Poster", poster_link);
                     cmd.Parameters.AddWithValue("@Nation", nation);
                     cmd.Parameters.AddWithValue("@Year_Create", year);
                     cmd.Parameters.AddWithValue("@Views", 0);

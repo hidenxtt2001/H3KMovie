@@ -202,11 +202,21 @@ namespace H3K.InterFace
                     break;
                 case "favorite_show":
                     favorite_show_panel.BringToFront();
-                    loadfavorite();
+                    Thread t = new Thread(() => {
+                        loadfavorite();
+                    });
+                    t.IsBackground = true;
+                    workLoad.Add(t);
+                    t.Start();
                     break;
                 case "history_show":
                     history_show_panel.BringToFront();
-                    loadHistory();
+                    Thread k = new Thread(() => {
+                        loadHistory();
+                    });
+                    k.IsBackground = true;
+                    workLoad.Add(k);
+                    k.Start();
                     break;
             }
             selectPanel = (Button)sender;
@@ -248,52 +258,70 @@ namespace H3K.InterFace
         }
         private void loadHistory()// Load Movie History 
         {
-            ClearControl(movies_list_history);
-            loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
-            DataTable result = data.dataHistory(data.Account.Rows[0]["username"].ToString()).Tables[0];
-            loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
-            foreach (DataRow item in result.Rows)
+            try
             {
-                movies_list_history.Invoke(new Action(() => {
-                    movies_list_history.Controls.Add(new Movie_Mange.MovieItem()
-                    {
-                        Movie_id = item["movie_id"].ToString(),
-                        Title = item["title"].ToString(),
-                        Content = item["plot"].ToString(),
-                        Rating = Convert.ToInt32(item["rating"]),
-                        Director = item["director"].ToString(),
-                        MovieLink = item["movie_link"].ToString(),
-                        ImageBackgournd = byteArrayToImage((byte[])(item["poster"])),
-                        Year = item["year_create"].ToString(),
-                        Nation = item["nation"].ToString()
-                    });
-                }));
+                ClearControl(movies_list_history);
+                loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
+                DataTable result = data.dataHistory(data.Account.Rows[0]["username"].ToString()).Tables[0];
+                if (!workLoad.Contains(Thread.CurrentThread)) return;
+                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                foreach (DataRow item in result.Rows)
+                {
+                    if (workLoad.Contains(Thread.CurrentThread))
+                        movies_list_history.Invoke(new Action(() => {
+                            movies_list_history.Controls.Add(new Movie_Mange.MovieItem()
+                            {
+                                Movie_id = item["movie_id"].ToString(),
+                                Title = item["title"].ToString(),
+                                Content = item["plot"].ToString(),
+                                Rating = Convert.ToInt32(item["rating"]),
+                                Director = item["director"].ToString(),
+                                MovieLink = item["movie_link"].ToString(),
+                                Background_link = item["poster"].ToString(),
+                                Year = item["year_create"].ToString(),
+                                Nation = item["nation"].ToString()
+                            });
+                        }));
+                    else return;
+                }
             }
+            catch (Exception) { }
 
         }
 
         private void loadfavorite()// Load Movie Favorite 
         {
-            ClearControl(movies_list_favorite);
-            loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
-            DataTable result = data.dataFavorite(data.Account.Rows[0]["username"].ToString()).Tables[0];
-            loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
-            foreach (DataRow item in result.Rows)
+            try
             {
-                movies_list_favorite.Invoke(new Action(() => {
-                    movies_list_favorite.Controls.Add(new Movie_Mange.MovieItem()
-                    {
-                        Movie_id = item["movie_id"].ToString(),
-                        Title = item["title"].ToString(),
-                        Content = item["plot"].ToString(),
-                        Rating = Convert.ToInt32(item["rating"]),
-                        Director = item["director"].ToString(),
-                        MovieLink = item["movie_link"].ToString(),
-                        ImageBackgournd = byteArrayToImage((byte[])(item["poster"])),
-                        Year = item["year_create"].ToString(),
-                        Nation = item["nation"].ToString()
-                    });
-                }));
+                ClearControl(movies_list_favorite);
+                loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
+                DataTable result = data.dataFavorite(data.Account.Rows[0]["username"].ToString()).Tables[0];
+                if (!workLoad.Contains(Thread.CurrentThread)) return;
+                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                foreach (DataRow item in result.Rows)
+                {
+                    if (workLoad.Contains(Thread.CurrentThread))
+                        movies_list_favorite.Invoke(new Action(() =>
+                        {
+                            movies_list_favorite.Controls.Add(new Movie_Mange.MovieItem()
+                            {
+                                Movie_id = item["movie_id"].ToString(),
+                                Title = item["title"].ToString(),
+                                Content = item["plot"].ToString(),
+                                Rating = Convert.ToInt32(item["rating"]),
+                                Director = item["director"].ToString(),
+                                MovieLink = item["movie_link"].ToString(),
+                                Background_link = item["poster"].ToString(),
+                                Year = item["year_create"].ToString(),
+                                Nation = item["nation"].ToString()
+                            });
+                        }));
+                    else return;
+                }
+            }
+            catch (Exception)
+            {
+
             }
         }
 
@@ -305,23 +333,27 @@ namespace H3K.InterFace
             try
             {
                 DataTable result = data.dataMovie(genre).Tables[0];
-                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                if (!workLoad.Contains(Thread.CurrentThread)) return;
+                    loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
                 foreach (DataRow item in result.Rows)
                 {
-                    list_item_movie.Invoke(new Action(() => {
-                        list_item_movie.Controls.Add(new Movie_Mange.MovieItem()
+                    if (workLoad.Contains(Thread.CurrentThread))
+                        list_item_movie.Invoke(new Action(() =>
                         {
-                            Movie_id = item["movie_id"].ToString(),
-                            Title = item["title"].ToString(),
-                            Content = item["plot"].ToString(),
-                            Rating = Convert.ToInt32(item["rating"]),
-                            Director = item["director"].ToString(),
-                            MovieLink = item["movie_link"].ToString(),
-                            ImageBackgournd = byteArrayToImage((byte[])(item["poster"])),
-                            Year = item["year_create"].ToString(),
-                            Nation = item["nation"].ToString()
-                        });
-                    }));
+                            list_item_movie.Controls.Add(new Movie_Mange.MovieItem()
+                            {
+                                Movie_id = item["movie_id"].ToString(),
+                                Title = item["title"].ToString(),
+                                Content = item["plot"].ToString(),
+                                Rating = Convert.ToInt32(item["rating"]),
+                                Director = item["director"].ToString(),
+                                MovieLink = item["movie_link"].ToString(),
+                                Background_link = item["poster"].ToString(),
+                                Year = item["year_create"].ToString(),
+                                Nation = item["nation"].ToString()
+                            });
+                        }));
+                    else return;
                 }
             }
             catch (Exception)
@@ -357,7 +389,7 @@ namespace H3K.InterFace
                             Rating = Convert.ToInt32(item["rating"]),
                             Director = item["director"].ToString(),
                             MovieLink = item["movie_link"].ToString(),
-                            ImageBackgournd = byteArrayToImage((byte[])(item["poster"])),
+                            Background_link = item["poster"].ToString(),
                             Year = item["year_create"].ToString(),
                             Nation = item["nation"].ToString()
                         });
@@ -370,7 +402,7 @@ namespace H3K.InterFace
             
         }
 
-        private void GenreChooseLoad(object sender, EventArgs e)
+        private void GenreChooseLoad(object sender, EventArgs e) // Load Follow Genres
         {
             if(workLoad.Count != 0)
             {
@@ -387,12 +419,6 @@ namespace H3K.InterFace
             workLoad.Add(t);
             t.Start();
         }
-
-
-
-
-
-
 
         #endregion
 

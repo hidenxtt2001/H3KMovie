@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using System.Threading;
+using System.Text.RegularExpressions;
+using System.Windows.Media.Imaging;
+using System.Net;
+using System.IO;
 
 namespace H3K.InterFace.Movie_Mange
 {
@@ -25,6 +30,7 @@ namespace H3K.InterFace.Movie_Mange
         private string _director;
         private string _movieLink;
         private Image _background;
+        private string _background_link;
         private string _year;
         private string _nation;
 
@@ -71,6 +77,7 @@ namespace H3K.InterFace.Movie_Mange
         public string Year { get => _year; set => _year = value; }
         [Category("Custom")]
         public string Nation { get => _nation; set => _nation = value; }
+        public string Background_link { get => _background_link; set => _background_link = value; }
 
 
         #region Action on Hover
@@ -102,7 +109,38 @@ namespace H3K.InterFace.Movie_Mange
         private void MovieItem_Load(object sender, EventArgs e)
         {
             title.Text = _title;
-            poster.BackgroundImage = _background;
+            Thread t = new Thread(() => {
+                try
+                {
+                    _background = Image.FromStream(DownloadData("https://drive.google.com/uc?id=" + Regex.Match(Background_link, @"[-\w]{25,}").Value));
+                    this.Invoke(new Action(() => {
+                        poster.BackgroundImage = _background;
+                    }));
+                }
+                catch (Exception) {  }
+            });
+            t.IsBackground = true;
+            t.Start();
+        }
+
+        private Stream DownloadData(string url)
+        {
+            WebRequest req = WebRequest.Create(url);
+            WebResponse response = req.GetResponse();
+            return response.GetResponseStream();
+        }
+        public static byte[] ReadFully(Stream input)
+        {
+            byte[] buffer = new byte[16 * 1024];
+            using (MemoryStream ms = new MemoryStream())
+            {
+                int read;
+                while ((read = input.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    ms.Write(buffer, 0, read);
+                }
+                return ms.ToArray();
+            }
         }
 
         private void watch_click(object sender, EventArgs e)

@@ -38,7 +38,7 @@
             // 
             // poster
             // 
-            this.poster.BackColor = System.Drawing.Color.Salmon;
+            this.poster.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(147)))), ((int)(((byte)(191)))));
             this.poster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.poster.Dock = System.Windows.Forms.DockStyle.Top;
             this.poster.Location = new System.Drawing.Point(5, 5);

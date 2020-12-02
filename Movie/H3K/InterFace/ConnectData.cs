@@ -12,6 +12,7 @@ namespace H3K.InterFace
     public class ConnectData
     {
         private static string connectionString = @"Server=tcp:hunghuy2009.database.windows.net,1433;Initial Catalog=H3K;Persist Security Info=False;User ID=hunghuy2009;Password=Hunghuy123;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        //private static string connectionString = @"Server=DESKTOP-5EV3VQR\SQLEXPRESS;Database=DOAN;Trusted_Connection=True;MultipleActiveResultSets=true;";
         private SqlConnection data { get; set; }
 
         private DataTable _account;
@@ -41,7 +42,7 @@ namespace H3K.InterFace
             catch (Exception ex)
             {
                 data.Close();
-                if (ex.Message == "The connection was not closed. The connection's current state is connecting.")
+                if (!ex.Message.Contains("Thread was being aborted"))
                 {
                     return dataMovie(genreid);
                 }
@@ -198,7 +199,13 @@ namespace H3K.InterFace
             }
             catch (Exception ex)
             {
+
                 data.Close();
+                if (!ex.Message.Contains("Thread was being aborted"))
+                {
+                    return searchMovie(keyword);
+                }
+                else Console.WriteLine(ex.Message);
                 return null;
             }
         }

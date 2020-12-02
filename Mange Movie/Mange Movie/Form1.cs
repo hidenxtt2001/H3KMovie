@@ -144,7 +144,7 @@ namespace Mange_Movie
                 string movieid = Regex.Match(textBox5.Text, @"d\/(.*?)\/view").Groups[1].Value;
                 if (!data.checkExist(movieid))
                 {
-                    if (data.MovieAdd(movieid, textBox1.Text, textBox2.Text, Convert.ToInt32(numericUpDown1.Value), textBox4.Text, textBox5.Text, ImageToByteArray(pictureBox1.Image), textBox7.Text, textBox6.Text) && data.MovieGenresAdd(getGenre(movieid)))
+                    if (data.MovieAdd(movieid, textBox1.Text, textBox2.Text, Convert.ToInt32(numericUpDown1.Value), textBox4.Text, textBox5.Text, textBox3.Text, textBox7.Text, textBox6.Text) && data.MovieGenresAdd(getGenre(movieid)))
                     {
                         MessageBox.Show("Thêm thành công");
                     }
@@ -154,6 +154,7 @@ namespace Mange_Movie
                         MessageBox.Show("Thêm thất bại");
                     }
                 }
+                else MessageBox.Show("Đã tồn tại phim trong cơ sở dữ liệu !");
             }
             else
                 MessageBox.Show("Điền đầy đủ thông tin");

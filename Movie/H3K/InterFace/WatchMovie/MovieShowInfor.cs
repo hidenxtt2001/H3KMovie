@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -73,16 +74,27 @@ namespace H3K.InterFace.WatchMovie
                 
             }
         }
-        #endregion
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        #endregion
 
+        #region Form Load
         private void MovieShowInfor_Load(object sender, EventArgs e)
         {
-            poster.BackgroundImage = movieItem.ImageBackgournd;
+            // Waitting Backgroundload
+            Thread t = new Thread(() => { 
+                while (movieItem.ImageBackgournd == null)
+                {
+                    this.Invoke(new Action(() => { poster.BackgroundImage = movieItem.ImageBackgournd; }));
+                }
+                Console.WriteLine("Set up xong hinh");
+            });
+            t.IsBackground = true;
+            t.Start();
+
+            // Set information
             rating.Point = movieItem.Rating;
             point.Text = movieItem.Rating + "/100";
             director.Text = movieItem.Director;
@@ -91,6 +103,7 @@ namespace H3K.InterFace.WatchMovie
             content.SelectAll();
             content.SelectionAlignment = HorizontalAlignment.Center;
 
+            // set Flag favorite 
             setFlagLoad();
         }
 
@@ -107,14 +120,17 @@ namespace H3K.InterFace.WatchMovie
                 mark_flag.Tag = 0;
             }
         }
+        #endregion
+
+        #region Favorite Action
         private void mark_flag_Click(object sender, EventArgs e)
         {
             setFlag();
         }
         private void setFlag()
         {
-            
-            if ( Convert.ToInt32(mark_flag.Tag) == 0)
+
+            if (Convert.ToInt32(mark_flag.Tag) == 0)
             {
                 data.setFavorite(data.Account.Rows[0]["username"].ToString(), movieItem.Movie_id);
                 mark_flag.Image = Mark.Images[1];
@@ -125,11 +141,12 @@ namespace H3K.InterFace.WatchMovie
                 data.delFavorite(data.Account.Rows[0]["username"].ToString(), movieItem.Movie_id);
                 mark_flag.Image = Mark.Images[0];
                 mark_flag.Tag = 0;
-            } 
-                
+            }
+
         }
+        #endregion
 
-
+        #region Watch Movie
         private void watch_movie_Click(object sender, EventArgs e)
         {
             MovieShow form = new MovieShow(movieItem.Movie_id,movieItem.Title);
@@ -139,6 +156,8 @@ namespace H3K.InterFace.WatchMovie
             form.ShowDialog();
             this.Close();
         }
+        #endregion
+        
 
         
     }

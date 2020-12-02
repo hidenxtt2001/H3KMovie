@@ -29,7 +29,7 @@ namespace H3K.InterFace.Movie_Mange
         private int _rating;
         private string _director;
         private string _movieLink;
-        private Image _background;
+        private Image _background =null;
         private string _background_link;
         private string _year;
         private string _nation;
@@ -116,6 +116,7 @@ namespace H3K.InterFace.Movie_Mange
                     this.Invoke(new Action(() => {
                         poster.BackgroundImage = _background;
                     }));
+                    Console.WriteLine("Load Xong Hinh");
                 }
                 catch (Exception) {  }
             });

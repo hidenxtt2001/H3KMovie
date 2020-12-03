@@ -96,9 +96,10 @@ namespace Mange_Movie
                 
                     try
                     {
-                        pictureBox1.Load("https://drive.google.com/uc?id=" + Regex.Match(textBox3.Text, @"[-\w]{25,}").Value);
+                        pictureBox1.Load("https://drive.google.com/uc?export=download&id=" + Regex.Match(textBox3.Text, @"[-\w]{25,}").Value);
+                        //pictureBox1.Load("https://photos.google.com/photo/AF1QipO7flrOJ8D4RdNYV4psVceNgaBgBsRJrnZC23zw");
                     }
-                    catch (Exception) { MessageBox.Show("Lỗi link ảnh"); }
+                    catch (Exception ex) { MessageBox.Show("Lỗi link ảnh"); }
                 
             }
             else

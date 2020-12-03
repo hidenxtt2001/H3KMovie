@@ -112,13 +112,13 @@ namespace H3K.InterFace.Movie_Mange
             Thread t = new Thread(() => {
                 try
                 {
-                    _background = Image.FromStream(DownloadData("https://drive.google.com/uc?id=" + Regex.Match(Background_link, @"[-\w]{25,}").Value));
+                    _background = Image.FromStream(DownloadData("https://drive.google.com/uc?export=download&id=" + Regex.Match(Background_link, @"[-\w]{25,}").Value));
                     this.Invoke(new Action(() => {
                         poster.BackgroundImage = _background;
                     }));
                     Console.WriteLine("Load Xong Hinh");
                 }
-                catch (Exception) {  }
+                catch (Exception ex) { Console.WriteLine(ex.Message); }
             });
             t.IsBackground = true;
             t.Start();
@@ -126,9 +126,14 @@ namespace H3K.InterFace.Movie_Mange
 
         private Stream DownloadData(string url)
         {
-            WebRequest req = WebRequest.Create(url);
-            WebResponse response = req.GetResponse();
-            return response.GetResponseStream();
+            HttpWebRequest webRequest = (System.Net.HttpWebRequest)System.Net.HttpWebRequest.Create(url);
+            webRequest.AllowWriteStreamBuffering = true;
+            webRequest.Timeout = 30000;
+
+            System.Net.WebResponse webResponse = webRequest.GetResponse();
+
+            return webResponse.GetResponseStream();
+            
         }
         public static byte[] ReadFully(Stream input)
         {

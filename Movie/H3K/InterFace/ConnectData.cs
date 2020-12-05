@@ -24,6 +24,13 @@ namespace H3K.InterFace
             data = new SqlConnection(connectionString);
             _account = new DataTable();
         }
+
+        #region LoadData
+        /// <summary>
+        /// Load Data From Database
+        /// </summary>
+        /// <param name="genreid"></param>
+        /// <returns></returns>      
         public DataSet dataMovie(int genreid) // Get Movie follow genre
         {
             try
@@ -63,8 +70,42 @@ namespace H3K.InterFace
             data.Close();
             return result;
         }
+        public bool UpdateAccount()
+        {
+            try
+            {
+                data.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = data;
+                    cmd.CommandText = "SELECT * FROM Account WHERE username=@USERNAME";
+                    cmd.Parameters.AddWithValue("@USERNAME", _account.Rows[0]["username"].ToString());
+                    using (SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                    {
+                        if (reader.HasRows)
+                        {
+                            _account.Load(reader);
+                            return true;
+                        }
+                        return false;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                data.Close();
+                return false;
+            }
+        }
+        public void Logout() // Logout Account
+        {
+            if (Account != null) _account = null;
+        }
 
-        public bool Login(string username,string password) // Check Login
+        #endregion
+
+        #region Login Action
+        public bool Login(string username, string password) // Check Login
         {
             try
             {
@@ -107,7 +148,7 @@ namespace H3K.InterFace
                     cmd.Parameters.AddWithValue("@EMAIL", email);
                     using (SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
                     {
-                        if(reader.Read())
+                        if (reader.Read())
                         {
                             return false;
                         }
@@ -129,88 +170,10 @@ namespace H3K.InterFace
                 return false;
             }
         }
+        #endregion
 
-        public DataSet dataHistory(string username) // Get History Movie of Account
-        {
-            try
-            {
-                data.Open();
-                DataSet result = new DataSet();
-                using (SqlDataAdapter da = new SqlDataAdapter(@"select mv.* from History his join Account ac on his.username = ac.username join Movies mv on mv.movie_id = his.movie_id where ac.username = @username", data))
-                {
-                    da.SelectCommand.Parameters.AddWithValue("@username", username);
-                    da.Fill(result);
-                    da.Dispose();
-                }
-                data.Close();
-                return result;
-            }
-            catch (Exception ex)
-            {
-                data.Close();
-                if (ex.Message.Contains("The connection was not closed. The connection's current state is open."))
-                {
-                    return dataHistory(username);
-                }
-                return null;
-            }
-        }
-
-        public DataSet dataFavorite(string username) // Get Favorite Movie Of Account
-        {
-            try
-            {
-                data.Open();
-                DataSet result = new DataSet();
-                using (SqlDataAdapter da = new SqlDataAdapter(@"select mv.* from Favorite fv join Account ac on fv.username = ac.username join Movies mv on mv.movie_id = fv.movie_id where ac.username = @username ", data))
-                {
-                    da.SelectCommand.Parameters.AddWithValue("@username", username);
-                    da.Fill(result);
-                    da.Dispose();
-                }
-                data.Close();
-                return result;
-            }
-            catch (Exception ex)
-            {
-                data.Close();
-                if (ex.Message.Contains("The connection was not closed. The connection's current state is open."))
-                {
-                    return dataFavorite(username);
-                }
-                return null;
-            }
-        }
-
-        public DataSet searchMovie(string keyword)
-        {
-            try
-            {
-                data.Open();
-                DataSet result = new DataSet();
-                using (SqlDataAdapter da = new SqlDataAdapter(@"SELECT *  FROM Movies WHERE LOWER(title) LIKE LOWER(@keyword)", data))
-                {
-                    da.SelectCommand.Parameters.AddWithValue("@keyword","%"+keyword+"%");
-                    da.Fill(result);
-                    da.Dispose();
-                }
-                data.Close();
-                return result;
-            }
-            catch (Exception ex)
-            {
-
-                data.Close();
-                if (!ex.Message.Contains("Thread was being aborted"))
-                {
-                    return searchMovie(keyword);
-                }
-                else Console.WriteLine(ex.Message);
-                return null;
-            }
-        }
-
-        public bool setFavorite(string username,string movie_id)
+        #region Data Account
+        public bool setFavorite(string username, string movie_id)
         {
             try
             {
@@ -231,7 +194,6 @@ namespace H3K.InterFace
                 return false;
             }
         }
-
         public bool delFavorite(string username, string movie_id)
         {
             try
@@ -253,7 +215,6 @@ namespace H3K.InterFace
                 return false;
             }
         }
-
         public bool checkFavorite(string username, string movie_id)
         {
             try
@@ -281,7 +242,6 @@ namespace H3K.InterFace
                 return false;
             }
         }
-
         public bool checkHistory(string username, string movie_id)
         {
             try
@@ -331,38 +291,87 @@ namespace H3K.InterFace
                 return false;
             }
         }
-
-        public bool UpdateAccount()
+        public DataSet dataHistory(string username) // Get History Movie of Account
         {
             try
             {
                 data.Open();
-                using (SqlCommand cmd = new SqlCommand())
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"select mv.* from History his join Account ac on his.username = ac.username join Movies mv on mv.movie_id = his.movie_id where ac.username = @username", data))
                 {
-                    cmd.Connection = data;
-                    cmd.CommandText = "SELECT * FROM Account WHERE username=@USERNAME";
-                    cmd.Parameters.AddWithValue("@USERNAME", _account.Rows[0]["username"].ToString());
-                    using (SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
-                    {
-                        if (reader.HasRows)
-                        {
-                            _account.Load(reader);
-                            return true;
-                        }
-                        return false;
-                    }
+                    da.SelectCommand.Parameters.AddWithValue("@username", username);
+                    da.Fill(result);
+                    da.Dispose();
                 }
+                data.Close();
+                return result;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 data.Close();
-                return false;
+                if (ex.Message.Contains("The connection was not closed. The connection's current state is open."))
+                {
+                    return dataHistory(username);
+                }
+                return null;
             }
         }
-
-        public void Logout() // Logout Account
+        public DataSet dataFavorite(string username) // Get Favorite Movie Of Account
         {
-            if (Account != null) _account = null;
+            try
+            {
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"select mv.* from Favorite fv join Account ac on fv.username = ac.username join Movies mv on mv.movie_id = fv.movie_id where ac.username = @username ", data))
+                {
+                    da.SelectCommand.Parameters.AddWithValue("@username", username);
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                data.Close();
+                if (ex.Message.Contains("The connection was not closed. The connection's current state is open."))
+                {
+                    return dataFavorite(username);
+                }
+                return null;
+            }
         }
+        #endregion
+
+        public DataSet searchMovie(string keyword)
+        {
+            try
+            {
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"SELECT *  FROM Movies WHERE LOWER(title) LIKE LOWER(@keyword)", data))
+                {
+                    da.SelectCommand.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
+            }
+            catch (Exception ex)
+            {
+
+                data.Close();
+                if (!ex.Message.Contains("Thread was being aborted"))
+                {
+                    return searchMovie(keyword);
+                }
+                else Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+        
+
+        
     }
 }

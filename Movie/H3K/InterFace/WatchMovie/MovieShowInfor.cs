@@ -87,8 +87,9 @@ namespace H3K.InterFace.WatchMovie
             Thread t = new Thread(() => { 
                 while (movieItem.ImageBackgournd == null)
                 {
-                    this.Invoke(new Action(() => { poster.BackgroundImage = movieItem.ImageBackgournd; }));
+                    continue;
                 }
+                this.Invoke(new Action(() => { poster.BackgroundImage = movieItem.ImageBackgournd; }));
                 Console.WriteLine("Set up xong hinh");
             });
             t.IsBackground = true;

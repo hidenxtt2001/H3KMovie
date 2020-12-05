@@ -60,6 +60,14 @@ namespace H3K.InterFace
             {
                 this.Close();
             }
+            else
+            {
+                if (!(bool)data.Account.Rows[0]["manage"])
+                {
+                    manage_show.Enabled = false;
+                    manage_show.Visible = false;
+                }
+            }
         }
         private void MainMenu_Shown(object sender, EventArgs e)
         {
@@ -178,7 +186,7 @@ namespace H3K.InterFace
             if (selectPanel != null)
             {
                 selectPanel.BackColor = Color.FromArgb(23, 27, 41);
-                switch (((Button)sender).Name)
+                switch (selectPanel.Name)
                 {
                     case "movie_show":
                         ClearControl(list_item_movie);
@@ -217,6 +225,9 @@ namespace H3K.InterFace
                     k.IsBackground = true;
                     workLoad.Add(k);
                     k.Start();
+                    break;
+                case "manage_show":
+                    manage_show_panel.BringToFront();
                     break;
             }
             selectPanel = (Button)sender;
@@ -421,6 +432,7 @@ namespace H3K.InterFace
         }
 
         #endregion
+
 
         
     }

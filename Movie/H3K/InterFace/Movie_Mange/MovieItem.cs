@@ -21,8 +21,14 @@ namespace H3K.InterFace.Movie_Mange
         public MovieItem()
         {
             InitializeComponent();
+            this.Disposed += OnDispose;
         }
 
+        private void OnDispose(object sender, EventArgs e)
+        {
+            _background = null;
+            poster.BackgroundImage = null;
+        }
         private string _movie_id;
         private string _title;
         private string _content;

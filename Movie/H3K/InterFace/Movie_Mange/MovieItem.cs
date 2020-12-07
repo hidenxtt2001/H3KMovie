@@ -118,7 +118,7 @@ namespace H3K.InterFace.Movie_Mange
             Thread t = new Thread(() => {
                 try
                 {
-                    _background = Image.FromStream(DownloadData("https://drive.google.com/uc?export=download&id=" + Regex.Match(Background_link, @"[-\w]{25,}").Value));
+                    _background = Image.FromStream(DownloadData(Background_link));
                     this.Invoke(new Action(() => {
                         poster.BackgroundImage = _background;
                     }));
@@ -134,11 +134,22 @@ namespace H3K.InterFace.Movie_Mange
         {
             HttpWebRequest webRequest = (System.Net.HttpWebRequest)System.Net.HttpWebRequest.Create(url);
             webRequest.AllowWriteStreamBuffering = true;
+            webRequest.UseDefaultCredentials = true;
+            webRequest.Proxy.Credentials = System.Net.CredentialCache.DefaultCredentials;
             webRequest.Timeout = 30000;
 
-            System.Net.WebResponse webResponse = webRequest.GetResponse();
+            try
+            {
+                System.Net.WebResponse webResponse = webRequest.GetResponse();
 
-            return webResponse.GetResponseStream();
+                return webResponse.GetResponseStream();
+            }
+            catch(WebException ex)
+            {
+                System.Net.WebResponse webResponse = ex.Response;
+                return webResponse.GetResponseStream();
+
+            }
             
         }
         public static byte[] ReadFully(Stream input)

@@ -1,10 +1,13 @@
-﻿using System;
+﻿using H3K.InterFace.Sign_Form;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -120,7 +123,7 @@ namespace H3K.InterFace
         #region Search Action
         private void search_input_Leave(object sender, EventArgs e)
         {
-            if(search_input.Text.Replace(" ",string.Empty) == string.Empty)
+            if (search_input.Text.Replace(" ", string.Empty) == string.Empty)
             {
                 search_input.Text = "Search";
             }
@@ -135,13 +138,13 @@ namespace H3K.InterFace
         }
         private void search_input_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 loadSearch(search_input.Text);
             }
         }
 
-        
+
         #endregion
 
         #region Category Movie
@@ -210,7 +213,8 @@ namespace H3K.InterFace
                     break;
                 case "favorite_show":
                     favorite_show_panel.BringToFront();
-                    Thread t = new Thread(() => {
+                    Thread t = new Thread(() =>
+                    {
                         loadfavorite();
                     });
                     t.IsBackground = true;
@@ -219,7 +223,8 @@ namespace H3K.InterFace
                     break;
                 case "history_show":
                     history_show_panel.BringToFront();
-                    Thread k = new Thread(() => {
+                    Thread k = new Thread(() =>
+                    {
                         loadHistory();
                     });
                     k.IsBackground = true;
@@ -253,11 +258,12 @@ namespace H3K.InterFace
         {
             foreach (Control k in control.Controls)
             {
-                control.BeginInvoke(new Action(() => {
+                control.BeginInvoke(new Action(() =>
+                {
                     control.Controls.Remove(k);
                     k.Dispose();
                 }));
-                
+
             }
 
             control.Invoke(new Action(() => { control.Controls.Clear(); }));
@@ -279,7 +285,8 @@ namespace H3K.InterFace
                 foreach (DataRow item in result.Rows)
                 {
                     if (workLoad.Contains(Thread.CurrentThread))
-                        movies_list_history.Invoke(new Action(() => {
+                        movies_list_history.Invoke(new Action(() =>
+                        {
                             movies_list_history.Controls.Add(new Movie_Mange.MovieItem()
                             {
                                 Movie_id = item["movie_id"].ToString(),
@@ -345,7 +352,7 @@ namespace H3K.InterFace
             {
                 DataTable result = data.dataMovie(genre).Tables[0];
                 if (!workLoad.Contains(Thread.CurrentThread)) return;
-                    loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
                 foreach (DataRow item in result.Rows)
                 {
                     if (workLoad.Contains(Thread.CurrentThread))
@@ -371,7 +378,7 @@ namespace H3K.InterFace
             {
 
             }
-            
+
 
         }
 
@@ -384,14 +391,16 @@ namespace H3K.InterFace
                     k.Abort();
                 }
             }
-            Thread t = new Thread(() => {
+            Thread t = new Thread(() =>
+            {
                 ClearControl(list_item_movie);
                 loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
                 DataTable result = data.searchMovie(keyword).Tables[0];
                 loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
                 foreach (DataRow item in result.Rows)
                 {
-                    list_item_movie.Invoke(new Action(() => {
+                    list_item_movie.Invoke(new Action(() =>
+                    {
                         list_item_movie.Controls.Add(new Movie_Mange.MovieItem()
                         {
                             Movie_id = item["movie_id"].ToString(),
@@ -410,20 +419,21 @@ namespace H3K.InterFace
             t.IsBackground = true;
             workLoad.Add(t);
             t.Start();
-            
+
         }
 
         private void GenreChooseLoad(object sender, EventArgs e) // Load Follow Genres
         {
-            if(workLoad.Count != 0)
+            if (workLoad.Count != 0)
             {
-                foreach(Thread k in workLoad)
+                foreach (Thread k in workLoad)
                 {
                     k.Abort();
                 }
                 workLoad.Clear();
             }
-            Thread t = new Thread(() => {
+            Thread t = new Thread(() =>
+            {
                 loadMovie(Convert.ToInt32(Regex.Match(((Button)sender).Name, @"\d{1,}").Value));
             });
             t.IsBackground = true;
@@ -433,6 +443,91 @@ namespace H3K.InterFace
 
         #endregion
 
+        #region Manage Movie
+
+        private void manage_poster_link_Leave(object sender, EventArgs e)
+        {
+            if (manage_poster_link.Text != string.Empty && IsImageUrl(manage_poster_link.Text))
+            {
+                manage_poster.Image =  Image.FromStream(DownloadData(manage_poster_link.Text));
+            }
+            else
+            {
+                MessageWarning message = new MessageWarning("Link poster không hợp lệ");
+                message.ShowDialog();
+            }
+        }
+
+        public bool IsImageUrl(string URL) // Check if url is a image or not  
+        {
+            var req = (HttpWebRequest)HttpWebRequest.Create(URL);
+            req.Method = "HEAD";
+            using (var resp = req.GetResponse())
+            {
+                return resp.ContentType.ToLower(CultureInfo.InvariantCulture)
+                           .StartsWith("image/");
+            }
+        }
+
+        private Stream DownloadData(string url) // Download image to poster
+        {
+            HttpWebRequest webRequest = (System.Net.HttpWebRequest)System.Net.HttpWebRequest.Create(url);
+            webRequest.AllowWriteStreamBuffering = true;
+            webRequest.Timeout = 30000;
+
+            System.Net.WebResponse webResponse = webRequest.GetResponse();
+
+            return webResponse.GetResponseStream();
+
+        }
+
+        private void AddMovie_Click(object sender, EventArgs e)
+        {
+            MessageWarning message = new MessageWarning("");
+            if (manage_title.Text != string.Empty && manage_poster_link.Text != string.Empty && manage_movie_link.Text != string.Empty)
+            {
+                string movieid = Regex.Match(manage_movie_link.Text, @"d\/(.*?)\/view").Groups[1].Value;
+                if (!data.checkExist(movieid))
+                {
+                    if (data.MovieAdd(movieid, manage_title.Text, manage_content.Text, Convert.ToInt32(manage_rating.Value), manage_director.Text, manage_movie_link.Text, manage_poster_link.Text, manage_nation.Text, manage_year.Value.ToString()) && data.MovieGenresAdd(getGenre(movieid)))
+                    {
+                        message.message = "Thêm thành công";
+                        message.ShowDialog();
+                    }
+                    else
+                    {
+                        if (data.checkExist(movieid)) data.MovieDel(movieid);
+                        message.message = "Thêm thất bại";
+                        message.ShowDialog();
+                    }
+                }
+                else
+                {
+                    message.message = "Đã tồn tại phim trong cơ sở dữ liệu !";
+                    message.ShowDialog();
+                }
+            }
+            else
+            {
+                message.message = "Vui lòng điền đầy đủ thông tin !";
+                message.ShowDialog();
+            }
+        }
+        public string[] getGenre(string movieid)
+        {
+            List<string> result = new List<string>();
+            foreach (CheckBox genre in flowLayoutPanel2.Controls)
+            {
+                if (genre.Checked)
+                {
+                    result.Add(string.Format("(N'{0}',{1})", movieid, genre.Name.Replace("manage_genre", string.Empty)));
+                }
+            }
+            return result.ToArray();
+        }
+
+
+        #endregion
 
         
     }

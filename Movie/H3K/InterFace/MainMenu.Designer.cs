@@ -45,6 +45,46 @@
             this.common = new System.Windows.Forms.Panel();
             this.manage_show_panel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.AddMovie = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.manage_genre1 = new System.Windows.Forms.CheckBox();
+            this.manage_genre2 = new System.Windows.Forms.CheckBox();
+            this.manage_genre3 = new System.Windows.Forms.CheckBox();
+            this.manage_genre4 = new System.Windows.Forms.CheckBox();
+            this.manage_genre5 = new System.Windows.Forms.CheckBox();
+            this.manage_genre6 = new System.Windows.Forms.CheckBox();
+            this.manage_genre7 = new System.Windows.Forms.CheckBox();
+            this.manage_genre8 = new System.Windows.Forms.CheckBox();
+            this.manage_genre9 = new System.Windows.Forms.CheckBox();
+            this.manage_genre10 = new System.Windows.Forms.CheckBox();
+            this.manage_genre11 = new System.Windows.Forms.CheckBox();
+            this.manage_genre12 = new System.Windows.Forms.CheckBox();
+            this.manage_genre13 = new System.Windows.Forms.CheckBox();
+            this.manage_genre14 = new System.Windows.Forms.CheckBox();
+            this.manage_genre15 = new System.Windows.Forms.CheckBox();
+            this.manage_genre16 = new System.Windows.Forms.CheckBox();
+            this.manage_genre17 = new System.Windows.Forms.CheckBox();
+            this.manage_genre18 = new System.Windows.Forms.CheckBox();
+            this.manage_genre19 = new System.Windows.Forms.CheckBox();
+            this.manage_genre20 = new System.Windows.Forms.CheckBox();
+            this.manage_genre21 = new System.Windows.Forms.CheckBox();
+            this.manage_genre22 = new System.Windows.Forms.CheckBox();
+            this.manage_genre23 = new System.Windows.Forms.CheckBox();
+            this.manage_rating = new System.Windows.Forms.NumericUpDown();
+            this.manage_year = new System.Windows.Forms.NumericUpDown();
+            this.manage_poster = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.manage_nation = new System.Windows.Forms.TextBox();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.manage_director = new System.Windows.Forms.TextBox();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.manage_content = new System.Windows.Forms.RichTextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.manage_poster_link = new System.Windows.Forms.TextBox();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -118,52 +158,19 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.manage_content = new System.Windows.Forms.RichTextBox();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.manage_director = new System.Windows.Forms.TextBox();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.manage_nation = new System.Windows.Forms.TextBox();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.manage_poster = new System.Windows.Forms.PictureBox();
-            this.manage_year = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
-            this.manage_rating = new System.Windows.Forms.NumericUpDown();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.manage_genre1 = new System.Windows.Forms.CheckBox();
-            this.manage_genre2 = new System.Windows.Forms.CheckBox();
-            this.manage_genre3 = new System.Windows.Forms.CheckBox();
-            this.manage_genre4 = new System.Windows.Forms.CheckBox();
-            this.manage_genre5 = new System.Windows.Forms.CheckBox();
-            this.manage_genre6 = new System.Windows.Forms.CheckBox();
-            this.manage_genre7 = new System.Windows.Forms.CheckBox();
-            this.manage_genre8 = new System.Windows.Forms.CheckBox();
-            this.manage_genre9 = new System.Windows.Forms.CheckBox();
-            this.manage_genre10 = new System.Windows.Forms.CheckBox();
-            this.manage_genre11 = new System.Windows.Forms.CheckBox();
-            this.manage_genre12 = new System.Windows.Forms.CheckBox();
-            this.manage_genre13 = new System.Windows.Forms.CheckBox();
-            this.manage_genre14 = new System.Windows.Forms.CheckBox();
-            this.manage_genre15 = new System.Windows.Forms.CheckBox();
-            this.manage_genre16 = new System.Windows.Forms.CheckBox();
-            this.manage_genre17 = new System.Windows.Forms.CheckBox();
-            this.manage_genre18 = new System.Windows.Forms.CheckBox();
-            this.manage_genre19 = new System.Windows.Forms.CheckBox();
-            this.manage_genre20 = new System.Windows.Forms.CheckBox();
-            this.manage_genre21 = new System.Windows.Forms.CheckBox();
-            this.manage_genre22 = new System.Windows.Forms.CheckBox();
-            this.manage_genre23 = new System.Windows.Forms.CheckBox();
-            this.AddMovie = new System.Windows.Forms.Button();
             this.form_born.SuspendLayout();
             this.menu_panel.SuspendLayout();
             this.action_panel.SuspendLayout();
             this.common.SuspendLayout();
             this.manage_show_panel.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_rating)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_year)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_poster)).BeginInit();
+            this.panel16.SuspendLayout();
+            this.panel14.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -179,13 +186,6 @@
             this.control.SuspendLayout();
             this.control_button.SuspendLayout();
             this.search_panel.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_poster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_year)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_rating)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // icon_mainmenu
@@ -429,6 +429,459 @@
             this.panel4.Size = new System.Drawing.Size(1176, 413);
             this.panel4.TabIndex = 2;
             // 
+            // AddMovie
+            // 
+            this.AddMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddMovie.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddMovie.ForeColor = System.Drawing.Color.White;
+            this.AddMovie.Location = new System.Drawing.Point(948, 346);
+            this.AddMovie.Name = "AddMovie";
+            this.AddMovie.Size = new System.Drawing.Size(159, 44);
+            this.AddMovie.TabIndex = 14;
+            this.AddMovie.Text = "Add Movie";
+            this.AddMovie.UseVisualStyleBackColor = true;
+            this.AddMovie.Click += new System.EventHandler(this.AddMovie_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.flowLayoutPanel2);
+            this.groupBox1.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(49, 200);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(477, 193);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Genres";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre1);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre2);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre3);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre4);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre5);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre6);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre7);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre8);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre9);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre10);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre11);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre12);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre13);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre14);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre15);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre16);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre17);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre18);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre19);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre20);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre21);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre22);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre23);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 23);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(471, 167);
+            this.flowLayoutPanel2.TabIndex = 0;
+            // 
+            // manage_genre1
+            // 
+            this.manage_genre1.AutoSize = true;
+            this.manage_genre1.Checked = true;
+            this.manage_genre1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.manage_genre1.Enabled = false;
+            this.manage_genre1.Location = new System.Drawing.Point(3, 3);
+            this.manage_genre1.Name = "manage_genre1";
+            this.manage_genre1.Size = new System.Drawing.Size(55, 24);
+            this.manage_genre1.TabIndex = 0;
+            this.manage_genre1.Text = "All";
+            this.manage_genre1.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre2
+            // 
+            this.manage_genre2.AutoSize = true;
+            this.manage_genre2.Location = new System.Drawing.Point(64, 3);
+            this.manage_genre2.Name = "manage_genre2";
+            this.manage_genre2.Size = new System.Drawing.Size(109, 24);
+            this.manage_genre2.TabIndex = 1;
+            this.manage_genre2.Text = "Animation";
+            this.manage_genre2.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre3
+            // 
+            this.manage_genre3.AutoSize = true;
+            this.manage_genre3.Location = new System.Drawing.Point(179, 3);
+            this.manage_genre3.Name = "manage_genre3";
+            this.manage_genre3.Size = new System.Drawing.Size(82, 24);
+            this.manage_genre3.TabIndex = 2;
+            this.manage_genre3.Text = "Action";
+            this.manage_genre3.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre4
+            // 
+            this.manage_genre4.AutoSize = true;
+            this.manage_genre4.Location = new System.Drawing.Point(267, 3);
+            this.manage_genre4.Name = "manage_genre4";
+            this.manage_genre4.Size = new System.Drawing.Size(109, 24);
+            this.manage_genre4.TabIndex = 3;
+            this.manage_genre4.Text = "Adventure";
+            this.manage_genre4.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre5
+            // 
+            this.manage_genre5.AutoSize = true;
+            this.manage_genre5.Location = new System.Drawing.Point(382, 3);
+            this.manage_genre5.Name = "manage_genre5";
+            this.manage_genre5.Size = new System.Drawing.Size(82, 24);
+            this.manage_genre5.TabIndex = 4;
+            this.manage_genre5.Text = "Comedy";
+            this.manage_genre5.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre6
+            // 
+            this.manage_genre6.AutoSize = true;
+            this.manage_genre6.Location = new System.Drawing.Point(3, 33);
+            this.manage_genre6.Name = "manage_genre6";
+            this.manage_genre6.Size = new System.Drawing.Size(73, 24);
+            this.manage_genre6.TabIndex = 5;
+            this.manage_genre6.Text = "Crime";
+            this.manage_genre6.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre7
+            // 
+            this.manage_genre7.AutoSize = true;
+            this.manage_genre7.Location = new System.Drawing.Point(82, 33);
+            this.manage_genre7.Name = "manage_genre7";
+            this.manage_genre7.Size = new System.Drawing.Size(100, 24);
+            this.manage_genre7.TabIndex = 6;
+            this.manage_genre7.Text = "Document";
+            this.manage_genre7.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre8
+            // 
+            this.manage_genre8.AutoSize = true;
+            this.manage_genre8.Location = new System.Drawing.Point(188, 33);
+            this.manage_genre8.Name = "manage_genre8";
+            this.manage_genre8.Size = new System.Drawing.Size(73, 24);
+            this.manage_genre8.TabIndex = 7;
+            this.manage_genre8.Text = "Drama";
+            this.manage_genre8.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre9
+            // 
+            this.manage_genre9.AutoSize = true;
+            this.manage_genre9.Location = new System.Drawing.Point(267, 33);
+            this.manage_genre9.Name = "manage_genre9";
+            this.manage_genre9.Size = new System.Drawing.Size(82, 24);
+            this.manage_genre9.TabIndex = 8;
+            this.manage_genre9.Text = "Family";
+            this.manage_genre9.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre10
+            // 
+            this.manage_genre10.AutoSize = true;
+            this.manage_genre10.Location = new System.Drawing.Point(355, 33);
+            this.manage_genre10.Name = "manage_genre10";
+            this.manage_genre10.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre10.TabIndex = 9;
+            this.manage_genre10.Text = "Fantasy";
+            this.manage_genre10.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre11
+            // 
+            this.manage_genre11.AutoSize = true;
+            this.manage_genre11.Location = new System.Drawing.Point(3, 63);
+            this.manage_genre11.Name = "manage_genre11";
+            this.manage_genre11.Size = new System.Drawing.Size(109, 24);
+            this.manage_genre11.TabIndex = 10;
+            this.manage_genre11.Text = "Film-Noir";
+            this.manage_genre11.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre12
+            // 
+            this.manage_genre12.AutoSize = true;
+            this.manage_genre12.Location = new System.Drawing.Point(118, 63);
+            this.manage_genre12.Name = "manage_genre12";
+            this.manage_genre12.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre12.TabIndex = 11;
+            this.manage_genre12.Text = "History";
+            this.manage_genre12.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre13
+            // 
+            this.manage_genre13.AutoSize = true;
+            this.manage_genre13.Location = new System.Drawing.Point(215, 63);
+            this.manage_genre13.Name = "manage_genre13";
+            this.manage_genre13.Size = new System.Drawing.Size(82, 24);
+            this.manage_genre13.TabIndex = 12;
+            this.manage_genre13.Text = "Horror";
+            this.manage_genre13.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre14
+            // 
+            this.manage_genre14.AutoSize = true;
+            this.manage_genre14.Location = new System.Drawing.Point(303, 63);
+            this.manage_genre14.Name = "manage_genre14";
+            this.manage_genre14.Size = new System.Drawing.Size(73, 24);
+            this.manage_genre14.TabIndex = 13;
+            this.manage_genre14.Text = "Music";
+            this.manage_genre14.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre15
+            // 
+            this.manage_genre15.AutoSize = true;
+            this.manage_genre15.Location = new System.Drawing.Point(3, 93);
+            this.manage_genre15.Name = "manage_genre15";
+            this.manage_genre15.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre15.TabIndex = 14;
+            this.manage_genre15.Text = "Musical";
+            this.manage_genre15.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre16
+            // 
+            this.manage_genre16.AutoSize = true;
+            this.manage_genre16.Location = new System.Drawing.Point(100, 93);
+            this.manage_genre16.Name = "manage_genre16";
+            this.manage_genre16.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre16.TabIndex = 15;
+            this.manage_genre16.Text = "Mystery";
+            this.manage_genre16.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre17
+            // 
+            this.manage_genre17.AutoSize = true;
+            this.manage_genre17.Location = new System.Drawing.Point(197, 93);
+            this.manage_genre17.Name = "manage_genre17";
+            this.manage_genre17.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre17.TabIndex = 16;
+            this.manage_genre17.Text = "Romance";
+            this.manage_genre17.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre18
+            // 
+            this.manage_genre18.AutoSize = true;
+            this.manage_genre18.Location = new System.Drawing.Point(294, 93);
+            this.manage_genre18.Name = "manage_genre18";
+            this.manage_genre18.Size = new System.Drawing.Size(82, 24);
+            this.manage_genre18.TabIndex = 17;
+            this.manage_genre18.Text = "Sci-Fi";
+            this.manage_genre18.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre19
+            // 
+            this.manage_genre19.AutoSize = true;
+            this.manage_genre19.Location = new System.Drawing.Point(382, 93);
+            this.manage_genre19.Name = "manage_genre19";
+            this.manage_genre19.Size = new System.Drawing.Size(73, 24);
+            this.manage_genre19.TabIndex = 18;
+            this.manage_genre19.Text = "Short";
+            this.manage_genre19.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre20
+            // 
+            this.manage_genre20.AutoSize = true;
+            this.manage_genre20.Location = new System.Drawing.Point(3, 123);
+            this.manage_genre20.Name = "manage_genre20";
+            this.manage_genre20.Size = new System.Drawing.Size(73, 24);
+            this.manage_genre20.TabIndex = 19;
+            this.manage_genre20.Text = "Sport";
+            this.manage_genre20.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre21
+            // 
+            this.manage_genre21.AutoSize = true;
+            this.manage_genre21.Location = new System.Drawing.Point(82, 123);
+            this.manage_genre21.Name = "manage_genre21";
+            this.manage_genre21.Size = new System.Drawing.Size(100, 24);
+            this.manage_genre21.TabIndex = 20;
+            this.manage_genre21.Text = "Thriller";
+            this.manage_genre21.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre22
+            // 
+            this.manage_genre22.AutoSize = true;
+            this.manage_genre22.Location = new System.Drawing.Point(188, 123);
+            this.manage_genre22.Name = "manage_genre22";
+            this.manage_genre22.Size = new System.Drawing.Size(55, 24);
+            this.manage_genre22.TabIndex = 21;
+            this.manage_genre22.Text = "War";
+            this.manage_genre22.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre23
+            // 
+            this.manage_genre23.AutoSize = true;
+            this.manage_genre23.Location = new System.Drawing.Point(249, 123);
+            this.manage_genre23.Name = "manage_genre23";
+            this.manage_genre23.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre23.TabIndex = 22;
+            this.manage_genre23.Text = "Western";
+            this.manage_genre23.UseVisualStyleBackColor = true;
+            // 
+            // manage_rating
+            // 
+            this.manage_rating.BackColor = System.Drawing.Color.White;
+            this.manage_rating.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_rating.Location = new System.Drawing.Point(816, 147);
+            this.manage_rating.Name = "manage_rating";
+            this.manage_rating.Size = new System.Drawing.Size(60, 27);
+            this.manage_rating.TabIndex = 11;
+            this.manage_rating.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            // 
+            // manage_year
+            // 
+            this.manage_year.BackColor = System.Drawing.Color.White;
+            this.manage_year.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_year.Location = new System.Drawing.Point(637, 148);
+            this.manage_year.Maximum = new decimal(new int[] {
+            1800,
+            0,
+            0,
+            0});
+            this.manage_year.Minimum = new decimal(new int[] {
+            1800,
+            0,
+            0,
+            0});
+            this.manage_year.Name = "manage_year";
+            this.manage_year.Size = new System.Drawing.Size(60, 27);
+            this.manage_year.TabIndex = 11;
+            this.manage_year.Value = new decimal(new int[] {
+            1800,
+            0,
+            0,
+            0});
+            // 
+            // manage_poster
+            // 
+            this.manage_poster.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.manage_poster.Location = new System.Drawing.Point(914, 19);
+            this.manage_poster.Name = "manage_poster";
+            this.manage_poster.Size = new System.Drawing.Size(226, 307);
+            this.manage_poster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.manage_poster.TabIndex = 10;
+            this.manage_poster.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Snow;
+            this.label16.Location = new System.Drawing.Point(731, 150);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(63, 20);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "Rating";
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.manage_nation);
+            this.panel16.Controls.Add(this.panel17);
+            this.panel16.Location = new System.Drawing.Point(661, 93);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(215, 29);
+            this.panel16.TabIndex = 9;
+            // 
+            // manage_nation
+            // 
+            this.manage_nation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.manage_nation.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.manage_nation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manage_nation.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_nation.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.manage_nation.Location = new System.Drawing.Point(0, 0);
+            this.manage_nation.Name = "manage_nation";
+            this.manage_nation.Size = new System.Drawing.Size(215, 20);
+            this.manage_nation.TabIndex = 0;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.White;
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel17.Location = new System.Drawing.Point(0, 28);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(215, 1);
+            this.panel17.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Snow;
+            this.label15.Location = new System.Drawing.Point(576, 150);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(45, 20);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "Year";
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.manage_director);
+            this.panel14.Controls.Add(this.panel15);
+            this.panel14.Location = new System.Drawing.Point(661, 41);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(215, 29);
+            this.panel14.TabIndex = 9;
+            // 
+            // manage_director
+            // 
+            this.manage_director.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.manage_director.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.manage_director.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manage_director.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_director.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.manage_director.Location = new System.Drawing.Point(0, 0);
+            this.manage_director.Name = "manage_director";
+            this.manage_director.Size = new System.Drawing.Size(215, 20);
+            this.manage_director.TabIndex = 0;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.White;
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel15.Location = new System.Drawing.Point(0, 28);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(215, 1);
+            this.panel15.TabIndex = 1;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Snow;
+            this.label14.Location = new System.Drawing.Point(576, 97);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(63, 20);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Nation";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Snow;
+            this.label13.Location = new System.Drawing.Point(576, 45);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(81, 20);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Director";
+            // 
+            // manage_content
+            // 
+            this.manage_content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.manage_content.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.manage_content.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_content.ForeColor = System.Drawing.Color.White;
+            this.manage_content.Location = new System.Drawing.Point(661, 203);
+            this.manage_content.Name = "manage_content";
+            this.manage_content.Size = new System.Drawing.Size(215, 187);
+            this.manage_content.TabIndex = 7;
+            this.manage_content.Text = "";
+            // 
             // panel12
             // 
             this.panel12.Controls.Add(this.manage_poster_link);
@@ -449,6 +902,7 @@
             this.manage_poster_link.Name = "manage_poster_link";
             this.manage_poster_link.Size = new System.Drawing.Size(354, 20);
             this.manage_poster_link.TabIndex = 0;
+            this.manage_poster_link.Leave += new System.EventHandler(this.manage_poster_link_Leave);
             // 
             // panel13
             // 
@@ -1381,457 +1835,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // manage_content
-            // 
-            this.manage_content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.manage_content.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.manage_content.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_content.ForeColor = System.Drawing.Color.White;
-            this.manage_content.Location = new System.Drawing.Point(661, 203);
-            this.manage_content.Name = "manage_content";
-            this.manage_content.Size = new System.Drawing.Size(215, 187);
-            this.manage_content.TabIndex = 7;
-            this.manage_content.Text = "";
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.manage_director);
-            this.panel14.Controls.Add(this.panel15);
-            this.panel14.Location = new System.Drawing.Point(661, 41);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(215, 29);
-            this.panel14.TabIndex = 9;
-            // 
-            // manage_director
-            // 
-            this.manage_director.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.manage_director.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.manage_director.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manage_director.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_director.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.manage_director.Location = new System.Drawing.Point(0, 0);
-            this.manage_director.Name = "manage_director";
-            this.manage_director.Size = new System.Drawing.Size(215, 20);
-            this.manage_director.TabIndex = 0;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel15.Location = new System.Drawing.Point(0, 28);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(215, 1);
-            this.panel15.TabIndex = 1;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Snow;
-            this.label13.Location = new System.Drawing.Point(576, 45);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(81, 20);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Director";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Snow;
-            this.label14.Location = new System.Drawing.Point(576, 97);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(63, 20);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Nation";
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.manage_nation);
-            this.panel16.Controls.Add(this.panel17);
-            this.panel16.Location = new System.Drawing.Point(661, 93);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(215, 29);
-            this.panel16.TabIndex = 9;
-            // 
-            // manage_nation
-            // 
-            this.manage_nation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.manage_nation.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.manage_nation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manage_nation.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_nation.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.manage_nation.Location = new System.Drawing.Point(0, 0);
-            this.manage_nation.Name = "manage_nation";
-            this.manage_nation.Size = new System.Drawing.Size(215, 20);
-            this.manage_nation.TabIndex = 0;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.White;
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel17.Location = new System.Drawing.Point(0, 28);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(215, 1);
-            this.panel17.TabIndex = 1;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Snow;
-            this.label15.Location = new System.Drawing.Point(576, 150);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 20);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "Year";
-            // 
-            // manage_poster
-            // 
-            this.manage_poster.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.manage_poster.Location = new System.Drawing.Point(914, 19);
-            this.manage_poster.Name = "manage_poster";
-            this.manage_poster.Size = new System.Drawing.Size(226, 307);
-            this.manage_poster.TabIndex = 10;
-            this.manage_poster.TabStop = false;
-            // 
-            // manage_year
-            // 
-            this.manage_year.BackColor = System.Drawing.Color.White;
-            this.manage_year.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_year.Location = new System.Drawing.Point(637, 148);
-            this.manage_year.Maximum = new decimal(new int[] {
-            1800,
-            0,
-            0,
-            0});
-            this.manage_year.Minimum = new decimal(new int[] {
-            1800,
-            0,
-            0,
-            0});
-            this.manage_year.Name = "manage_year";
-            this.manage_year.Size = new System.Drawing.Size(60, 27);
-            this.manage_year.TabIndex = 11;
-            this.manage_year.Value = new decimal(new int[] {
-            1800,
-            0,
-            0,
-            0});
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Snow;
-            this.label16.Location = new System.Drawing.Point(731, 150);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(63, 20);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Rating";
-            // 
-            // manage_rating
-            // 
-            this.manage_rating.BackColor = System.Drawing.Color.White;
-            this.manage_rating.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_rating.Location = new System.Drawing.Point(816, 147);
-            this.manage_rating.Name = "manage_rating";
-            this.manage_rating.Size = new System.Drawing.Size(60, 27);
-            this.manage_rating.TabIndex = 11;
-            this.manage_rating.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.flowLayoutPanel2);
-            this.groupBox1.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(49, 200);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(477, 193);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Genres";
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre1);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre2);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre3);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre4);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre5);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre6);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre7);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre8);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre9);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre10);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre11);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre12);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre13);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre14);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre15);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre16);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre17);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre18);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre19);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre20);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre21);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre22);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre23);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 23);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(471, 167);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
-            // manage_genre1
-            // 
-            this.manage_genre1.AutoSize = true;
-            this.manage_genre1.Checked = true;
-            this.manage_genre1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.manage_genre1.Enabled = false;
-            this.manage_genre1.Location = new System.Drawing.Point(3, 3);
-            this.manage_genre1.Name = "manage_genre1";
-            this.manage_genre1.Size = new System.Drawing.Size(55, 24);
-            this.manage_genre1.TabIndex = 0;
-            this.manage_genre1.Text = "All";
-            this.manage_genre1.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre2
-            // 
-            this.manage_genre2.AutoSize = true;
-            this.manage_genre2.Location = new System.Drawing.Point(64, 3);
-            this.manage_genre2.Name = "manage_genre2";
-            this.manage_genre2.Size = new System.Drawing.Size(109, 24);
-            this.manage_genre2.TabIndex = 1;
-            this.manage_genre2.Text = "Animation";
-            this.manage_genre2.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre3
-            // 
-            this.manage_genre3.AutoSize = true;
-            this.manage_genre3.Location = new System.Drawing.Point(179, 3);
-            this.manage_genre3.Name = "manage_genre3";
-            this.manage_genre3.Size = new System.Drawing.Size(82, 24);
-            this.manage_genre3.TabIndex = 2;
-            this.manage_genre3.Text = "Action";
-            this.manage_genre3.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre4
-            // 
-            this.manage_genre4.AutoSize = true;
-            this.manage_genre4.Location = new System.Drawing.Point(267, 3);
-            this.manage_genre4.Name = "manage_genre4";
-            this.manage_genre4.Size = new System.Drawing.Size(109, 24);
-            this.manage_genre4.TabIndex = 3;
-            this.manage_genre4.Text = "Adventure";
-            this.manage_genre4.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre5
-            // 
-            this.manage_genre5.AutoSize = true;
-            this.manage_genre5.Location = new System.Drawing.Point(382, 3);
-            this.manage_genre5.Name = "manage_genre5";
-            this.manage_genre5.Size = new System.Drawing.Size(82, 24);
-            this.manage_genre5.TabIndex = 4;
-            this.manage_genre5.Text = "Comedy";
-            this.manage_genre5.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre6
-            // 
-            this.manage_genre6.AutoSize = true;
-            this.manage_genre6.Location = new System.Drawing.Point(3, 33);
-            this.manage_genre6.Name = "manage_genre6";
-            this.manage_genre6.Size = new System.Drawing.Size(73, 24);
-            this.manage_genre6.TabIndex = 5;
-            this.manage_genre6.Text = "Crime";
-            this.manage_genre6.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre7
-            // 
-            this.manage_genre7.AutoSize = true;
-            this.manage_genre7.Location = new System.Drawing.Point(82, 33);
-            this.manage_genre7.Name = "manage_genre7";
-            this.manage_genre7.Size = new System.Drawing.Size(100, 24);
-            this.manage_genre7.TabIndex = 6;
-            this.manage_genre7.Text = "Document";
-            this.manage_genre7.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre8
-            // 
-            this.manage_genre8.AutoSize = true;
-            this.manage_genre8.Location = new System.Drawing.Point(188, 33);
-            this.manage_genre8.Name = "manage_genre8";
-            this.manage_genre8.Size = new System.Drawing.Size(73, 24);
-            this.manage_genre8.TabIndex = 7;
-            this.manage_genre8.Text = "Drama";
-            this.manage_genre8.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre9
-            // 
-            this.manage_genre9.AutoSize = true;
-            this.manage_genre9.Location = new System.Drawing.Point(267, 33);
-            this.manage_genre9.Name = "manage_genre9";
-            this.manage_genre9.Size = new System.Drawing.Size(82, 24);
-            this.manage_genre9.TabIndex = 8;
-            this.manage_genre9.Text = "Family";
-            this.manage_genre9.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre10
-            // 
-            this.manage_genre10.AutoSize = true;
-            this.manage_genre10.Location = new System.Drawing.Point(355, 33);
-            this.manage_genre10.Name = "manage_genre10";
-            this.manage_genre10.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre10.TabIndex = 9;
-            this.manage_genre10.Text = "Fantasy";
-            this.manage_genre10.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre11
-            // 
-            this.manage_genre11.AutoSize = true;
-            this.manage_genre11.Location = new System.Drawing.Point(3, 63);
-            this.manage_genre11.Name = "manage_genre11";
-            this.manage_genre11.Size = new System.Drawing.Size(109, 24);
-            this.manage_genre11.TabIndex = 10;
-            this.manage_genre11.Text = "Film-Noir";
-            this.manage_genre11.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre12
-            // 
-            this.manage_genre12.AutoSize = true;
-            this.manage_genre12.Location = new System.Drawing.Point(118, 63);
-            this.manage_genre12.Name = "manage_genre12";
-            this.manage_genre12.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre12.TabIndex = 11;
-            this.manage_genre12.Text = "History";
-            this.manage_genre12.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre13
-            // 
-            this.manage_genre13.AutoSize = true;
-            this.manage_genre13.Location = new System.Drawing.Point(215, 63);
-            this.manage_genre13.Name = "manage_genre13";
-            this.manage_genre13.Size = new System.Drawing.Size(82, 24);
-            this.manage_genre13.TabIndex = 12;
-            this.manage_genre13.Text = "Horror";
-            this.manage_genre13.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre14
-            // 
-            this.manage_genre14.AutoSize = true;
-            this.manage_genre14.Location = new System.Drawing.Point(303, 63);
-            this.manage_genre14.Name = "manage_genre14";
-            this.manage_genre14.Size = new System.Drawing.Size(73, 24);
-            this.manage_genre14.TabIndex = 13;
-            this.manage_genre14.Text = "Music";
-            this.manage_genre14.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre15
-            // 
-            this.manage_genre15.AutoSize = true;
-            this.manage_genre15.Location = new System.Drawing.Point(3, 93);
-            this.manage_genre15.Name = "manage_genre15";
-            this.manage_genre15.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre15.TabIndex = 14;
-            this.manage_genre15.Text = "Musical";
-            this.manage_genre15.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre16
-            // 
-            this.manage_genre16.AutoSize = true;
-            this.manage_genre16.Location = new System.Drawing.Point(100, 93);
-            this.manage_genre16.Name = "manage_genre16";
-            this.manage_genre16.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre16.TabIndex = 15;
-            this.manage_genre16.Text = "Mystery";
-            this.manage_genre16.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre17
-            // 
-            this.manage_genre17.AutoSize = true;
-            this.manage_genre17.Location = new System.Drawing.Point(197, 93);
-            this.manage_genre17.Name = "manage_genre17";
-            this.manage_genre17.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre17.TabIndex = 16;
-            this.manage_genre17.Text = "Romance";
-            this.manage_genre17.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre18
-            // 
-            this.manage_genre18.AutoSize = true;
-            this.manage_genre18.Location = new System.Drawing.Point(294, 93);
-            this.manage_genre18.Name = "manage_genre18";
-            this.manage_genre18.Size = new System.Drawing.Size(82, 24);
-            this.manage_genre18.TabIndex = 17;
-            this.manage_genre18.Text = "Sci-Fi";
-            this.manage_genre18.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre19
-            // 
-            this.manage_genre19.AutoSize = true;
-            this.manage_genre19.Location = new System.Drawing.Point(382, 93);
-            this.manage_genre19.Name = "manage_genre19";
-            this.manage_genre19.Size = new System.Drawing.Size(73, 24);
-            this.manage_genre19.TabIndex = 18;
-            this.manage_genre19.Text = "Short";
-            this.manage_genre19.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre20
-            // 
-            this.manage_genre20.AutoSize = true;
-            this.manage_genre20.Location = new System.Drawing.Point(3, 123);
-            this.manage_genre20.Name = "manage_genre20";
-            this.manage_genre20.Size = new System.Drawing.Size(73, 24);
-            this.manage_genre20.TabIndex = 19;
-            this.manage_genre20.Text = "Sport";
-            this.manage_genre20.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre21
-            // 
-            this.manage_genre21.AutoSize = true;
-            this.manage_genre21.Location = new System.Drawing.Point(82, 123);
-            this.manage_genre21.Name = "manage_genre21";
-            this.manage_genre21.Size = new System.Drawing.Size(100, 24);
-            this.manage_genre21.TabIndex = 20;
-            this.manage_genre21.Text = "Thriller";
-            this.manage_genre21.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre22
-            // 
-            this.manage_genre22.AutoSize = true;
-            this.manage_genre22.Location = new System.Drawing.Point(188, 123);
-            this.manage_genre22.Name = "manage_genre22";
-            this.manage_genre22.Size = new System.Drawing.Size(55, 24);
-            this.manage_genre22.TabIndex = 21;
-            this.manage_genre22.Text = "War";
-            this.manage_genre22.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre23
-            // 
-            this.manage_genre23.AutoSize = true;
-            this.manage_genre23.Location = new System.Drawing.Point(249, 123);
-            this.manage_genre23.Name = "manage_genre23";
-            this.manage_genre23.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre23.TabIndex = 22;
-            this.manage_genre23.Text = "Western";
-            this.manage_genre23.UseVisualStyleBackColor = true;
-            // 
-            // AddMovie
-            // 
-            this.AddMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddMovie.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddMovie.ForeColor = System.Drawing.Color.White;
-            this.AddMovie.Location = new System.Drawing.Point(948, 346);
-            this.AddMovie.Name = "AddMovie";
-            this.AddMovie.Size = new System.Drawing.Size(159, 44);
-            this.AddMovie.TabIndex = 14;
-            this.AddMovie.Text = "Add Movie";
-            this.AddMovie.UseVisualStyleBackColor = true;
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1853,6 +1856,16 @@
             this.manage_show_panel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_rating)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_year)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_poster)).EndInit();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -1874,16 +1887,6 @@
             this.control_button.ResumeLayout(false);
             this.search_panel.ResumeLayout(false);
             this.search_panel.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_poster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_year)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_rating)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

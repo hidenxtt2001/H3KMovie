@@ -24,7 +24,7 @@ namespace H3K.InterFace
         public MainMenu()
         {
             InitializeComponent();
-
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             // Disable Horizontal Scroll Bar
             category_scroll.HorizontalScroll.Maximum = 0;
             category_scroll.AutoScrollPosition = new Point(0, 0);

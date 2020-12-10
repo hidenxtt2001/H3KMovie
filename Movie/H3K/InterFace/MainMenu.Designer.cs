@@ -381,8 +381,8 @@
             // 
             // common
             // 
-            this.common.Controls.Add(this.movie_show_panel);
             this.common.Controls.Add(this.manage_show_panel);
+            this.common.Controls.Add(this.movie_show_panel);
             this.common.Controls.Add(this.favorite_show_panel);
             this.common.Controls.Add(this.account_infor_panel);
             this.common.Controls.Add(this.history_show_panel);

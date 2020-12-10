@@ -40,6 +40,8 @@ namespace H3K.InterFace
             // Set normal button main choose
             selectPanel = movie_show;
 
+            manage_year.Maximum = DateTime.Now.Year;
+
             // Data
             data = new ConnectData();
         }

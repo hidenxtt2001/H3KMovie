@@ -57,3 +57,7 @@ C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.Sign_Form.MessageWarning.resources
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.WatchMovie.MovieShowInfor.resources
 C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.WatchMovie.RatingStar.resources
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\bin\Debug\Nancy.dll
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\bin\Debug\Nancy.xml
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.Sign_Form.Code_reset_from.resources
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.csproj.CopyComplete

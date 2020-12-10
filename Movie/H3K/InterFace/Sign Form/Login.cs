@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Nancy.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -72,9 +75,9 @@ namespace H3K.InterFace.Sign_Form
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e) 
         {
-            sign_up.SendToBack();
+            sign_in.BringToFront();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -82,7 +85,10 @@ namespace H3K.InterFace.Sign_Form
             sign_up.BringToFront();
         }
 
-
+        private void Forgot_Pass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            forgot_password.BringToFront();
+        }
 
 
         #endregion
@@ -137,6 +143,53 @@ namespace H3K.InterFace.Sign_Form
             }
         }
 
+        private void Reset_Password_Click(object sender, EventArgs e)
+        {
+            MessageWarning message = new MessageWarning("");
+            if (RequestCode(user_forgot.Text, email_forgot.Text))
+            {
+                message.message = "The Code has been sent to your email!";
+                Code_reset_from from = new Code_reset_from(user_forgot.Text);
+                from.ShowDialog();
+                sign_in.BringToFront();
+            }
+            else
+            {
+                message.message = "Username or Email not correct!";
+                message.ShowDialog();
+            }
+
+        }
+        private bool RequestCode(string username,string email)
+        {
+            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("http://www.hidenxtt.somee.com/request-code-reset");
+            httpWebRequest.Method = "POST";
+            httpWebRequest.ContentType = "application/json";
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = new JavaScriptSerializer().Serialize(new
+                {
+                    username = username,
+                    email = email
+                });
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+            try
+            {
+                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                {
+                    return Convert.ToBoolean(streamReader.ReadToEnd());
+                }
+            }
+            catch (WebException ex)
+            {
+                return Convert.ToBoolean(new StreamReader(ex.Response.GetResponseStream()).ReadToEnd());
+            }
+        }
         #region Check Textbox
         private void username_input_KeyDown(object sender, KeyEventArgs e)
         {
@@ -155,6 +208,9 @@ namespace H3K.InterFace.Sign_Form
             return Regex.IsMatch(email, @"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$");
         }
 
+
         #endregion
+
+        
     }
 }

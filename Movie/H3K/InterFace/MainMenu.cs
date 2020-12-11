@@ -490,7 +490,7 @@ namespace H3K.InterFace
                 string movieid = Regex.Match(manage_movie_link.Text, @"d\/(.*?)\/view").Groups[1].Value;
                 if (!data.checkExist(movieid))
                 {
-                    if (data.MovieAdd(movieid, manage_title.Text, manage_content.Text, Convert.ToInt32(manage_rating.Value), manage_director.Text, manage_movie_link.Text, manage_poster_link.Text, manage_nation.Text, manage_year.Value.ToString()) && data.MovieGenresAdd(getGenre(movieid)))
+                    if (data.MovieAdd(movieid, manage_title.Text, manage_content.Text, Convert.ToInt32(manage_rating.Value), manage_director.Text, manage_movie_link.Text, manage_poster_link.Text, manage_nation.Text, Convert.ToInt32(manage_year.Value).ToString()) && data.MovieGenresAdd(getGenre(movieid)))
                     {
                         message.message = "Thêm thành công";
                         message.ShowDialog();

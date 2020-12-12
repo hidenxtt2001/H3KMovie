@@ -43,11 +43,7 @@
             this.action_panel = new System.Windows.Forms.Panel();
             this.loading_label = new System.Windows.Forms.Label();
             this.common = new System.Windows.Forms.Panel();
-            this.manage_show_panel = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.movie_show_panel = new System.Windows.Forms.Panel();
-            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.category = new System.Windows.Forms.Panel();
             this.category_scroll = new System.Windows.Forms.Panel();
@@ -76,34 +72,27 @@
             this.genre1 = new System.Windows.Forms.Button();
             this.scroll_right = new System.Windows.Forms.Button();
             this.scroll_left = new System.Windows.Forms.Button();
-            this.favorite_show_panel = new System.Windows.Forms.Panel();
-            this.movies_list_favorite = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
             this.account_infor_panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.avatar = new System.Windows.Forms.PictureBox();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.password_information = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.name_information = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.mail_information = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.username_information = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.history_show_panel = new System.Windows.Forms.Panel();
-            this.movies_list_history = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.control = new System.Windows.Forms.Panel();
-            this.control_button = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.search_panel = new System.Windows.Forms.Panel();
-            this.search_input = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.manage_show_panel = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.AddMovie = new System.Windows.Forms.Button();
@@ -161,24 +150,45 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.favorite_show_panel = new System.Windows.Forms.Panel();
+            this.movies_list_favorite = new System.Windows.Forms.FlowLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.history_show_panel = new System.Windows.Forms.Panel();
+            this.movies_list_history = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.control = new System.Windows.Forms.Panel();
+            this.control_button = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.search_panel = new System.Windows.Forms.Panel();
+            this.search_input = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.form_born.SuspendLayout();
             this.menu_panel.SuspendLayout();
             this.action_panel.SuspendLayout();
             this.common.SuspendLayout();
-            this.manage_show_panel.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.movie_show_panel.SuspendLayout();
             this.category.SuspendLayout();
             this.category_scroll.SuspendLayout();
-            this.favorite_show_panel.SuspendLayout();
             this.account_infor_panel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.history_show_panel.SuspendLayout();
-            this.control.SuspendLayout();
-            this.control_button.SuspendLayout();
-            this.search_panel.SuspendLayout();
+            this.panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
+            this.panel21.SuspendLayout();
+            this.panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.manage_show_panel.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.manage_poster)).BeginInit();
@@ -193,6 +203,11 @@
             this.panel12.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.favorite_show_panel.SuspendLayout();
+            this.history_show_panel.SuspendLayout();
+            this.control.SuspendLayout();
+            this.control_button.SuspendLayout();
+            this.search_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // icon_mainmenu
@@ -388,9 +403,9 @@
             // 
             // common
             // 
-            this.common.Controls.Add(this.manage_show_panel);
-            this.common.Controls.Add(this.account_infor_panel);
             this.common.Controls.Add(this.movie_show_panel);
+            this.common.Controls.Add(this.account_infor_panel);
+            this.common.Controls.Add(this.manage_show_panel);
             this.common.Controls.Add(this.favorite_show_panel);
             this.common.Controls.Add(this.history_show_panel);
             this.common.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -398,37 +413,6 @@
             this.common.Name = "common";
             this.common.Size = new System.Drawing.Size(1176, 726);
             this.common.TabIndex = 3;
-            // 
-            // manage_show_panel
-            // 
-            this.manage_show_panel.Controls.Add(this.panel4);
-            this.manage_show_panel.Controls.Add(this.label8);
-            this.manage_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manage_show_panel.Location = new System.Drawing.Point(0, 0);
-            this.manage_show_panel.Name = "manage_show_panel";
-            this.manage_show_panel.Size = new System.Drawing.Size(1176, 726);
-            this.manage_show_panel.TabIndex = 5;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.tableLayoutPanel2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 70);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1176, 413);
-            this.panel4.TabIndex = 2;
-            // 
-            // label8
-            // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label8.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label8.Location = new System.Drawing.Point(0, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(1176, 70);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Manage  Movies";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // movie_show_panel
             // 
@@ -440,14 +424,6 @@
             this.movie_show_panel.Name = "movie_show_panel";
             this.movie_show_panel.Size = new System.Drawing.Size(1176, 726);
             this.movie_show_panel.TabIndex = 2;
-            // 
-            // list_item_movie
-            // 
-            this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.list_item_movie.Location = new System.Drawing.Point(0, 70);
-            this.list_item_movie.Name = "list_item_movie";
-            this.list_item_movie.Size = new System.Drawing.Size(1176, 649);
-            this.list_item_movie.TabIndex = 4;
             // 
             // panel1
             // 
@@ -879,37 +855,6 @@
             this.scroll_left.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
             this.scroll_left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
             // 
-            // favorite_show_panel
-            // 
-            this.favorite_show_panel.Controls.Add(this.movies_list_favorite);
-            this.favorite_show_panel.Controls.Add(this.label3);
-            this.favorite_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.favorite_show_panel.Location = new System.Drawing.Point(0, 0);
-            this.favorite_show_panel.Name = "favorite_show_panel";
-            this.favorite_show_panel.Size = new System.Drawing.Size(1176, 726);
-            this.favorite_show_panel.TabIndex = 4;
-            // 
-            // movies_list_favorite
-            // 
-            this.movies_list_favorite.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.movies_list_favorite.Location = new System.Drawing.Point(0, 70);
-            this.movies_list_favorite.Name = "movies_list_favorite";
-            this.movies_list_favorite.Padding = new System.Windows.Forms.Padding(5);
-            this.movies_list_favorite.Size = new System.Drawing.Size(1176, 656);
-            this.movies_list_favorite.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1176, 70);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Movies Favorite";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // account_infor_panel
             // 
             this.account_infor_panel.Controls.Add(this.tableLayoutPanel1);
@@ -923,10 +868,12 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel20, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel21, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 70);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -937,133 +884,181 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.flowLayoutPanel1);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(124)))), ((int)(((byte)(163)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(648, 100);
-            this.panel3.Margin = new System.Windows.Forms.Padding(50, 100, 50, 100);
+            this.panel3.Location = new System.Drawing.Point(780, 50);
+            this.panel3.Margin = new System.Windows.Forms.Padding(10, 50, 10, 50);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(478, 456);
-            this.panel3.TabIndex = 1;
+            this.panel3.Size = new System.Drawing.Size(1, 556);
+            this.panel3.TabIndex = 0;
             // 
-            // flowLayoutPanel1
+            // panel20
             // 
-            this.flowLayoutPanel1.Controls.Add(this.label4);
-            this.flowLayoutPanel1.Controls.Add(this.textBox1);
-            this.flowLayoutPanel1.Controls.Add(this.label5);
-            this.flowLayoutPanel1.Controls.Add(this.textBox2);
-            this.flowLayoutPanel1.Controls.Add(this.label6);
-            this.flowLayoutPanel1.Controls.Add(this.textBox3);
-            this.flowLayoutPanel1.Controls.Add(this.label7);
-            this.flowLayoutPanel1.Controls.Add(this.textBox4);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(478, 456);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.panel20.Controls.Add(this.avatar);
+            this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel20.Location = new System.Drawing.Point(830, 60);
+            this.panel20.Margin = new System.Windows.Forms.Padding(40, 60, 40, 60);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(306, 536);
+            this.panel20.TabIndex = 1;
             // 
-            // label4
+            // avatar
             // 
-            this.label4.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.ImageIndex = 1;
-            this.label4.ImageList = this.icon_mainmenu;
-            this.label4.Location = new System.Drawing.Point(3, 10);
-            this.label4.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 23);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Username";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.avatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.avatar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.avatar.Location = new System.Drawing.Point(0, 0);
+            this.avatar.Name = "avatar";
+            this.avatar.Size = new System.Drawing.Size(306, 306);
+            this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatar.TabIndex = 0;
+            this.avatar.TabStop = false;
             // 
-            // textBox1
+            // panel21
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(169, 10);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 25);
-            this.textBox1.TabIndex = 1;
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(124)))), ((int)(((byte)(163)))));
+            this.panel21.Controls.Add(this.panel25);
+            this.panel21.Controls.Add(this.panel24);
+            this.panel21.Controls.Add(this.panel23);
+            this.panel21.Controls.Add(this.panel22);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel21.Location = new System.Drawing.Point(60, 60);
+            this.panel21.Margin = new System.Windows.Forms.Padding(60);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(650, 536);
+            this.panel21.TabIndex = 2;
             // 
-            // label5
+            // panel25
             // 
-            this.label5.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.ImageIndex = 6;
-            this.label5.ImageList = this.icon_mainmenu;
-            this.label5.Location = new System.Drawing.Point(3, 55);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(160, 23);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Email";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel25.Controls.Add(this.password_information);
+            this.panel25.Controls.Add(this.pictureBox4);
+            this.panel25.Location = new System.Drawing.Point(83, 403);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(495, 50);
+            this.panel25.TabIndex = 5;
             // 
-            // textBox2
+            // password_information
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(169, 55);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 25);
-            this.textBox2.TabIndex = 3;
+            this.password_information.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.password_information.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_information.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.password_information.Location = new System.Drawing.Point(50, 0);
+            this.password_information.Name = "password_information";
+            this.password_information.Size = new System.Drawing.Size(445, 50);
+            this.password_information.TabIndex = 1;
+            this.password_information.Text = "label7";
+            this.password_information.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // pictureBox4
             // 
-            this.label6.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.ImageIndex = 4;
-            this.label6.ImageList = this.icon_mainmenu;
-            this.label6.Location = new System.Drawing.Point(3, 100);
-            this.label6.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(160, 23);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Name";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox4.Image = global::H3K.Properties.Resources.icons8_lock_64;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Padding = new System.Windows.Forms.Padding(12);
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
             // 
-            // textBox3
+            // panel24
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(169, 100);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 25);
-            this.textBox3.TabIndex = 5;
+            this.panel24.Controls.Add(this.name_information);
+            this.panel24.Controls.Add(this.pictureBox3);
+            this.panel24.Location = new System.Drawing.Point(83, 292);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(495, 50);
+            this.panel24.TabIndex = 4;
             // 
-            // label7
+            // name_information
             // 
-            this.label7.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.ImageIndex = 5;
-            this.label7.ImageList = this.icon_mainmenu;
-            this.label7.Location = new System.Drawing.Point(3, 145);
-            this.label7.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 23);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Password";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.name_information.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.name_information.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_information.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.name_information.Location = new System.Drawing.Point(50, 0);
+            this.name_information.Name = "name_information";
+            this.name_information.Size = new System.Drawing.Size(445, 50);
+            this.name_information.TabIndex = 1;
+            this.name_information.Text = "label6";
+            this.name_information.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // pictureBox3
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(169, 145);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(250, 25);
-            this.textBox4.TabIndex = 7;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox3.Image = global::H3K.Properties.Resources.icons8_name_tag_64;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Padding = new System.Windows.Forms.Padding(7);
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // panel23
+            // 
+            this.panel23.Controls.Add(this.mail_information);
+            this.panel23.Controls.Add(this.pictureBox2);
+            this.panel23.Location = new System.Drawing.Point(83, 181);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(495, 50);
+            this.panel23.TabIndex = 3;
+            // 
+            // mail_information
+            // 
+            this.mail_information.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mail_information.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mail_information.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.mail_information.Location = new System.Drawing.Point(50, 0);
+            this.mail_information.Name = "mail_information";
+            this.mail_information.Size = new System.Drawing.Size(445, 50);
+            this.mail_information.TabIndex = 1;
+            this.mail_information.Text = "label5";
+            this.mail_information.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = global::H3K.Properties.Resources.icons8_mailing_64;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(7);
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel22
+            // 
+            this.panel22.Controls.Add(this.username_information);
+            this.panel22.Controls.Add(this.pictureBox1);
+            this.panel22.Location = new System.Drawing.Point(83, 70);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(495, 50);
+            this.panel22.TabIndex = 2;
+            // 
+            // username_information
+            // 
+            this.username_information.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.username_information.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_information.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.username_information.Location = new System.Drawing.Point(50, 0);
+            this.username_information.Name = "username_information";
+            this.username_information.Size = new System.Drawing.Size(445, 50);
+            this.username_information.TabIndex = 1;
+            this.username_information.Text = "label4";
+            this.username_information.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::H3K.Properties.Resources.icons8_account_64;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(7);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -1077,153 +1072,24 @@
             this.label1.Text = "Account Information";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // history_show_panel
+            // manage_show_panel
             // 
-            this.history_show_panel.Controls.Add(this.movies_list_history);
-            this.history_show_panel.Controls.Add(this.label2);
-            this.history_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.history_show_panel.Location = new System.Drawing.Point(0, 0);
-            this.history_show_panel.Name = "history_show_panel";
-            this.history_show_panel.Size = new System.Drawing.Size(1176, 726);
-            this.history_show_panel.TabIndex = 4;
+            this.manage_show_panel.Controls.Add(this.panel4);
+            this.manage_show_panel.Controls.Add(this.label8);
+            this.manage_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manage_show_panel.Location = new System.Drawing.Point(0, 0);
+            this.manage_show_panel.Name = "manage_show_panel";
+            this.manage_show_panel.Size = new System.Drawing.Size(1176, 726);
+            this.manage_show_panel.TabIndex = 5;
             // 
-            // movies_list_history
+            // panel4
             // 
-            this.movies_list_history.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.movies_list_history.Location = new System.Drawing.Point(0, 70);
-            this.movies_list_history.Name = "movies_list_history";
-            this.movies_list_history.Padding = new System.Windows.Forms.Padding(5);
-            this.movies_list_history.Size = new System.Drawing.Size(1176, 656);
-            this.movies_list_history.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1176, 70);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Movie History";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // control
-            // 
-            this.control.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(46)))), ((int)(((byte)(62)))));
-            this.control.Controls.Add(this.control_button);
-            this.control.Controls.Add(this.search_panel);
-            this.control.Dock = System.Windows.Forms.DockStyle.Top;
-            this.control.Location = new System.Drawing.Point(0, 0);
-            this.control.Name = "control";
-            this.control.Padding = new System.Windows.Forms.Padding(6);
-            this.control.Size = new System.Drawing.Size(1176, 42);
-            this.control.TabIndex = 0;
-            this.control.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
-            // 
-            // control_button
-            // 
-            this.control_button.AutoSize = true;
-            this.control_button.Controls.Add(this.button2);
-            this.control_button.Controls.Add(this.button3);
-            this.control_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.control_button.Location = new System.Drawing.Point(1110, 6);
-            this.control_button.Name = "control_button";
-            this.control_button.Size = new System.Drawing.Size(60, 30);
-            this.control_button.TabIndex = 2;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::H3K.Properties.Resources.icons8_subtract;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(92)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(92)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 30);
-            this.button2.TabIndex = 3;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::H3K.Properties.Resources.icons8_delete;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(92)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(92)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(30, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(30, 30);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // search_panel
-            // 
-            this.search_panel.Controls.Add(this.search_input);
-            this.search_panel.Controls.Add(this.panel6);
-            this.search_panel.Controls.Add(this.panel5);
-            this.search_panel.Controls.Add(this.button1);
-            this.search_panel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.search_panel.Location = new System.Drawing.Point(6, 6);
-            this.search_panel.Name = "search_panel";
-            this.search_panel.Padding = new System.Windows.Forms.Padding(5);
-            this.search_panel.Size = new System.Drawing.Size(291, 30);
-            this.search_panel.TabIndex = 1;
-            // 
-            // search_input
-            // 
-            this.search_input.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(46)))), ((int)(((byte)(62)))));
-            this.search_input.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.search_input.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.search_input.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_input.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.search_input.Location = new System.Drawing.Point(37, 5);
-            this.search_input.Name = "search_input";
-            this.search_input.Size = new System.Drawing.Size(237, 19);
-            this.search_input.TabIndex = 1;
-            this.search_input.Text = "Search";
-            this.search_input.Enter += new System.EventHandler(this.search_input_Enter);
-            this.search_input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.search_input_KeyDown);
-            this.search_input.Leave += new System.EventHandler(this.search_input_Leave);
-            // 
-            // panel6
-            // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(274, 5);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(12, 20);
-            this.panel6.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(27, 5);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(10, 20);
-            this.panel5.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(46)))), ((int)(((byte)(62)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(46)))), ((int)(((byte)(62)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(5, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(22, 20);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.panel4.Controls.Add(this.tableLayoutPanel2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 70);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1176, 413);
+            this.panel4.TabIndex = 2;
             // 
             // tableLayoutPanel2
             // 
@@ -1877,6 +1743,205 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Title";
             // 
+            // label8
+            // 
+            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label8.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(1176, 70);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Manage  Movies";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // favorite_show_panel
+            // 
+            this.favorite_show_panel.Controls.Add(this.movies_list_favorite);
+            this.favorite_show_panel.Controls.Add(this.label3);
+            this.favorite_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.favorite_show_panel.Location = new System.Drawing.Point(0, 0);
+            this.favorite_show_panel.Name = "favorite_show_panel";
+            this.favorite_show_panel.Size = new System.Drawing.Size(1176, 726);
+            this.favorite_show_panel.TabIndex = 4;
+            // 
+            // movies_list_favorite
+            // 
+            this.movies_list_favorite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.movies_list_favorite.Location = new System.Drawing.Point(0, 70);
+            this.movies_list_favorite.Name = "movies_list_favorite";
+            this.movies_list_favorite.Padding = new System.Windows.Forms.Padding(5);
+            this.movies_list_favorite.Size = new System.Drawing.Size(1176, 656);
+            this.movies_list_favorite.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1176, 70);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Movies Favorite";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // history_show_panel
+            // 
+            this.history_show_panel.Controls.Add(this.movies_list_history);
+            this.history_show_panel.Controls.Add(this.label2);
+            this.history_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.history_show_panel.Location = new System.Drawing.Point(0, 0);
+            this.history_show_panel.Name = "history_show_panel";
+            this.history_show_panel.Size = new System.Drawing.Size(1176, 726);
+            this.history_show_panel.TabIndex = 4;
+            // 
+            // movies_list_history
+            // 
+            this.movies_list_history.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.movies_list_history.Location = new System.Drawing.Point(0, 70);
+            this.movies_list_history.Name = "movies_list_history";
+            this.movies_list_history.Padding = new System.Windows.Forms.Padding(5);
+            this.movies_list_history.Size = new System.Drawing.Size(1176, 656);
+            this.movies_list_history.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1176, 70);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Movie History";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // control
+            // 
+            this.control.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(46)))), ((int)(((byte)(62)))));
+            this.control.Controls.Add(this.control_button);
+            this.control.Controls.Add(this.search_panel);
+            this.control.Dock = System.Windows.Forms.DockStyle.Top;
+            this.control.Location = new System.Drawing.Point(0, 0);
+            this.control.Name = "control";
+            this.control.Padding = new System.Windows.Forms.Padding(6);
+            this.control.Size = new System.Drawing.Size(1176, 42);
+            this.control.TabIndex = 0;
+            this.control.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            // 
+            // control_button
+            // 
+            this.control_button.AutoSize = true;
+            this.control_button.Controls.Add(this.button2);
+            this.control_button.Controls.Add(this.button3);
+            this.control_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.control_button.Location = new System.Drawing.Point(1110, 6);
+            this.control_button.Name = "control_button";
+            this.control_button.Size = new System.Drawing.Size(60, 30);
+            this.control_button.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::H3K.Properties.Resources.icons8_subtract;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(92)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(92)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(30, 30);
+            this.button2.TabIndex = 3;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::H3K.Properties.Resources.icons8_delete;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(92)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(92)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(30, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 30);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // search_panel
+            // 
+            this.search_panel.Controls.Add(this.search_input);
+            this.search_panel.Controls.Add(this.panel6);
+            this.search_panel.Controls.Add(this.panel5);
+            this.search_panel.Controls.Add(this.button1);
+            this.search_panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.search_panel.Location = new System.Drawing.Point(6, 6);
+            this.search_panel.Name = "search_panel";
+            this.search_panel.Padding = new System.Windows.Forms.Padding(5);
+            this.search_panel.Size = new System.Drawing.Size(291, 30);
+            this.search_panel.TabIndex = 1;
+            // 
+            // search_input
+            // 
+            this.search_input.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(46)))), ((int)(((byte)(62)))));
+            this.search_input.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.search_input.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.search_input.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_input.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.search_input.Location = new System.Drawing.Point(37, 5);
+            this.search_input.Name = "search_input";
+            this.search_input.Size = new System.Drawing.Size(237, 19);
+            this.search_input.TabIndex = 1;
+            this.search_input.Text = "Search";
+            this.search_input.Enter += new System.EventHandler(this.search_input_Enter);
+            this.search_input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.search_input_KeyDown);
+            this.search_input.Leave += new System.EventHandler(this.search_input_Leave);
+            // 
+            // panel6
+            // 
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(274, 5);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(12, 20);
+            this.panel6.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(27, 5);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(10, 20);
+            this.panel5.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(46)))), ((int)(((byte)(62)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(46)))), ((int)(((byte)(62)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(5, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(22, 20);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // list_item_movie
+            // 
+            this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.list_item_movie.Location = new System.Drawing.Point(0, 70);
+            this.list_item_movie.Name = "list_item_movie";
+            this.list_item_movie.Size = new System.Drawing.Size(1176, 649);
+            this.list_item_movie.TabIndex = 4;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1895,23 +1960,24 @@
             this.action_panel.ResumeLayout(false);
             this.action_panel.PerformLayout();
             this.common.ResumeLayout(false);
-            this.manage_show_panel.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.movie_show_panel.ResumeLayout(false);
             this.category.ResumeLayout(false);
             this.category_scroll.ResumeLayout(false);
-            this.favorite_show_panel.ResumeLayout(false);
             this.account_infor_panel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.history_show_panel.ResumeLayout(false);
-            this.control.ResumeLayout(false);
-            this.control.PerformLayout();
-            this.control_button.ResumeLayout(false);
-            this.search_panel.ResumeLayout(false);
-            this.search_panel.PerformLayout();
+            this.panel20.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
+            this.panel21.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel24.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel22.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.manage_show_panel.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.manage_poster)).EndInit();
@@ -1934,6 +2000,13 @@
             this.panel10.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.favorite_show_panel.ResumeLayout(false);
+            this.history_show_panel.ResumeLayout(false);
+            this.control.ResumeLayout(false);
+            this.control.PerformLayout();
+            this.control_button.ResumeLayout(false);
+            this.search_panel.ResumeLayout(false);
+            this.search_panel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1997,17 +2070,6 @@
         private System.Windows.Forms.Button scroll_right;
         private System.Windows.Forms.Button scroll_left;
         private Movie_Mange.SmoothScrollPanel list_item_movie;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label loading_label;
         private System.Windows.Forms.Button manage_show;
         private System.Windows.Forms.Panel manage_show_panel;
@@ -2070,5 +2132,22 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Label password_information;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Label name_information;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Label mail_information;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Label username_information;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox avatar;
     }
 }

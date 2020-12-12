@@ -210,6 +210,7 @@ namespace H3K.InterFace
                     GenreChooseLoad(genre1, e);
                     break;
                 case "account_infor":
+                    setDataAccount();
                     account_infor_panel.BringToFront();
                     break;
                 case "favorite_show":
@@ -528,6 +529,27 @@ namespace H3K.InterFace
         }
 
 
+
+        #endregion
+
+        #region Account Information
+
+        private void setDataAccount()
+        {
+            username_information.Text = data.Account.Rows[0]["username"].ToString();
+            mail_information.Text = data.Account.Rows[0]["email"].ToString();
+            name_information.Text = data.Account.Rows[0]["name"].ToString();
+            password_information.Text = "";
+            foreach (char k in data.Account.Rows[0]["password"].ToString())
+            {
+                password_information.Text += "*";
+            }
+            if (data.Account.Rows[0]["avatar"].ToString() != "")
+            {
+                avatar.Image = Image.FromStream(new MemoryStream((byte[])data.Account.Rows[0]["avatar"]));
+            }
+            
+        }
 
         #endregion
     }

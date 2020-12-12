@@ -63,9 +63,9 @@ namespace H3K.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_movie {
+        internal static System.Drawing.Bitmap icons8_account_64 {
             get {
-                object obj = ResourceManager.GetObject("icon_movie", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_account_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +86,36 @@ namespace H3K.Properties {
         internal static System.Drawing.Bitmap icons8_left {
             get {
                 object obj = ResourceManager.GetObject("icons8_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_lock_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_lock_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_mailing_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_mailing_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_name_tag_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_name_tag_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

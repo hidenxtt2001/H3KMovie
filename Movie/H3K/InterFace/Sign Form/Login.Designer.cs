@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.logo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sign_up = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.email_sign_up = new System.Windows.Forms.TextBox();
@@ -42,7 +43,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.sign_in = new System.Windows.Forms.Panel();
+            this.Forgot_Pass = new System.Windows.Forms.LinkLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,6 +60,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.forgot_password = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -69,14 +76,8 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Forgot_Pass = new System.Windows.Forms.LinkLabel();
             this.logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sign_up.SuspendLayout();
             this.panel7.SuspendLayout();
             this.sign_in.SuspendLayout();
@@ -85,7 +86,6 @@
             this.panel1.SuspendLayout();
             this.forgot_password.SuspendLayout();
             this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // logo
@@ -97,6 +97,19 @@
             this.logo.Padding = new System.Windows.Forms.Padding(10, 50, 10, 50);
             this.logo.Size = new System.Drawing.Size(423, 460);
             this.logo.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::H3K.Properties.Resources.logo;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(403, 360);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
             // sign_up
             // 
@@ -258,6 +271,54 @@
             this.panel7.TabIndex = 9;
             this.panel7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::H3K.Properties.Resources.icons8_left;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(211)))), ((int)(((byte)(240)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(211)))), ((int)(((byte)(240)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(4, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(36, 32);
+            this.button4.TabIndex = 13;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::H3K.Properties.Resources.icons8_subtract;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(370, 4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(30, 32);
+            this.button5.TabIndex = 1;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::H3K.Properties.Resources.icons8_delete;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(400, 4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(30, 32);
+            this.button6.TabIndex = 0;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button1_Click);
+            // 
             // sign_in
             // 
             this.sign_in.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(147)))), ((int)(((byte)(191)))));
@@ -277,6 +338,22 @@
             this.sign_in.Name = "sign_in";
             this.sign_in.Size = new System.Drawing.Size(434, 460);
             this.sign_in.TabIndex = 6;
+            // 
+            // Forgot_Pass
+            // 
+            this.Forgot_Pass.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
+            this.Forgot_Pass.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Forgot_Pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(100)))), ((int)(((byte)(217)))));
+            this.Forgot_Pass.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.Forgot_Pass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(100)))), ((int)(((byte)(217)))));
+            this.Forgot_Pass.Location = new System.Drawing.Point(123, 397);
+            this.Forgot_Pass.Name = "Forgot_Pass";
+            this.Forgot_Pass.Size = new System.Drawing.Size(188, 33);
+            this.Forgot_Pass.TabIndex = 3;
+            this.Forgot_Pass.TabStop = true;
+            this.Forgot_Pass.Text = "Forgot Your Password";
+            this.Forgot_Pass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Forgot_Pass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Forgot_Pass_LinkClicked);
             // 
             // panel4
             // 
@@ -298,7 +375,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(178, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(78, 33);
-            this.linkLabel1.TabIndex = 1;
+            this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Sign Up";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -345,7 +422,7 @@
             this.Login_Button.Location = new System.Drawing.Point(141, 309);
             this.Login_Button.Name = "Login_Button";
             this.Login_Button.Size = new System.Drawing.Size(145, 45);
-            this.Login_Button.TabIndex = 5;
+            this.Login_Button.TabIndex = 2;
             this.Login_Button.Text = "Login";
             this.Login_Button.UseVisualStyleBackColor = false;
             this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
@@ -359,7 +436,7 @@
             this.password_input.Location = new System.Drawing.Point(97, 248);
             this.password_input.Name = "password_input";
             this.password_input.Size = new System.Drawing.Size(231, 23);
-            this.password_input.TabIndex = 4;
+            this.password_input.TabIndex = 1;
             this.password_input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.username_input_KeyDown);
             // 
             // label2
@@ -384,7 +461,7 @@
             this.username_input.Location = new System.Drawing.Point(97, 172);
             this.username_input.Name = "username_input";
             this.username_input.Size = new System.Drawing.Size(231, 23);
-            this.username_input.TabIndex = 2;
+            this.username_input.TabIndex = 0;
             this.username_input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.username_input_KeyDown);
             // 
             // label3
@@ -425,6 +502,38 @@
             this.panel9.Size = new System.Drawing.Size(434, 40);
             this.panel9.TabIndex = 9;
             this.panel9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::H3K.Properties.Resources.icons8_subtract;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(370, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(30, 32);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::H3K.Properties.Resources.icons8_delete;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(400, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 32);
+            this.button3.TabIndex = 0;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -609,115 +718,6 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::H3K.Properties.Resources.icons8_subtract;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(370, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 32);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::H3K.Properties.Resources.icons8_delete;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(400, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(30, 32);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = global::H3K.Properties.Resources.icons8_left;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(211)))), ((int)(((byte)(240)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(211)))), ((int)(((byte)(240)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(36, 32);
-            this.button4.TabIndex = 13;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = global::H3K.Properties.Resources.icons8_subtract;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(370, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(30, 32);
-            this.button5.TabIndex = 1;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackgroundImage = global::H3K.Properties.Resources.icons8_delete;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(400, 4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(30, 32);
-            this.button6.TabIndex = 0;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::H3K.Properties.Resources.logo;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 50);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(403, 360);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
-            // 
-            // Forgot_Pass
-            // 
-            this.Forgot_Pass.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(116)))), ((int)(((byte)(237)))));
-            this.Forgot_Pass.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Forgot_Pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(100)))), ((int)(((byte)(217)))));
-            this.Forgot_Pass.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.Forgot_Pass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(100)))), ((int)(((byte)(217)))));
-            this.Forgot_Pass.Location = new System.Drawing.Point(123, 397);
-            this.Forgot_Pass.Name = "Forgot_Pass";
-            this.Forgot_Pass.Size = new System.Drawing.Size(188, 33);
-            this.Forgot_Pass.TabIndex = 11;
-            this.Forgot_Pass.TabStop = true;
-            this.Forgot_Pass.Text = "Forgot Your Password";
-            this.Forgot_Pass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Forgot_Pass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Forgot_Pass_LinkClicked);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -732,6 +732,7 @@
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.logo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.sign_up.ResumeLayout(false);
             this.sign_up.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -743,7 +744,6 @@
             this.forgot_password.ResumeLayout(false);
             this.forgot_password.PerformLayout();
             this.panel14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

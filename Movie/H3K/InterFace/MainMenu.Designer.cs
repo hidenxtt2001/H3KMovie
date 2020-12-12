@@ -43,6 +43,9 @@
             this.action_panel = new System.Windows.Forms.Panel();
             this.loading_label = new System.Windows.Forms.Label();
             this.common = new System.Windows.Forms.Panel();
+            this.manage_show_panel = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.movie_show_panel = new System.Windows.Forms.Panel();
             this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -73,9 +76,54 @@
             this.genre1 = new System.Windows.Forms.Button();
             this.scroll_right = new System.Windows.Forms.Button();
             this.scroll_left = new System.Windows.Forms.Button();
-            this.manage_show_panel = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.favorite_show_panel = new System.Windows.Forms.Panel();
+            this.movies_list_favorite = new System.Windows.Forms.FlowLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.account_infor_panel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.history_show_panel = new System.Windows.Forms.Panel();
+            this.movies_list_history = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.control = new System.Windows.Forms.Panel();
+            this.control_button = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.search_panel = new System.Windows.Forms.Panel();
+            this.search_input = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel19 = new System.Windows.Forms.Panel();
             this.AddMovie = new System.Windows.Forms.Button();
+            this.manage_poster = new System.Windows.Forms.PictureBox();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.manage_rating = new System.Windows.Forms.NumericUpDown();
+            this.manage_year = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.manage_nation = new System.Windows.Forms.TextBox();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.manage_director = new System.Windows.Forms.TextBox();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.manage_content = new System.Windows.Forms.RichTextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.manage_genre1 = new System.Windows.Forms.CheckBox();
@@ -101,20 +149,6 @@
             this.manage_genre21 = new System.Windows.Forms.CheckBox();
             this.manage_genre22 = new System.Windows.Forms.CheckBox();
             this.manage_genre23 = new System.Windows.Forms.CheckBox();
-            this.manage_rating = new System.Windows.Forms.NumericUpDown();
-            this.manage_year = new System.Windows.Forms.NumericUpDown();
-            this.manage_poster = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.manage_nation = new System.Windows.Forms.TextBox();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.manage_director = new System.Windows.Forms.TextBox();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.manage_content = new System.Windows.Forms.RichTextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.manage_poster_link = new System.Windows.Forms.TextBox();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -124,59 +158,18 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.manage_title = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.favorite_show_panel = new System.Windows.Forms.Panel();
-            this.movies_list_favorite = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.account_infor_panel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.history_show_panel = new System.Windows.Forms.Panel();
-            this.movies_list_history = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.control = new System.Windows.Forms.Panel();
-            this.control_button = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.search_panel = new System.Windows.Forms.Panel();
-            this.search_input = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.form_born.SuspendLayout();
             this.menu_panel.SuspendLayout();
             this.action_panel.SuspendLayout();
             this.common.SuspendLayout();
+            this.manage_show_panel.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.movie_show_panel.SuspendLayout();
             this.category.SuspendLayout();
             this.category_scroll.SuspendLayout();
-            this.manage_show_panel.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_rating)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_year)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_poster)).BeginInit();
-            this.panel16.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.favorite_show_panel.SuspendLayout();
             this.account_infor_panel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -186,6 +179,20 @@
             this.control.SuspendLayout();
             this.control_button.SuspendLayout();
             this.search_panel.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_poster)).BeginInit();
+            this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_rating)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_year)).BeginInit();
+            this.panel16.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // icon_mainmenu
@@ -382,15 +389,46 @@
             // common
             // 
             this.common.Controls.Add(this.manage_show_panel);
+            this.common.Controls.Add(this.account_infor_panel);
             this.common.Controls.Add(this.movie_show_panel);
             this.common.Controls.Add(this.favorite_show_panel);
-            this.common.Controls.Add(this.account_infor_panel);
             this.common.Controls.Add(this.history_show_panel);
             this.common.Dock = System.Windows.Forms.DockStyle.Fill;
             this.common.Location = new System.Drawing.Point(0, 42);
             this.common.Name = "common";
             this.common.Size = new System.Drawing.Size(1176, 726);
             this.common.TabIndex = 3;
+            // 
+            // manage_show_panel
+            // 
+            this.manage_show_panel.Controls.Add(this.panel4);
+            this.manage_show_panel.Controls.Add(this.label8);
+            this.manage_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manage_show_panel.Location = new System.Drawing.Point(0, 0);
+            this.manage_show_panel.Name = "manage_show_panel";
+            this.manage_show_panel.Size = new System.Drawing.Size(1176, 726);
+            this.manage_show_panel.TabIndex = 5;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.tableLayoutPanel2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 70);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1176, 413);
+            this.panel4.TabIndex = 2;
+            // 
+            // label8
+            // 
+            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label8.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(1176, 70);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Manage  Movies";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // movie_show_panel
             // 
@@ -841,643 +879,6 @@
             this.scroll_left.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
             this.scroll_left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
             // 
-            // manage_show_panel
-            // 
-            this.manage_show_panel.Controls.Add(this.panel4);
-            this.manage_show_panel.Controls.Add(this.label8);
-            this.manage_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manage_show_panel.Location = new System.Drawing.Point(0, 0);
-            this.manage_show_panel.Name = "manage_show_panel";
-            this.manage_show_panel.Size = new System.Drawing.Size(1176, 726);
-            this.manage_show_panel.TabIndex = 5;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.AddMovie);
-            this.panel4.Controls.Add(this.groupBox1);
-            this.panel4.Controls.Add(this.manage_rating);
-            this.panel4.Controls.Add(this.manage_year);
-            this.panel4.Controls.Add(this.manage_poster);
-            this.panel4.Controls.Add(this.label16);
-            this.panel4.Controls.Add(this.panel16);
-            this.panel4.Controls.Add(this.label15);
-            this.panel4.Controls.Add(this.panel14);
-            this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Controls.Add(this.manage_content);
-            this.panel4.Controls.Add(this.panel12);
-            this.panel4.Controls.Add(this.panel10);
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 70);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1176, 413);
-            this.panel4.TabIndex = 2;
-            // 
-            // AddMovie
-            // 
-            this.AddMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddMovie.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddMovie.ForeColor = System.Drawing.Color.White;
-            this.AddMovie.Location = new System.Drawing.Point(948, 346);
-            this.AddMovie.Name = "AddMovie";
-            this.AddMovie.Size = new System.Drawing.Size(159, 44);
-            this.AddMovie.TabIndex = 14;
-            this.AddMovie.Text = "Add Movie";
-            this.AddMovie.UseVisualStyleBackColor = true;
-            this.AddMovie.Click += new System.EventHandler(this.AddMovie_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.flowLayoutPanel2);
-            this.groupBox1.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(49, 200);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(477, 193);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Genres";
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre1);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre2);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre3);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre4);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre5);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre6);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre7);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre8);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre9);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre10);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre11);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre12);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre13);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre14);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre15);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre16);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre17);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre18);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre19);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre20);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre21);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre22);
-            this.flowLayoutPanel2.Controls.Add(this.manage_genre23);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 23);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(471, 167);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
-            // manage_genre1
-            // 
-            this.manage_genre1.AutoSize = true;
-            this.manage_genre1.Checked = true;
-            this.manage_genre1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.manage_genre1.Enabled = false;
-            this.manage_genre1.Location = new System.Drawing.Point(3, 3);
-            this.manage_genre1.Name = "manage_genre1";
-            this.manage_genre1.Size = new System.Drawing.Size(55, 24);
-            this.manage_genre1.TabIndex = 0;
-            this.manage_genre1.Text = "All";
-            this.manage_genre1.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre2
-            // 
-            this.manage_genre2.AutoSize = true;
-            this.manage_genre2.Location = new System.Drawing.Point(64, 3);
-            this.manage_genre2.Name = "manage_genre2";
-            this.manage_genre2.Size = new System.Drawing.Size(109, 24);
-            this.manage_genre2.TabIndex = 1;
-            this.manage_genre2.Text = "Animation";
-            this.manage_genre2.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre3
-            // 
-            this.manage_genre3.AutoSize = true;
-            this.manage_genre3.Location = new System.Drawing.Point(179, 3);
-            this.manage_genre3.Name = "manage_genre3";
-            this.manage_genre3.Size = new System.Drawing.Size(82, 24);
-            this.manage_genre3.TabIndex = 2;
-            this.manage_genre3.Text = "Action";
-            this.manage_genre3.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre4
-            // 
-            this.manage_genre4.AutoSize = true;
-            this.manage_genre4.Location = new System.Drawing.Point(267, 3);
-            this.manage_genre4.Name = "manage_genre4";
-            this.manage_genre4.Size = new System.Drawing.Size(109, 24);
-            this.manage_genre4.TabIndex = 3;
-            this.manage_genre4.Text = "Adventure";
-            this.manage_genre4.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre5
-            // 
-            this.manage_genre5.AutoSize = true;
-            this.manage_genre5.Location = new System.Drawing.Point(382, 3);
-            this.manage_genre5.Name = "manage_genre5";
-            this.manage_genre5.Size = new System.Drawing.Size(82, 24);
-            this.manage_genre5.TabIndex = 4;
-            this.manage_genre5.Text = "Comedy";
-            this.manage_genre5.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre6
-            // 
-            this.manage_genre6.AutoSize = true;
-            this.manage_genre6.Location = new System.Drawing.Point(3, 33);
-            this.manage_genre6.Name = "manage_genre6";
-            this.manage_genre6.Size = new System.Drawing.Size(73, 24);
-            this.manage_genre6.TabIndex = 5;
-            this.manage_genre6.Text = "Crime";
-            this.manage_genre6.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre7
-            // 
-            this.manage_genre7.AutoSize = true;
-            this.manage_genre7.Location = new System.Drawing.Point(82, 33);
-            this.manage_genre7.Name = "manage_genre7";
-            this.manage_genre7.Size = new System.Drawing.Size(100, 24);
-            this.manage_genre7.TabIndex = 6;
-            this.manage_genre7.Text = "Document";
-            this.manage_genre7.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre8
-            // 
-            this.manage_genre8.AutoSize = true;
-            this.manage_genre8.Location = new System.Drawing.Point(188, 33);
-            this.manage_genre8.Name = "manage_genre8";
-            this.manage_genre8.Size = new System.Drawing.Size(73, 24);
-            this.manage_genre8.TabIndex = 7;
-            this.manage_genre8.Text = "Drama";
-            this.manage_genre8.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre9
-            // 
-            this.manage_genre9.AutoSize = true;
-            this.manage_genre9.Location = new System.Drawing.Point(267, 33);
-            this.manage_genre9.Name = "manage_genre9";
-            this.manage_genre9.Size = new System.Drawing.Size(82, 24);
-            this.manage_genre9.TabIndex = 8;
-            this.manage_genre9.Text = "Family";
-            this.manage_genre9.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre10
-            // 
-            this.manage_genre10.AutoSize = true;
-            this.manage_genre10.Location = new System.Drawing.Point(355, 33);
-            this.manage_genre10.Name = "manage_genre10";
-            this.manage_genre10.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre10.TabIndex = 9;
-            this.manage_genre10.Text = "Fantasy";
-            this.manage_genre10.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre11
-            // 
-            this.manage_genre11.AutoSize = true;
-            this.manage_genre11.Location = new System.Drawing.Point(3, 63);
-            this.manage_genre11.Name = "manage_genre11";
-            this.manage_genre11.Size = new System.Drawing.Size(109, 24);
-            this.manage_genre11.TabIndex = 10;
-            this.manage_genre11.Text = "Film-Noir";
-            this.manage_genre11.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre12
-            // 
-            this.manage_genre12.AutoSize = true;
-            this.manage_genre12.Location = new System.Drawing.Point(118, 63);
-            this.manage_genre12.Name = "manage_genre12";
-            this.manage_genre12.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre12.TabIndex = 11;
-            this.manage_genre12.Text = "History";
-            this.manage_genre12.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre13
-            // 
-            this.manage_genre13.AutoSize = true;
-            this.manage_genre13.Location = new System.Drawing.Point(215, 63);
-            this.manage_genre13.Name = "manage_genre13";
-            this.manage_genre13.Size = new System.Drawing.Size(82, 24);
-            this.manage_genre13.TabIndex = 12;
-            this.manage_genre13.Text = "Horror";
-            this.manage_genre13.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre14
-            // 
-            this.manage_genre14.AutoSize = true;
-            this.manage_genre14.Location = new System.Drawing.Point(303, 63);
-            this.manage_genre14.Name = "manage_genre14";
-            this.manage_genre14.Size = new System.Drawing.Size(73, 24);
-            this.manage_genre14.TabIndex = 13;
-            this.manage_genre14.Text = "Music";
-            this.manage_genre14.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre15
-            // 
-            this.manage_genre15.AutoSize = true;
-            this.manage_genre15.Location = new System.Drawing.Point(3, 93);
-            this.manage_genre15.Name = "manage_genre15";
-            this.manage_genre15.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre15.TabIndex = 14;
-            this.manage_genre15.Text = "Musical";
-            this.manage_genre15.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre16
-            // 
-            this.manage_genre16.AutoSize = true;
-            this.manage_genre16.Location = new System.Drawing.Point(100, 93);
-            this.manage_genre16.Name = "manage_genre16";
-            this.manage_genre16.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre16.TabIndex = 15;
-            this.manage_genre16.Text = "Mystery";
-            this.manage_genre16.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre17
-            // 
-            this.manage_genre17.AutoSize = true;
-            this.manage_genre17.Location = new System.Drawing.Point(197, 93);
-            this.manage_genre17.Name = "manage_genre17";
-            this.manage_genre17.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre17.TabIndex = 16;
-            this.manage_genre17.Text = "Romance";
-            this.manage_genre17.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre18
-            // 
-            this.manage_genre18.AutoSize = true;
-            this.manage_genre18.Location = new System.Drawing.Point(294, 93);
-            this.manage_genre18.Name = "manage_genre18";
-            this.manage_genre18.Size = new System.Drawing.Size(82, 24);
-            this.manage_genre18.TabIndex = 17;
-            this.manage_genre18.Text = "Sci-Fi";
-            this.manage_genre18.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre19
-            // 
-            this.manage_genre19.AutoSize = true;
-            this.manage_genre19.Location = new System.Drawing.Point(382, 93);
-            this.manage_genre19.Name = "manage_genre19";
-            this.manage_genre19.Size = new System.Drawing.Size(73, 24);
-            this.manage_genre19.TabIndex = 18;
-            this.manage_genre19.Text = "Short";
-            this.manage_genre19.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre20
-            // 
-            this.manage_genre20.AutoSize = true;
-            this.manage_genre20.Location = new System.Drawing.Point(3, 123);
-            this.manage_genre20.Name = "manage_genre20";
-            this.manage_genre20.Size = new System.Drawing.Size(73, 24);
-            this.manage_genre20.TabIndex = 19;
-            this.manage_genre20.Text = "Sport";
-            this.manage_genre20.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre21
-            // 
-            this.manage_genre21.AutoSize = true;
-            this.manage_genre21.Location = new System.Drawing.Point(82, 123);
-            this.manage_genre21.Name = "manage_genre21";
-            this.manage_genre21.Size = new System.Drawing.Size(100, 24);
-            this.manage_genre21.TabIndex = 20;
-            this.manage_genre21.Text = "Thriller";
-            this.manage_genre21.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre22
-            // 
-            this.manage_genre22.AutoSize = true;
-            this.manage_genre22.Location = new System.Drawing.Point(188, 123);
-            this.manage_genre22.Name = "manage_genre22";
-            this.manage_genre22.Size = new System.Drawing.Size(55, 24);
-            this.manage_genre22.TabIndex = 21;
-            this.manage_genre22.Text = "War";
-            this.manage_genre22.UseVisualStyleBackColor = true;
-            // 
-            // manage_genre23
-            // 
-            this.manage_genre23.AutoSize = true;
-            this.manage_genre23.Location = new System.Drawing.Point(249, 123);
-            this.manage_genre23.Name = "manage_genre23";
-            this.manage_genre23.Size = new System.Drawing.Size(91, 24);
-            this.manage_genre23.TabIndex = 22;
-            this.manage_genre23.Text = "Western";
-            this.manage_genre23.UseVisualStyleBackColor = true;
-            // 
-            // manage_rating
-            // 
-            this.manage_rating.BackColor = System.Drawing.Color.White;
-            this.manage_rating.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_rating.Location = new System.Drawing.Point(816, 147);
-            this.manage_rating.Name = "manage_rating";
-            this.manage_rating.Size = new System.Drawing.Size(60, 27);
-            this.manage_rating.TabIndex = 11;
-            this.manage_rating.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            // 
-            // manage_year
-            // 
-            this.manage_year.BackColor = System.Drawing.Color.White;
-            this.manage_year.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_year.Location = new System.Drawing.Point(637, 148);
-            this.manage_year.Maximum = new decimal(new int[] {
-            1800,
-            0,
-            0,
-            0});
-            this.manage_year.Minimum = new decimal(new int[] {
-            1800,
-            0,
-            0,
-            0});
-            this.manage_year.Name = "manage_year";
-            this.manage_year.Size = new System.Drawing.Size(60, 27);
-            this.manage_year.TabIndex = 11;
-            this.manage_year.Value = new decimal(new int[] {
-            1800,
-            0,
-            0,
-            0});
-            // 
-            // manage_poster
-            // 
-            this.manage_poster.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.manage_poster.Location = new System.Drawing.Point(914, 19);
-            this.manage_poster.Name = "manage_poster";
-            this.manage_poster.Size = new System.Drawing.Size(226, 307);
-            this.manage_poster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.manage_poster.TabIndex = 10;
-            this.manage_poster.TabStop = false;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Snow;
-            this.label16.Location = new System.Drawing.Point(731, 150);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(63, 20);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Rating";
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.manage_nation);
-            this.panel16.Controls.Add(this.panel17);
-            this.panel16.Location = new System.Drawing.Point(661, 93);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(215, 29);
-            this.panel16.TabIndex = 9;
-            // 
-            // manage_nation
-            // 
-            this.manage_nation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.manage_nation.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.manage_nation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manage_nation.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_nation.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.manage_nation.Location = new System.Drawing.Point(0, 0);
-            this.manage_nation.Name = "manage_nation";
-            this.manage_nation.Size = new System.Drawing.Size(215, 20);
-            this.manage_nation.TabIndex = 0;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.White;
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel17.Location = new System.Drawing.Point(0, 28);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(215, 1);
-            this.panel17.TabIndex = 1;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Snow;
-            this.label15.Location = new System.Drawing.Point(576, 150);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 20);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "Year";
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.manage_director);
-            this.panel14.Controls.Add(this.panel15);
-            this.panel14.Location = new System.Drawing.Point(661, 41);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(215, 29);
-            this.panel14.TabIndex = 9;
-            // 
-            // manage_director
-            // 
-            this.manage_director.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.manage_director.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.manage_director.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manage_director.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_director.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.manage_director.Location = new System.Drawing.Point(0, 0);
-            this.manage_director.Name = "manage_director";
-            this.manage_director.Size = new System.Drawing.Size(215, 20);
-            this.manage_director.TabIndex = 0;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel15.Location = new System.Drawing.Point(0, 28);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(215, 1);
-            this.panel15.TabIndex = 1;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Snow;
-            this.label14.Location = new System.Drawing.Point(576, 97);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(63, 20);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Nation";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Snow;
-            this.label13.Location = new System.Drawing.Point(576, 45);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(81, 20);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Director";
-            // 
-            // manage_content
-            // 
-            this.manage_content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.manage_content.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.manage_content.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_content.ForeColor = System.Drawing.Color.White;
-            this.manage_content.Location = new System.Drawing.Point(661, 203);
-            this.manage_content.Name = "manage_content";
-            this.manage_content.Size = new System.Drawing.Size(215, 187);
-            this.manage_content.TabIndex = 7;
-            this.manage_content.Text = "";
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.manage_poster_link);
-            this.panel12.Controls.Add(this.panel13);
-            this.panel12.Location = new System.Drawing.Point(172, 145);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(354, 29);
-            this.panel12.TabIndex = 6;
-            // 
-            // manage_poster_link
-            // 
-            this.manage_poster_link.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.manage_poster_link.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.manage_poster_link.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manage_poster_link.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_poster_link.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.manage_poster_link.Location = new System.Drawing.Point(0, 0);
-            this.manage_poster_link.Name = "manage_poster_link";
-            this.manage_poster_link.Size = new System.Drawing.Size(354, 20);
-            this.manage_poster_link.TabIndex = 0;
-            this.manage_poster_link.Leave += new System.EventHandler(this.manage_poster_link_Leave);
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.White;
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel13.Location = new System.Drawing.Point(0, 28);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(354, 1);
-            this.panel13.TabIndex = 1;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.manage_movie_link);
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Location = new System.Drawing.Point(172, 93);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(354, 29);
-            this.panel10.TabIndex = 5;
-            // 
-            // manage_movie_link
-            // 
-            this.manage_movie_link.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.manage_movie_link.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.manage_movie_link.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manage_movie_link.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_movie_link.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.manage_movie_link.Location = new System.Drawing.Point(0, 0);
-            this.manage_movie_link.Name = "manage_movie_link";
-            this.manage_movie_link.Size = new System.Drawing.Size(354, 20);
-            this.manage_movie_link.TabIndex = 0;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(0, 28);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(354, 1);
-            this.panel11.TabIndex = 1;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.manage_title);
-            this.panel7.Controls.Add(this.panel9);
-            this.panel7.Location = new System.Drawing.Point(172, 41);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(354, 29);
-            this.panel7.TabIndex = 4;
-            // 
-            // manage_title
-            // 
-            this.manage_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.manage_title.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.manage_title.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manage_title.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manage_title.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.manage_title.Location = new System.Drawing.Point(0, 0);
-            this.manage_title.Name = "manage_title";
-            this.manage_title.Size = new System.Drawing.Size(354, 20);
-            this.manage_title.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 28);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(354, 1);
-            this.panel9.TabIndex = 1;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Snow;
-            this.label12.Location = new System.Drawing.Point(576, 205);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 20);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Content";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Snow;
-            this.label11.Location = new System.Drawing.Point(45, 149);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 20);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Poster Link";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Snow;
-            this.label10.Location = new System.Drawing.Point(45, 97);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 20);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Movie Link";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Snow;
-            this.label9.Location = new System.Drawing.Point(45, 45);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 20);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Title";
-            // 
-            // label8
-            // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label8.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label8.Location = new System.Drawing.Point(0, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(1176, 70);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Manage  Movies";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // favorite_show_panel
             // 
             this.favorite_show_panel.Controls.Add(this.movies_list_favorite);
@@ -1522,10 +923,9 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 70);
@@ -1535,24 +935,14 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1176, 656);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(124)))), ((int)(((byte)(163)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(578, 55);
-            this.panel2.Margin = new System.Windows.Forms.Padding(49, 55, 49, 55);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(19, 546);
-            this.panel2.TabIndex = 0;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.flowLayoutPanel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(696, 100);
+            this.panel3.Location = new System.Drawing.Point(648, 100);
             this.panel3.Margin = new System.Windows.Forms.Padding(50, 100, 50, 100);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(430, 456);
+            this.panel3.Size = new System.Drawing.Size(478, 456);
             this.panel3.TabIndex = 1;
             // 
             // flowLayoutPanel1
@@ -1568,7 +958,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(430, 456);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(478, 456);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // label4
@@ -1835,9 +1225,662 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.88435F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.14966F));
+            this.tableLayoutPanel2.Controls.Add(this.panel19, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel18, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 413F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1176, 413);
+            this.tableLayoutPanel2.TabIndex = 4;
+            // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.AddMovie);
+            this.panel19.Controls.Add(this.manage_poster);
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel19.Location = new System.Drawing.Point(894, 3);
+            this.panel19.Name = "panel19";
+            this.panel19.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.panel19.Size = new System.Drawing.Size(279, 407);
+            this.panel19.TabIndex = 2;
+            // 
+            // AddMovie
+            // 
+            this.AddMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddMovie.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddMovie.ForeColor = System.Drawing.Color.White;
+            this.AddMovie.Location = new System.Drawing.Point(36, 340);
+            this.AddMovie.Name = "AddMovie";
+            this.AddMovie.Size = new System.Drawing.Size(159, 44);
+            this.AddMovie.TabIndex = 16;
+            this.AddMovie.Text = "Add Movie";
+            this.AddMovie.UseVisualStyleBackColor = true;
+            // 
+            // manage_poster
+            // 
+            this.manage_poster.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.manage_poster.Dock = System.Windows.Forms.DockStyle.Top;
+            this.manage_poster.Location = new System.Drawing.Point(0, 0);
+            this.manage_poster.Name = "manage_poster";
+            this.manage_poster.Size = new System.Drawing.Size(259, 324);
+            this.manage_poster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.manage_poster.TabIndex = 15;
+            this.manage_poster.TabStop = false;
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.manage_rating);
+            this.panel18.Controls.Add(this.manage_year);
+            this.panel18.Controls.Add(this.label16);
+            this.panel18.Controls.Add(this.panel16);
+            this.panel18.Controls.Add(this.label15);
+            this.panel18.Controls.Add(this.panel14);
+            this.panel18.Controls.Add(this.label14);
+            this.panel18.Controls.Add(this.label13);
+            this.panel18.Controls.Add(this.manage_content);
+            this.panel18.Controls.Add(this.label12);
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel18.Location = new System.Drawing.Point(473, 3);
+            this.panel18.Name = "panel18";
+            this.panel18.Padding = new System.Windows.Forms.Padding(10);
+            this.panel18.Size = new System.Drawing.Size(415, 407);
+            this.panel18.TabIndex = 1;
+            // 
+            // manage_rating
+            // 
+            this.manage_rating.BackColor = System.Drawing.Color.White;
+            this.manage_rating.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_rating.Location = new System.Drawing.Point(298, 150);
+            this.manage_rating.Name = "manage_rating";
+            this.manage_rating.Size = new System.Drawing.Size(60, 27);
+            this.manage_rating.TabIndex = 20;
+            this.manage_rating.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            // 
+            // manage_year
+            // 
+            this.manage_year.BackColor = System.Drawing.Color.White;
+            this.manage_year.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_year.Location = new System.Drawing.Point(105, 150);
+            this.manage_year.Maximum = new decimal(new int[] {
+            1800,
+            0,
+            0,
+            0});
+            this.manage_year.Minimum = new decimal(new int[] {
+            1800,
+            0,
+            0,
+            0});
+            this.manage_year.Name = "manage_year";
+            this.manage_year.Size = new System.Drawing.Size(60, 27);
+            this.manage_year.TabIndex = 21;
+            this.manage_year.Value = new decimal(new int[] {
+            1800,
+            0,
+            0,
+            0});
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Snow;
+            this.label16.Location = new System.Drawing.Point(202, 154);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(63, 20);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "Rating";
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.manage_nation);
+            this.panel16.Controls.Add(this.panel17);
+            this.panel16.Location = new System.Drawing.Point(132, 96);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(215, 29);
+            this.panel16.TabIndex = 18;
+            // 
+            // manage_nation
+            // 
+            this.manage_nation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.manage_nation.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.manage_nation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manage_nation.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_nation.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.manage_nation.Location = new System.Drawing.Point(0, 0);
+            this.manage_nation.Name = "manage_nation";
+            this.manage_nation.Size = new System.Drawing.Size(215, 20);
+            this.manage_nation.TabIndex = 0;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.White;
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel17.Location = new System.Drawing.Point(0, 28);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(215, 1);
+            this.panel17.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Snow;
+            this.label15.Location = new System.Drawing.Point(28, 154);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(45, 20);
+            this.label15.TabIndex = 15;
+            this.label15.Text = "Year";
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.manage_director);
+            this.panel14.Controls.Add(this.panel15);
+            this.panel14.Location = new System.Drawing.Point(132, 44);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(215, 29);
+            this.panel14.TabIndex = 19;
+            // 
+            // manage_director
+            // 
+            this.manage_director.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.manage_director.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.manage_director.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manage_director.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_director.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.manage_director.Location = new System.Drawing.Point(0, 0);
+            this.manage_director.Name = "manage_director";
+            this.manage_director.Size = new System.Drawing.Size(215, 20);
+            this.manage_director.TabIndex = 0;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.White;
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel15.Location = new System.Drawing.Point(0, 28);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(215, 1);
+            this.panel15.TabIndex = 1;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Snow;
+            this.label14.Location = new System.Drawing.Point(28, 101);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(63, 20);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Nation";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Snow;
+            this.label13.Location = new System.Drawing.Point(28, 49);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(81, 20);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Director";
+            // 
+            // manage_content
+            // 
+            this.manage_content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.manage_content.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.manage_content.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.manage_content.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_content.ForeColor = System.Drawing.Color.White;
+            this.manage_content.Location = new System.Drawing.Point(10, 242);
+            this.manage_content.Name = "manage_content";
+            this.manage_content.Size = new System.Drawing.Size(395, 155);
+            this.manage_content.TabIndex = 13;
+            this.manage_content.Text = "";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Snow;
+            this.label12.Location = new System.Drawing.Point(28, 199);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 20);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Content";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Controls.Add(this.panel12);
+            this.panel2.Controls.Add(this.panel10);
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(464, 407);
+            this.panel2.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.flowLayoutPanel2);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox1.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(0, 216);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(464, 191);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Genres";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre1);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre2);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre3);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre4);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre5);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre6);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre7);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre8);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre9);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre10);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre11);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre12);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre13);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre14);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre15);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre16);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre17);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre18);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre19);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre20);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre21);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre22);
+            this.flowLayoutPanel2.Controls.Add(this.manage_genre23);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 23);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(458, 165);
+            this.flowLayoutPanel2.TabIndex = 0;
+            // 
+            // manage_genre1
+            // 
+            this.manage_genre1.AutoSize = true;
+            this.manage_genre1.Checked = true;
+            this.manage_genre1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.manage_genre1.Enabled = false;
+            this.manage_genre1.Location = new System.Drawing.Point(3, 3);
+            this.manage_genre1.Name = "manage_genre1";
+            this.manage_genre1.Size = new System.Drawing.Size(55, 24);
+            this.manage_genre1.TabIndex = 0;
+            this.manage_genre1.Text = "All";
+            this.manage_genre1.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre2
+            // 
+            this.manage_genre2.AutoSize = true;
+            this.manage_genre2.Location = new System.Drawing.Point(64, 3);
+            this.manage_genre2.Name = "manage_genre2";
+            this.manage_genre2.Size = new System.Drawing.Size(109, 24);
+            this.manage_genre2.TabIndex = 1;
+            this.manage_genre2.Text = "Animation";
+            this.manage_genre2.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre3
+            // 
+            this.manage_genre3.AutoSize = true;
+            this.manage_genre3.Location = new System.Drawing.Point(179, 3);
+            this.manage_genre3.Name = "manage_genre3";
+            this.manage_genre3.Size = new System.Drawing.Size(82, 24);
+            this.manage_genre3.TabIndex = 2;
+            this.manage_genre3.Text = "Action";
+            this.manage_genre3.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre4
+            // 
+            this.manage_genre4.AutoSize = true;
+            this.manage_genre4.Location = new System.Drawing.Point(267, 3);
+            this.manage_genre4.Name = "manage_genre4";
+            this.manage_genre4.Size = new System.Drawing.Size(109, 24);
+            this.manage_genre4.TabIndex = 3;
+            this.manage_genre4.Text = "Adventure";
+            this.manage_genre4.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre5
+            // 
+            this.manage_genre5.AutoSize = true;
+            this.manage_genre5.Location = new System.Drawing.Point(3, 33);
+            this.manage_genre5.Name = "manage_genre5";
+            this.manage_genre5.Size = new System.Drawing.Size(82, 24);
+            this.manage_genre5.TabIndex = 4;
+            this.manage_genre5.Text = "Comedy";
+            this.manage_genre5.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre6
+            // 
+            this.manage_genre6.AutoSize = true;
+            this.manage_genre6.Location = new System.Drawing.Point(91, 33);
+            this.manage_genre6.Name = "manage_genre6";
+            this.manage_genre6.Size = new System.Drawing.Size(73, 24);
+            this.manage_genre6.TabIndex = 5;
+            this.manage_genre6.Text = "Crime";
+            this.manage_genre6.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre7
+            // 
+            this.manage_genre7.AutoSize = true;
+            this.manage_genre7.Location = new System.Drawing.Point(170, 33);
+            this.manage_genre7.Name = "manage_genre7";
+            this.manage_genre7.Size = new System.Drawing.Size(100, 24);
+            this.manage_genre7.TabIndex = 6;
+            this.manage_genre7.Text = "Document";
+            this.manage_genre7.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre8
+            // 
+            this.manage_genre8.AutoSize = true;
+            this.manage_genre8.Location = new System.Drawing.Point(276, 33);
+            this.manage_genre8.Name = "manage_genre8";
+            this.manage_genre8.Size = new System.Drawing.Size(73, 24);
+            this.manage_genre8.TabIndex = 7;
+            this.manage_genre8.Text = "Drama";
+            this.manage_genre8.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre9
+            // 
+            this.manage_genre9.AutoSize = true;
+            this.manage_genre9.Location = new System.Drawing.Point(355, 33);
+            this.manage_genre9.Name = "manage_genre9";
+            this.manage_genre9.Size = new System.Drawing.Size(82, 24);
+            this.manage_genre9.TabIndex = 8;
+            this.manage_genre9.Text = "Family";
+            this.manage_genre9.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre10
+            // 
+            this.manage_genre10.AutoSize = true;
+            this.manage_genre10.Location = new System.Drawing.Point(3, 63);
+            this.manage_genre10.Name = "manage_genre10";
+            this.manage_genre10.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre10.TabIndex = 9;
+            this.manage_genre10.Text = "Fantasy";
+            this.manage_genre10.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre11
+            // 
+            this.manage_genre11.AutoSize = true;
+            this.manage_genre11.Location = new System.Drawing.Point(100, 63);
+            this.manage_genre11.Name = "manage_genre11";
+            this.manage_genre11.Size = new System.Drawing.Size(109, 24);
+            this.manage_genre11.TabIndex = 10;
+            this.manage_genre11.Text = "Film-Noir";
+            this.manage_genre11.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre12
+            // 
+            this.manage_genre12.AutoSize = true;
+            this.manage_genre12.Location = new System.Drawing.Point(215, 63);
+            this.manage_genre12.Name = "manage_genre12";
+            this.manage_genre12.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre12.TabIndex = 11;
+            this.manage_genre12.Text = "History";
+            this.manage_genre12.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre13
+            // 
+            this.manage_genre13.AutoSize = true;
+            this.manage_genre13.Location = new System.Drawing.Point(312, 63);
+            this.manage_genre13.Name = "manage_genre13";
+            this.manage_genre13.Size = new System.Drawing.Size(82, 24);
+            this.manage_genre13.TabIndex = 12;
+            this.manage_genre13.Text = "Horror";
+            this.manage_genre13.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre14
+            // 
+            this.manage_genre14.AutoSize = true;
+            this.manage_genre14.Location = new System.Drawing.Point(3, 93);
+            this.manage_genre14.Name = "manage_genre14";
+            this.manage_genre14.Size = new System.Drawing.Size(73, 24);
+            this.manage_genre14.TabIndex = 13;
+            this.manage_genre14.Text = "Music";
+            this.manage_genre14.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre15
+            // 
+            this.manage_genre15.AutoSize = true;
+            this.manage_genre15.Location = new System.Drawing.Point(82, 93);
+            this.manage_genre15.Name = "manage_genre15";
+            this.manage_genre15.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre15.TabIndex = 14;
+            this.manage_genre15.Text = "Musical";
+            this.manage_genre15.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre16
+            // 
+            this.manage_genre16.AutoSize = true;
+            this.manage_genre16.Location = new System.Drawing.Point(179, 93);
+            this.manage_genre16.Name = "manage_genre16";
+            this.manage_genre16.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre16.TabIndex = 15;
+            this.manage_genre16.Text = "Mystery";
+            this.manage_genre16.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre17
+            // 
+            this.manage_genre17.AutoSize = true;
+            this.manage_genre17.Location = new System.Drawing.Point(276, 93);
+            this.manage_genre17.Name = "manage_genre17";
+            this.manage_genre17.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre17.TabIndex = 16;
+            this.manage_genre17.Text = "Romance";
+            this.manage_genre17.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre18
+            // 
+            this.manage_genre18.AutoSize = true;
+            this.manage_genre18.Location = new System.Drawing.Point(373, 93);
+            this.manage_genre18.Name = "manage_genre18";
+            this.manage_genre18.Size = new System.Drawing.Size(82, 24);
+            this.manage_genre18.TabIndex = 17;
+            this.manage_genre18.Text = "Sci-Fi";
+            this.manage_genre18.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre19
+            // 
+            this.manage_genre19.AutoSize = true;
+            this.manage_genre19.Location = new System.Drawing.Point(3, 123);
+            this.manage_genre19.Name = "manage_genre19";
+            this.manage_genre19.Size = new System.Drawing.Size(73, 24);
+            this.manage_genre19.TabIndex = 18;
+            this.manage_genre19.Text = "Short";
+            this.manage_genre19.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre20
+            // 
+            this.manage_genre20.AutoSize = true;
+            this.manage_genre20.Location = new System.Drawing.Point(82, 123);
+            this.manage_genre20.Name = "manage_genre20";
+            this.manage_genre20.Size = new System.Drawing.Size(73, 24);
+            this.manage_genre20.TabIndex = 19;
+            this.manage_genre20.Text = "Sport";
+            this.manage_genre20.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre21
+            // 
+            this.manage_genre21.AutoSize = true;
+            this.manage_genre21.Location = new System.Drawing.Point(161, 123);
+            this.manage_genre21.Name = "manage_genre21";
+            this.manage_genre21.Size = new System.Drawing.Size(100, 24);
+            this.manage_genre21.TabIndex = 20;
+            this.manage_genre21.Text = "Thriller";
+            this.manage_genre21.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre22
+            // 
+            this.manage_genre22.AutoSize = true;
+            this.manage_genre22.Location = new System.Drawing.Point(267, 123);
+            this.manage_genre22.Name = "manage_genre22";
+            this.manage_genre22.Size = new System.Drawing.Size(55, 24);
+            this.manage_genre22.TabIndex = 21;
+            this.manage_genre22.Text = "War";
+            this.manage_genre22.UseVisualStyleBackColor = true;
+            // 
+            // manage_genre23
+            // 
+            this.manage_genre23.AutoSize = true;
+            this.manage_genre23.Location = new System.Drawing.Point(328, 123);
+            this.manage_genre23.Name = "manage_genre23";
+            this.manage_genre23.Size = new System.Drawing.Size(91, 24);
+            this.manage_genre23.TabIndex = 22;
+            this.manage_genre23.Text = "Western";
+            this.manage_genre23.UseVisualStyleBackColor = true;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.manage_poster_link);
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Location = new System.Drawing.Point(137, 148);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(354, 29);
+            this.panel12.TabIndex = 19;
+            // 
+            // manage_poster_link
+            // 
+            this.manage_poster_link.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.manage_poster_link.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.manage_poster_link.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manage_poster_link.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_poster_link.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.manage_poster_link.Location = new System.Drawing.Point(0, 0);
+            this.manage_poster_link.Name = "manage_poster_link";
+            this.manage_poster_link.Size = new System.Drawing.Size(354, 20);
+            this.manage_poster_link.TabIndex = 0;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.White;
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel13.Location = new System.Drawing.Point(0, 28);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(354, 1);
+            this.panel13.TabIndex = 1;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.manage_movie_link);
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Location = new System.Drawing.Point(137, 96);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(354, 29);
+            this.panel10.TabIndex = 18;
+            // 
+            // manage_movie_link
+            // 
+            this.manage_movie_link.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.manage_movie_link.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.manage_movie_link.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manage_movie_link.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_movie_link.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.manage_movie_link.Location = new System.Drawing.Point(0, 0);
+            this.manage_movie_link.Name = "manage_movie_link";
+            this.manage_movie_link.Size = new System.Drawing.Size(354, 20);
+            this.manage_movie_link.TabIndex = 0;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel11.Location = new System.Drawing.Point(0, 28);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(354, 1);
+            this.panel11.TabIndex = 1;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.manage_title);
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Location = new System.Drawing.Point(137, 44);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(354, 29);
+            this.panel7.TabIndex = 17;
+            // 
+            // manage_title
+            // 
+            this.manage_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.manage_title.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.manage_title.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.manage_title.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_title.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.manage_title.Location = new System.Drawing.Point(0, 0);
+            this.manage_title.Name = "manage_title";
+            this.manage_title.Size = new System.Drawing.Size(354, 20);
+            this.manage_title.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(0, 28);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(354, 1);
+            this.panel9.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Snow;
+            this.label11.Location = new System.Drawing.Point(10, 152);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(108, 20);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Poster Link";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Snow;
+            this.label10.Location = new System.Drawing.Point(10, 100);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(99, 20);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Movie Link";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Consolas", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Snow;
+            this.label9.Location = new System.Drawing.Point(10, 48);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 20);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Title";
+            // 
             // MainMenu
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(1340, 768);
             this.Controls.Add(this.form_born);
@@ -1852,28 +1895,11 @@
             this.action_panel.ResumeLayout(false);
             this.action_panel.PerformLayout();
             this.common.ResumeLayout(false);
+            this.manage_show_panel.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.movie_show_panel.ResumeLayout(false);
             this.category.ResumeLayout(false);
             this.category_scroll.ResumeLayout(false);
-            this.manage_show_panel.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_rating)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_year)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.manage_poster)).EndInit();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.favorite_show_panel.ResumeLayout(false);
             this.account_infor_panel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -1886,6 +1912,28 @@
             this.control_button.ResumeLayout(false);
             this.search_panel.ResumeLayout(false);
             this.search_panel.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.manage_poster)).EndInit();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_rating)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manage_year)).EndInit();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1950,7 +1998,6 @@
         private System.Windows.Forms.Button scroll_left;
         private Movie_Mange.SmoothScrollPanel list_item_movie;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label4;
@@ -1966,20 +2013,14 @@
         private System.Windows.Forms.Panel manage_show_panel;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox manage_title;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox manage_poster_link;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox manage_movie_link;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.RichTextBox manage_content;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Button AddMovie;
+        private System.Windows.Forms.PictureBox manage_poster;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.NumericUpDown manage_rating;
+        private System.Windows.Forms.NumericUpDown manage_year;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.TextBox manage_nation;
         private System.Windows.Forms.Panel panel17;
@@ -1989,11 +2030,10 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.PictureBox manage_poster;
+        private System.Windows.Forms.RichTextBox manage_content;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.NumericUpDown manage_rating;
-        private System.Windows.Forms.NumericUpDown manage_year;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.CheckBox manage_genre1;
         private System.Windows.Forms.CheckBox manage_genre2;
@@ -2018,6 +2058,17 @@
         private System.Windows.Forms.CheckBox manage_genre21;
         private System.Windows.Forms.CheckBox manage_genre22;
         private System.Windows.Forms.CheckBox manage_genre23;
-        private System.Windows.Forms.Button AddMovie;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.TextBox manage_poster_link;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.TextBox manage_movie_link;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox manage_title;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
     }
 }

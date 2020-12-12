@@ -528,8 +528,7 @@ namespace H3K.InterFace
         }
 
 
-        #endregion
 
-        
+        #endregion
     }
 }

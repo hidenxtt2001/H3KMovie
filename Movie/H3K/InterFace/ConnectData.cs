@@ -467,6 +467,35 @@ namespace H3K.InterFace
         }
         #endregion
 
+        #region Update Account Information
+
+        public bool UpdateInfor(string name, string email,string password)
+        {
+            try
+            {
+                data.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = data;
+                    cmd.CommandText = "UPDATE Account SET name=@name , email = @email , password = @password WHERE username = @username";
+                    cmd.Parameters.AddWithValue("@username", this.Account.Rows[0]["username"].ToString());
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@password", password);
+                    cmd.ExecuteNonQuery();
+                    data.Close();
+                    return true;
+                }
+            }
+            catch(Exception ex)
+            {
+                data.Close();
+                return false;
+            }
+        }
+
+        #endregion
+
 
     }
 }

@@ -44,6 +44,8 @@ namespace H3K.InterFace
 
             // Data
             data = new ConnectData();
+
+            
         }
 
         private static List<Thread> workLoad { get; set; }
@@ -550,7 +552,59 @@ namespace H3K.InterFace
             }
             
         }
+        private void buttonChangePwd_Click(object sender, EventArgs e) // Button change password
+        {
+            panelChangePwd.BringToFront();
+        }
+
+        private void buttonOut_Click(object sender, EventArgs e) // Button out of change password
+        {
+            show_infor_panel.BringToFront();
+        }
+        private void buttonChngPwd_Click(object sender, EventArgs e) // Button Press Change password in panelChangePwd
+        {
+            MessageWarning msw = new MessageWarning("");
+            if(data.Account.Rows[0]["password"].ToString() == textBoxCurPwd.Text)
+            {
+                if(textBoxNewPwd.Text == textBoxConPwd.Text)
+                {
+                    data.UpdateInfor(data.Account.Rows[0]["name"].ToString(), data.Account.Rows[0]["email"].ToString(), textBoxNewPwd.Text);
+                    msw.message = "Changed Password Successfully!";
+                    msw.ShowDialog();
+                    show_infor_panel.BringToFront();
+                }
+                else
+                {
+                    msw.message = "Confirm Password does not match";
+                    msw.ShowDialog();
+                }
+            }
+            else
+            {
+                msw.message = "Wrong Current Password!";
+                msw.ShowDialog();
+            }
+        }
+        private void buttonChangeName_Click(object sender, EventArgs e) // Button change Name
+        {
+            panelChangeName.Visible = true;
+        }
+        private void butXchangeName_Click(object sender, EventArgs e) // Button out of change Name
+        {
+            panelChangeName.Visible = false;
+        }
+        private void butOkChangeName_Click(object sender, EventArgs e) // Button Ok change Name
+        {
+            MessageWarning msw = new MessageWarning("");
+            data.UpdateInfor(textBoxChangeName.Text, data.Account.Rows[0]["email"].ToString(), data.Account.Rows[0]["password"].ToString());
+            msw.message = "Changed Name Successfully!";
+            msw.ShowDialog();
+            textBoxChangeName.Text = "";
+            panelChangeName.Visible = false;
+        }
 
         #endregion
+
+        
     }
 }

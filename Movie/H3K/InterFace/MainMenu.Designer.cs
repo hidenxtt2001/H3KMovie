@@ -44,7 +44,6 @@
             this.loading_label = new System.Windows.Forms.Label();
             this.common = new System.Windows.Forms.Panel();
             this.movie_show_panel = new System.Windows.Forms.Panel();
-            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.category = new System.Windows.Forms.Panel();
             this.category_scroll = new System.Windows.Forms.Panel();
@@ -78,7 +77,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.avatar = new System.Windows.Forms.PictureBox();
-            this.panel21 = new System.Windows.Forms.Panel();
+            this.show_infor_panel = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
             this.password_information = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -167,6 +166,25 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.common_infor = new System.Windows.Forms.Panel();
+            this.panelChangePwd = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxCurPwd = new System.Windows.Forms.TextBox();
+            this.textBoxNewPwd = new System.Windows.Forms.TextBox();
+            this.textBoxConPwd = new System.Windows.Forms.TextBox();
+            this.buttonChngPwd = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.buttonChangePwd = new System.Windows.Forms.Button();
+            this.buttonChangeName = new System.Windows.Forms.Button();
+            this.buttonOut = new System.Windows.Forms.Button();
+            this.textBoxChangeName = new System.Windows.Forms.TextBox();
+            this.panelChangeName = new System.Windows.Forms.Panel();
+            this.butOkChangeName = new System.Windows.Forms.Button();
+            this.butXchangeName = new System.Windows.Forms.Button();
+            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.form_born.SuspendLayout();
             this.menu_panel.SuspendLayout();
             this.action_panel.SuspendLayout();
@@ -178,7 +196,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.panel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
-            this.panel21.SuspendLayout();
+            this.show_infor_panel.SuspendLayout();
             this.panel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel24.SuspendLayout();
@@ -208,6 +226,9 @@
             this.control.SuspendLayout();
             this.control_button.SuspendLayout();
             this.search_panel.SuspendLayout();
+            this.common_infor.SuspendLayout();
+            this.panelChangePwd.SuspendLayout();
+            this.panelChangeName.SuspendLayout();
             this.SuspendLayout();
             // 
             // icon_mainmenu
@@ -222,6 +243,8 @@
             this.icon_mainmenu.Images.SetKeyName(5, "icons8_lock.ico");
             this.icon_mainmenu.Images.SetKeyName(6, "icons8_envelope.ico");
             this.icon_mainmenu.Images.SetKeyName(7, "icons8_maintenance.ico");
+            this.icon_mainmenu.Images.SetKeyName(8, "icons8_checkmark.ico");
+            this.icon_mainmenu.Images.SetKeyName(9, "icons8_delete.ico");
             // 
             // timer1
             // 
@@ -379,9 +402,9 @@
             // action_panel
             // 
             this.action_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.action_panel.Controls.Add(this.loading_label);
             this.action_panel.Controls.Add(this.common);
             this.action_panel.Controls.Add(this.control);
+            this.action_panel.Controls.Add(this.loading_label);
             this.action_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.action_panel.Location = new System.Drawing.Point(164, 0);
             this.action_panel.Margin = new System.Windows.Forms.Padding(0);
@@ -403,8 +426,8 @@
             // 
             // common
             // 
-            this.common.Controls.Add(this.movie_show_panel);
             this.common.Controls.Add(this.account_infor_panel);
+            this.common.Controls.Add(this.movie_show_panel);
             this.common.Controls.Add(this.manage_show_panel);
             this.common.Controls.Add(this.favorite_show_panel);
             this.common.Controls.Add(this.history_show_panel);
@@ -424,14 +447,6 @@
             this.movie_show_panel.Name = "movie_show_panel";
             this.movie_show_panel.Size = new System.Drawing.Size(1176, 726);
             this.movie_show_panel.TabIndex = 2;
-            // 
-            // list_item_movie
-            // 
-            this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.list_item_movie.Location = new System.Drawing.Point(0, 70);
-            this.list_item_movie.Name = "list_item_movie";
-            this.list_item_movie.Size = new System.Drawing.Size(1176, 649);
-            this.list_item_movie.TabIndex = 4;
             // 
             // panel1
             // 
@@ -879,14 +894,15 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.common_infor, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel20, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel21, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 70);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 656F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1176, 656);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -921,19 +937,21 @@
             this.avatar.TabIndex = 0;
             this.avatar.TabStop = false;
             // 
-            // panel21
+            // show_infor_panel
             // 
-            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(124)))), ((int)(((byte)(163)))));
-            this.panel21.Controls.Add(this.panel25);
-            this.panel21.Controls.Add(this.panel24);
-            this.panel21.Controls.Add(this.panel23);
-            this.panel21.Controls.Add(this.panel22);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel21.Location = new System.Drawing.Point(60, 60);
-            this.panel21.Margin = new System.Windows.Forms.Padding(60);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(650, 536);
-            this.panel21.TabIndex = 2;
+            this.show_infor_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(124)))), ((int)(((byte)(163)))));
+            this.show_infor_panel.Controls.Add(this.panelChangeName);
+            this.show_infor_panel.Controls.Add(this.buttonChangeName);
+            this.show_infor_panel.Controls.Add(this.buttonChangePwd);
+            this.show_infor_panel.Controls.Add(this.panel25);
+            this.show_infor_panel.Controls.Add(this.panel24);
+            this.show_infor_panel.Controls.Add(this.panel23);
+            this.show_infor_panel.Controls.Add(this.panel22);
+            this.show_infor_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.show_infor_panel.Location = new System.Drawing.Point(0, 0);
+            this.show_infor_panel.Name = "show_infor_panel";
+            this.show_infor_panel.Size = new System.Drawing.Size(650, 536);
+            this.show_infor_panel.TabIndex = 2;
             // 
             // panel25
             // 
@@ -1942,6 +1960,226 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "icons8_checkmark_64.png");
+            this.imageList1.Images.SetKeyName(1, "icons8_available_updates_32.png");
+            this.imageList1.Images.SetKeyName(2, "icons8_delete_64.png");
+            // 
+            // common_infor
+            // 
+            this.common_infor.Controls.Add(this.show_infor_panel);
+            this.common_infor.Controls.Add(this.panelChangePwd);
+            this.common_infor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.common_infor.Location = new System.Drawing.Point(60, 60);
+            this.common_infor.Margin = new System.Windows.Forms.Padding(60);
+            this.common_infor.Name = "common_infor";
+            this.common_infor.Size = new System.Drawing.Size(650, 536);
+            this.common_infor.TabIndex = 6;
+            // 
+            // panelChangePwd
+            // 
+            this.panelChangePwd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(124)))), ((int)(((byte)(163)))));
+            this.panelChangePwd.Controls.Add(this.buttonOut);
+            this.panelChangePwd.Controls.Add(this.buttonChngPwd);
+            this.panelChangePwd.Controls.Add(this.textBoxConPwd);
+            this.panelChangePwd.Controls.Add(this.textBoxNewPwd);
+            this.panelChangePwd.Controls.Add(this.textBoxCurPwd);
+            this.panelChangePwd.Controls.Add(this.label6);
+            this.panelChangePwd.Controls.Add(this.label5);
+            this.panelChangePwd.Controls.Add(this.label4);
+            this.panelChangePwd.Controls.Add(this.label7);
+            this.panelChangePwd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChangePwd.Location = new System.Drawing.Point(0, 0);
+            this.panelChangePwd.Name = "panelChangePwd";
+            this.panelChangePwd.Size = new System.Drawing.Size(650, 536);
+            this.panelChangePwd.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(37, 146);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(170, 22);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Current Password";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(37, 239);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(130, 22);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "New Password";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(37, 333);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(170, 22);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Confirm Password";
+            // 
+            // textBoxCurPwd
+            // 
+            this.textBoxCurPwd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCurPwd.Location = new System.Drawing.Point(240, 144);
+            this.textBoxCurPwd.Name = "textBoxCurPwd";
+            this.textBoxCurPwd.PasswordChar = '*';
+            this.textBoxCurPwd.Size = new System.Drawing.Size(346, 26);
+            this.textBoxCurPwd.TabIndex = 3;
+            // 
+            // textBoxNewPwd
+            // 
+            this.textBoxNewPwd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNewPwd.Location = new System.Drawing.Point(240, 237);
+            this.textBoxNewPwd.Name = "textBoxNewPwd";
+            this.textBoxNewPwd.PasswordChar = '*';
+            this.textBoxNewPwd.Size = new System.Drawing.Size(346, 26);
+            this.textBoxNewPwd.TabIndex = 4;
+            // 
+            // textBoxConPwd
+            // 
+            this.textBoxConPwd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConPwd.Location = new System.Drawing.Point(242, 331);
+            this.textBoxConPwd.Name = "textBoxConPwd";
+            this.textBoxConPwd.PasswordChar = '*';
+            this.textBoxConPwd.Size = new System.Drawing.Size(346, 26);
+            this.textBoxConPwd.TabIndex = 5;
+            // 
+            // buttonChngPwd
+            // 
+            this.buttonChngPwd.AutoSize = true;
+            this.buttonChngPwd.FlatAppearance.BorderSize = 0;
+            this.buttonChngPwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChngPwd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonChngPwd.ForeColor = System.Drawing.Color.White;
+            this.buttonChngPwd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonChngPwd.ImageIndex = 0;
+            this.buttonChngPwd.ImageList = this.imageList1;
+            this.buttonChngPwd.Location = new System.Drawing.Point(389, 426);
+            this.buttonChngPwd.Name = "buttonChngPwd";
+            this.buttonChngPwd.Size = new System.Drawing.Size(199, 54);
+            this.buttonChngPwd.TabIndex = 6;
+            this.buttonChngPwd.Text = "Change Password";
+            this.buttonChngPwd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonChngPwd.UseVisualStyleBackColor = true;
+            this.buttonChngPwd.Click += new System.EventHandler(this.buttonChngPwd_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(230, 44);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(190, 24);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Change Password";
+            // 
+            // buttonChangePwd
+            // 
+            this.buttonChangePwd.FlatAppearance.BorderSize = 0;
+            this.buttonChangePwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChangePwd.ImageIndex = 1;
+            this.buttonChangePwd.ImageList = this.imageList1;
+            this.buttonChangePwd.Location = new System.Drawing.Point(578, 405);
+            this.buttonChangePwd.Name = "buttonChangePwd";
+            this.buttonChangePwd.Size = new System.Drawing.Size(62, 49);
+            this.buttonChangePwd.TabIndex = 6;
+            this.buttonChangePwd.UseVisualStyleBackColor = true;
+            this.buttonChangePwd.Click += new System.EventHandler(this.buttonChangePwd_Click);
+            // 
+            // buttonChangeName
+            // 
+            this.buttonChangeName.FlatAppearance.BorderSize = 0;
+            this.buttonChangeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChangeName.ImageIndex = 1;
+            this.buttonChangeName.ImageList = this.imageList1;
+            this.buttonChangeName.Location = new System.Drawing.Point(578, 294);
+            this.buttonChangeName.Name = "buttonChangeName";
+            this.buttonChangeName.Size = new System.Drawing.Size(62, 49);
+            this.buttonChangeName.TabIndex = 7;
+            this.buttonChangeName.UseVisualStyleBackColor = true;
+            this.buttonChangeName.Click += new System.EventHandler(this.buttonChangeName_Click);
+            // 
+            // buttonOut
+            // 
+            this.buttonOut.FlatAppearance.BorderSize = 0;
+            this.buttonOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOut.ImageIndex = 2;
+            this.buttonOut.ImageList = this.imageList1;
+            this.buttonOut.Location = new System.Drawing.Point(578, 13);
+            this.buttonOut.Name = "buttonOut";
+            this.buttonOut.Size = new System.Drawing.Size(51, 44);
+            this.buttonOut.TabIndex = 8;
+            this.buttonOut.UseVisualStyleBackColor = true;
+            this.buttonOut.Click += new System.EventHandler(this.buttonOut_Click);
+            // 
+            // textBoxChangeName
+            // 
+            this.textBoxChangeName.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxChangeName.ForeColor = System.Drawing.Color.Black;
+            this.textBoxChangeName.Location = new System.Drawing.Point(19, 6);
+            this.textBoxChangeName.Name = "textBoxChangeName";
+            this.textBoxChangeName.Size = new System.Drawing.Size(314, 30);
+            this.textBoxChangeName.TabIndex = 2;
+            // 
+            // panelChangeName
+            // 
+            this.panelChangeName.Controls.Add(this.butXchangeName);
+            this.panelChangeName.Controls.Add(this.butOkChangeName);
+            this.panelChangeName.Controls.Add(this.textBoxChangeName);
+            this.panelChangeName.Location = new System.Drawing.Point(192, 292);
+            this.panelChangeName.Name = "panelChangeName";
+            this.panelChangeName.Size = new System.Drawing.Size(349, 91);
+            this.panelChangeName.TabIndex = 2;
+            this.panelChangeName.Visible = false;
+            // 
+            // butOkChangeName
+            // 
+            this.butOkChangeName.FlatAppearance.BorderSize = 0;
+            this.butOkChangeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butOkChangeName.ImageIndex = 8;
+            this.butOkChangeName.ImageList = this.icon_mainmenu;
+            this.butOkChangeName.Location = new System.Drawing.Point(221, 53);
+            this.butOkChangeName.Name = "butOkChangeName";
+            this.butOkChangeName.Size = new System.Drawing.Size(46, 23);
+            this.butOkChangeName.TabIndex = 3;
+            this.butOkChangeName.UseVisualStyleBackColor = true;
+            this.butOkChangeName.Click += new System.EventHandler(this.butOkChangeName_Click);
+            // 
+            // butXchangeName
+            // 
+            this.butXchangeName.FlatAppearance.BorderSize = 0;
+            this.butXchangeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butXchangeName.ImageIndex = 9;
+            this.butXchangeName.ImageList = this.icon_mainmenu;
+            this.butXchangeName.Location = new System.Drawing.Point(287, 53);
+            this.butXchangeName.Name = "butXchangeName";
+            this.butXchangeName.Size = new System.Drawing.Size(46, 23);
+            this.butXchangeName.TabIndex = 4;
+            this.butXchangeName.UseVisualStyleBackColor = true;
+            this.butXchangeName.Click += new System.EventHandler(this.butXchangeName_Click);
+            // 
+            // list_item_movie
+            // 
+            this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.list_item_movie.Location = new System.Drawing.Point(0, 70);
+            this.list_item_movie.Name = "list_item_movie";
+            this.list_item_movie.Size = new System.Drawing.Size(1176, 649);
+            this.list_item_movie.TabIndex = 4;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1967,7 +2205,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
-            this.panel21.ResumeLayout(false);
+            this.show_infor_panel.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel24.ResumeLayout(false);
@@ -2007,6 +2245,11 @@
             this.control_button.ResumeLayout(false);
             this.search_panel.ResumeLayout(false);
             this.search_panel.PerformLayout();
+            this.common_infor.ResumeLayout(false);
+            this.panelChangePwd.ResumeLayout(false);
+            this.panelChangePwd.PerformLayout();
+            this.panelChangeName.ResumeLayout(false);
+            this.panelChangeName.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2135,7 +2378,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel show_infor_panel;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Label password_information;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -2149,5 +2392,23 @@
         private System.Windows.Forms.Label username_information;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox avatar;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Panel common_infor;
+        private System.Windows.Forms.Panel panelChangePwd;
+        private System.Windows.Forms.Button buttonOut;
+        private System.Windows.Forms.Button buttonChngPwd;
+        private System.Windows.Forms.TextBox textBoxConPwd;
+        private System.Windows.Forms.TextBox textBoxNewPwd;
+        private System.Windows.Forms.TextBox textBoxCurPwd;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button buttonChangeName;
+        private System.Windows.Forms.Button buttonChangePwd;
+        private System.Windows.Forms.Panel panelChangeName;
+        private System.Windows.Forms.Button butXchangeName;
+        private System.Windows.Forms.Button butOkChangeName;
+        private System.Windows.Forms.TextBox textBoxChangeName;
     }
 }

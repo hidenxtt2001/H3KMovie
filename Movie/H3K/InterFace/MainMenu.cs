@@ -546,11 +546,6 @@ namespace H3K.InterFace
             {
                 password_information.Text += "*";
             }
-            if (data.Account.Rows[0]["avatar"].ToString() != "")
-            {
-                avatar.Image = Image.FromStream(new MemoryStream((byte[])data.Account.Rows[0]["avatar"]));
-            }
-            
         }
         private void buttonChangePwd_Click(object sender, EventArgs e) // Button change password
         {
@@ -566,10 +561,13 @@ namespace H3K.InterFace
             MessageWarning msw = new MessageWarning("");
             if(data.Account.Rows[0]["password"].ToString() == textBoxCurPwd.Text)
             {
-                if(textBoxNewPwd.Text == textBoxConPwd.Text)
+                textBoxConPwd.Text = textBoxConPwd.Text.Replace(" ", string.Empty);
+                if (textBoxNewPwd.Text == textBoxConPwd.Text)
                 {
                     data.UpdateInfor(data.Account.Rows[0]["name"].ToString(), data.Account.Rows[0]["email"].ToString(), textBoxNewPwd.Text);
                     msw.message = "Changed Password Successfully!";
+                    data.Account.Rows[0]["password"] = textBoxNewPwd.Text;
+                    setDataAccount();
                     msw.ShowDialog();
                     show_infor_panel.BringToFront();
                 }
@@ -596,11 +594,23 @@ namespace H3K.InterFace
         private void butOkChangeName_Click(object sender, EventArgs e) // Button Ok change Name
         {
             MessageWarning msw = new MessageWarning("");
-            data.UpdateInfor(textBoxChangeName.Text, data.Account.Rows[0]["email"].ToString(), data.Account.Rows[0]["password"].ToString());
-            msw.message = "Changed Name Successfully!";
+            if(data.UpdateInfor(textBoxChangeName.Text, data.Account.Rows[0]["email"].ToString(), data.Account.Rows[0]["password"].ToString()))
+            {
+                msw.message = "Changed Name Successfully!";
+                data.Account.Rows[0]["name"] = textBoxChangeName.Text;
+                setDataAccount();
+            }
+            
+            else msw.message = "Changed Name Failed!";
             msw.ShowDialog();
             textBoxChangeName.Text = "";
             panelChangeName.Visible = false;
+        }
+        private void logout__button_Click(object sender, EventArgs e)
+        {
+            data.Logout();
+            Application.Restart();
+            Environment.Exit(0);
         }
 
         #endregion

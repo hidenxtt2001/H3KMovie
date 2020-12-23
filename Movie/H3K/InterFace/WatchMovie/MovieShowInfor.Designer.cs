@@ -32,7 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieShowInfor));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.poster = new System.Windows.Forms.Panel();
+            this.mark_flag = new System.Windows.Forms.PictureBox();
+            this.gradientPanel1 = new H3K.InterFace.WatchMovie.GradientPanel();
+            this.point = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rating = new H3K.InterFace.WatchMovie.RatingStar();
             this.infor = new System.Windows.Forms.Panel();
+            this.director = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.watch_movie = new System.Windows.Forms.Button();
             this.title = new System.Windows.Forms.Label();
@@ -42,22 +49,15 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.director = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.mark_flag = new System.Windows.Forms.PictureBox();
             this.Mark = new System.Windows.Forms.ImageList(this.components);
-            this.gradientPanel1 = new H3K.InterFace.WatchMovie.GradientPanel();
-            this.point = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.rating = new H3K.InterFace.WatchMovie.RatingStar();
             this.tableLayoutPanel1.SuspendLayout();
             this.poster.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mark_flag)).BeginInit();
+            this.gradientPanel1.SuspendLayout();
             this.infor.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mark_flag)).BeginInit();
-            this.gradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -90,6 +90,65 @@
             this.poster.Size = new System.Drawing.Size(340, 483);
             this.poster.TabIndex = 1;
             // 
+            // mark_flag
+            // 
+            this.mark_flag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mark_flag.Location = new System.Drawing.Point(0, -20);
+            this.mark_flag.Name = "mark_flag";
+            this.mark_flag.Size = new System.Drawing.Size(55, 73);
+            this.mark_flag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mark_flag.TabIndex = 2;
+            this.mark_flag.TabStop = false;
+            this.mark_flag.Tag = "1";
+            this.mark_flag.Click += new System.EventHandler(this.mark_flag_Click);
+            // 
+            // gradientPanel1
+            // 
+            this.gradientPanel1.ColorBotton = System.Drawing.Color.Empty;
+            this.gradientPanel1.ColorTop = System.Drawing.Color.Empty;
+            this.gradientPanel1.Controls.Add(this.point);
+            this.gradientPanel1.Controls.Add(this.label2);
+            this.gradientPanel1.Controls.Add(this.rating);
+            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gradientPanel1.Location = new System.Drawing.Point(0, 143);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Opacity = 200;
+            this.gradientPanel1.Size = new System.Drawing.Size(340, 340);
+            this.gradientPanel1.TabIndex = 1;
+            // 
+            // point
+            // 
+            this.point.AutoSize = true;
+            this.point.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.point.ForeColor = System.Drawing.Color.LightCyan;
+            this.point.Location = new System.Drawing.Point(181, 283);
+            this.point.Name = "point";
+            this.point.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.point.Size = new System.Drawing.Size(54, 19);
+            this.point.TabIndex = 1;
+            this.point.Text = "Point";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightCyan;
+            this.label2.Location = new System.Drawing.Point(99, 282);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(81, 19);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Rating :";
+            // 
+            // rating
+            // 
+            this.rating.BackColor = System.Drawing.Color.Transparent;
+            this.rating.Location = new System.Drawing.Point(83, 239);
+            this.rating.Name = "rating";
+            this.rating.Point = 50;
+            this.rating.Size = new System.Drawing.Size(175, 35);
+            this.rating.TabIndex = 0;
+            // 
             // infor
             // 
             this.infor.Controls.Add(this.director);
@@ -104,6 +163,28 @@
             this.infor.Padding = new System.Windows.Forms.Padding(60);
             this.infor.Size = new System.Drawing.Size(532, 477);
             this.infor.TabIndex = 2;
+            // 
+            // director
+            // 
+            this.director.AutoSize = true;
+            this.director.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.director.ForeColor = System.Drawing.Color.LightCyan;
+            this.director.Location = new System.Drawing.Point(78, 345);
+            this.director.Name = "director";
+            this.director.Size = new System.Drawing.Size(81, 19);
+            this.director.TabIndex = 5;
+            this.director.Text = "Director";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(57, 320);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 18);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Director by";
             // 
             // button2
             // 
@@ -207,93 +288,12 @@
             this.panel4.Size = new System.Drawing.Size(7, 100);
             this.panel4.TabIndex = 0;
             // 
-            // director
-            // 
-            this.director.AutoSize = true;
-            this.director.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.director.ForeColor = System.Drawing.Color.LightCyan;
-            this.director.Location = new System.Drawing.Point(78, 345);
-            this.director.Name = "director";
-            this.director.Size = new System.Drawing.Size(81, 19);
-            this.director.TabIndex = 5;
-            this.director.Text = "Director";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(57, 320);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 18);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Director by";
-            // 
-            // mark_flag
-            // 
-            this.mark_flag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.mark_flag.Location = new System.Drawing.Point(0, -20);
-            this.mark_flag.Name = "mark_flag";
-            this.mark_flag.Size = new System.Drawing.Size(55, 73);
-            this.mark_flag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.mark_flag.TabIndex = 2;
-            this.mark_flag.TabStop = false;
-            this.mark_flag.Tag = "1";
-            this.mark_flag.Click += new System.EventHandler(this.mark_flag_Click);
-            // 
             // Mark
             // 
             this.Mark.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Mark.ImageStream")));
             this.Mark.TransparentColor = System.Drawing.Color.Transparent;
             this.Mark.Images.SetKeyName(0, "icons8_bookmark.ico");
             this.Mark.Images.SetKeyName(1, "icons8_filled_bookmark_ribbon.ico");
-            // 
-            // gradientPanel1
-            // 
-            this.gradientPanel1.ColorBotton = System.Drawing.Color.Empty;
-            this.gradientPanel1.ColorTop = System.Drawing.Color.Empty;
-            this.gradientPanel1.Controls.Add(this.point);
-            this.gradientPanel1.Controls.Add(this.label2);
-            this.gradientPanel1.Controls.Add(this.rating);
-            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gradientPanel1.Location = new System.Drawing.Point(0, 143);
-            this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Opacity = 200;
-            this.gradientPanel1.Size = new System.Drawing.Size(340, 340);
-            this.gradientPanel1.TabIndex = 1;
-            // 
-            // point
-            // 
-            this.point.AutoSize = true;
-            this.point.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.point.ForeColor = System.Drawing.Color.LightCyan;
-            this.point.Location = new System.Drawing.Point(181, 283);
-            this.point.Name = "point";
-            this.point.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.point.Size = new System.Drawing.Size(54, 19);
-            this.point.TabIndex = 1;
-            this.point.Text = "Point";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.LightCyan;
-            this.label2.Location = new System.Drawing.Point(99, 282);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(81, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Rating :";
-            // 
-            // rating
-            // 
-            this.rating.BackColor = System.Drawing.Color.Transparent;
-            this.rating.Location = new System.Drawing.Point(83, 239);
-            this.rating.Name = "rating";
-            this.rating.Point = 50;
-            this.rating.Size = new System.Drawing.Size(175, 35);
-            this.rating.TabIndex = 0;
             // 
             // MovieShowInfor
             // 
@@ -306,16 +306,17 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MovieShowInfor";
             this.Load += new System.EventHandler(this.MovieShowInfor_Load);
+            this.Shown += new System.EventHandler(this.MovieShowInfor_Shown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.poster.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mark_flag)).EndInit();
+            this.gradientPanel1.ResumeLayout(false);
+            this.gradientPanel1.PerformLayout();
             this.infor.ResumeLayout(false);
             this.infor.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.mark_flag)).EndInit();
-            this.gradientPanel1.ResumeLayout(false);
-            this.gradientPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

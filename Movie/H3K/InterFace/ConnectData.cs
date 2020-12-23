@@ -486,7 +486,6 @@ namespace H3K.InterFace
             }
         }
 
-
         public bool MovieDel(string movieid)
         {
             try
@@ -496,6 +495,36 @@ namespace H3K.InterFace
                 {
                     cmd.CommandText = "DELETE FROM Movie_Genres WHERE movie_id = @MovieID  DELETE FROM Movies WHERE movie_id = @MovieID";
                     cmd.Parameters.AddWithValue("@MovieID", movieid);
+                    cmd.ExecuteNonQuery();
+                    data.Close();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                data.Close();
+                return false;
+            }
+        }
+
+        public bool MovieUpdate(string movieid, string title, string plot, int rating, string director, string movie_link, string poster_link, string nation, string year,int view)
+        {
+            try
+            {
+                data.Open();
+                using (SqlCommand cmd = new SqlCommand() { Connection = data })
+                {
+                    cmd.CommandText = "update Movies set title =@Title , plot = @Plot , rating = @Rating , director = @Director , movie_link = @Movie_Link , poster = @Poster , year_create = @Year_Create , nation = @Nation , views_count = @Views where movieid = @MovieID";
+                    cmd.Parameters.AddWithValue("@MovieID", movieid);
+                    cmd.Parameters.AddWithValue("@Title", title);
+                    cmd.Parameters.AddWithValue("@Plot", plot);
+                    cmd.Parameters.AddWithValue("@Rating", rating);
+                    cmd.Parameters.AddWithValue("@Director", director);
+                    cmd.Parameters.AddWithValue("@Movie_Link", movie_link);
+                    cmd.Parameters.AddWithValue("@Poster", poster_link);
+                    cmd.Parameters.AddWithValue("@Nation", nation);
+                    cmd.Parameters.AddWithValue("@Year_Create", year);
+                    cmd.Parameters.AddWithValue("@Views", view + 1);
                     cmd.ExecuteNonQuery();
                     data.Close();
                     return true;

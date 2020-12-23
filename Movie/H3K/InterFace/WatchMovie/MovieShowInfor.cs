@@ -83,17 +83,7 @@ namespace H3K.InterFace.WatchMovie
         #region Form Load
         private void MovieShowInfor_Load(object sender, EventArgs e)
         {
-            // Waitting Backgroundload
-            Thread t = new Thread(() => { 
-                while (movieItem.ImageBackgournd == null)
-                {
-                    continue;
-                }
-                this.Invoke(new Action(() => { poster.BackgroundImage = movieItem.ImageBackgournd; }));
-                Console.WriteLine("Set up xong hinh");
-            });
-            t.IsBackground = true;
-            t.Start();
+            
 
             // Set information
             rating.Point = movieItem.Rating;
@@ -157,9 +147,30 @@ namespace H3K.InterFace.WatchMovie
             form.ShowDialog();
             this.Close();
         }
-        #endregion
-        
 
-        
+
+        #endregion
+
+        private void MovieShowInfor_Shown(object sender, EventArgs e)
+        {
+            // Waitting Backgroundload
+            Thread t = new Thread(() => {
+                while (movieItem.ImageBackgournd == null)
+                {
+                    continue;
+                }
+                try
+                {
+                    this.Invoke(new Action(() => { poster.BackgroundImage = movieItem.ImageBackgournd; }));
+                    Console.WriteLine("Set up xong hinh");
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Set up hinh loi");
+                }
+            });
+            t.IsBackground = true;
+            t.Start();
+        }
     }
 }

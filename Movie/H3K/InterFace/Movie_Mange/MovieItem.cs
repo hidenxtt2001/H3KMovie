@@ -18,11 +18,14 @@ namespace H3K.InterFace.Movie_Mange
 {
     public partial class MovieItem : UserControl
     {
+
+
         public MovieItem()
         {
             InitializeComponent();
             this.Disposed += OnDispose;
         }
+
 
         private void OnDispose(object sender, EventArgs e)
         {

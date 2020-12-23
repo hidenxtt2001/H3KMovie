@@ -343,6 +343,7 @@ namespace H3K.InterFace
         }
         #endregion
 
+        #region Search Options
         public DataSet searchMovie(string keyword)
         {
             try
@@ -370,6 +371,67 @@ namespace H3K.InterFace
                 return null;
             }
         }
+
+        public DataSet searchFavorite(string keyword)
+        {
+            try
+            {
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"SELECT * FROM Movies JOIN Favorite ON Movies.movie_id = Favorite.movie_id WHERE Favorite.username = @username AND LOWER(Movies.title) LIKE LOWER(@keyword)", data))
+                {
+                    da.SelectCommand.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+                    da.SelectCommand.Parameters.AddWithValue("@username", Account.Rows[0]["username"].ToString());
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
+            }
+            catch (Exception ex)
+            {
+
+                data.Close();
+                if (!ex.Message.Contains("Thread was being aborted"))
+                {
+                    return searchMovie(keyword);
+                }
+                else Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public DataSet searchHis(string keyword)
+        {
+            try
+            {
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"SELECT * FROM Movies JOIN History ON Movies.movie_id = History.movie_id WHERE History.username = @username AND LOWER(Movies.title) LIKE LOWER(@keyword)", data))
+                {
+                    da.SelectCommand.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+                    da.SelectCommand.Parameters.AddWithValue("@username", Account.Rows[0]["username"].ToString());
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
+            }
+            catch (Exception ex)
+            {
+
+                data.Close();
+                if (!ex.Message.Contains("Thread was being aborted"))
+                {
+                    return searchMovie(keyword);
+                }
+                else Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+        #endregion
+
+
 
         #region Manage Movie
         public bool checkExist(string id)

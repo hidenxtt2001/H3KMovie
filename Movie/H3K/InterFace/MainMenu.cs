@@ -137,13 +137,13 @@ namespace H3K.InterFace
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            loadSearch(search_input.Text);
+            loadSearch(search_input.Text,listPanel);
         }
         private void search_input_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                loadSearch(search_input.Text);
+                loadSearch(search_input.Text,listPanel);
             }
         }
 
@@ -187,6 +187,7 @@ namespace H3K.InterFace
         #region Button Main Show Panel
 
         private Control selectPanel { get; set; }
+        private Control listPanel { get; set; }
         private void mainbutton_show(object sender, EventArgs e)
         {
             if (selectPanel != null)
@@ -209,14 +210,17 @@ namespace H3K.InterFace
             {
                 case "movie_show":
                     movie_show_panel.BringToFront();
+                    listPanel = list_item_movie;
                     GenreChooseLoad(genre1, e);
                     break;
                 case "account_infor":
                     setDataAccount();
+                    listPanel = null;
                     account_infor_panel.BringToFront();
                     break;
                 case "favorite_show":
                     favorite_show_panel.BringToFront();
+                    listPanel = movies_list_favorite;
                     Thread t = new Thread(() =>
                     {
                         loadfavorite();
@@ -227,6 +231,7 @@ namespace H3K.InterFace
                     break;
                 case "history_show":
                     history_show_panel.BringToFront();
+                    listPanel = movies_list_history;
                     Thread k = new Thread(() =>
                     {
                         loadHistory();
@@ -386,7 +391,7 @@ namespace H3K.InterFace
 
         }
 
-        private void loadSearch(string keyword) // Search Movie
+        private void loadSearch(string keyword,Control sender) // Search Movie
         {
             if (workLoad.Count != 0)
             {
@@ -395,34 +400,53 @@ namespace H3K.InterFace
                     k.Abort();
                 }
             }
-            Thread t = new Thread(() =>
+            if(sender != null)
             {
-                ClearControl(list_item_movie);
-                loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
-                DataTable result = data.searchMovie(keyword).Tables[0];
-                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
-                foreach (DataRow item in result.Rows)
+                ClearControl(sender);
+                Thread t = new Thread(() =>
                 {
-                    list_item_movie.Invoke(new Action(() =>
+                    ClearControl(list_item_movie);
+                    loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
+                    DataTable result = new DataTable();
+                    switch (sender.Name) 
                     {
-                        list_item_movie.Controls.Add(new Movie_Mange.MovieItem()
+                        case "list_item_movie":
+                            result = data.searchMovie(keyword).Tables[0];
+                            break;
+                        case "movies_list_favorite":
+                            result = data.searchFavorite(keyword).Tables[0];
+                            break;
+                        case "movies_list_history":
+                            result = data.searchHis(keyword).Tables[0];
+                            break;
+                        default:
+                            break;
+                    }
+                    loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                    foreach (DataRow item in result.Rows)
+                    {
+                        sender.Invoke(new Action(() =>
                         {
-                            Movie_id = item["movie_id"].ToString(),
-                            Title = item["title"].ToString(),
-                            Content = item["plot"].ToString(),
-                            Rating = Convert.ToInt32(item["rating"]),
-                            Director = item["director"].ToString(),
-                            MovieLink = item["movie_link"].ToString(),
-                            Background_link = item["poster"].ToString(),
-                            Year = item["year_create"].ToString(),
-                            Nation = item["nation"].ToString()
-                        });
-                    }));
-                }
-            });
-            t.IsBackground = true;
-            workLoad.Add(t);
-            t.Start();
+                            sender.Controls.Add(new Movie_Mange.MovieItem()
+                            {
+                                Movie_id = item["movie_id"].ToString(),
+                                Title = item["title"].ToString(),
+                                Content = item["plot"].ToString(),
+                                Rating = Convert.ToInt32(item["rating"]),
+                                Director = item["director"].ToString(),
+                                MovieLink = item["movie_link"].ToString(),
+                                Background_link = item["poster"].ToString(),
+                                Year = item["year_create"].ToString(),
+                                Nation = item["nation"].ToString()
+                            });
+                        }));
+                    }
+                });
+                t.IsBackground = true;
+                workLoad.Add(t);
+                t.Start();
+            }
+            
 
         }
 

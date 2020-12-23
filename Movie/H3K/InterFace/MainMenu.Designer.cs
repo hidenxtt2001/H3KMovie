@@ -78,8 +78,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.movie_show_panel = new System.Windows.Forms.Panel();
-            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.category = new System.Windows.Forms.Panel();
             this.category_scroll = new System.Windows.Forms.Panel();
             this.genre23 = new System.Windows.Forms.Button();
@@ -183,6 +181,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.loading_label = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.form_born.SuspendLayout();
             this.menu_panel.SuspendLayout();
             this.action_panel.SuspendLayout();
@@ -225,6 +225,7 @@
             this.control.SuspendLayout();
             this.control_button.SuspendLayout();
             this.search_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // icon_mainmenu
@@ -838,29 +839,12 @@
             // movie_show_panel
             // 
             this.movie_show_panel.Controls.Add(this.list_item_movie);
-            this.movie_show_panel.Controls.Add(this.panel1);
             this.movie_show_panel.Controls.Add(this.category);
             this.movie_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.movie_show_panel.Location = new System.Drawing.Point(0, 0);
             this.movie_show_panel.Name = "movie_show_panel";
             this.movie_show_panel.Size = new System.Drawing.Size(1176, 726);
             this.movie_show_panel.TabIndex = 2;
-            // 
-            // list_item_movie
-            // 
-            this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.list_item_movie.Location = new System.Drawing.Point(0, 70);
-            this.list_item_movie.Name = "list_item_movie";
-            this.list_item_movie.Size = new System.Drawing.Size(1176, 649);
-            this.list_item_movie.TabIndex = 4;
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 719);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1176, 7);
-            this.panel1.TabIndex = 3;
             // 
             // category
             // 
@@ -1286,6 +1270,7 @@
             // 
             // manage_show_panel
             // 
+            this.manage_show_panel.Controls.Add(this.dataGridView1);
             this.manage_show_panel.Controls.Add(this.panel4);
             this.manage_show_panel.Controls.Add(this.label8);
             this.manage_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2158,6 +2143,25 @@
             this.loading_label.Text = "Loading....";
             this.loading_label.Visible = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(27)))), ((int)(((byte)(41)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 483);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(10);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1176, 243);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // list_item_movie
+            // 
+            this.list_item_movie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.list_item_movie.Location = new System.Drawing.Point(0, 70);
+            this.list_item_movie.Name = "list_item_movie";
+            this.list_item_movie.Size = new System.Drawing.Size(1176, 656);
+            this.list_item_movie.TabIndex = 4;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -2226,6 +2230,7 @@
             this.control_button.ResumeLayout(false);
             this.search_panel.ResumeLayout(false);
             this.search_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2260,7 +2265,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel movie_show_panel;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel category;
         private System.Windows.Forms.Panel category_scroll;
         private System.Windows.Forms.Button genre23;
@@ -2384,5 +2388,6 @@
         private System.Windows.Forms.Button butOkChangeName;
         private System.Windows.Forms.TextBox textBoxChangeName;
         private System.Windows.Forms.Button logout__button;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

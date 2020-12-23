@@ -146,9 +146,7 @@ namespace H3K.InterFace.Movie_Mange
             }
             catch(WebException ex)
             {
-                System.Net.WebResponse webResponse = ex.Response;
-                return webResponse.GetResponseStream();
-
+                return null;
             }
             
         }

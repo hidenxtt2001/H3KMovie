@@ -11,6 +11,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -52,7 +53,10 @@ namespace H3K.InterFace.Sign_Form
         }
 
         private void Login_Load(object sender, EventArgs e)
-        {            
+        {
+            timer.AutoReset = true;
+            timer.SynchronizingObject = this;
+            timer.Elapsed += timer_Elapsed;
         }
 
         #region Action Button
@@ -138,18 +142,39 @@ namespace H3K.InterFace.Sign_Form
                 new MessageWarning("Username cant contain Special Character !!").ShowDialog();
                 return;
             }
-           
-            if(connect.Login(username_input.Text, password_input.Text))
+            string username = username_input.Text;
+            string pass = password_input.Text;
+            if (connect.Login(username, pass))
             {
-                loginSubmit = true;
-                this.Close();
+                FormLoadingAction();
+                
             }
             else
             {
                 new MessageWarning("Please check correct your login input !!").ShowDialog();
             }
         }
+        System.Timers.Timer timer = new System.Timers.Timer(1);
+        private void FormLoadingAction()
+        {
+            
+            panel1.Visible = false;
+            loginSubmit = true;
+            timer.Start();
+            
+        }
+        void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            logo.Width += 6;
 
+            if (logo.Width > 748)
+            {
+                timer.Stop();
+                Thread.Sleep(2000);
+                this.Close();
+            }
+                
+        }
         private void Reset_Password_Click(object sender, EventArgs e)
         {
             MessageWarning message = new MessageWarning("");
@@ -216,8 +241,9 @@ namespace H3K.InterFace.Sign_Form
         }
 
 
+
+
         #endregion
 
-        
     }
 }

@@ -95,18 +95,18 @@
             this.logo.Location = new System.Drawing.Point(0, 0);
             this.logo.Name = "logo";
             this.logo.Padding = new System.Windows.Forms.Padding(10, 50, 10, 50);
-            this.logo.Size = new System.Drawing.Size(423, 460);
+            this.logo.Size = new System.Drawing.Size(421, 460);
             this.logo.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::H3K.Properties.Resources.logo;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(10, 50);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(403, 360);
+            this.pictureBox1.Size = new System.Drawing.Size(401, 360);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -478,9 +478,8 @@
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
             this.label8.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label8.Location = new System.Drawing.Point(0, 40);
@@ -540,7 +539,7 @@
             this.panel1.Controls.Add(this.sign_in);
             this.panel1.Controls.Add(this.sign_up);
             this.panel1.Controls.Add(this.forgot_password);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(423, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(434, 460);

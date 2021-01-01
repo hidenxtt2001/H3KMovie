@@ -33,16 +33,24 @@ namespace H3K.InterFace.Sign_Form
         private void Reset_Password_Click(object sender, EventArgs e)
         {
             MessageWarning message = new MessageWarning("");
-            if (SubmitCode(code_reset.Text, new_password.Text))
+            if(new_password.Text.Length >= 6)
             {
-                message.message = "Reset Pass Successful @";
-                message.ShowDialog();
-                this.Close();
+                if (SubmitCode(code_reset.Text, new_password.Text))
+                {
+                    message.message = "Reset Pass Successful";
+                    message.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    message.message = "Your code invalid";
+                    message.ShowDialog();
+                }
             }
             else
             {
-                message.message = "Your code invalid";
-                message.ShowDialog();
+                new MessageWarning("Your password must longer than 6.").ShowDialog();
+                return;
             }
         }
 

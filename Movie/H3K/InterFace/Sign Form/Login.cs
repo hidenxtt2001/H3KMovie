@@ -101,14 +101,21 @@ namespace H3K.InterFace.Sign_Form
                 new MessageWarning("Username cant contain Special Character!").ShowDialog();
                 return;
             }
+            else if (password_sign_up.Text.Length <= 6)
+            {
+                new MessageWarning("Your password must longer than 6.").ShowDialog();
+                return;
+            }
             else if (!checkValidEmail(email_sign_up.Text)) // Kiểm tra định dạng email
             {
                 new MessageWarning("Email not valid!").ShowDialog();
                 return;
             }
+            
+
 
             // Kiểm tra tài khoản có tồn tại trong database hay không ?
-            if (connect.Register(username_sign_up.Text, password_sign_up.Text,email_sign_up.Text)) 
+            if (password_sign_up.Text.Length >= 6 && connect.Register(username_sign_up.Text, password_sign_up.Text,email_sign_up.Text)) 
             {
                 new MessageWarning("Sign Up Success").ShowDialog();
                 sign_up.SendToBack();

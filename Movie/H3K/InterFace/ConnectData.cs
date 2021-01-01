@@ -60,15 +60,22 @@ namespace H3K.InterFace
         }
         public DataSet dataGenres() // Get Genres
         {
-            data.Open();
-            DataSet result = new DataSet();
-            using (SqlDataAdapter da = new SqlDataAdapter(@"select movieid,genreid from Movie_genres", data))
+            try
             {
-                da.Fill(result);
-                da.Dispose();
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"select movieid,genreid from Movie_genres", data))
+                {
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
             }
-            data.Close();
-            return result;
+            catch (Exception)
+            {
+                return new DataSet();
+            }
         }
         public bool UpdateAccount()
         {
@@ -507,14 +514,14 @@ namespace H3K.InterFace
             }
         }
 
-        public bool MovieUpdate(string movieid, string title, string plot, int rating, string director, string movie_link, string poster_link, string nation, string year,int view)
+        public bool MovieUpdate(string movieid, string title, string plot, int rating, string director, string movie_link, string poster_link, string nation, string year)
         {
             try
             {
                 data.Open();
                 using (SqlCommand cmd = new SqlCommand() { Connection = data })
                 {
-                    cmd.CommandText = "update Movies set title =@Title , plot = @Plot , rating = @Rating , director = @Director , movie_link = @Movie_Link , poster = @Poster , year_create = @Year_Create , nation = @Nation , views_count = @Views where movieid = @MovieID";
+                    cmd.CommandText = "DELETE FROM Movie_Genres WHERE movie_id = @MovieID update Movies set title = @Title , plot = @Plot , rating = @Rating , director = @Director , movie_link = @Movie_Link , poster = @Poster , year_create = @Year_Create , nation = @Nation where movie_id = @MovieID";
                     cmd.Parameters.AddWithValue("@MovieID", movieid);
                     cmd.Parameters.AddWithValue("@Title", title);
                     cmd.Parameters.AddWithValue("@Plot", plot);
@@ -524,7 +531,6 @@ namespace H3K.InterFace
                     cmd.Parameters.AddWithValue("@Poster", poster_link);
                     cmd.Parameters.AddWithValue("@Nation", nation);
                     cmd.Parameters.AddWithValue("@Year_Create", year);
-                    cmd.Parameters.AddWithValue("@Views", view + 1);
                     cmd.ExecuteNonQuery();
                     data.Close();
                     return true;
@@ -554,6 +560,48 @@ namespace H3K.InterFace
             {
                 data.Close();
                 return false;
+            }
+        }
+
+        public bool MovieSetView(string movieid)
+        {
+            try
+            {
+                data.Open();
+                using (SqlCommand cmd = new SqlCommand() { Connection = data })
+                {
+                    cmd.CommandText = "UPDATE Movies SET views_count = views_count + 1 WHERE movie_id = @MovieID";
+                    cmd.Parameters.AddWithValue("@MovieID", movieid);
+                    cmd.ExecuteNonQuery();
+                    data.Close();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                data.Close();
+                return false;
+            }
+        }
+
+        public DataSet MovieGetGenres(string movieid)
+        {
+            try
+            {
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"select genre_id from Movie_genres where movie_id = @Movieid", data))
+                {
+                    da.SelectCommand.Parameters.AddWithValue("@Movieid", movieid);
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
+            }
+            catch (Exception)
+            {
+                return new DataSet();
             }
         }
         #endregion

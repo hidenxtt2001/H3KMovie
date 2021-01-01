@@ -29,6 +29,8 @@ namespace H3K.InterFace
             category_scroll.AutoScrollPosition = new Point(0, 0);
             category_scroll.AutoScroll = true;
 
+            // DataGridView
+            dataMovie.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             list_item_movie.VerticalScroll.Maximum = 0;
             list_item_movie.AutoScrollPosition = new Point(0, 0);
@@ -204,6 +206,9 @@ namespace H3K.InterFace
                     case "history_show":
                         ClearControl(movies_list_history);
                         break;
+                    case "manage_show":
+                        dataMovie.DataSource = null;
+                        break;
                 }
             }
             switch (((Button)sender).Name)
@@ -242,11 +247,17 @@ namespace H3K.InterFace
                     break;
                 case "manage_show":
                     manage_show_panel.BringToFront();
+                    new Thread(() => {
+                        using (DataTable temp = data.dataMovie(1).Tables[0])
+                        {
+                            dataMovie.Invoke(new Action(() => { dataMovie.DataSource = temp; }));
+                        }
+                    }).Start();
+                    
                     break;
             }
             selectPanel = (Button)sender;
             ((Button)sender).BackColor = Color.FromArgb(125, 124, 163);
-
         }
 
 
@@ -508,39 +519,57 @@ namespace H3K.InterFace
             return webResponse.GetResponseStream();
 
         }
-
+        // Button Add Movie
         private void AddMovie_Click(object sender, EventArgs e)
         {
-            MessageWarning message = new MessageWarning("");
-            if (manage_title.Text != string.Empty && manage_poster_link.Text != string.Empty && manage_movie_link.Text != string.Empty)
+            if(AddMovie.ForeColor != Color.Gray)
             {
-                string movieid = Regex.Match(manage_movie_link.Text, @"d\/(.*?)\/view").Groups[1].Value;
-                if (!data.checkExist(movieid))
+                MessageWarning message = new MessageWarning("");
+                if (manage_title.Text != string.Empty && manage_poster_link.Text != string.Empty && manage_movie_link.Text != string.Empty)
                 {
-                    if (data.MovieAdd(movieid, manage_title.Text, manage_content.Text, Convert.ToInt32(manage_rating.Value), manage_director.Text, manage_movie_link.Text, manage_poster_link.Text, manage_nation.Text, Convert.ToInt32(manage_year.Value).ToString()) && data.MovieGenresAdd(getGenre(movieid)))
+                    string movieid = Regex.Match(manage_movie_link.Text, @"d\/(.*?)\/view").Groups[1].Value;
+                    if (!data.checkExist(movieid))
                     {
-                        message.message = "Thêm thành công";
-                        message.ShowDialog();
+                        if (data.MovieAdd(movieid, manage_title.Text, manage_content.Text, Convert.ToInt32(manage_rating.Value), manage_director.Text, manage_movie_link.Text, manage_poster_link.Text, manage_nation.Text, Convert.ToInt32(manage_year.Value).ToString()) && data.MovieGenresAdd(getGenre(movieid)))
+                        {
+                            message.message = "Thêm thành công";
+                            ClearDataManage();
+                            message.ShowDialog();
+                            new Thread(() => {
+                                using (DataTable temp = data.dataMovie(1).Tables[0])
+                                {
+                                    dataMovie.Invoke(new Action(() => { dataMovie.DataSource = temp; }));
+                                }
+                            }).Start();
+                        }
+                        else
+                        {
+                            if (data.checkExist(movieid)) data.MovieDel(movieid);
+                            message.message = "Thêm thất bại";
+                            message.ShowDialog();
+                        }
                     }
                     else
                     {
-                        if (data.checkExist(movieid)) data.MovieDel(movieid);
-                        message.message = "Thêm thất bại";
+                        message.message = "Đã tồn tại phim trong cơ sở dữ liệu !";
                         message.ShowDialog();
                     }
                 }
                 else
                 {
-                    message.message = "Đã tồn tại phim trong cơ sở dữ liệu !";
+                    message.message = "Vui lòng điền đầy đủ thông tin !";
                     message.ShowDialog();
                 }
             }
             else
             {
-                message.message = "Vui lòng điền đầy đủ thông tin !";
-                message.ShowDialog();
+                AddMovie.ForeColor = Color.White;
+                UpdateMovie.ForeColor = Color.Gray;
+                ClearDataManage();
             }
+            
         }
+        // Get All Genres Check
         public string[] getGenre(string movieid)
         {
             List<string> result = new List<string>();
@@ -553,9 +582,134 @@ namespace H3K.InterFace
             }
             return result.ToArray();
         }
+        // Fillter Movie From Director 
+        private void manage_director_TextChanged(object sender, EventArgs e)
+        {
+            if(dataMovie.DataSource != null)
+            {
+                BindingSource bs = new BindingSource();
+                bs.DataSource = dataMovie.DataSource;
+                bs.Filter = "director like '%" + manage_director.Text + "%'";
+                dataMovie.DataSource = bs;
+            }
+        }
 
+        private void dataMovie_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                dataMovie.ClearSelection();
+                dataMovie.Rows[e.RowIndex].Selected = true;
+            }
+        }
+        
+        // Fill textbox with content of movie
+        private void updateMovie_Content_Click(object sender, EventArgs e)
+        {
+            AddMovie.ForeColor = Color.Gray;
+            UpdateMovie.ForeColor = Color.White;
+            manage_title.Text = dataMovie.SelectedRows[0].Cells["title"].Value.ToString();
+            manage_movie_link.Text = dataMovie.SelectedRows[0].Cells["movie_link"].Value.ToString();
+            manage_poster_link.Text = dataMovie.SelectedRows[0].Cells["poster"].Value.ToString();
+            manage_director.Text = dataMovie.SelectedRows[0].Cells["director"].Value.ToString();
+            manage_nation.Text = dataMovie.SelectedRows[0].Cells["nation"].Value.ToString();
+            manage_year.Value = Convert.ToInt32(dataMovie.SelectedRows[0].Cells["year_create"].Value);
+            manage_rating.Value = Convert.ToInt32(dataMovie.SelectedRows[0].Cells["rating"].Value);
+            manage_content.Text = dataMovie.SelectedRows[0].Cells["plot"].Value.ToString();
 
+            foreach(CheckBox k in flowLayoutPanel2.Controls)
+            {
+                if (k.Enabled)
+                {
+                    k.Checked = false;
+                }
+            }
+            foreach(DataRow k in data.MovieGetGenres(dataMovie.SelectedRows[0].Cells["movie_id"].Value.ToString()).Tables[0].Rows)
+            {
+                ((CheckBox)this.Controls.Find("manage_genre" + k["genre_id"].ToString(), true)[0]).Checked = true;
+            }
+        }
+        // Button update click
+        private void UpdateMovie_Click(object sender, EventArgs e)
+        {
+            if(UpdateMovie.ForeColor != Color.Gray)
+            {
+                MessageWarning message = new MessageWarning("");
+                if (manage_title.Text != string.Empty && manage_poster_link.Text != string.Empty && manage_movie_link.Text != string.Empty)
+                {
+                    string movieid = Regex.Match(manage_movie_link.Text, @"d\/(.*?)\/view").Groups[1].Value;
+                    if (data.checkExist(movieid))
+                    {
+                        if (data.MovieUpdate(movieid, manage_title.Text, manage_content.Text, Convert.ToInt32(manage_rating.Value), manage_director.Text, manage_movie_link.Text, manage_poster_link.Text, manage_nation.Text, Convert.ToInt32(manage_year.Value).ToString()) && data.MovieGenresAdd(getGenre(movieid)))
+                        {
+                            message.message = "Cập nhập thành công";
+                            message.ShowDialog();
+                            ClearDataManage();
+                            new Thread(() => {
+                                using (DataTable temp = data.dataMovie(1).Tables[0])
+                                {
+                                    dataMovie.Invoke(new Action(() => { dataMovie.DataSource = temp; }));
+                                }
+                            }).Start();
+                        }
+                        else
+                        {
+                            message.message = "Cập nhập thất bại thất bại";
+                            message.ShowDialog();
+                        }
+                    }
+                    else
+                    {
+                        message.message = "Không tồn tại phim trong cơ sở dữ liệu !";
+                        message.ShowDialog();
+                    }
+                }
+                else
+                {
+                    message.message = "Vui lòng điền đầy đủ thông tin !";
+                    message.ShowDialog();
+                }
+            }
+        }
 
+        private void ClearDataManage()
+        {
+            manage_title.Text = "";
+            manage_movie_link.Text = "";
+            manage_poster_link.Text = "";
+            manage_director.Text = "";
+            manage_nation.Text = "";
+            manage_year.Value = 1900;
+            manage_rating.Value = 50;
+            manage_content.Text = "";
+
+            foreach (CheckBox k in flowLayoutPanel2.Controls)
+            {
+                if (k.Enabled)
+                {
+                    k.Checked = false;
+                }
+            }
+        }
+
+        //Remove Movie 
+        private void removeMovie_Content_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn xoá không ?", "Warning Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                if (data.MovieDel(dataMovie.SelectedRows[0].Cells["moive_id"].Value.ToString()))
+                {
+                    MessageBox.Show("Xoá thành công");
+                    new Thread(() => {
+                        using (DataTable temp = data.dataMovie(1).Tables[0])
+                        {
+                            dataMovie.Invoke(new Action(() => { dataMovie.DataSource = temp; }));
+                        }
+                    }).Start();
+                }
+            }
+
+        }
         #endregion
 
         #region Account Information
@@ -636,6 +790,16 @@ namespace H3K.InterFace
             Application.Restart();
             Environment.Exit(0);
         }
+
+
+
+
+
+
+
+
+
+
 
         #endregion
 

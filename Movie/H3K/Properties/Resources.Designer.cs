@@ -83,6 +83,16 @@ namespace H3K.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_film_reel_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_film_reel_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_left {
             get {
                 object obj = ResourceManager.GetObject("icons8_left", resourceCulture);

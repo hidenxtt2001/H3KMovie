@@ -123,6 +123,7 @@ namespace H3K.InterFace.Movie_Mange
                 {
                     _background = Image.FromStream(DownloadData(Background_link));
                     this.Invoke(new Action(() => {
+                        poster.BackgroundImageLayout = ImageLayout.Stretch;
                         poster.BackgroundImage = _background;
                     }));
                     Console.WriteLine("Load Xong Hinh");

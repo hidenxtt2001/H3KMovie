@@ -143,6 +143,7 @@ namespace H3K.InterFace.WatchMovie
             MovieShow form = new MovieShow(movieItem.Movie_id,movieItem.Title);
             if (!data.checkHistory(data.Account.Rows[0]["username"].ToString(), movieItem.Movie_id))
                 data.setHistory(data.Account.Rows[0]["username"].ToString(), movieItem.Movie_id);
+            data.MovieSetView(movieItem.Movie_id);
             this.Hide();
             form.ShowDialog();
             this.Close();

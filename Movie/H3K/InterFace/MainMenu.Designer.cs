@@ -46,6 +46,34 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.action_panel = new System.Windows.Forms.Panel();
             this.common = new System.Windows.Forms.Panel();
+            this.movie_show_panel = new System.Windows.Forms.Panel();
+            this.category = new System.Windows.Forms.Panel();
+            this.category_scroll = new System.Windows.Forms.Panel();
+            this.genre23 = new System.Windows.Forms.Button();
+            this.genre22 = new System.Windows.Forms.Button();
+            this.genre21 = new System.Windows.Forms.Button();
+            this.genre20 = new System.Windows.Forms.Button();
+            this.genre19 = new System.Windows.Forms.Button();
+            this.genre18 = new System.Windows.Forms.Button();
+            this.genre17 = new System.Windows.Forms.Button();
+            this.genre16 = new System.Windows.Forms.Button();
+            this.genre15 = new System.Windows.Forms.Button();
+            this.genre14 = new System.Windows.Forms.Button();
+            this.genre13 = new System.Windows.Forms.Button();
+            this.genre12 = new System.Windows.Forms.Button();
+            this.genre11 = new System.Windows.Forms.Button();
+            this.genre10 = new System.Windows.Forms.Button();
+            this.genre9 = new System.Windows.Forms.Button();
+            this.genre8 = new System.Windows.Forms.Button();
+            this.genre7 = new System.Windows.Forms.Button();
+            this.genre6 = new System.Windows.Forms.Button();
+            this.genre5 = new System.Windows.Forms.Button();
+            this.genre4 = new System.Windows.Forms.Button();
+            this.genre3 = new System.Windows.Forms.Button();
+            this.genre2 = new System.Windows.Forms.Button();
+            this.genre1 = new System.Windows.Forms.Button();
+            this.scroll_right = new System.Windows.Forms.Button();
+            this.scroll_left = new System.Windows.Forms.Button();
             this.manage_show_panel = new System.Windows.Forms.Panel();
             this.dataMovie = new System.Windows.Forms.DataGridView();
             this.content_manage = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -111,34 +139,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.movie_show_panel = new System.Windows.Forms.Panel();
-            this.category = new System.Windows.Forms.Panel();
-            this.category_scroll = new System.Windows.Forms.Panel();
-            this.genre23 = new System.Windows.Forms.Button();
-            this.genre22 = new System.Windows.Forms.Button();
-            this.genre21 = new System.Windows.Forms.Button();
-            this.genre20 = new System.Windows.Forms.Button();
-            this.genre19 = new System.Windows.Forms.Button();
-            this.genre18 = new System.Windows.Forms.Button();
-            this.genre17 = new System.Windows.Forms.Button();
-            this.genre16 = new System.Windows.Forms.Button();
-            this.genre15 = new System.Windows.Forms.Button();
-            this.genre14 = new System.Windows.Forms.Button();
-            this.genre13 = new System.Windows.Forms.Button();
-            this.genre12 = new System.Windows.Forms.Button();
-            this.genre11 = new System.Windows.Forms.Button();
-            this.genre10 = new System.Windows.Forms.Button();
-            this.genre9 = new System.Windows.Forms.Button();
-            this.genre8 = new System.Windows.Forms.Button();
-            this.genre7 = new System.Windows.Forms.Button();
-            this.genre6 = new System.Windows.Forms.Button();
-            this.genre5 = new System.Windows.Forms.Button();
-            this.genre4 = new System.Windows.Forms.Button();
-            this.genre3 = new System.Windows.Forms.Button();
-            this.genre2 = new System.Windows.Forms.Button();
-            this.genre1 = new System.Windows.Forms.Button();
-            this.scroll_right = new System.Windows.Forms.Button();
-            this.scroll_left = new System.Windows.Forms.Button();
             this.history_show_panel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.favorite_show_panel = new System.Windows.Forms.Panel();
@@ -153,7 +153,6 @@
             this.butOkChangeName = new System.Windows.Forms.Button();
             this.textBoxChangeName = new System.Windows.Forms.TextBox();
             this.buttonChangeName = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.buttonChangePwd = new System.Windows.Forms.Button();
             this.panel25 = new System.Windows.Forms.Panel();
             this.password_information = new System.Windows.Forms.Label();
@@ -196,6 +195,9 @@
             this.panel1.SuspendLayout();
             this.action_panel.SuspendLayout();
             this.common.SuspendLayout();
+            this.movie_show_panel.SuspendLayout();
+            this.category.SuspendLayout();
+            this.category_scroll.SuspendLayout();
             this.manage_show_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataMovie)).BeginInit();
             this.content_manage.SuspendLayout();
@@ -214,9 +216,6 @@
             this.panel12.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.movie_show_panel.SuspendLayout();
-            this.category.SuspendLayout();
-            this.category_scroll.SuspendLayout();
             this.history_show_panel.SuspendLayout();
             this.favorite_show_panel.SuspendLayout();
             this.account_infor_panel.SuspendLayout();
@@ -242,16 +241,18 @@
             // 
             this.icon_mainmenu.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("icon_mainmenu.ImageStream")));
             this.icon_mainmenu.TransparentColor = System.Drawing.Color.Transparent;
-            this.icon_mainmenu.Images.SetKeyName(0, "icons8_cinema.ico");
-            this.icon_mainmenu.Images.SetKeyName(1, "icons8_customer.ico");
-            this.icon_mainmenu.Images.SetKeyName(2, "icons8_literature.ico");
-            this.icon_mainmenu.Images.SetKeyName(3, "icons8_star_filled.ico");
-            this.icon_mainmenu.Images.SetKeyName(4, "icons8_contact.ico");
-            this.icon_mainmenu.Images.SetKeyName(5, "icons8_lock.ico");
-            this.icon_mainmenu.Images.SetKeyName(6, "icons8_envelope.ico");
-            this.icon_mainmenu.Images.SetKeyName(7, "icons8_maintenance.ico");
-            this.icon_mainmenu.Images.SetKeyName(8, "icons8_checkmark.ico");
-            this.icon_mainmenu.Images.SetKeyName(9, "icons8_delete.ico");
+            this.icon_mainmenu.Images.SetKeyName(0, "icons8_cinema_64.png");
+            this.icon_mainmenu.Images.SetKeyName(1, "icons8_customer_64.png");
+            this.icon_mainmenu.Images.SetKeyName(2, "icons8_cancel_32.png");
+            this.icon_mainmenu.Images.SetKeyName(3, "icons8_contact_64.png");
+            this.icon_mainmenu.Images.SetKeyName(4, "icons8_customer_64.png");
+            this.icon_mainmenu.Images.SetKeyName(5, "icons8_envelope_64.png");
+            this.icon_mainmenu.Images.SetKeyName(6, "icons8_literature_64.png");
+            this.icon_mainmenu.Images.SetKeyName(7, "icons8_lock_64.png");
+            this.icon_mainmenu.Images.SetKeyName(8, "icons8_maintenance_64.png");
+            this.icon_mainmenu.Images.SetKeyName(9, "icons8_ok_32.png");
+            this.icon_mainmenu.Images.SetKeyName(10, "icons8_star_64.png");
+            this.icon_mainmenu.Images.SetKeyName(11, "icons8_edit_property_64.png");
             // 
             // timer1
             // 
@@ -298,7 +299,7 @@
             this.manage_show.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manage_show.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.manage_show.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manage_show.ImageIndex = 7;
+            this.manage_show.ImageKey = "icons8_maintenance_64.png";
             this.manage_show.ImageList = this.icon_mainmenu;
             this.manage_show.Location = new System.Drawing.Point(0, 283);
             this.manage_show.Name = "manage_show";
@@ -320,7 +321,7 @@
             this.history_show.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.history_show.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.history_show.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.history_show.ImageIndex = 2;
+            this.history_show.ImageKey = "icons8_literature_64.png";
             this.history_show.ImageList = this.icon_mainmenu;
             this.history_show.Location = new System.Drawing.Point(0, 243);
             this.history_show.Name = "history_show";
@@ -341,7 +342,7 @@
             this.favorite_show.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.favorite_show.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.favorite_show.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.favorite_show.ImageIndex = 3;
+            this.favorite_show.ImageKey = "icons8_star_64.png";
             this.favorite_show.ImageList = this.icon_mainmenu;
             this.favorite_show.Location = new System.Drawing.Point(0, 203);
             this.favorite_show.Name = "favorite_show";
@@ -362,7 +363,7 @@
             this.account_infor.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.account_infor.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.account_infor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.account_infor.ImageIndex = 1;
+            this.account_infor.ImageKey = "icons8_customer_64.png";
             this.account_infor.ImageList = this.icon_mainmenu;
             this.account_infor.Location = new System.Drawing.Point(0, 163);
             this.account_infor.Name = "account_infor";
@@ -384,7 +385,7 @@
             this.movie_show.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movie_show.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.movie_show.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.movie_show.ImageIndex = 0;
+            this.movie_show.ImageKey = "icons8_cinema_64.png";
             this.movie_show.ImageList = this.icon_mainmenu;
             this.movie_show.Location = new System.Drawing.Point(0, 123);
             this.movie_show.Name = "movie_show";
@@ -433,15 +434,447 @@
             // common
             // 
             this.common.Controls.Add(this.movie_show_panel);
+            this.common.Controls.Add(this.account_infor_panel);
             this.common.Controls.Add(this.manage_show_panel);
             this.common.Controls.Add(this.history_show_panel);
             this.common.Controls.Add(this.favorite_show_panel);
-            this.common.Controls.Add(this.account_infor_panel);
             this.common.Dock = System.Windows.Forms.DockStyle.Fill;
             this.common.Location = new System.Drawing.Point(0, 42);
             this.common.Name = "common";
             this.common.Size = new System.Drawing.Size(1176, 726);
             this.common.TabIndex = 3;
+            // 
+            // movie_show_panel
+            // 
+            this.movie_show_panel.Controls.Add(this.list_item_movie);
+            this.movie_show_panel.Controls.Add(this.category);
+            this.movie_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.movie_show_panel.Location = new System.Drawing.Point(0, 0);
+            this.movie_show_panel.Name = "movie_show_panel";
+            this.movie_show_panel.Size = new System.Drawing.Size(1176, 726);
+            this.movie_show_panel.TabIndex = 2;
+            // 
+            // category
+            // 
+            this.category.Controls.Add(this.category_scroll);
+            this.category.Controls.Add(this.scroll_right);
+            this.category.Controls.Add(this.scroll_left);
+            this.category.Dock = System.Windows.Forms.DockStyle.Top;
+            this.category.Location = new System.Drawing.Point(0, 0);
+            this.category.Name = "category";
+            this.category.Padding = new System.Windows.Forms.Padding(18);
+            this.category.Size = new System.Drawing.Size(1176, 70);
+            this.category.TabIndex = 1;
+            // 
+            // category_scroll
+            // 
+            this.category_scroll.Controls.Add(this.genre23);
+            this.category_scroll.Controls.Add(this.genre22);
+            this.category_scroll.Controls.Add(this.genre21);
+            this.category_scroll.Controls.Add(this.genre20);
+            this.category_scroll.Controls.Add(this.genre19);
+            this.category_scroll.Controls.Add(this.genre18);
+            this.category_scroll.Controls.Add(this.genre17);
+            this.category_scroll.Controls.Add(this.genre16);
+            this.category_scroll.Controls.Add(this.genre15);
+            this.category_scroll.Controls.Add(this.genre14);
+            this.category_scroll.Controls.Add(this.genre13);
+            this.category_scroll.Controls.Add(this.genre12);
+            this.category_scroll.Controls.Add(this.genre11);
+            this.category_scroll.Controls.Add(this.genre10);
+            this.category_scroll.Controls.Add(this.genre9);
+            this.category_scroll.Controls.Add(this.genre8);
+            this.category_scroll.Controls.Add(this.genre7);
+            this.category_scroll.Controls.Add(this.genre6);
+            this.category_scroll.Controls.Add(this.genre5);
+            this.category_scroll.Controls.Add(this.genre4);
+            this.category_scroll.Controls.Add(this.genre3);
+            this.category_scroll.Controls.Add(this.genre2);
+            this.category_scroll.Controls.Add(this.genre1);
+            this.category_scroll.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.category_scroll.Location = new System.Drawing.Point(78, 18);
+            this.category_scroll.Name = "category_scroll";
+            this.category_scroll.Size = new System.Drawing.Size(1020, 34);
+            this.category_scroll.TabIndex = 2;
+            // 
+            // genre23
+            // 
+            this.genre23.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre23.FlatAppearance.BorderSize = 0;
+            this.genre23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre23.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre23.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre23.Location = new System.Drawing.Point(2464, 0);
+            this.genre23.Name = "genre23";
+            this.genre23.Size = new System.Drawing.Size(112, 34);
+            this.genre23.TabIndex = 21;
+            this.genre23.Text = "Western";
+            this.genre23.UseVisualStyleBackColor = true;
+            this.genre23.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre22
+            // 
+            this.genre22.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre22.FlatAppearance.BorderSize = 0;
+            this.genre22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre22.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre22.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre22.Location = new System.Drawing.Point(2352, 0);
+            this.genre22.Name = "genre22";
+            this.genre22.Size = new System.Drawing.Size(112, 34);
+            this.genre22.TabIndex = 22;
+            this.genre22.Text = "War";
+            this.genre22.UseVisualStyleBackColor = true;
+            this.genre22.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre21
+            // 
+            this.genre21.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre21.FlatAppearance.BorderSize = 0;
+            this.genre21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre21.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre21.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre21.Location = new System.Drawing.Point(2240, 0);
+            this.genre21.Name = "genre21";
+            this.genre21.Size = new System.Drawing.Size(112, 34);
+            this.genre21.TabIndex = 23;
+            this.genre21.Text = "Thriller";
+            this.genre21.UseVisualStyleBackColor = true;
+            this.genre21.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre20
+            // 
+            this.genre20.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre20.FlatAppearance.BorderSize = 0;
+            this.genre20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre20.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre20.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre20.Location = new System.Drawing.Point(2128, 0);
+            this.genre20.Name = "genre20";
+            this.genre20.Size = new System.Drawing.Size(112, 34);
+            this.genre20.TabIndex = 24;
+            this.genre20.Text = "Sport";
+            this.genre20.UseVisualStyleBackColor = true;
+            this.genre20.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre19
+            // 
+            this.genre19.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre19.FlatAppearance.BorderSize = 0;
+            this.genre19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre19.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre19.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre19.Location = new System.Drawing.Point(2016, 0);
+            this.genre19.Name = "genre19";
+            this.genre19.Size = new System.Drawing.Size(112, 34);
+            this.genre19.TabIndex = 20;
+            this.genre19.Text = "Short";
+            this.genre19.UseVisualStyleBackColor = true;
+            this.genre19.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre18
+            // 
+            this.genre18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre18.FlatAppearance.BorderSize = 0;
+            this.genre18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre18.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre18.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre18.Location = new System.Drawing.Point(1904, 0);
+            this.genre18.Name = "genre18";
+            this.genre18.Size = new System.Drawing.Size(112, 34);
+            this.genre18.TabIndex = 19;
+            this.genre18.Text = "Sci-fi";
+            this.genre18.UseVisualStyleBackColor = true;
+            this.genre18.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre17
+            // 
+            this.genre17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre17.FlatAppearance.BorderSize = 0;
+            this.genre17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre17.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre17.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre17.Location = new System.Drawing.Point(1792, 0);
+            this.genre17.Name = "genre17";
+            this.genre17.Size = new System.Drawing.Size(112, 34);
+            this.genre17.TabIndex = 18;
+            this.genre17.Text = "Romance";
+            this.genre17.UseVisualStyleBackColor = true;
+            this.genre17.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre16
+            // 
+            this.genre16.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre16.FlatAppearance.BorderSize = 0;
+            this.genre16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre16.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre16.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre16.Location = new System.Drawing.Point(1680, 0);
+            this.genre16.Name = "genre16";
+            this.genre16.Size = new System.Drawing.Size(112, 34);
+            this.genre16.TabIndex = 17;
+            this.genre16.Text = "Mystery";
+            this.genre16.UseVisualStyleBackColor = true;
+            this.genre16.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre15
+            // 
+            this.genre15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre15.FlatAppearance.BorderSize = 0;
+            this.genre15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre15.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre15.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre15.Location = new System.Drawing.Point(1568, 0);
+            this.genre15.Name = "genre15";
+            this.genre15.Size = new System.Drawing.Size(112, 34);
+            this.genre15.TabIndex = 16;
+            this.genre15.Text = "Musical";
+            this.genre15.UseVisualStyleBackColor = true;
+            this.genre15.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre14
+            // 
+            this.genre14.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre14.FlatAppearance.BorderSize = 0;
+            this.genre14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre14.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre14.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre14.Location = new System.Drawing.Point(1456, 0);
+            this.genre14.Name = "genre14";
+            this.genre14.Size = new System.Drawing.Size(112, 34);
+            this.genre14.TabIndex = 15;
+            this.genre14.Text = "Music";
+            this.genre14.UseVisualStyleBackColor = true;
+            this.genre14.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre13
+            // 
+            this.genre13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre13.FlatAppearance.BorderSize = 0;
+            this.genre13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre13.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre13.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre13.Location = new System.Drawing.Point(1344, 0);
+            this.genre13.Name = "genre13";
+            this.genre13.Size = new System.Drawing.Size(112, 34);
+            this.genre13.TabIndex = 14;
+            this.genre13.Text = "Horror";
+            this.genre13.UseVisualStyleBackColor = true;
+            this.genre13.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre12
+            // 
+            this.genre12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre12.FlatAppearance.BorderSize = 0;
+            this.genre12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre12.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre12.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre12.Location = new System.Drawing.Point(1232, 0);
+            this.genre12.Name = "genre12";
+            this.genre12.Size = new System.Drawing.Size(112, 34);
+            this.genre12.TabIndex = 13;
+            this.genre12.Text = "History";
+            this.genre12.UseVisualStyleBackColor = true;
+            this.genre12.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre11
+            // 
+            this.genre11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre11.FlatAppearance.BorderSize = 0;
+            this.genre11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre11.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre11.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre11.Location = new System.Drawing.Point(1120, 0);
+            this.genre11.Name = "genre11";
+            this.genre11.Size = new System.Drawing.Size(112, 34);
+            this.genre11.TabIndex = 12;
+            this.genre11.Text = "Film-Noir";
+            this.genre11.UseVisualStyleBackColor = true;
+            this.genre11.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre10
+            // 
+            this.genre10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre10.FlatAppearance.BorderSize = 0;
+            this.genre10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre10.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre10.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre10.Location = new System.Drawing.Point(1008, 0);
+            this.genre10.Name = "genre10";
+            this.genre10.Size = new System.Drawing.Size(112, 34);
+            this.genre10.TabIndex = 11;
+            this.genre10.Text = "Fantasy";
+            this.genre10.UseVisualStyleBackColor = true;
+            this.genre10.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre9
+            // 
+            this.genre9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre9.FlatAppearance.BorderSize = 0;
+            this.genre9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre9.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre9.Location = new System.Drawing.Point(896, 0);
+            this.genre9.Name = "genre9";
+            this.genre9.Size = new System.Drawing.Size(112, 34);
+            this.genre9.TabIndex = 10;
+            this.genre9.Text = "Family";
+            this.genre9.UseVisualStyleBackColor = true;
+            this.genre9.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre8
+            // 
+            this.genre8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre8.FlatAppearance.BorderSize = 0;
+            this.genre8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre8.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre8.Location = new System.Drawing.Point(784, 0);
+            this.genre8.Name = "genre8";
+            this.genre8.Size = new System.Drawing.Size(112, 34);
+            this.genre8.TabIndex = 9;
+            this.genre8.Text = "Drama";
+            this.genre8.UseVisualStyleBackColor = true;
+            this.genre8.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre7
+            // 
+            this.genre7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre7.FlatAppearance.BorderSize = 0;
+            this.genre7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre7.Location = new System.Drawing.Point(672, 0);
+            this.genre7.Name = "genre7";
+            this.genre7.Size = new System.Drawing.Size(112, 34);
+            this.genre7.TabIndex = 8;
+            this.genre7.Text = "Document";
+            this.genre7.UseVisualStyleBackColor = true;
+            this.genre7.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre6
+            // 
+            this.genre6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre6.FlatAppearance.BorderSize = 0;
+            this.genre6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre6.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre6.Location = new System.Drawing.Point(560, 0);
+            this.genre6.Name = "genre6";
+            this.genre6.Size = new System.Drawing.Size(112, 34);
+            this.genre6.TabIndex = 7;
+            this.genre6.Text = "Crime";
+            this.genre6.UseVisualStyleBackColor = true;
+            this.genre6.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre5
+            // 
+            this.genre5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre5.FlatAppearance.BorderSize = 0;
+            this.genre5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre5.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre5.Location = new System.Drawing.Point(448, 0);
+            this.genre5.Name = "genre5";
+            this.genre5.Size = new System.Drawing.Size(112, 34);
+            this.genre5.TabIndex = 6;
+            this.genre5.Text = "Comedy";
+            this.genre5.UseVisualStyleBackColor = true;
+            this.genre5.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre4
+            // 
+            this.genre4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre4.FlatAppearance.BorderSize = 0;
+            this.genre4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre4.Location = new System.Drawing.Point(336, 0);
+            this.genre4.Name = "genre4";
+            this.genre4.Size = new System.Drawing.Size(112, 34);
+            this.genre4.TabIndex = 5;
+            this.genre4.Text = "Adventure";
+            this.genre4.UseVisualStyleBackColor = true;
+            this.genre4.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre3
+            // 
+            this.genre3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre3.FlatAppearance.BorderSize = 0;
+            this.genre3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre3.Location = new System.Drawing.Point(224, 0);
+            this.genre3.Name = "genre3";
+            this.genre3.Size = new System.Drawing.Size(112, 34);
+            this.genre3.TabIndex = 4;
+            this.genre3.Text = "Action";
+            this.genre3.UseVisualStyleBackColor = true;
+            this.genre3.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre2
+            // 
+            this.genre2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre2.FlatAppearance.BorderSize = 0;
+            this.genre2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre2.Location = new System.Drawing.Point(112, 0);
+            this.genre2.Name = "genre2";
+            this.genre2.Size = new System.Drawing.Size(112, 34);
+            this.genre2.TabIndex = 3;
+            this.genre2.Text = "Animation";
+            this.genre2.UseVisualStyleBackColor = true;
+            this.genre2.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // genre1
+            // 
+            this.genre1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.genre1.FlatAppearance.BorderSize = 0;
+            this.genre1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genre1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.genre1.Location = new System.Drawing.Point(0, 0);
+            this.genre1.Name = "genre1";
+            this.genre1.Size = new System.Drawing.Size(112, 34);
+            this.genre1.TabIndex = 2;
+            this.genre1.Text = "All";
+            this.genre1.UseVisualStyleBackColor = true;
+            this.genre1.Click += new System.EventHandler(this.GenreChooseLoad);
+            // 
+            // scroll_right
+            // 
+            this.scroll_right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.scroll_right.BackgroundImage = global::H3K.Properties.Resources.icons8_sort_right;
+            this.scroll_right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.scroll_right.Dock = System.Windows.Forms.DockStyle.Right;
+            this.scroll_right.FlatAppearance.BorderSize = 0;
+            this.scroll_right.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.scroll_right.Location = new System.Drawing.Point(1098, 18);
+            this.scroll_right.Name = "scroll_right";
+            this.scroll_right.Size = new System.Drawing.Size(60, 34);
+            this.scroll_right.TabIndex = 1;
+            this.scroll_right.UseVisualStyleBackColor = false;
+            this.scroll_right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button5_MouseDown);
+            this.scroll_right.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
+            this.scroll_right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
+            // 
+            // scroll_left
+            // 
+            this.scroll_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
+            this.scroll_left.BackgroundImage = global::H3K.Properties.Resources.icons8_sort_left;
+            this.scroll_left.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.scroll_left.Dock = System.Windows.Forms.DockStyle.Left;
+            this.scroll_left.FlatAppearance.BorderSize = 0;
+            this.scroll_left.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.scroll_left.Location = new System.Drawing.Point(18, 18);
+            this.scroll_left.Name = "scroll_left";
+            this.scroll_left.Size = new System.Drawing.Size(60, 34);
+            this.scroll_left.TabIndex = 0;
+            this.scroll_left.UseVisualStyleBackColor = false;
+            this.scroll_left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button4_MouseDown);
+            this.scroll_left.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
+            this.scroll_left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
             // 
             // manage_show_panel
             // 
@@ -1208,438 +1641,6 @@
             this.label8.Text = "Manage  Movies";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // movie_show_panel
-            // 
-            this.movie_show_panel.Controls.Add(this.list_item_movie);
-            this.movie_show_panel.Controls.Add(this.category);
-            this.movie_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.movie_show_panel.Location = new System.Drawing.Point(0, 0);
-            this.movie_show_panel.Name = "movie_show_panel";
-            this.movie_show_panel.Size = new System.Drawing.Size(1176, 726);
-            this.movie_show_panel.TabIndex = 2;
-            // 
-            // category
-            // 
-            this.category.Controls.Add(this.category_scroll);
-            this.category.Controls.Add(this.scroll_right);
-            this.category.Controls.Add(this.scroll_left);
-            this.category.Dock = System.Windows.Forms.DockStyle.Top;
-            this.category.Location = new System.Drawing.Point(0, 0);
-            this.category.Name = "category";
-            this.category.Padding = new System.Windows.Forms.Padding(18);
-            this.category.Size = new System.Drawing.Size(1176, 70);
-            this.category.TabIndex = 1;
-            // 
-            // category_scroll
-            // 
-            this.category_scroll.Controls.Add(this.genre23);
-            this.category_scroll.Controls.Add(this.genre22);
-            this.category_scroll.Controls.Add(this.genre21);
-            this.category_scroll.Controls.Add(this.genre20);
-            this.category_scroll.Controls.Add(this.genre19);
-            this.category_scroll.Controls.Add(this.genre18);
-            this.category_scroll.Controls.Add(this.genre17);
-            this.category_scroll.Controls.Add(this.genre16);
-            this.category_scroll.Controls.Add(this.genre15);
-            this.category_scroll.Controls.Add(this.genre14);
-            this.category_scroll.Controls.Add(this.genre13);
-            this.category_scroll.Controls.Add(this.genre12);
-            this.category_scroll.Controls.Add(this.genre11);
-            this.category_scroll.Controls.Add(this.genre10);
-            this.category_scroll.Controls.Add(this.genre9);
-            this.category_scroll.Controls.Add(this.genre8);
-            this.category_scroll.Controls.Add(this.genre7);
-            this.category_scroll.Controls.Add(this.genre6);
-            this.category_scroll.Controls.Add(this.genre5);
-            this.category_scroll.Controls.Add(this.genre4);
-            this.category_scroll.Controls.Add(this.genre3);
-            this.category_scroll.Controls.Add(this.genre2);
-            this.category_scroll.Controls.Add(this.genre1);
-            this.category_scroll.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.category_scroll.Location = new System.Drawing.Point(78, 18);
-            this.category_scroll.Name = "category_scroll";
-            this.category_scroll.Size = new System.Drawing.Size(1020, 34);
-            this.category_scroll.TabIndex = 2;
-            // 
-            // genre23
-            // 
-            this.genre23.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre23.FlatAppearance.BorderSize = 0;
-            this.genre23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre23.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre23.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre23.Location = new System.Drawing.Point(2464, 0);
-            this.genre23.Name = "genre23";
-            this.genre23.Size = new System.Drawing.Size(112, 34);
-            this.genre23.TabIndex = 21;
-            this.genre23.Text = "Western";
-            this.genre23.UseVisualStyleBackColor = true;
-            this.genre23.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre22
-            // 
-            this.genre22.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre22.FlatAppearance.BorderSize = 0;
-            this.genre22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre22.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre22.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre22.Location = new System.Drawing.Point(2352, 0);
-            this.genre22.Name = "genre22";
-            this.genre22.Size = new System.Drawing.Size(112, 34);
-            this.genre22.TabIndex = 22;
-            this.genre22.Text = "War";
-            this.genre22.UseVisualStyleBackColor = true;
-            this.genre22.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre21
-            // 
-            this.genre21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre21.FlatAppearance.BorderSize = 0;
-            this.genre21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre21.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre21.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre21.Location = new System.Drawing.Point(2240, 0);
-            this.genre21.Name = "genre21";
-            this.genre21.Size = new System.Drawing.Size(112, 34);
-            this.genre21.TabIndex = 23;
-            this.genre21.Text = "Thriller";
-            this.genre21.UseVisualStyleBackColor = true;
-            this.genre21.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre20
-            // 
-            this.genre20.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre20.FlatAppearance.BorderSize = 0;
-            this.genre20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre20.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre20.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre20.Location = new System.Drawing.Point(2128, 0);
-            this.genre20.Name = "genre20";
-            this.genre20.Size = new System.Drawing.Size(112, 34);
-            this.genre20.TabIndex = 24;
-            this.genre20.Text = "Sport";
-            this.genre20.UseVisualStyleBackColor = true;
-            this.genre20.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre19
-            // 
-            this.genre19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre19.FlatAppearance.BorderSize = 0;
-            this.genre19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre19.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre19.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre19.Location = new System.Drawing.Point(2016, 0);
-            this.genre19.Name = "genre19";
-            this.genre19.Size = new System.Drawing.Size(112, 34);
-            this.genre19.TabIndex = 20;
-            this.genre19.Text = "Short";
-            this.genre19.UseVisualStyleBackColor = true;
-            this.genre19.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre18
-            // 
-            this.genre18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre18.FlatAppearance.BorderSize = 0;
-            this.genre18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre18.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre18.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre18.Location = new System.Drawing.Point(1904, 0);
-            this.genre18.Name = "genre18";
-            this.genre18.Size = new System.Drawing.Size(112, 34);
-            this.genre18.TabIndex = 19;
-            this.genre18.Text = "Sci-fi";
-            this.genre18.UseVisualStyleBackColor = true;
-            this.genre18.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre17
-            // 
-            this.genre17.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre17.FlatAppearance.BorderSize = 0;
-            this.genre17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre17.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre17.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre17.Location = new System.Drawing.Point(1792, 0);
-            this.genre17.Name = "genre17";
-            this.genre17.Size = new System.Drawing.Size(112, 34);
-            this.genre17.TabIndex = 18;
-            this.genre17.Text = "Romance";
-            this.genre17.UseVisualStyleBackColor = true;
-            this.genre17.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre16
-            // 
-            this.genre16.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre16.FlatAppearance.BorderSize = 0;
-            this.genre16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre16.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre16.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre16.Location = new System.Drawing.Point(1680, 0);
-            this.genre16.Name = "genre16";
-            this.genre16.Size = new System.Drawing.Size(112, 34);
-            this.genre16.TabIndex = 17;
-            this.genre16.Text = "Mystery";
-            this.genre16.UseVisualStyleBackColor = true;
-            this.genre16.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre15
-            // 
-            this.genre15.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre15.FlatAppearance.BorderSize = 0;
-            this.genre15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre15.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre15.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre15.Location = new System.Drawing.Point(1568, 0);
-            this.genre15.Name = "genre15";
-            this.genre15.Size = new System.Drawing.Size(112, 34);
-            this.genre15.TabIndex = 16;
-            this.genre15.Text = "Musical";
-            this.genre15.UseVisualStyleBackColor = true;
-            this.genre15.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre14
-            // 
-            this.genre14.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre14.FlatAppearance.BorderSize = 0;
-            this.genre14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre14.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre14.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre14.Location = new System.Drawing.Point(1456, 0);
-            this.genre14.Name = "genre14";
-            this.genre14.Size = new System.Drawing.Size(112, 34);
-            this.genre14.TabIndex = 15;
-            this.genre14.Text = "Music";
-            this.genre14.UseVisualStyleBackColor = true;
-            this.genre14.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre13
-            // 
-            this.genre13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre13.FlatAppearance.BorderSize = 0;
-            this.genre13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre13.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre13.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre13.Location = new System.Drawing.Point(1344, 0);
-            this.genre13.Name = "genre13";
-            this.genre13.Size = new System.Drawing.Size(112, 34);
-            this.genre13.TabIndex = 14;
-            this.genre13.Text = "Horror";
-            this.genre13.UseVisualStyleBackColor = true;
-            this.genre13.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre12
-            // 
-            this.genre12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre12.FlatAppearance.BorderSize = 0;
-            this.genre12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre12.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre12.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre12.Location = new System.Drawing.Point(1232, 0);
-            this.genre12.Name = "genre12";
-            this.genre12.Size = new System.Drawing.Size(112, 34);
-            this.genre12.TabIndex = 13;
-            this.genre12.Text = "History";
-            this.genre12.UseVisualStyleBackColor = true;
-            this.genre12.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre11
-            // 
-            this.genre11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre11.FlatAppearance.BorderSize = 0;
-            this.genre11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre11.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre11.Location = new System.Drawing.Point(1120, 0);
-            this.genre11.Name = "genre11";
-            this.genre11.Size = new System.Drawing.Size(112, 34);
-            this.genre11.TabIndex = 12;
-            this.genre11.Text = "Film-Noir";
-            this.genre11.UseVisualStyleBackColor = true;
-            this.genre11.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre10
-            // 
-            this.genre10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre10.FlatAppearance.BorderSize = 0;
-            this.genre10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre10.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre10.Location = new System.Drawing.Point(1008, 0);
-            this.genre10.Name = "genre10";
-            this.genre10.Size = new System.Drawing.Size(112, 34);
-            this.genre10.TabIndex = 11;
-            this.genre10.Text = "Fantasy";
-            this.genre10.UseVisualStyleBackColor = true;
-            this.genre10.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre9
-            // 
-            this.genre9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre9.FlatAppearance.BorderSize = 0;
-            this.genre9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre9.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre9.Location = new System.Drawing.Point(896, 0);
-            this.genre9.Name = "genre9";
-            this.genre9.Size = new System.Drawing.Size(112, 34);
-            this.genre9.TabIndex = 10;
-            this.genre9.Text = "Family";
-            this.genre9.UseVisualStyleBackColor = true;
-            this.genre9.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre8
-            // 
-            this.genre8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre8.FlatAppearance.BorderSize = 0;
-            this.genre8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre8.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre8.Location = new System.Drawing.Point(784, 0);
-            this.genre8.Name = "genre8";
-            this.genre8.Size = new System.Drawing.Size(112, 34);
-            this.genre8.TabIndex = 9;
-            this.genre8.Text = "Drama";
-            this.genre8.UseVisualStyleBackColor = true;
-            this.genre8.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre7
-            // 
-            this.genre7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre7.FlatAppearance.BorderSize = 0;
-            this.genre7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre7.Location = new System.Drawing.Point(672, 0);
-            this.genre7.Name = "genre7";
-            this.genre7.Size = new System.Drawing.Size(112, 34);
-            this.genre7.TabIndex = 8;
-            this.genre7.Text = "Document";
-            this.genre7.UseVisualStyleBackColor = true;
-            this.genre7.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre6
-            // 
-            this.genre6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre6.FlatAppearance.BorderSize = 0;
-            this.genre6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre6.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre6.Location = new System.Drawing.Point(560, 0);
-            this.genre6.Name = "genre6";
-            this.genre6.Size = new System.Drawing.Size(112, 34);
-            this.genre6.TabIndex = 7;
-            this.genre6.Text = "Crime";
-            this.genre6.UseVisualStyleBackColor = true;
-            this.genre6.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre5
-            // 
-            this.genre5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre5.FlatAppearance.BorderSize = 0;
-            this.genre5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre5.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre5.Location = new System.Drawing.Point(448, 0);
-            this.genre5.Name = "genre5";
-            this.genre5.Size = new System.Drawing.Size(112, 34);
-            this.genre5.TabIndex = 6;
-            this.genre5.Text = "Comedy";
-            this.genre5.UseVisualStyleBackColor = true;
-            this.genre5.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre4
-            // 
-            this.genre4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre4.FlatAppearance.BorderSize = 0;
-            this.genre4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre4.Location = new System.Drawing.Point(336, 0);
-            this.genre4.Name = "genre4";
-            this.genre4.Size = new System.Drawing.Size(112, 34);
-            this.genre4.TabIndex = 5;
-            this.genre4.Text = "Adventure";
-            this.genre4.UseVisualStyleBackColor = true;
-            this.genre4.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre3
-            // 
-            this.genre3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre3.FlatAppearance.BorderSize = 0;
-            this.genre3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre3.Location = new System.Drawing.Point(224, 0);
-            this.genre3.Name = "genre3";
-            this.genre3.Size = new System.Drawing.Size(112, 34);
-            this.genre3.TabIndex = 4;
-            this.genre3.Text = "Action";
-            this.genre3.UseVisualStyleBackColor = true;
-            this.genre3.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre2
-            // 
-            this.genre2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre2.FlatAppearance.BorderSize = 0;
-            this.genre2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre2.Location = new System.Drawing.Point(112, 0);
-            this.genre2.Name = "genre2";
-            this.genre2.Size = new System.Drawing.Size(112, 34);
-            this.genre2.TabIndex = 3;
-            this.genre2.Text = "Animation";
-            this.genre2.UseVisualStyleBackColor = true;
-            this.genre2.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // genre1
-            // 
-            this.genre1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.genre1.FlatAppearance.BorderSize = 0;
-            this.genre1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genre1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genre1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.genre1.Location = new System.Drawing.Point(0, 0);
-            this.genre1.Name = "genre1";
-            this.genre1.Size = new System.Drawing.Size(112, 34);
-            this.genre1.TabIndex = 2;
-            this.genre1.Text = "All";
-            this.genre1.UseVisualStyleBackColor = true;
-            this.genre1.Click += new System.EventHandler(this.GenreChooseLoad);
-            // 
-            // scroll_right
-            // 
-            this.scroll_right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.scroll_right.BackgroundImage = global::H3K.Properties.Resources.icons8_sort_right;
-            this.scroll_right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.scroll_right.Dock = System.Windows.Forms.DockStyle.Right;
-            this.scroll_right.FlatAppearance.BorderSize = 0;
-            this.scroll_right.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.scroll_right.Location = new System.Drawing.Point(1098, 18);
-            this.scroll_right.Name = "scroll_right";
-            this.scroll_right.Size = new System.Drawing.Size(60, 34);
-            this.scroll_right.TabIndex = 1;
-            this.scroll_right.UseVisualStyleBackColor = false;
-            this.scroll_right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button5_MouseDown);
-            this.scroll_right.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
-            this.scroll_right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
-            // 
-            // scroll_left
-            // 
-            this.scroll_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
-            this.scroll_left.BackgroundImage = global::H3K.Properties.Resources.icons8_sort_left;
-            this.scroll_left.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.scroll_left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.scroll_left.FlatAppearance.BorderSize = 0;
-            this.scroll_left.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.scroll_left.Location = new System.Drawing.Point(18, 18);
-            this.scroll_left.Name = "scroll_left";
-            this.scroll_left.Size = new System.Drawing.Size(60, 34);
-            this.scroll_left.TabIndex = 0;
-            this.scroll_left.UseVisualStyleBackColor = false;
-            this.scroll_left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button4_MouseDown);
-            this.scroll_left.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
-            this.scroll_left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
-            // 
             // history_show_panel
             // 
             this.history_show_panel.Controls.Add(this.movies_list_history);
@@ -1767,7 +1768,7 @@
             // 
             this.butXchangeName.FlatAppearance.BorderSize = 0;
             this.butXchangeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butXchangeName.ImageIndex = 9;
+            this.butXchangeName.ImageIndex = 2;
             this.butXchangeName.ImageList = this.icon_mainmenu;
             this.butXchangeName.Location = new System.Drawing.Point(287, 53);
             this.butXchangeName.Name = "butXchangeName";
@@ -1780,7 +1781,7 @@
             // 
             this.butOkChangeName.FlatAppearance.BorderSize = 0;
             this.butOkChangeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butOkChangeName.ImageIndex = 8;
+            this.butOkChangeName.ImageIndex = 9;
             this.butOkChangeName.ImageList = this.icon_mainmenu;
             this.butOkChangeName.Location = new System.Drawing.Point(221, 53);
             this.butOkChangeName.Name = "butOkChangeName";
@@ -1802,8 +1803,8 @@
             // 
             this.buttonChangeName.FlatAppearance.BorderSize = 0;
             this.buttonChangeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonChangeName.ImageIndex = 2;
-            this.buttonChangeName.ImageList = this.imageList1;
+            this.buttonChangeName.ImageKey = "icons8_edit_property_64.png";
+            this.buttonChangeName.ImageList = this.icon_mainmenu;
             this.buttonChangeName.Location = new System.Drawing.Point(578, 294);
             this.buttonChangeName.Name = "buttonChangeName";
             this.buttonChangeName.Size = new System.Drawing.Size(62, 49);
@@ -1811,20 +1812,12 @@
             this.buttonChangeName.UseVisualStyleBackColor = true;
             this.buttonChangeName.Click += new System.EventHandler(this.buttonChangeName_Click);
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "icons8_checkmark_64.png");
-            this.imageList1.Images.SetKeyName(1, "icons8_delete_64.png");
-            this.imageList1.Images.SetKeyName(2, "icons8_edit_64.png");
-            // 
             // buttonChangePwd
             // 
             this.buttonChangePwd.FlatAppearance.BorderSize = 0;
             this.buttonChangePwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonChangePwd.ImageIndex = 2;
-            this.buttonChangePwd.ImageList = this.imageList1;
+            this.buttonChangePwd.ImageKey = "icons8_edit_property_64.png";
+            this.buttonChangePwd.ImageList = this.icon_mainmenu;
             this.buttonChangePwd.Location = new System.Drawing.Point(578, 405);
             this.buttonChangePwd.Name = "buttonChangePwd";
             this.buttonChangePwd.Size = new System.Drawing.Size(62, 49);
@@ -1987,8 +1980,7 @@
             // 
             this.buttonOut.FlatAppearance.BorderSize = 0;
             this.buttonOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOut.ImageIndex = 1;
-            this.buttonOut.ImageList = this.imageList1;
+            this.buttonOut.Image = global::H3K.Properties.Resources.icons8_delete;
             this.buttonOut.Location = new System.Drawing.Point(578, 13);
             this.buttonOut.Name = "buttonOut";
             this.buttonOut.Size = new System.Drawing.Size(51, 44);
@@ -2004,11 +1996,11 @@
             this.buttonChngPwd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonChngPwd.ForeColor = System.Drawing.Color.White;
             this.buttonChngPwd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonChngPwd.ImageIndex = 0;
-            this.buttonChngPwd.ImageList = this.imageList1;
+            this.buttonChngPwd.ImageKey = "icons8_ok_32.png";
+            this.buttonChngPwd.ImageList = this.icon_mainmenu;
             this.buttonChngPwd.Location = new System.Drawing.Point(389, 426);
             this.buttonChngPwd.Name = "buttonChngPwd";
-            this.buttonChngPwd.Size = new System.Drawing.Size(199, 54);
+            this.buttonChngPwd.Size = new System.Drawing.Size(181, 54);
             this.buttonChngPwd.TabIndex = 6;
             this.buttonChngPwd.Text = "Change Password";
             this.buttonChngPwd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2270,6 +2262,9 @@
             this.action_panel.ResumeLayout(false);
             this.action_panel.PerformLayout();
             this.common.ResumeLayout(false);
+            this.movie_show_panel.ResumeLayout(false);
+            this.category.ResumeLayout(false);
+            this.category_scroll.ResumeLayout(false);
             this.manage_show_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataMovie)).EndInit();
             this.content_manage.ResumeLayout(false);
@@ -2296,9 +2291,6 @@
             this.panel10.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.movie_show_panel.ResumeLayout(false);
-            this.category.ResumeLayout(false);
-            this.category_scroll.ResumeLayout(false);
             this.history_show_panel.ResumeLayout(false);
             this.favorite_show_panel.ResumeLayout(false);
             this.account_infor_panel.ResumeLayout(false);
@@ -2457,7 +2449,6 @@
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Label username_information;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel common_infor;
         private System.Windows.Forms.Panel panelChangePwd;
         private System.Windows.Forms.Button buttonOut;

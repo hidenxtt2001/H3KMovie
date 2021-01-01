@@ -635,6 +635,86 @@ namespace H3K.InterFace
 
         #endregion
 
+        #region DataTopMovie
+        public DataSet dataTopView()
+        {
+            try
+            {
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"select top(20) * from Movies order by views_count desc", data))
+                {
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
+            }
+            catch (Exception)
+            {
+                return new DataSet();
+            }
+        }
+        public DataSet dataTopRating()
+        {
+            try
+            {
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"select top(20) * from Movies order by rating desc", data))
+                {
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
+            }
+            catch (Exception)
+            {
+                return new DataSet();
+            }
+        }
+
+        public DataSet dataTopAction()
+        {
+            try
+            {
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"select top(20) * from Movies join Movie_Genres on Movies.movie_id = Movie_Genres.movie_id where Movie_Genres.genre_id = 3 order by views_count desc,rating desc", data))
+                {
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
+            }
+            catch (Exception)
+            {
+                return new DataSet();
+            }
+        }
+
+        public DataSet dataTopFavorite()
+        {
+            try
+            {
+                data.Open();
+                DataSet result = new DataSet();
+                using (SqlDataAdapter da = new SqlDataAdapter(@"select * from Movies where movie_id in (select top(20) movie_id from Favorite group by movie_id order by COUNT(username) desc )", data))
+                {
+                    da.Fill(result);
+                    da.Dispose();
+                }
+                data.Close();
+                return result;
+            }
+            catch (Exception)
+            {
+                return new DataSet();
+            }
+        }
+        #endregion
 
     }
 }

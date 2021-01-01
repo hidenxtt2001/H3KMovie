@@ -192,10 +192,10 @@
             this.main_top_movies = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.albumMovies4 = new H3K.InterFace.Movie_Mange.AlbumMovies();
-            this.albumMovies3 = new H3K.InterFace.Movie_Mange.AlbumMovies();
-            this.albumMovies2 = new H3K.InterFace.Movie_Mange.AlbumMovies();
-            this.albumMovies1 = new H3K.InterFace.Movie_Mange.AlbumMovies();
+            this.topFavorite = new H3K.InterFace.Movie_Mange.AlbumMovies();
+            this.topAction = new H3K.InterFace.Movie_Mange.AlbumMovies();
+            this.topView = new H3K.InterFace.Movie_Mange.AlbumMovies();
+            this.topRating = new H3K.InterFace.Movie_Mange.AlbumMovies();
             this.list_top_movies = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.list_item_movie = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
             this.movies_list_history = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
@@ -2273,6 +2273,7 @@
             this.main_top_movies.Dock = System.Windows.Forms.DockStyle.Fill;
             this.main_top_movies.Location = new System.Drawing.Point(0, 67);
             this.main_top_movies.Name = "main_top_movies";
+            this.main_top_movies.Padding = new System.Windows.Forms.Padding(100, 0, 100, 0);
             this.main_top_movies.Size = new System.Drawing.Size(1176, 659);
             this.main_top_movies.TabIndex = 0;
             // 
@@ -2293,78 +2294,82 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.albumMovies4, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.albumMovies3, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.albumMovies2, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.albumMovies1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.topFavorite, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.topAction, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.topView, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.topRating, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(100, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1176, 659);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(976, 659);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // albumMovies4
+            // topFavorite
             // 
-            this.albumMovies4.BackColor = System.Drawing.Color.Transparent;
-            this.albumMovies4.ColorBottom = System.Drawing.Color.Lime;
-            this.albumMovies4.ColorTop = System.Drawing.Color.Blue;
-            this.albumMovies4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.albumMovies4.LabelBottom = "Content";
-            this.albumMovies4.LabelTop = "Top 20";
-            this.albumMovies4.Location = new System.Drawing.Point(658, 337);
-            this.albumMovies4.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
-            this.albumMovies4.Name = "albumMovies4";
-            this.albumMovies4.Padding = new System.Windows.Forms.Padding(4);
-            this.albumMovies4.Size = new System.Drawing.Size(448, 314);
-            this.albumMovies4.TabIndex = 3;
+            this.topFavorite.BackColor = System.Drawing.Color.Transparent;
+            this.topFavorite.ColorBottom = System.Drawing.Color.Lime;
+            this.topFavorite.ColorTop = System.Drawing.Color.Blue;
+            this.topFavorite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.topFavorite.LabelBottom = "Most Favortie";
+            this.topFavorite.LabelTop = "Top 20";
+            this.topFavorite.Location = new System.Drawing.Point(558, 337);
+            this.topFavorite.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
+            this.topFavorite.Name = "topFavorite";
+            this.topFavorite.Padding = new System.Windows.Forms.Padding(4);
+            this.topFavorite.Size = new System.Drawing.Size(348, 314);
+            this.topFavorite.TabIndex = 3;
+            this.topFavorite.Click += new System.EventHandler(this.AlbumMovies_Click);
             // 
-            // albumMovies3
+            // topAction
             // 
-            this.albumMovies3.BackColor = System.Drawing.Color.Transparent;
-            this.albumMovies3.ColorBottom = System.Drawing.Color.Red;
-            this.albumMovies3.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.albumMovies3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.albumMovies3.LabelBottom = "Content";
-            this.albumMovies3.LabelTop = "Top 20";
-            this.albumMovies3.Location = new System.Drawing.Point(70, 337);
-            this.albumMovies3.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
-            this.albumMovies3.Name = "albumMovies3";
-            this.albumMovies3.Padding = new System.Windows.Forms.Padding(4);
-            this.albumMovies3.Size = new System.Drawing.Size(448, 314);
-            this.albumMovies3.TabIndex = 2;
+            this.topAction.BackColor = System.Drawing.Color.Transparent;
+            this.topAction.ColorBottom = System.Drawing.Color.Red;
+            this.topAction.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.topAction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.topAction.LabelBottom = "Action Movies";
+            this.topAction.LabelTop = "Top 20";
+            this.topAction.Location = new System.Drawing.Point(70, 337);
+            this.topAction.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
+            this.topAction.Name = "topAction";
+            this.topAction.Padding = new System.Windows.Forms.Padding(4);
+            this.topAction.Size = new System.Drawing.Size(348, 314);
+            this.topAction.TabIndex = 2;
+            this.topAction.Click += new System.EventHandler(this.AlbumMovies_Click);
             // 
-            // albumMovies2
+            // topView
             // 
-            this.albumMovies2.BackColor = System.Drawing.Color.Transparent;
-            this.albumMovies2.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.albumMovies2.ColorTop = System.Drawing.Color.Purple;
-            this.albumMovies2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.albumMovies2.LabelBottom = "Content";
-            this.albumMovies2.LabelTop = "Top 20";
-            this.albumMovies2.Location = new System.Drawing.Point(658, 8);
-            this.albumMovies2.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
-            this.albumMovies2.Name = "albumMovies2";
-            this.albumMovies2.Padding = new System.Windows.Forms.Padding(4);
-            this.albumMovies2.Size = new System.Drawing.Size(448, 313);
-            this.albumMovies2.TabIndex = 1;
+            this.topView.BackColor = System.Drawing.Color.Transparent;
+            this.topView.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.topView.ColorTop = System.Drawing.Color.Purple;
+            this.topView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.topView.LabelBottom = "Most Views";
+            this.topView.LabelTop = "Top 20";
+            this.topView.Location = new System.Drawing.Point(558, 8);
+            this.topView.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
+            this.topView.Name = "topView";
+            this.topView.Padding = new System.Windows.Forms.Padding(4);
+            this.topView.Size = new System.Drawing.Size(348, 313);
+            this.topView.TabIndex = 1;
+            this.topView.Click += new System.EventHandler(this.AlbumMovies_Click);
             // 
-            // albumMovies1
+            // topRating
             // 
-            this.albumMovies1.BackColor = System.Drawing.Color.Transparent;
-            this.albumMovies1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.albumMovies1.ColorTop = System.Drawing.Color.Red;
-            this.albumMovies1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.albumMovies1.LabelBottom = "Content";
-            this.albumMovies1.LabelTop = "Top 20";
-            this.albumMovies1.Location = new System.Drawing.Point(70, 8);
-            this.albumMovies1.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
-            this.albumMovies1.Name = "albumMovies1";
-            this.albumMovies1.Padding = new System.Windows.Forms.Padding(4);
-            this.albumMovies1.Size = new System.Drawing.Size(448, 313);
-            this.albumMovies1.TabIndex = 0;
+            this.topRating.BackColor = System.Drawing.Color.Transparent;
+            this.topRating.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.topRating.ColorTop = System.Drawing.Color.Red;
+            this.topRating.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.topRating.LabelBottom = "Highest Rating";
+            this.topRating.LabelTop = "Top 20";
+            this.topRating.Location = new System.Drawing.Point(70, 8);
+            this.topRating.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
+            this.topRating.Name = "topRating";
+            this.topRating.Padding = new System.Windows.Forms.Padding(4);
+            this.topRating.Size = new System.Drawing.Size(348, 313);
+            this.topRating.TabIndex = 0;
+            this.topRating.Click += new System.EventHandler(this.AlbumMovies_Click);
             // 
             // list_top_movies
             // 
@@ -2640,9 +2645,9 @@
         private Movie_Mange.SmoothScrollPanel list_top_movies;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Movie_Mange.AlbumMovies albumMovies4;
-        private Movie_Mange.AlbumMovies albumMovies3;
-        private Movie_Mange.AlbumMovies albumMovies2;
-        private Movie_Mange.AlbumMovies albumMovies1;
+        private Movie_Mange.AlbumMovies topFavorite;
+        private Movie_Mange.AlbumMovies topAction;
+        private Movie_Mange.AlbumMovies topView;
+        private Movie_Mange.AlbumMovies topRating;
     }
 }

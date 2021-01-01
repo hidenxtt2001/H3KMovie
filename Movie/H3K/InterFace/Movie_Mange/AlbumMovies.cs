@@ -34,5 +34,38 @@ namespace H3K.InterFace.Movie_Mange
             g.FillRectangle(lgb, this.ClientRectangle);
             base.OnPaint(e);
         }
+
+        private void poster_MouseHover(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(100, Color.FromArgb(125, 124, 163));
+        }
+
+        private void poster_MouseLeave(object sender, EventArgs e)
+        {
+            if (!IsMouseHover(this))
+            {
+                this.BackColor = Color.Transparent;
+            }
+        }
+        private bool IsMouseHover(Control c)
+        {
+            Point p = Control.MousePosition;
+            Point p1 = c.PointToClient(p);
+            if (c.DisplayRectangle.Contains(c.PointToClient(p)))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public delegate void EventClickAlbumControl(object sender, EventArgs e);
+        public event EventClickAlbumControl ClickAlbumControl;
+
+
+        private void AlbumControl_Click(object sender, EventArgs e)
+        {
+            if (this.ClickAlbumControl != null)
+                this.ClickAlbumControl(this, e);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using H3K.InterFace.Sign_Form;
+﻿using H3K.InterFace.Movie_Mange;
+using H3K.InterFace.Sign_Form;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,7 +48,11 @@ namespace H3K.InterFace
             // Data
             data = new ConnectData();
 
-            
+            foreach (AlbumMovies ctl in tableLayoutPanel2.Controls) // Get event click Album Control
+            {
+                ctl.ClickAlbumControl += AlbumMovies_Click;
+            }
+
         }
 
         private static List<Thread> workLoad { get; set; }
@@ -259,6 +264,8 @@ namespace H3K.InterFace
                     break;
 
                 case "top_show":
+                    label17.Text = "Top Movies";
+                    main_top_movies.BringToFront();
                     topmovies_show_panel.BringToFront();
                     break;
             }
@@ -811,7 +818,191 @@ namespace H3K.InterFace
         #endregion
 
         #region Top Movies
+        private void AlbumMovies_Click(object sender, EventArgs e)
+        {
+            switch (((AlbumMovies)sender).Name)
+            {
+                case "topRating":
+                    label17.Text = "Top Rating Movies";
+                    list_top_movies.BringToFront();
+                    Thread k1 = new Thread(() =>
+                    {
+                        loadTopRating();
+                    });
+                    k1.IsBackground = true;
+                    workLoad.Add(k1);
+                    k1.Start();
+                    break;
+                case "topView":
+                    label17.Text = "Top Views Movies";
+                    list_top_movies.BringToFront();
+                    Thread k2 = new Thread(() =>
+                    {
+                        loadTopView();
+                    });
+                    k2.IsBackground = true;
+                    workLoad.Add(k2);
+                    k2.Start();
+                    break;
+                case "topAction":
+                    label17.Text = "Top Rating Movies";
+                    list_top_movies.BringToFront();
+                    Thread k3 = new Thread(() =>
+                    {
+                        loadTopAction();
+                    });
+                    k3.IsBackground = true;
+                    workLoad.Add(k3);
+                    k3.Start();
+                    break;
+                case "topFavorite":
+                    label17.Text = "Top Rating Movies";
+                    list_top_movies.BringToFront();
+                    Thread k4 = new Thread(() =>
+                    {
+                        loadTopFavorite();
+                    });
+                    k4.IsBackground = true;
+                    workLoad.Add(k4);
+                    k4.Start();
+                    break;
+            }
+        }
+        private void loadTopAction()
+        {
+            try
+            {
+                ClearControl(movies_list_history);
+                loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
+                DataTable result = data.dataTopAction().Tables[0];
+                if (!workLoad.Contains(Thread.CurrentThread)) return;
+                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                foreach (DataRow item in result.Rows)
+                {
+                    if (workLoad.Contains(Thread.CurrentThread))
+                        list_top_movies.Invoke(new Action(() =>
+                        {
+                            list_top_movies.Controls.Add(new Movie_Mange.MovieItem()
+                            {
+                                Movie_id = item["movie_id"].ToString(),
+                                Title = item["title"].ToString(),
+                                Content = item["plot"].ToString(),
+                                Rating = Convert.ToInt32(item["rating"]),
+                                Director = item["director"].ToString(),
+                                MovieLink = item["movie_link"].ToString(),
+                                Background_link = item["poster"].ToString(),
+                                Year = item["year_create"].ToString(),
+                                Nation = item["nation"].ToString()
+                            });
+                        }));
+                    else return;
+                }
+            }
+            catch (Exception) { }
+        }
+
+        private void loadTopFavorite()
+        {
+            try
+            {
+                ClearControl(movies_list_history);
+                loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
+                DataTable result = data.dataTopFavorite().Tables[0];
+                if (!workLoad.Contains(Thread.CurrentThread)) return;
+                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                foreach (DataRow item in result.Rows)
+                {
+                    if (workLoad.Contains(Thread.CurrentThread))
+                        list_top_movies.Invoke(new Action(() =>
+                        {
+                            list_top_movies.Controls.Add(new Movie_Mange.MovieItem()
+                            {
+                                Movie_id = item["movie_id"].ToString(),
+                                Title = item["title"].ToString(),
+                                Content = item["plot"].ToString(),
+                                Rating = Convert.ToInt32(item["rating"]),
+                                Director = item["director"].ToString(),
+                                MovieLink = item["movie_link"].ToString(),
+                                Background_link = item["poster"].ToString(),
+                                Year = item["year_create"].ToString(),
+                                Nation = item["nation"].ToString()
+                            });
+                        }));
+                    else return;
+                }
+            }
+            catch (Exception) { }
+        }
+
+        private void loadTopView()
+        {
+            try
+            {
+                ClearControl(movies_list_history);
+                loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
+                DataTable result = data.dataTopView().Tables[0];
+                if (!workLoad.Contains(Thread.CurrentThread)) return;
+                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                foreach (DataRow item in result.Rows)
+                {
+                    if (workLoad.Contains(Thread.CurrentThread))
+                        list_top_movies.Invoke(new Action(() =>
+                        {
+                            list_top_movies.Controls.Add(new Movie_Mange.MovieItem()
+                            {
+                                Movie_id = item["movie_id"].ToString(),
+                                Title = item["title"].ToString(),
+                                Content = item["plot"].ToString(),
+                                Rating = Convert.ToInt32(item["rating"]),
+                                Director = item["director"].ToString(),
+                                MovieLink = item["movie_link"].ToString(),
+                                Background_link = item["poster"].ToString(),
+                                Year = item["year_create"].ToString(),
+                                Nation = item["nation"].ToString()
+                            });
+                        }));
+                    else return;
+                }
+            }
+            catch (Exception) { }
+        }
+
+        private void loadTopRating()
+        {
+            try
+            {
+                ClearControl(movies_list_history);
+                loading_label.Invoke(new Action(() => { loading_label.Visible = true; }));
+                DataTable result = data.dataTopRating().Tables[0];
+                if (!workLoad.Contains(Thread.CurrentThread)) return;
+                loading_label.Invoke(new Action(() => { loading_label.Visible = false; }));
+                foreach (DataRow item in result.Rows)
+                {
+                    if (workLoad.Contains(Thread.CurrentThread))
+                        list_top_movies.Invoke(new Action(() =>
+                        {
+                            list_top_movies.Controls.Add(new Movie_Mange.MovieItem()
+                            {
+                                Movie_id = item["movie_id"].ToString(),
+                                Title = item["title"].ToString(),
+                                Content = item["plot"].ToString(),
+                                Rating = Convert.ToInt32(item["rating"]),
+                                Director = item["director"].ToString(),
+                                MovieLink = item["movie_link"].ToString(),
+                                Background_link = item["poster"].ToString(),
+                                Year = item["year_create"].ToString(),
+                                Nation = item["nation"].ToString()
+                            });
+                        }));
+                    else return;
+                }
+            }
+            catch (Exception) { }
+        }
+
 
         #endregion
+
+        
     }
 }

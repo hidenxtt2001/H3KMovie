@@ -81,3 +81,4 @@ C:\Users\ASUS\Source\Repos\H3KMovie2\Movie\H3K\obj\Debug\H3K.csproj.CoreCompileI
 C:\Users\ASUS\Source\Repos\H3KMovie2\Movie\H3K\obj\Debug\H3K.csproj.CopyComplete
 C:\Users\ASUS\Source\Repos\H3KMovie2\Movie\H3K\obj\Debug\H3K.exe
 C:\Users\ASUS\Source\Repos\H3KMovie2\Movie\H3K\obj\Debug\H3K.pdb
+C:\Users\HidenxTT\source\repos\GitHub\H3KMovie\Movie\H3K\obj\Debug\H3K.InterFace.Movie_Mange.AlbumMovies.resources

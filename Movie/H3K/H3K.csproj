@@ -59,6 +59,12 @@
     <Compile Include="InterFace\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterFace\Movie_Mange\AlbumMovies.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InterFace\Movie_Mange\AlbumMovies.Designer.cs">
+      <DependentUpon>AlbumMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="InterFace\Movie_Mange\MovieItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="InterFace\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterFace\Movie_Mange\AlbumMovies.resx">
+      <DependentUpon>AlbumMovies.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterFace\Movie_Mange\MovieItem.resx">
       <DependentUpon>MovieItem.cs</DependentUpon>

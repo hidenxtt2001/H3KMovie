@@ -51,6 +51,7 @@
             this.button9.Size = new System.Drawing.Size(30, 32);
             this.button9.TabIndex = 1;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel12
             // 

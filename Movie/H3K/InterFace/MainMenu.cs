@@ -209,6 +209,9 @@ namespace H3K.InterFace
                     case "manage_show":
                         dataMovie.DataSource = null;
                         break;
+                    case "top_show":
+                        ClearControl(list_top_movies);
+                        break;
                 }
             }
             switch (((Button)sender).Name)
@@ -253,7 +256,10 @@ namespace H3K.InterFace
                             dataMovie.Invoke(new Action(() => { dataMovie.DataSource = temp; }));
                         }
                     }).Start();
-                    
+                    break;
+
+                case "top_show":
+                    topmovies_show_panel.BringToFront();
                     break;
             }
             selectPanel = (Button)sender;
@@ -801,12 +807,11 @@ namespace H3K.InterFace
 
 
 
-        #endregion
 
+        #endregion
 
         #region Top Movies
 
         #endregion
-
     }
 }

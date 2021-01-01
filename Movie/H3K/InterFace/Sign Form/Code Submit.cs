@@ -33,7 +33,7 @@ namespace H3K.InterFace.Sign_Form
         private void Reset_Password_Click(object sender, EventArgs e)
         {
             MessageWarning message = new MessageWarning("");
-            if(new_password.Text.Length >= 6)
+            if(new_password.Text.Replace(" ",string.Empty).Length >= 6)
             {
                 if (SubmitCode(code_reset.Text, new_password.Text))
                 {
@@ -84,6 +84,11 @@ namespace H3K.InterFace.Sign_Form
             {
                 return Convert.ToBoolean(new StreamReader(ex.Response.GetResponseStream()).ReadToEnd());
             }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

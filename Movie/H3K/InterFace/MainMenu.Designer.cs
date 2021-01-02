@@ -76,15 +76,6 @@
             this.genre1 = new System.Windows.Forms.Button();
             this.scroll_right = new System.Windows.Forms.Button();
             this.scroll_left = new System.Windows.Forms.Button();
-            this.topmovies_show_panel = new System.Windows.Forms.Panel();
-            this.main_top_movies = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.topFavorite = new H3K.InterFace.Movie_Mange.AlbumMovies();
-            this.topAction = new H3K.InterFace.Movie_Mange.AlbumMovies();
-            this.topView = new H3K.InterFace.Movie_Mange.AlbumMovies();
-            this.topRating = new H3K.InterFace.Movie_Mange.AlbumMovies();
-            this.list_top_movies = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
-            this.label17 = new System.Windows.Forms.Label();
             this.account_infor_panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.common_infor = new System.Windows.Forms.Panel();
@@ -119,6 +110,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.topmovies_show_panel = new System.Windows.Forms.Panel();
+            this.main_top_movies = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.topFavorite = new H3K.InterFace.Movie_Mange.AlbumMovies();
+            this.topAction = new H3K.InterFace.Movie_Mange.AlbumMovies();
+            this.topView = new H3K.InterFace.Movie_Mange.AlbumMovies();
+            this.topRating = new H3K.InterFace.Movie_Mange.AlbumMovies();
+            this.list_top_movies = new H3K.InterFace.Movie_Mange.SmoothScrollPanel();
+            this.label17 = new System.Windows.Forms.Label();
             this.manage_show_panel = new System.Windows.Forms.Panel();
             this.dataMovie = new System.Windows.Forms.DataGridView();
             this.content_manage = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -208,9 +208,6 @@
             this.movie_show_panel.SuspendLayout();
             this.category.SuspendLayout();
             this.category_scroll.SuspendLayout();
-            this.topmovies_show_panel.SuspendLayout();
-            this.main_top_movies.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.account_infor_panel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.common_infor.SuspendLayout();
@@ -225,6 +222,9 @@
             this.panel22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelChangePwd.SuspendLayout();
+            this.topmovies_show_panel.SuspendLayout();
+            this.main_top_movies.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.manage_show_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataMovie)).BeginInit();
             this.content_manage.SuspendLayout();
@@ -470,8 +470,8 @@
             // common
             // 
             this.common.Controls.Add(this.movie_show_panel);
-            this.common.Controls.Add(this.topmovies_show_panel);
             this.common.Controls.Add(this.account_infor_panel);
+            this.common.Controls.Add(this.topmovies_show_panel);
             this.common.Controls.Add(this.manage_show_panel);
             this.common.Controls.Add(this.history_show_panel);
             this.common.Controls.Add(this.favorite_show_panel);
@@ -921,129 +921,6 @@
             this.scroll_left.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
             this.scroll_left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
             // 
-            // topmovies_show_panel
-            // 
-            this.topmovies_show_panel.Controls.Add(this.main_top_movies);
-            this.topmovies_show_panel.Controls.Add(this.list_top_movies);
-            this.topmovies_show_panel.Controls.Add(this.label17);
-            this.topmovies_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.topmovies_show_panel.Location = new System.Drawing.Point(0, 0);
-            this.topmovies_show_panel.Name = "topmovies_show_panel";
-            this.topmovies_show_panel.Size = new System.Drawing.Size(1176, 726);
-            this.topmovies_show_panel.TabIndex = 6;
-            // 
-            // main_top_movies
-            // 
-            this.main_top_movies.Controls.Add(this.tableLayoutPanel2);
-            this.main_top_movies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.main_top_movies.Location = new System.Drawing.Point(0, 67);
-            this.main_top_movies.Name = "main_top_movies";
-            this.main_top_movies.Padding = new System.Windows.Forms.Padding(100, 0, 100, 0);
-            this.main_top_movies.Size = new System.Drawing.Size(1176, 659);
-            this.main_top_movies.TabIndex = 0;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.topFavorite, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.topAction, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.topView, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.topRating, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(100, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(976, 659);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // topFavorite
-            // 
-            this.topFavorite.BackColor = System.Drawing.Color.Transparent;
-            this.topFavorite.ColorBottom = System.Drawing.Color.Lime;
-            this.topFavorite.ColorTop = System.Drawing.Color.Blue;
-            this.topFavorite.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.topFavorite.LabelBottom = "Most Favortie";
-            this.topFavorite.LabelTop = "Top 20";
-            this.topFavorite.Location = new System.Drawing.Point(558, 337);
-            this.topFavorite.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
-            this.topFavorite.Name = "topFavorite";
-            this.topFavorite.Padding = new System.Windows.Forms.Padding(4);
-            this.topFavorite.Size = new System.Drawing.Size(348, 314);
-            this.topFavorite.TabIndex = 3;
-            this.topFavorite.Click += new System.EventHandler(this.AlbumMovies_Click);
-            // 
-            // topAction
-            // 
-            this.topAction.BackColor = System.Drawing.Color.Transparent;
-            this.topAction.ColorBottom = System.Drawing.Color.Red;
-            this.topAction.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.topAction.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.topAction.LabelBottom = "Action Movies";
-            this.topAction.LabelTop = "Top 20";
-            this.topAction.Location = new System.Drawing.Point(70, 337);
-            this.topAction.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
-            this.topAction.Name = "topAction";
-            this.topAction.Padding = new System.Windows.Forms.Padding(4);
-            this.topAction.Size = new System.Drawing.Size(348, 314);
-            this.topAction.TabIndex = 2;
-            this.topAction.Click += new System.EventHandler(this.AlbumMovies_Click);
-            // 
-            // topView
-            // 
-            this.topView.BackColor = System.Drawing.Color.Transparent;
-            this.topView.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.topView.ColorTop = System.Drawing.Color.Purple;
-            this.topView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.topView.LabelBottom = "Most Views";
-            this.topView.LabelTop = "Top 20";
-            this.topView.Location = new System.Drawing.Point(558, 8);
-            this.topView.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
-            this.topView.Name = "topView";
-            this.topView.Padding = new System.Windows.Forms.Padding(4);
-            this.topView.Size = new System.Drawing.Size(348, 313);
-            this.topView.TabIndex = 1;
-            this.topView.Click += new System.EventHandler(this.AlbumMovies_Click);
-            // 
-            // topRating
-            // 
-            this.topRating.BackColor = System.Drawing.Color.Transparent;
-            this.topRating.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.topRating.ColorTop = System.Drawing.Color.Red;
-            this.topRating.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.topRating.LabelBottom = "Highest Rating";
-            this.topRating.LabelTop = "Top 20";
-            this.topRating.Location = new System.Drawing.Point(70, 8);
-            this.topRating.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
-            this.topRating.Name = "topRating";
-            this.topRating.Padding = new System.Windows.Forms.Padding(4);
-            this.topRating.Size = new System.Drawing.Size(348, 313);
-            this.topRating.TabIndex = 0;
-            this.topRating.Click += new System.EventHandler(this.AlbumMovies_Click);
-            // 
-            // list_top_movies
-            // 
-            this.list_top_movies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.list_top_movies.Location = new System.Drawing.Point(0, 67);
-            this.list_top_movies.Name = "list_top_movies";
-            this.list_top_movies.Size = new System.Drawing.Size(1176, 659);
-            this.list_top_movies.TabIndex = 5;
-            // 
-            // label17
-            // 
-            this.label17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label17.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label17.Location = new System.Drawing.Point(0, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(1176, 67);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Top Movies";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // account_infor_panel
             // 
             this.account_infor_panel.Controls.Add(this.tableLayoutPanel1);
@@ -1449,6 +1326,129 @@
             this.label1.Text = "Account Information";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // topmovies_show_panel
+            // 
+            this.topmovies_show_panel.Controls.Add(this.main_top_movies);
+            this.topmovies_show_panel.Controls.Add(this.list_top_movies);
+            this.topmovies_show_panel.Controls.Add(this.label17);
+            this.topmovies_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.topmovies_show_panel.Location = new System.Drawing.Point(0, 0);
+            this.topmovies_show_panel.Name = "topmovies_show_panel";
+            this.topmovies_show_panel.Size = new System.Drawing.Size(1176, 726);
+            this.topmovies_show_panel.TabIndex = 6;
+            // 
+            // main_top_movies
+            // 
+            this.main_top_movies.Controls.Add(this.tableLayoutPanel2);
+            this.main_top_movies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main_top_movies.Location = new System.Drawing.Point(0, 67);
+            this.main_top_movies.Name = "main_top_movies";
+            this.main_top_movies.Padding = new System.Windows.Forms.Padding(100, 0, 100, 0);
+            this.main_top_movies.Size = new System.Drawing.Size(1176, 659);
+            this.main_top_movies.TabIndex = 0;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.topFavorite, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.topAction, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.topView, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.topRating, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(100, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(976, 659);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // topFavorite
+            // 
+            this.topFavorite.BackColor = System.Drawing.Color.Transparent;
+            this.topFavorite.ColorBottom = System.Drawing.Color.Lime;
+            this.topFavorite.ColorTop = System.Drawing.Color.Blue;
+            this.topFavorite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.topFavorite.LabelBottom = "Most Favortie";
+            this.topFavorite.LabelTop = "Top 20";
+            this.topFavorite.Location = new System.Drawing.Point(558, 337);
+            this.topFavorite.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
+            this.topFavorite.Name = "topFavorite";
+            this.topFavorite.Padding = new System.Windows.Forms.Padding(4);
+            this.topFavorite.Size = new System.Drawing.Size(348, 314);
+            this.topFavorite.TabIndex = 3;
+            this.topFavorite.Click += new System.EventHandler(this.AlbumMovies_Click);
+            // 
+            // topAction
+            // 
+            this.topAction.BackColor = System.Drawing.Color.Transparent;
+            this.topAction.ColorBottom = System.Drawing.Color.Red;
+            this.topAction.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.topAction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.topAction.LabelBottom = "Action Movies";
+            this.topAction.LabelTop = "Top 20";
+            this.topAction.Location = new System.Drawing.Point(70, 337);
+            this.topAction.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
+            this.topAction.Name = "topAction";
+            this.topAction.Padding = new System.Windows.Forms.Padding(4);
+            this.topAction.Size = new System.Drawing.Size(348, 314);
+            this.topAction.TabIndex = 2;
+            this.topAction.Click += new System.EventHandler(this.AlbumMovies_Click);
+            // 
+            // topView
+            // 
+            this.topView.BackColor = System.Drawing.Color.Transparent;
+            this.topView.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.topView.ColorTop = System.Drawing.Color.Purple;
+            this.topView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.topView.LabelBottom = "Most Views";
+            this.topView.LabelTop = "Top 20";
+            this.topView.Location = new System.Drawing.Point(558, 8);
+            this.topView.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
+            this.topView.Name = "topView";
+            this.topView.Padding = new System.Windows.Forms.Padding(4);
+            this.topView.Size = new System.Drawing.Size(348, 313);
+            this.topView.TabIndex = 1;
+            this.topView.Click += new System.EventHandler(this.AlbumMovies_Click);
+            // 
+            // topRating
+            // 
+            this.topRating.BackColor = System.Drawing.Color.Transparent;
+            this.topRating.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.topRating.ColorTop = System.Drawing.Color.Red;
+            this.topRating.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.topRating.LabelBottom = "Highest Rating";
+            this.topRating.LabelTop = "Top 20";
+            this.topRating.Location = new System.Drawing.Point(70, 8);
+            this.topRating.Margin = new System.Windows.Forms.Padding(70, 8, 70, 8);
+            this.topRating.Name = "topRating";
+            this.topRating.Padding = new System.Windows.Forms.Padding(4);
+            this.topRating.Size = new System.Drawing.Size(348, 313);
+            this.topRating.TabIndex = 0;
+            this.topRating.Click += new System.EventHandler(this.AlbumMovies_Click);
+            // 
+            // list_top_movies
+            // 
+            this.list_top_movies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.list_top_movies.Location = new System.Drawing.Point(0, 67);
+            this.list_top_movies.Name = "list_top_movies";
+            this.list_top_movies.Size = new System.Drawing.Size(1176, 659);
+            this.list_top_movies.TabIndex = 5;
+            // 
+            // label17
+            // 
+            this.label17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label17.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label17.Location = new System.Drawing.Point(0, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(1176, 67);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Top Movies";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // manage_show_panel
             // 
             this.manage_show_panel.Controls.Add(this.dataMovie);
@@ -1504,6 +1504,7 @@
             // 
             // content_manage
             // 
+            this.content_manage.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.content_manage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateMovie_Content,
             this.removeMovie_Content});
@@ -2425,9 +2426,6 @@
             this.movie_show_panel.ResumeLayout(false);
             this.category.ResumeLayout(false);
             this.category_scroll.ResumeLayout(false);
-            this.topmovies_show_panel.ResumeLayout(false);
-            this.main_top_movies.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
             this.account_infor_panel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.common_infor.ResumeLayout(false);
@@ -2444,6 +2442,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelChangePwd.ResumeLayout(false);
             this.panelChangePwd.PerformLayout();
+            this.topmovies_show_panel.ResumeLayout(false);
+            this.main_top_movies.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.manage_show_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataMovie)).EndInit();
             this.content_manage.ResumeLayout(false);

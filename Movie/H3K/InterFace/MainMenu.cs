@@ -741,6 +741,13 @@ namespace H3K.InterFace
         private void buttonChangePwd_Click(object sender, EventArgs e) // Button change password
         {
             panelChangePwd.BringToFront();
+            foreach (Control txt in panelChangePwd.Controls.Cast<Control>().OrderBy(c => c.TabIndex)) // reset textbox in change password
+            {
+                if (txt is TextBox)
+                {
+                    txt.Text = "";
+                }
+            }
         }
 
         private void buttonOut_Click(object sender, EventArgs e) // Button out of change password
@@ -753,7 +760,7 @@ namespace H3K.InterFace
             if(data.Account.Rows[0]["password"].ToString() == textBoxCurPwd.Text)
             {
                 textBoxConPwd.Text = textBoxConPwd.Text.Replace(" ", string.Empty);
-                if (textBoxNewPwd.Text == textBoxConPwd.Text)
+                if (textBoxNewPwd.Text == textBoxConPwd.Text && textBoxNewPwd.Text.Length > 6)
                 {
                     data.UpdateInfor(data.Account.Rows[0]["name"].ToString(), data.Account.Rows[0]["email"].ToString(), textBoxNewPwd.Text);
                     msw.message = "Changed Password Successfully!";
@@ -762,6 +769,11 @@ namespace H3K.InterFace
                     msw.ShowDialog();
                     show_infor_panel.BringToFront();
                 }
+                else if(textBoxNewPwd.Text.Length <= 6)
+                {
+                    msw.message = "Your new password must longer than 6!";
+                    msw.ShowDialog();
+                }    
                 else
                 {
                     msw.message = "Confirm Password does not match";
@@ -773,6 +785,8 @@ namespace H3K.InterFace
                 msw.message = "Wrong Current Password!";
                 msw.ShowDialog();
             }
+             
+
         }
         private void buttonChangeName_Click(object sender, EventArgs e) // Button change Name
         {

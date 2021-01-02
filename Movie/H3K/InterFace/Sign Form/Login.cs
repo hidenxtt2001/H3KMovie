@@ -107,7 +107,7 @@ namespace H3K.InterFace.Sign_Form
             }
             else if (password_sign_up.Text.Length <= 6)
             {
-                new MessageWarning("Your password must longer than 6.").ShowDialog();
+                new MessageWarning("Your password must longer than 6!").ShowDialog();
                 return;
             }
             else if (!checkValidEmail(email_sign_up.Text)) // Kiểm tra định dạng email
